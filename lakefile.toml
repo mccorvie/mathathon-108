@@ -1,0 +1,6 @@
+name = "mathathon-108"
+version = "0.1.0"
+defaultTargets = ["Mathathon108"]
+
+[[lean_lib]]
+name = "Mathathon108"
