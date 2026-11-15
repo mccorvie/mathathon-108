@@ -502,3 +502,9 @@ name = "Prefix40"
 
 [[lean_lib]]
 name = "AnalyticHelpers"
+
+[[lean_lib]]
+name = "VProof"
+
+[[lean_lib]]
+name = "UProof"

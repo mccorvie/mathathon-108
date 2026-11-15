@@ -1,3 +1,7 @@
+MEMORY RECEIVER CANDIDATE — no new receiving gate yet.
+Copied baseline gate and counts are in ../baseline-controls.
+The original README follows as baseline documentation.
+
 # Lean project: Fauzan's ζ(5) method for symbolic odd s
 
 Lean v4.35.0, Mathlib v4.35.0, pinned in `lean-toolchain`, `lakefile.toml`, `lake-manifest.json`.

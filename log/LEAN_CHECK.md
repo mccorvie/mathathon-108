@@ -1,13 +1,10 @@
 # Lean check
-Run 2026-11-14T22:58-08:00 on `MergeEntry`, `Mathathon.Zeta5Comparator.Solution` in `/Users/mathathon/code/mathathon/problems/108-zeta-odd-autopsy/evidence/L-merge/project`.
+Run 2026-11-15T01:13-08:00 on `MergeEntry`, `Mathathon.Zeta5Comparator.Solution` in `/Users/mathathon/code/mathathon/problems/108-zeta-odd-autopsy/evidence/C-memory-merged/project`.
 **Overall: PASS**
 
 
 ## Versions
 - PASS: Lean v4.35.0, Mathlib v4.35.0
-
-## Build
-- PASS
 
 ## Declarations
 
@@ -53,6 +50,9 @@ Run 2026-11-14T22:58-08:00 on `MergeEntry`, `Mathathon.Zeta5Comparator.Solution`
 | `CCertificateSplit.closing` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `SplitClosing.closing_neg` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `RiemannZetaValues.irrational_five` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CFieldCert.all_u_ok` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CFieldCert.all_v_ok` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CFieldCert.critical_ok` | **PASS** | propext, Classical.choice, Quot.sound |  |
 
 ## Statements (a human must compare each with the claim in the report)
 
@@ -296,6 +296,18 @@ SplitClosing.closing_neg : Mathathon.P108.thetaPkg 5 6 (3 / 40) 1000000 (-265037
 ### `RiemannZetaValues.irrational_five`
 ```lean
 RiemannZetaValues.irrational_five : ∃ x, Irrational x ∧ riemannZeta 5 = ↑x
+```
+### `CFieldCert.all_u_ok`
+```lean
+CFieldCert.all_u_ok : ∀ r ∈ CFieldData.uRows, CField.UOK CFieldData.numeric r
+```
+### `CFieldCert.all_v_ok`
+```lean
+CFieldCert.all_v_ok : ∀ r ∈ CFieldData.vRows, CField.VOK CFieldData.numeric r
+```
+### `CFieldCert.critical_ok`
+```lean
+CFieldCert.critical_ok : CField.CriticalOK CFieldData.numeric CFieldData.critical
 ```
 
 ## Source scan (warnings)
