@@ -2,6 +2,7 @@
 Adapted lane-B E414/E415 reductions, themselves Firsching mo271/Zeta5@be1c0d82;
 Fauzan re-derivation; Comparator metadata Paul-Lez; Apache-2.0. See source-map.json. -/
 import AnalyticInterface
+import Apery.Construction
 
 /-!
 E414 conditional analytic staging, Codex lane B. PROOF-DRAFT until gate.

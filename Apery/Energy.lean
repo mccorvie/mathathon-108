@@ -1,8 +1,13 @@
 import Mathlib
-import Apery.HermiteIBP
-import Apery.DetIntegral
+import Apery.WeightCore
+import BAnalyticEnvelope
 
 /-!
+PROOF-DRAFT: analytic compression by Codex a8_tieband, Lane B.
+Adapted from Firsching/Paul-Lez, mo271/Zeta5@be1c0d82, Apache-2.0.
+The actual Vfield, log-sum comparisons and a.e. arguments are unchanged.
+The two density/integral proofs now specialize the existing generic proofs.
+
 # Towards the energy bound (6.14): elementary ingredients
 
 * the external field `V(t) = 2π√t + ∫₀¹ log(t+u²) du - 6 ∫₀^α log(t+u²) du` of (6.1);
@@ -14,6 +19,9 @@ open Filter Topology Set MeasureTheory Finset
 
 namespace Apery
 
+/-- The unchanged positive-half-line measure from upstream DetIntegral.lean. -/
+noncomputable abbrev μpos : Measure ℝ := volume.restrict (Ioi 0)
+
 /-- The external field of (6.1). -/
 noncomputable def Vfield (t : ℝ) : ℝ :=
   2 * Real.pi * Real.sqrt t + (∫ u in (0 : ℝ)..1, Real.log (t + u ^ 2)) -
@@ -22,19 +30,8 @@ noncomputable def Vfield (t : ℝ) : ℝ :=
 /-- `w(y) ≤ (1/π) (1 + 2πy)^5 e^{-2πy}` for `y > 0`. -/
 lemma w_le' {y : ℝ} (hy : 0 < y) :
     w y ≤ 1 / Real.pi * (1 + 2 * Real.pi * y) ^ 5 * Real.exp (-(2 * Real.pi * y)) := by
-  rw [w_eq_F4 hy]
-  have h := abs_F4_le hy
-  have hF : F4 y ≤ 24 * (1 + 2 * Real.pi * y) ^ (4 + 1) / (2 * Real.pi * y ^ (4 + 1) * qe y) :=
-    (le_abs_self _).trans h
-  have hq : qe y = Real.exp (2 * Real.pi * y) := rfl
-  have hqinv : 1 / qe y = Real.exp (-(2 * Real.pi * y)) := by rw [hq, Real.exp_neg, one_div]
-  have hqpos := qe_pos y
-  calc y ^ 5 * F4 y / 12 ≤ y ^ 5 * (24 * (1 + 2 * Real.pi * y) ^ (4 + 1) / (2 * Real.pi * y ^ (4 + 1) * qe y)) / 12 := by
-        gcongr
-    _ = 1 / Real.pi * (1 + 2 * Real.pi * y) ^ 5 * (1 / qe y) := by
-        field_simp
-        ring
-    _ = _ := by rw [hqinv]
+  rw [w_eq_general_five]
+  exact BAnalyticEnvelope.density_envelope 5 (by omega) hy
 
 /-- The monotone comparison (6.12): for `t > 0` and `1 ≤ m`,
 `K ∫₀^{m/K} log(t+u²) du ≤ ∑_{j=1}^m log(t + (j/K)²)`. -/
@@ -165,62 +162,7 @@ lemma sum_log_le_integral {t : ℝ} (ht : 0 < t) {K : ℝ} (hK : 1 ≤ K) {m : �
 lemma integral_one_add_pow_mul_exp {K : ℝ} (hK : 1 ≤ K) :
     ∫ y in Ioi 0, (1 + 2 * Real.pi * y) ^ 5 * Real.exp (-(1 / K * y)) ≤
       (2 * Real.pi) ^ 5 * 32 * 121 * K ^ 6 := by
-  have hK0 : 0 < K := by linarith
-  have hr : 0 < 1 / K := by positivity
-  have hpi := Real.pi_gt_three
-  -- the dominating function
-  have hg : IntegrableOn (fun y : ℝ => (2 * Real.pi) ^ 5 * 32 * (y ^ 0 * Real.exp (-(1 / K * y))) +
-      (2 * Real.pi) ^ 5 * 32 * (y ^ 5 * Real.exp (-(1 / K * y)))) (Ioi 0) :=
-    ((integrableOn_pow_mul_exp_neg_mul 0 hr).const_mul _).add ((integrableOn_pow_mul_exp_neg_mul 5 hr).const_mul _)
-  have hle : ∀ y : ℝ, 0 < y → (1 + 2 * Real.pi * y) ^ 5 * Real.exp (-(1 / K * y)) ≤
-      (2 * Real.pi) ^ 5 * 32 * (y ^ 0 * Real.exp (-(1 / K * y))) +
-        (2 * Real.pi) ^ 5 * 32 * (y ^ 5 * Real.exp (-(1 / K * y))) := by
-    intro y hy
-    have h1 : (1 + 2 * Real.pi * y) ^ 5 ≤ (2 * Real.pi) ^ 5 * (1 + y) ^ 5 := by
-      rw [← mul_pow]
-      exact pow_le_pow_left₀ (by positivity) (by nlinarith) 5
-    have h2 : (1 + y) ^ 5 ≤ 32 * (1 + y ^ 5) := by
-      rcases le_or_gt y 1 with h | h
-      · have : (1 + y) ^ 5 ≤ 2 ^ 5 := pow_le_pow_left₀ (by linarith) (by linarith) 5
-        have : 0 ≤ y ^ 5 := by positivity
-        nlinarith
-      · have : (1 + y) ^ 5 ≤ (2 * y) ^ 5 := pow_le_pow_left₀ (by linarith) (by linarith) 5
-        have : 0 ≤ y ^ 5 := by positivity
-        nlinarith
-    have he : 0 ≤ Real.exp (-(1 / K * y)) := (Real.exp_pos _).le
-    calc (1 + 2 * Real.pi * y) ^ 5 * Real.exp (-(1 / K * y))
-        ≤ (2 * Real.pi) ^ 5 * (32 * (1 + y ^ 5)) * Real.exp (-(1 / K * y)) := by
-          gcongr
-          exact h1.trans (by gcongr)
-      _ = _ := by simp only [pow_zero, one_mul]; ring
-  have hnn : 0 ≤ᵐ[volume.restrict (Ioi 0)]
-      fun y : ℝ => (1 + 2 * Real.pi * y) ^ 5 * Real.exp (-(1 / K * y)) :=
-    (ae_restrict_iff' measurableSet_Ioi).mpr (Filter.Eventually.of_forall fun y hy => by
-      have : (0 : ℝ) < y := hy
-      positivity)
-  have hmono : ∀ᵐ y ∂(volume.restrict (Ioi 0)), (1 + 2 * Real.pi * y) ^ 5 * Real.exp (-(1 / K * y)) ≤
-      (2 * Real.pi) ^ 5 * 32 * (y ^ 0 * Real.exp (-(1 / K * y))) +
-        (2 * Real.pi) ^ 5 * 32 * (y ^ 5 * Real.exp (-(1 / K * y))) :=
-    (ae_restrict_iff' measurableSet_Ioi).mpr (Filter.Eventually.of_forall fun y hy => hle y hy)
-  calc ∫ y in Ioi 0, (1 + 2 * Real.pi * y) ^ 5 * Real.exp (-(1 / K * y))
-      ≤ ∫ y in Ioi 0, ((2 * Real.pi) ^ 5 * 32 * (y ^ 0 * Real.exp (-(1 / K * y))) +
-          (2 * Real.pi) ^ 5 * 32 * (y ^ 5 * Real.exp (-(1 / K * y)))) :=
-        integral_mono_of_nonneg hnn hg hmono
-    _ = (2 * Real.pi) ^ 5 * 32 * ((0 : ℕ).factorial / (1 / K) ^ (0 + 1)) +
-          (2 * Real.pi) ^ 5 * 32 * ((5 : ℕ).factorial / (1 / K) ^ (5 + 1)) := by
-        rw [integral_add ((integrableOn_pow_mul_exp_neg_mul 0 hr).const_mul _)
-          ((integrableOn_pow_mul_exp_neg_mul 5 hr).const_mul _), integral_const_mul, integral_const_mul,
-          integral_pow_mul_exp_neg_mul 0 hr, integral_pow_mul_exp_neg_mul 5 hr]
-    _ = (2 * Real.pi) ^ 5 * 32 * (K + 120 * K ^ 6) := by
-        simp only [Nat.factorial]; norm_num
-        all_goals field_simp
-        all_goals ring
-    _ ≤ (2 * Real.pi) ^ 5 * 32 * 121 * K ^ 6 := by
-        have : K ≤ K ^ 6 := by
-          calc K = K ^ 1 := (pow_one K).symm
-            _ ≤ K ^ 6 := pow_le_pow_right₀ hK (by norm_num)
-        nlinarith [pow_pos (by positivity : (0:ℝ) < 2 * Real.pi) 5]
-
+  exact BAnalyticIntegral.integral_pi_five hK
 
 /-! ### Almost every configuration has positive, pairwise distinct coordinates -/
 

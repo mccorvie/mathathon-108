@@ -2,7 +2,8 @@ import AnalyticInterface
 import BInnerStatement
 import Zeta5S.AtFive
 import Apery.Criterion
-import Apery.Degree
+import GeneralDegree
+import Apery.Construction
 import Apery.Zeta5
 import ZetaIdentification
 
@@ -133,7 +134,7 @@ def CriterionTransportStatement : Prop :=
 #check AperyS.AssemblyTarget.normalization_sharp_statement
 #check AperyS.AssemblyTarget.normalizerSharp_pos
 #check AperyS.Upstream.F_eq_FS
-#check Apery.natDegree_F
+#check AperyS.natDegree_FS_le
 #check BZetaIdentification.riemannZeta_eq_zetaS
 #print IrrationalFiveStatement
 #print NormalizationStatement

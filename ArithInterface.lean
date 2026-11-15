@@ -41,7 +41,7 @@ def MarginIdentityStatement : Prop := CCompact.MarginIdentityStatement
 #check AperyS.AssemblyTarget.normalizerSharp_pos
 #check BFullBridge.explicit_normalizer_limit_statement
 #check AperyS.Upstream.F_eq_FS
-#check Apery.natDegree_F
+#check AperyS.natDegree_FS_le
 #check BZetaIdentification.riemannZeta_eq_zetaS
 #print ArithmeticSideConditionsStatement
 #print PolynomialIdentificationStatement

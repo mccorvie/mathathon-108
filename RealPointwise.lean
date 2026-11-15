@@ -130,8 +130,12 @@ theorem integrand_le {T : ℝ} (hConfig : U48.ConfigurationStatement T)
         (s : ℝ) * Real.log (1 + 2 * Real.pi * y i) := by
     intro i
     have hyi := hy i
-    have hDN := aeval_D_pos (3 * n) (t := y i ^ 2) (by positivity)
-    have hDK := aeval_D_pos (40 * n) (t := y i ^ 2) (by positivity)
+    have hDN : 0 < aeval (y i ^ 2) (D (3 * n)) := by
+      simpa only [D_eq_legacy] using
+        (AperyS.aeval_D_pos (3 * n) (t := y i ^ 2) (by positivity))
+    have hDK : 0 < aeval (y i ^ 2) (D (40 * n)) := by
+      simpa only [D_eq_legacy] using
+        (AperyS.aeval_D_pos (40 * n) (t := y i ^ 2) (by positivity))
     have hw := BAnalyticMoments.w_pos s hyi
     unfold BAnalyticGram.gramWeight
     rw [D_eq_legacy (3 * n), D_eq_legacy (40 * n)]

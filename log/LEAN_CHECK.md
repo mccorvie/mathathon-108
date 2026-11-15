@@ -1,5 +1,5 @@
 # Lean check
-Run 2026-11-15T01:13-08:00 on `MergeEntry`, `Mathathon.Zeta5Comparator.Solution` in `/Users/mathathon/code/mathathon/problems/108-zeta-odd-autopsy/evidence/C-memory-merged/project`.
+Run 2026-11-15T02:17-08:00 on `MergeEntry`, `Mathathon.Zeta5Comparator.Solution` in `/Users/mathathon/code/mathathon/problems/108-zeta-odd-autopsy/evidence/C-memory-merged/project`.
 **Overall: PASS**
 
 
@@ -53,6 +53,18 @@ Run 2026-11-15T01:13-08:00 on `MergeEntry`, `Mathathon.Zeta5Comparator.Solution`
 | `CFieldCert.all_u_ok` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `CFieldCert.all_v_ok` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `CFieldCert.critical_ok` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CCompact.PolynomialIdentificationStatement` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CArithInstance.PolynomialIdentificationStatement` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CArithInstance.polynomial_identification` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CArithInstance.degree_bound` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `AperyS.natDegree_FS_le` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `Apery.w_eq_general_five` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `Apery.w_le'` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `Apery.integral_le_sum_log` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `Apery.sum_log_le_integral` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `Apery.integral_one_add_pow_mul_exp` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `Apery.volume_eq_coord_null` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `Apery.ae_pos_injective` | **PASS** | propext, Classical.choice, Quot.sound |  |
 
 ## Statements (a human must compare each with the claim in the report)
 
@@ -308,6 +320,70 @@ CFieldCert.all_v_ok : ∀ r ∈ CFieldData.vRows, CField.VOK CFieldData.numeric 
 ### `CFieldCert.critical_ok`
 ```lean
 CFieldCert.critical_ok : CField.CriticalOK CFieldData.numeric CFieldData.critical
+```
+### `CCompact.PolynomialIdentificationStatement`
+```lean
+CCompact.PolynomialIdentificationStatement : Prop
+```
+### `CArithInstance.PolynomialIdentificationStatement`
+```lean
+CArithInstance.PolynomialIdentificationStatement : Prop
+```
+### `CArithInstance.polynomial_identification`
+```lean
+CArithInstance.polynomial_identification : CArithInstance.PolynomialIdentificationStatement
+```
+### `CArithInstance.degree_bound`
+```lean
+CArithInstance.degree_bound : CArithInstance.DegreeStatement
+```
+### `AperyS.natDegree_FS_le`
+```lean
+AperyS.natDegree_FS_le : ∀ (s ν K N h : ℕ), (AperyS.FS s ν K N h).natDegree ≤ h
+```
+### `Apery.w_eq_general_five`
+```lean
+Apery.w_eq_general_five : ∀ (y : ℝ), Apery.w y = BAnalyticMoments.w 5 y
+```
+### `Apery.w_le'`
+```lean
+@Apery.w_le' : ∀ {y : ℝ}, 0 < y → Apery.w y ≤ 1 / Real.pi * (1 + 2 * Real.pi * y) ^ 5 * Real.exp (-(2 * Real.pi * y))
+```
+### `Apery.integral_le_sum_log`
+```lean
+@Apery.integral_le_sum_log : ∀ {t : ℝ},
+  0 < t →
+    ∀ {K : ℝ},
+      0 < K →
+        ∀ (m : ℕ),
+          K * ∫ (u : ℝ) in 0..↑m / K, Real.log (t + u ^ 2) ≤ ∑ j ∈ Finset.range m, Real.log (t + ((↑j + 1) / K) ^ 2)
+```
+### `Apery.sum_log_le_integral`
+```lean
+@Apery.sum_log_le_integral : ∀ {t : ℝ},
+  0 < t →
+    ∀ {K : ℝ},
+      1 ≤ K →
+        ∀ {m : ℕ},
+          1 ≤ m →
+            ↑m ≤ K →
+              ∑ j ∈ Finset.range m, Real.log (t + ((↑j + 1) / K) ^ 2) ≤
+                (K * ∫ (u : ℝ) in 0..↑m / K, Real.log (t + u ^ 2)) + 2 * Real.log (2 * K) + 2
+```
+### `Apery.integral_one_add_pow_mul_exp`
+```lean
+@Apery.integral_one_add_pow_mul_exp : ∀ {K : ℝ},
+  1 ≤ K →
+    ∫ (y : ℝ) in Set.Ioi 0, (1 + 2 * Real.pi * y) ^ 5 * Real.exp (-(1 / K * y)) ≤ (2 * Real.pi) ^ 5 * 32 * 121 * K ^ 6
+```
+### `Apery.volume_eq_coord_null`
+```lean
+@Apery.volume_eq_coord_null : ∀ {h : ℕ} {i j : Fin h}, i ≠ j → MeasureTheory.volume {x | x i = x j} = 0
+```
+### `Apery.ae_pos_injective`
+```lean
+Apery.ae_pos_injective : ∀ (h : ℕ),
+  ∀ᵐ (x : Fin h → ℝ) ∂MeasureTheory.Measure.pi fun x => Apery.μpos, (∀ (i : Fin h), 0 < x i) ∧ Function.Injective x
 ```
 
 ## Source scan (warnings)

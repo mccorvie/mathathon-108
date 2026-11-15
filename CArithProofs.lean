@@ -31,11 +31,11 @@ theorem polynomial_identification : PolynomialIdentificationStatement := by
   rw [← AperyS.Upstream.F_eq_FS]
   rfl
 
-/-- PROOF-DRAFT: upstream Degree.lean:177-178, transported along the exact polynomial. -/
+/-- PROOF-DRAFT: Andrew Casper suggested using only a degree upper bound.
+Apply lane B's existing Firsching-based affine-determinant bound, including n=0. -/
 theorem degree_bound : DegreeStatement := by
   intro n
-  rw [polynomial_identification n]
-  exact (Apery.natDegree_F n).le
+  exact AperyS.natDegree_FS_le 5 6 (40 * n) (3 * n) (37 * n)
 
 /-- PROOF-DRAFT: lane L E311 SharpAssembly.lean:58-64,104-140 specialized literally.
 The normalizer and allocation are exactly those in the lane B E432 limit. -/

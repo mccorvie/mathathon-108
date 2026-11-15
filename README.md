@@ -1,10 +1,18 @@
-MEMORY RECEIVER CANDIDATE — no new receiving gate yet.
-Copied baseline gate and counts are in ../baseline-controls.
-The original README follows as baseline documentation.
-
 # Lean project: Fauzan's ζ(5) method for symbolic odd s
 
 Lean v4.35.0, Mathlib v4.35.0, pinned in `lean-toolchain`, `lakefile.toml`, `lake-manifest.json`.
+
+Lane C's project of record, after E616 memory checks and E615/C8 simplifications.
+**COMPUTED:** 435 local Lean source files, 45,175 physical source lines, including
+helpers, numerical data, comments and the isolated Comparator challenge; external
+Mathlib/PNT sources are excluded. The memory-fixed baseline has 444files/47,275lines.
+C8 saves 2,100lines; the separate memory engineering costs 1,570lines relative to
+the earlier357file/45,705line snapshot. These are whole-project source counts.
+
+**LEAN-CHECKED:** the final gate passes55/55 declarations on4.35.0, with standard
+axioms only. Both MergeEntry and Mathathon.Zeta5Comparator.Solution build. All40
+previous report statements print identically. Report labels and different-family
+statement comparisons remain the integrator's responsibility.
 
 ```bash
 lake exe cache get
@@ -59,10 +67,21 @@ lake env lean Mathathon/Claims.lean
 
 ## Where things come from
 
-`Apery/` holds files of mo271/Zeta5 (Moritz Firsching; Apache-2.0; Comparator metadata by Paul-Lez) that are reused
-unchanged: the criterion, the degree theorem, the raw-energy and tail files. `Zeta5S/` is that project's arithmetic
-core with s and ν made variables. The prime number theorem input is AlexKontorovich/PrimeNumberTheoremAnd, pinned in
-the manifest. `NOTICE` and the licence files give the details.
+`Apery/` reuses Moritz Firsching's mo271/Zeta5 (Apache-2.0; Comparator metadata
+by Paul-Lez), including the unchanged criterion, raw-energy and tail files.
+`Zeta5S/` makes the arithmetic parameters s and ν symbolic. Lane B's existing
+GeneralDegree proof bounds the actual FS degree by h without an exact leading
+coefficient calculation; C8 applies it to the fixed instance. The existing generic
+density/envelope/integrability proofs specialize to the exact s=5 weight through
+Apery.WeightCore, replacing the duplicate specialized analytic route. Polynomial
+identification names and all numerical data/model constants are preserved.
+
+**Andrew Casper** is credited by name for the degree-upper-bound and primitive-value
+suggestions in his shared archive. None of his files is copied. The primitive
+interpretation clarifies the existing criterion; no extra content theorem is assumed.
+The implementation reuses the attributed lane-B proofs and existing Firsching-based
+adapters. The prime number theorem input is AlexKontorovich/PrimeNumberTheoremAnd,
+pinned in the manifest. `NOTICE` and the licence files retain the prior/event credits.
 
 ## Independent statement comparator
 

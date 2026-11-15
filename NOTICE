@@ -19,3 +19,9 @@ E603/E604/E606/E607 supply the attributed arithmetic, analytic and final
 criterion proofs. The compact endpoint and heavy fallback have separate final
 gate receipts. No human comparison is assumed; label upgrades follow the
 integrator's submitted-project, report-printing and cross-family-review rule.
+
+
+C8 / E615 simplification credit (2026-11-15): Andrew Casper suggested using only
+a degree upper bound and interpreting the primitive evaluation. None of his
+archive files is copied. The implementation specializes existing lane-B generic
+degree/density/analytic proofs and retains Fauzan/Firsching/Paul-Lez attribution.
