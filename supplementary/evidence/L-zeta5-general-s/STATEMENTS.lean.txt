@@ -1,0 +1,214 @@
+-- Auto-extracted from Zeta5S/*.lean (namespace AperyS) for README.md; the files are authoritative.
+
+-- ===== definitions (general s; where present: nu, K, N, h) =====
+-- TauBound.lean
+noncomputable def tauS (s : ℕ) (P : ℚ[X]) : ℚ :=
+  Lb (derivative^[s - 2] P) / ((s - 1).factorial : ℚ)
+
+-- PoleFun.lean
+def Hs (s j : ℕ) : ℚ := ∑ v ∈ Icc 1 j, 1 / (v : ℚ) ^ s
+
+-- PoleFun.lean
+noncomputable def tauXs (s : ℕ) (A : ℚ[X]) (Pl : Finset ℤ) : ℚ[X] :=
+  C (tauS s (polyPart A Pl)) + ∑ r ∈ Pl, C (resP A Pl r) * (C (Hs s (dd r)) - X)
+
+-- Monomial.lean
+def μmonoS (s e : ℕ) : ℚ :=
+  (-1) ^ e * _root_.bernoulli (2 * e + 2) *
+    (((2 * e + s).factorial : ℚ) / ((2 * e + 2).factorial : ℚ)) / ((s - 1).factorial : ℚ)
+
+-- Monomial.lean
+noncomputable def μpolyS (s : ℕ) (P : ℚ[X]) : ℚ := P.sum fun e c => c * μmonoS s e
+
+-- Pullback.lean
+noncomputable def pullS (s K : ℕ) (P : ℚ[X]) : ℚ[X] :=
+  C ((-1 : ℚ) ^ K) * X ^ s * P.comp (-X ^ 2)
+
+-- Pullback.lean
+noncomputable def qS (m : ℕ) (a : ℚ) : ℚ[X] :=
+  -(X * ∑ i ∈ range m, (X ^ 2) ^ i * C a ^ (m - 1 - i))
+
+-- Pullback.lean
+noncomputable def poleValueS (s j : ℕ) : ℚ[X] :=
+  C ((j : ℚ) ^ (s - 1)) * (X - C (Hs s j)) - C (1 / ((s : ℚ) - 1)) + C (1 / (2 * (j : ℚ)))
+
+-- Pullback.lean
+noncomputable def μXS (s K : ℕ) (P : ℚ[X]) : ℚ[X] :=
+  C (μpolyS s (P /ₘ D K)) +
+    ∑ j ∈ Icc 1 K,
+      C (P.eval (-(j : ℚ) ^ 2) / (derivative (D K)).eval (-(j : ℚ) ^ 2)) * poleValueS s j
+
+-- TEntry.lean
+def xrootsS (s : ℕ) (M : Multiset ℤ) : Multiset ℤ :=
+  Multiset.replicate s 0 + M + M.map (fun γ => -γ)
+
+-- BasisChange.lean
+noncomputable def GS (s ν K N h : ℕ) : Matrix (Fin h) (Fin h) ℚ[X] :=
+  fun i j => μXS s K (D N ^ ν * X ^ ((i : ℕ) + (j : ℕ)))
+
+-- BasisChange.lean
+noncomputable def ΔS (s ν K N h : ℕ) : ℚ[X] := (GS s ν K N h).det
+
+-- ClassFrame.lean
+def entryRootsS (ν : ℕ) {m : ℕ} (N : ℕ) (L : Fin (m + 1) → ℕ)
+    (x y : Σ a : Fin (m + 1), Fin (L a)) : Multiset ℤ :=
+  ν • ((Icc 1 N).val.map fun j : ℕ => (j : ℤ)) + classRoots L x.1 x.2 + classRoots L y.1 y.2
+
+-- ClassFrame.lean
+noncomputable def classCountS (s : ℕ) (p : ℕ) (K : ℕ) (M : Multiset ℤ) (c : ZMod p) : ℚ :=
+  (((if c = 0 then s else 0) + (M.filter fun γ : ℤ => (γ : ZMod p) = c).card +
+    (M.filter fun γ : ℤ => (γ : ZMod p) = -c).card : ℕ) : ℚ) - (plc p (PlK K) c).card
+
+-- ClassCount.lean
+noncomputable def BseS (s ν : ℕ) (p K N : ℕ) (a : ℕ) : ℚ :=
+  (if a = 0 then (s : ℚ) else 0) + (ν : ℚ) * (SX p N (((a : ℤ) : ZMod p)) : ℚ) -
+    SX p K (((a : ℤ) : ZMod p))
+
+-- SmallPrimeF.lean
+noncomputable def SS (ν K N h : ℕ) : ℚ :=
+  (K.factorial : ℚ) ^ (2 * h) * 4 ^ (h - 1) /
+    ((N.factorial : ℚ) ^ (2 * ν * h) * ∏ i ∈ Icc 1 (h - 1), ((2 * i).factorial : ℚ) ^ 2)
+
+-- SmallPrimeF.lean
+noncomputable def FS (s ν K N h : ℕ) : ℚ[X] := C (SS ν K N h) * ΔS s ν K N h
+
+-- OuterFrame.lean
+noncomputable def μGeS (σ T : ℕ) (Q : ℚ[X]) : ℚ :=
+  ∑ e ∈ range (Q.natDegree + 1), if T ≤ e then Q.coeff e * μmonoS σ e else 0
+
+-- ===== theorems (each: axioms [propext, Classical.choice, Quot.sound], log/05_axioms.log) =====
+-- TauBound.lean
+theorem tauS_bound (s : ℕ) (hs : 2 ≤ s) {P : ℚ[X]} {d : ℕ} (hd : P.natDegree ≤ d) {β : ℚ}
+    (hv : ∀ m ≤ d, VG p (P.eval (m : ℚ)) β) :
+    VG p (tauS s P)
+      (β - ((s : ℚ) - 1) * Nat.log p (d + 1) - padicValNat p (s - 1).factorial)
+
+-- DirectBound.lean
+lemma VG_Hs (s : ℕ) {m : ℕ} (hm : m < p ^ 2) : VG p (Hs s m) (-(s : ℚ))
+
+-- DirectPoly.lean
+theorem tauXs_direct (s : ℕ) (hs : 2 ≤ s) (hps : s ≤ p) (κ : ℚ) (hκ : VG p κ 0)
+    (Z : Multiset ℤ) (Pl : Finset ℤ)
+    (hsep : Sep p Pl) (hH : ∀ r ∈ Pl, dd r < p ^ 2) (hdeg : Z.card - Pl.card + 1 < p ^ 2)
+    (β : ℚ) (hβ : ∀ c : ZMod p, β ≤ (cnt p Z c : ℚ) - (plc p Pl c).card) :
+    GV p (tauXs s (numOf κ Z) Pl) (β - ((s : ℚ) - 1))
+
+-- Monomial.lean
+lemma tauS_X_pow (s n : ℕ) :
+    tauS s (X ^ n) =
+      (n.descFactorial (s - 2) : ℚ) * _root_.bernoulli (n - (s - 2)) / ((s - 1).factorial : ℚ)
+
+-- Monomial.lean
+lemma tauS_X_pow_odd (s : ℕ) (hs : 2 ≤ s) (e : ℕ) :
+    tauS s (C ((-1 : ℚ) ^ e) * X ^ (2 * e + s)) = μmonoS s e
+
+-- Monomial.lean
+lemma tauS_pull_poly (s : ℕ) (hs : 2 ≤ s) (Q : ℚ[X]) :
+    tauS s (X ^ s * Q.comp (-X ^ 2)) = μpolyS s Q
+
+-- Distribution.lean
+theorem Lb_distribution (n : ℕ) (P : ℚ[X]) :
+    ∑ a ∈ range n, Lb (P.comp (C (a : ℚ) + C (n : ℚ) * X)) = n * Lb P
+
+-- Distribution.lean
+theorem tauS_distribution (s : ℕ) (hs : 2 ≤ s) (n : ℕ) (P : ℚ[X]) :
+    ∑ a ∈ range n, tauS s (P.comp (C (a : ℚ) + C (n : ℚ) * X)) = (n : ℚ) ^ (s - 1) * tauS s P
+
+-- Pullback.lean
+theorem polyPart_pullS (m K : ℕ) (P : ℚ[X]) :
+    polyPart (pullS (2 * m + 1) K P) (PlK K) = X ^ (2 * m + 1) * (P /ₘ D K).comp (-X ^ 2) +
+      ∑ j ∈ Icc 1 K, C (res K P j) * qS m ((j : ℚ) ^ 2)
+
+-- Pullback.lean
+theorem μXS_eq_tauXs (s : ℕ) (hodd : Odd s) (hs : 3 ≤ s) (K : ℕ) (P : ℚ[X]) :
+    μXS s K P = tauXs s (pullS s K P) (PlK K)
+
+-- TEntry.lean
+theorem μXS_tpol_bound {p : ℕ} [Fact p.Prime] (s : ℕ) (hodd : Odd s) (hs3 : 3 ≤ s) (hps : s ≤ p)
+    (K : ℕ) (M : Multiset ℤ)
+    (hsep : Sep p (PlK K)) (hK : K < p ^ 2) (hdeg : s + 2 * M.card - 2 * K + 1 < p ^ 2) (β : ℚ)
+    (hβ : ∀ c : ZMod p, β ≤ ((if c = 0 then s else 0) +
+      (M.filter fun γ : ℤ => (γ : ZMod p) = c).card +
+      (M.filter fun γ : ℤ => (γ : ZMod p) = -c).card : ℕ) - (plc p (PlK K) c).card) :
+    GV p (μXS s K (tpol M)) (β - ((s : ℚ) - 1))
+
+-- MomentVal.lean
+theorem VG_μmonoS (s : ℕ) (hs : 2 ≤ s) (hps : s ≤ p) (e : ℕ) : VG p (μmonoS s e) (-1)
+
+-- MomentVal.lean
+theorem VG_μmonoS_int (s : ℕ) (hs : 2 ≤ s) (hps : s ≤ p) {e : ℕ}
+    (he : 2 * e + 2 < (s - 1) * (p - 1)) : VG p (μmonoS s e) 0
+
+-- BasisChange.lean
+theorem det_basis_changeS (s ν K N h : ℕ) (E : Fin h → ℚ[X])
+    (hE : ∀ a, (E a).natDegree < h) :
+    (Matrix.of fun a b => μXS s K (D N ^ ν * E a * E b)).det =
+      C ((coeffMat E).det ^ 2) * ΔS s ν K N h
+
+-- ClassFrame.lean
+theorem class_frameS {p : ℕ} [hp : Fact p.Prime] (s : ℕ) (hodd : Odd s) (hs3 : 3 ≤ s) (hps : s ≤ p)
+    {m : ℕ} (hm : 2 * m + 1 = p)
+    (ν K N h : ℕ) (L : Fin (m + 1) → ℕ) (hL : ∑ c, L c = h)
+    (w : (Σ a : Fin (m + 1), Fin (L a)) → ℚ)
+    (hsep : Sep p (PlK K)) (hK : K < p ^ 2)
+    (hdeg : s + 2 * (ν * N + 2 * h) - 2 * K + 1 < p ^ 2)
+    (hentry : ∀ x y : (Σ a : Fin (m + 1), Fin (L a)), ∀ c : ZMod p,
+      w x + w y + ((s : ℚ) - 1) ≤ classCountS s p K (entryRootsS ν N L x y) c) :
+    GV p (ΔS s ν K N h) (2 * ∑ x, w x)
+
+-- ClassCount.lean
+theorem classCount_eqS (s ν : ℕ) (hm : 2 * m + 1 = p) (K N : ℕ) (L : Fin (m + 1) → ℕ)
+    (x y : Σ a : Fin (m + 1), Fin (L a)) (c : ZMod p) :
+    classCountS s p K (entryRootsS ν N L x y) c =
+      BseS s ν p K N (ccls hm c) + (if ccls hm c = 0 then 2 else 1) *
+        ((nu L x (ccls hm c) : ℚ) + nu L y (ccls hm c))
+
+-- InnerWeights.lean
+theorem inner_bound_capS {p : ℕ} [Fact p.Prime] (s : ℕ) (hodd : Odd s) (hs3 : 3 ≤ s) (hps : s ≤ p)
+    (hm : 2 * m + 1 = p) (hm1 : 1 ≤ m)
+    (ν K N h : ℕ) (L : Fin (m + 1) → ℕ) (hL : ∑ c, L c = h)
+    (hsep : Sep p (PlK K)) (hK : K < p ^ 2)
+    (hdeg : s + 2 * (ν * N + 2 * h) - 2 * K + 1 < p ^ 2)
+    (hZ : tminS ((s : ℚ) - 1) hm1 L (BseS s ν p K N) ≤
+      2 * L 0 + (BseS s ν p K N 0 - ((s : ℚ) - 1)) / 2) :
+    GV p (ΔS s ν K N h) (2 * ∑ x, wcapS ((s : ℚ) - 1) hm1 L (BseS s ν p K N) x)
+
+-- PoleVal.lean
+lemma GV_poleValueS_sq (s : ℕ) (hs : 2 ≤ s) (hs1 : ¬ p ∣ s - 1) (hp3 : 3 ≤ p) {j : ℕ}
+    (hj : 1 ≤ j) (hjp : j < p ^ 2) : GV p (poleValueS s j) (-(s : ℚ))
+
+-- PoleVal.lean
+lemma GV_poleValueS_mul (s : ℕ) (hs : 2 ≤ s) (hs1 : ¬ p ∣ s - 1) (hp3 : 3 ≤ p) {k : ℕ}
+    (hk : 1 ≤ k) (hkp : k < p) : GV p (poleValueS s (p * k)) (-1)
+
+-- PoleVal.lean
+theorem GV_poleValueS_congr (s : ℕ) (hodd : Odd s) (hp3 : 3 ≤ p) {c : ℕ} (hc : 1 ≤ c)
+    (hcp : c < p) : GV p (poleValueS s (p - c) - poleValueS s c) 1
+
+-- SmallPrimeTau.lean
+theorem crude_tauXs (s : ℕ) (hs : 2 ≤ s) {K d : ℕ} (hK : 1 ≤ K) (hdK : 2 * K ≤ d) (A : ℚ[X]) (hA : A.natDegree ≤ d)
+    (hint : ∀ z : ℤ, VG p (A.eval (z : ℚ)) 0) :
+    GV p (tauXs s (C ((K.factorial : ℚ) ^ 2) * A) (PlK K))
+      (-((s : ℚ) + 1) * (Nat.log p (d + 1) : ℚ) - padicValNat p (s - 1).factorial)
+
+-- SmallPrimeF.lean
+theorem small_prime_boundS (s : ℕ) (hodd : Odd s) (hs3 : 3 ≤ s) (ν K N h : ℕ) (hK1 : 1 ≤ K)
+    (hh1 : 1 ≤ h) (hshape : 2 * K ≤ s + 2 * (ν * N) + 4 * (h - 1)) :
+    GV p (FS s ν K N h)
+      (-(((s : ℚ) + 1) * (h : ℚ) * (Nat.log p (s + 2 * (ν * N) + 4 * (h - 1) + 1) : ℚ) +
+        (h : ℚ) * padicValNat p (s - 1).factorial))
+
+-- OuterFrame.lean
+theorem outer_frameS (σ : ℕ) (hσ : 2 ≤ σ) (hpσ : σ ≤ p) (T ν K N h : ℕ) (hT : 1 ≤ T) (Ez : Fin (h) → ℤ[X])
+    (hdegZ : ∀ s, (Ez s).natDegree < h) {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (γ : ι → ZMod p) (hγ : Function.Injective γ) (Lc : ι → ℕ) (cls : Fin (h) → ι)
+    (idx : Fin (h) → ℕ) (hidx : ∀ a, idx a < Lc (cls a))
+    (hinj : ∀ a b, cls a = cls b → idx a = idx b → a = b)
+    (hred : ∀ a, (Ez a).map (Int.castRingHom (ZMod p)) =
+      (∏ c ∈ Finset.univ.erase (cls a), (X - C (γ c)) ^ Lc c) * (X - C (γ (cls a))) ^ idx a)
+    (w : Fin (h) → ℚ) (hw : ∀ s, w s ≤ 0)
+    (hA : ∀ s t, GV p (μXS σ K (D (N) ^ ν * (Ez s).map (Int.castRingHom ℚ) *
+        (Ez t).map (Int.castRingHom ℚ)) -
+      C (μGeS σ T ((D (N) ^ ν * (Ez s).map (Int.castRingHom ℚ) *
+        (Ez t).map (Int.castRingHom ℚ)) /ₘ D (K)))) (w s + w t)) :
+    GV p (ΔS σ ν K N h) (2 * ∑ s, w s - ((h - ((T + K - ν * N) - (h - 1)) : ℕ) : ℚ))

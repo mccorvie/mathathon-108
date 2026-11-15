@@ -1,0 +1,27 @@
+import UPackageMargin
+import PrefixBounds
+
+/- E213 / Codex. COMPUTED statement/axiom dump; parent gate and human comparison separate. -/
+set_option pp.fullNames true
+set_option format.width 120
+#print Mathathon.P108.thetaPkg
+#print Mathathon.P108.innerR
+#print Mathathon.P108.innerGamma
+#print Mathathon.P108.innerN
+#print Mathathon.P108.Iout
+#check U18.innerIntegral200_value
+#check U18.arithmetic200_lower
+#check U18.arithmetic200_strong
+#check U18.theta200_gt
+#check U18.theta200_lb6Square15
+#check U18.theta200_of_witness_le
+#check U18.theta200_le_of_40_le_le200
+#print axioms U18.innerIntegral200_value
+#print axioms U18.arithmetic200_lower
+#print axioms U18.arithmetic200_strong
+#print axioms U18.theta200_gt
+#print axioms U18.theta200_lb6Square15
+#print axioms U18.theta200_of_witness_le
+#print axioms U18.theta200_le_of_40_le_le200
+#print axioms U11.lb6Square15_gt
+#print axioms Mathathon.P108.Iout_7_6

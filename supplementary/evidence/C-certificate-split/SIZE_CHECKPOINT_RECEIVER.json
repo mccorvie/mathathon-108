@@ -1,0 +1,5730 @@
+{
+  "author": "Codex lane C",
+  "status": "COMPUTED source size only; use separate final gate",
+  "created_utc": "2026-11-15T05:50:36.429200+00:00",
+  "unit": "physical local Lean source lines, including comments, numerical data and helpers; external dependencies excluded equally",
+  "current": {
+    "root": "SplitEntry",
+    "files": 277,
+    "lines": 45184,
+    "bytes": 3109947,
+    "modules": {
+      "SplitEntry": {
+        "path": "SplitEntry.lean",
+        "lines": 29,
+        "bytes": 1232,
+        "sha256": "2ec894f2a02b78f5633fb45e699ee0681128a3e2206833395db438a4d9ffb4ab",
+        "imports": [
+          "SplitAnalytic",
+          "Closing"
+        ]
+      },
+      "Closing": {
+        "path": "Closing.lean",
+        "lines": 89,
+        "bytes": 3536,
+        "sha256": "1589a43518f3a365edefc0b0a797512dc27ec64a71df54462ca3109eeac81121",
+        "imports": [
+          "DataRows.Block000",
+          "DataRows.Block001",
+          "DataRows.Block002",
+          "DataRows.Block003",
+          "DataRows.Block004",
+          "DataRows.Block005",
+          "DataRows.Block006",
+          "DataRows.Block007",
+          "SplitTail"
+        ]
+      },
+      "SplitTail": {
+        "path": "SplitTail.lean",
+        "lines": 296,
+        "bytes": 14197,
+        "sha256": "0238b4d7ea6ade02d9914b3da415c76a12d1fa283101e3bd84b2a19898eb9b54",
+        "imports": [
+          "PackageTail.Primitive",
+          "Mathlib.Analysis.Calculus.Deriv.ZPow"
+        ]
+      },
+      "PackageTail.Primitive": {
+        "path": "PackageTail/Primitive.lean",
+        "lines": 81,
+        "bytes": 3541,
+        "sha256": "1139dda15c5efedaa4dc51bdafd3913918652f25e30fd0f29aec0aa7ee66517e",
+        "imports": [
+          "PackageTail.Centered",
+          "Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts"
+        ]
+      },
+      "PackageTail.Centered": {
+        "path": "PackageTail/Centered.lean",
+        "lines": 125,
+        "bytes": 5444,
+        "sha256": "684d111dc1eadc27c6287dd340c6d2d2f3bbbaa9002c3a5ae10f6772d54f0f8d",
+        "imports": [
+          "PeriodShift"
+        ]
+      },
+      "PeriodShift": {
+        "path": "PeriodShift.lean",
+        "lines": 94,
+        "bytes": 3737,
+        "sha256": "2cde0701ceb230e42aaa6b6277d2aba99c6b0bfec16517f5485d4ea45023ae53",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces": {
+        "path": "MarginPieces.lean",
+        "lines": 64,
+        "bytes": 2412,
+        "sha256": "0f3a85630d56fee941de079e39ce6ecc85f7eb3fe1050b9c6ac932e3e7691f9f",
+        "imports": [
+          "Mathathon.P108.SStep",
+          "Mathlib.Tactic"
+        ]
+      },
+      "Mathathon.P108.SStep": {
+        "path": "Mathathon/P108/SStep.lean",
+        "lines": 79,
+        "bytes": 3458,
+        "sha256": "e8df3748c2fca958b9e3044ac9c724721a356f2fb28b50fce8a6fad328a9b357",
+        "imports": [
+          "Mathathon.P108.InnerShift",
+          "Mathathon.P108.Integrable",
+          "Mathathon.P108.OuterValues"
+        ]
+      },
+      "Mathathon.P108.OuterValues": {
+        "path": "Mathathon/P108/OuterValues.lean",
+        "lines": 331,
+        "bytes": 19861,
+        "sha256": "06a8e24517c0d4b9597e5e04112394ead44abeacaac6e60916323c00caa57f2d",
+        "imports": [
+          "Mathathon.P108.OuterDefs"
+        ]
+      },
+      "Mathathon.P108.OuterDefs": {
+        "path": "Mathathon/P108/OuterDefs.lean",
+        "lines": 172,
+        "bytes": 9040,
+        "sha256": "7c3393f0e32c3d87ec111751daae82fef1d0116041e3b7fe13710ae0186c072f",
+        "imports": [
+          "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+          "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+        ]
+      },
+      "Mathathon.P108.Integrable": {
+        "path": "Mathathon/P108/Integrable.lean",
+        "lines": 156,
+        "bytes": 6415,
+        "sha256": "cd26e55c30ded633c1e78258dc9f76085e2bc10ad13aaba58b8c5c8d886d39cd",
+        "imports": [
+          "Mathathon.P108.InnerShift",
+          "Mathlib.MeasureTheory.Integral.Prod"
+        ]
+      },
+      "Mathathon.P108.InnerShift": {
+        "path": "Mathathon/P108/InnerShift.lean",
+        "lines": 254,
+        "bytes": 12278,
+        "sha256": "01768a13661727e9d0c74491c4afd3193b5c30593124cb7bff27a71613cf0e81",
+        "imports": [
+          "Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic",
+          "Mathlib.MeasureTheory.Function.Floor",
+          "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+        ]
+      },
+      "DataRows.Block007": {
+        "path": "DataRows/Block007.lean",
+        "lines": 212,
+        "bytes": 9888,
+        "sha256": "348d38b58019c3b41719d188f8fdc60b03adc447010de1262c727c3070e31443",
+        "imports": [
+          "RowSoundness"
+        ]
+      },
+      "RowSoundness": {
+        "path": "RowSoundness.lean",
+        "lines": 122,
+        "bytes": 5032,
+        "sha256": "fa45f211b6885c94e31b9646ef8388b3d265503455a79484de36b0962a8fb882",
+        "imports": [
+          "CellKernel"
+        ]
+      },
+      "CellKernel": {
+        "path": "CellKernel.lean",
+        "lines": 166,
+        "bytes": 6598,
+        "sha256": "2a9fe664eee6edc960fdb8c141c1614c506250c986f9e36d533563e8a4602905",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "DataRows.Block006": {
+        "path": "DataRows/Block006.lean",
+        "lines": 318,
+        "bytes": 15060,
+        "sha256": "8381370ffbb205e985cbbec0d50e92543fe625208150285db6feeb083338b79a",
+        "imports": [
+          "RowSoundness"
+        ]
+      },
+      "DataRows.Block005": {
+        "path": "DataRows/Block005.lean",
+        "lines": 317,
+        "bytes": 14993,
+        "sha256": "889016c6a5d9594c2c51dc671bbc72932c5f648d30ade1a144bfdb5033c7602c",
+        "imports": [
+          "RowSoundness"
+        ]
+      },
+      "DataRows.Block004": {
+        "path": "DataRows/Block004.lean",
+        "lines": 317,
+        "bytes": 15040,
+        "sha256": "75f713876b1e815308270841792f5f4c9abeab3cd73ccf4151935e573bf56665",
+        "imports": [
+          "RowSoundness"
+        ]
+      },
+      "DataRows.Block003": {
+        "path": "DataRows/Block003.lean",
+        "lines": 317,
+        "bytes": 14984,
+        "sha256": "dca6a8cc059e84ec8758dcdeae2b54d2a1675a18d41b8ba3819761df70f7db87",
+        "imports": [
+          "RowSoundness"
+        ]
+      },
+      "DataRows.Block002": {
+        "path": "DataRows/Block002.lean",
+        "lines": 317,
+        "bytes": 14621,
+        "sha256": "fff2b40bd2dfbba947178892b6b30f48b06426aaaabde28077d35e910f54beff",
+        "imports": [
+          "RowSoundness"
+        ]
+      },
+      "DataRows.Block001": {
+        "path": "DataRows/Block001.lean",
+        "lines": 317,
+        "bytes": 14456,
+        "sha256": "805ced5b785c1802726631f275123313e5a5599f18c4f716acf53dec1a77099c",
+        "imports": [
+          "RowSoundness"
+        ]
+      },
+      "DataRows.Block000": {
+        "path": "DataRows/Block000.lean",
+        "lines": 317,
+        "bytes": 14170,
+        "sha256": "dc76803bdfcd91fef11d3dbd9d5b175ab39833beeae00da2b0317221f64da046",
+        "imports": [
+          "RowSoundness"
+        ]
+      },
+      "SplitAnalytic": {
+        "path": "SplitAnalytic.lean",
+        "lines": 39,
+        "bytes": 1595,
+        "sha256": "9c5d180a4b4306d566177e603fbb27e040456da6a8c1213d1729d8503086d365",
+        "imports": [
+          "ArithmeticEntry",
+          "LocalField",
+          "ConfigurationTransport",
+          "RealTransport"
+        ]
+      },
+      "RealTransport": {
+        "path": "RealTransport.lean",
+        "lines": 49,
+        "bytes": 2458,
+        "sha256": "8e29a025ca8ee7d64f8a79924cee5b9c81576e0bfb27007e1bf3eefab0ff5fcd",
+        "imports": [
+          "RealIntegral"
+        ]
+      },
+      "RealIntegral": {
+        "path": "RealIntegral.lean",
+        "lines": 104,
+        "bytes": 5404,
+        "sha256": "922e0847671aec0c7ad84423dfce855f22596607a987da6c223d12906cec04b2",
+        "imports": [
+          "RealPointwise"
+        ]
+      },
+      "RealPointwise": {
+        "path": "RealPointwise.lean",
+        "lines": 197,
+        "bytes": 10484,
+        "sha256": "a4eb5d7415f2e99640270721496210573a2049212852773c717b0098b9ea7653",
+        "imports": [
+          "RealScalar",
+          "RealDeterminant"
+        ]
+      },
+      "RealDeterminant": {
+        "path": "RealDeterminant.lean",
+        "lines": 86,
+        "bytes": 4368,
+        "sha256": "07b106c121c37cf72e5a868c9ac2138c065c89fbb9ed9a14b098e48085244748",
+        "imports": [
+          "RealDetStatement",
+          "RealAndreief"
+        ]
+      },
+      "RealAndreief": {
+        "path": "RealAndreief.lean",
+        "lines": 36,
+        "bytes": 2084,
+        "sha256": "fec5660f826a51b7ccf47ad5b5e72767af27081b922ad3ed6ed84edd4e1ccddf",
+        "imports": [
+          "Apery.Andreief"
+        ]
+      },
+      "Apery.Andreief": {
+        "path": "Apery/Andreief.lean",
+        "lines": 115,
+        "bytes": 5757,
+        "sha256": "fd3c752dbd71d658deaf5765bfadb9e5a5f24028dd9fe5e38205708a279d039a",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "RealDetStatement": {
+        "path": "RealDetStatement.lean",
+        "lines": 26,
+        "bytes": 1187,
+        "sha256": "0a39985e6e5cdff8349fa1df5e1ff35ac703a42f6399403dcc57ac7602b6cc78",
+        "imports": [
+          "Gram"
+        ]
+      },
+      "Gram": {
+        "path": "Gram.lean",
+        "lines": 146,
+        "bytes": 7688,
+        "sha256": "6fecca4e0a6f71fea8b14e497431363c3cb3f287c201a3c2ded435756e317736",
+        "imports": [
+          "GramStatement"
+        ]
+      },
+      "GramStatement": {
+        "path": "GramStatement.lean",
+        "lines": 27,
+        "bytes": 1211,
+        "sha256": "6fb93b22a88b864ec9137a6f5d6fb5f8c646c48c6cc87ef4179c8e6ed13d7f16",
+        "imports": [
+          "Functional",
+          "Zeta5S.BasisChange"
+        ]
+      },
+      "Zeta5S.BasisChange": {
+        "path": "Zeta5S/BasisChange.lean",
+        "lines": 122,
+        "bytes": 6851,
+        "sha256": "0badc7cfbb56039972ff863e6d2bcfb863c5687f3ec12b068383573c4ef1b15c",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Pullback",
+          "Zeta5S.Base"
+        ]
+      },
+      "Zeta5S.Base": {
+        "path": "Zeta5S/Base.lean",
+        "lines": 128,
+        "bytes": 6829,
+        "sha256": "bd61eb7ae3a16f9d2d324e55122cc979def37ccfb74dccff231a635777b41640",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Zeta5S.Pullback": {
+        "path": "Zeta5S/Pullback.lean",
+        "lines": 293,
+        "bytes": 16207,
+        "sha256": "ebffb5ad911323534bbaed2d316e4e07907cf42db30f8e82720a3b8406ad76e4",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Monomial",
+          "Zeta5S.Base"
+        ]
+      },
+      "Zeta5S.Monomial": {
+        "path": "Zeta5S/Monomial.lean",
+        "lines": 99,
+        "bytes": 5096,
+        "sha256": "206e3fc33d8cd65a3ada6f4f1f90237c8cf7c0e93b7282b652962c02791eb697",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.PoleFun"
+        ]
+      },
+      "Zeta5S.PoleFun": {
+        "path": "Zeta5S/PoleFun.lean",
+        "lines": 99,
+        "bytes": 5135,
+        "sha256": "2fe575dea9273336fe7b8b3d6c4dfdf38a89068120cd4f3a9c80143a0a63a633",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.TauBound"
+        ]
+      },
+      "Zeta5S.TauBound": {
+        "path": "Zeta5S/TauBound.lean",
+        "lines": 167,
+        "bytes": 8555,
+        "sha256": "4cafd8b0f285e774a5191ef47ff4a32b6624d3f66a89376a4553f340d97887e2",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.BinomBasis"
+        ]
+      },
+      "Zeta5S.BinomBasis": {
+        "path": "Zeta5S/BinomBasis.lean",
+        "lines": 249,
+        "bytes": 12346,
+        "sha256": "d69355164de0504b0badf41d651947e50e384a89fb85c4e5781931e695bb1349",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Val"
+        ]
+      },
+      "Zeta5S.Val": {
+        "path": "Zeta5S/Val.lean",
+        "lines": 230,
+        "bytes": 11087,
+        "sha256": "dcbf5c6d62626ab49dc9323fac395240415b846a4c7b4d3a447385f4bf5f4544",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Functional": {
+        "path": "Functional.lean",
+        "lines": 88,
+        "bytes": 4356,
+        "sha256": "6d28259c1a43b8c4f5ca0d621919ce08c5ab43c74e4e7317b9c0423aff4adf44",
+        "imports": [
+          "FunctionalStatement",
+          "PartialFractions"
+        ]
+      },
+      "PartialFractions": {
+        "path": "PartialFractions.lean",
+        "lines": 43,
+        "bytes": 2068,
+        "sha256": "598f63902bc375c7ec470c825318fb5010c2fe59778e19255b7425017e57b424",
+        "imports": [
+          "Zeta5S.Base"
+        ]
+      },
+      "FunctionalStatement": {
+        "path": "FunctionalStatement.lean",
+        "lines": 20,
+        "bytes": 873,
+        "sha256": "77e4bae84f348f9e82ee6783e4ccf8b845a1d298b42a6b4ca760bba9958f4e66",
+        "imports": [
+          "Finish"
+        ]
+      },
+      "Finish": {
+        "path": "Finish.lean",
+        "lines": 114,
+        "bytes": 5574,
+        "sha256": "e114c71860247367c199990a3e0816c87dd1d1f7967614901df340798d0f5a90",
+        "imports": [
+          "Scaling",
+          "Bose"
+        ]
+      },
+      "Bose": {
+        "path": "Bose.lean",
+        "lines": 100,
+        "bytes": 4260,
+        "sha256": "7615ebb89a7b1b0b1fa2c573bf9e590830f68faa36c0ce2ab26d3739e465f75d",
+        "imports": [
+          "BAnalyticIntegral"
+        ]
+      },
+      "BAnalyticIntegral": {
+        "path": "BAnalyticIntegral.lean",
+        "lines": 159,
+        "bytes": 7767,
+        "sha256": "eefc453a2515068c1576200e4f414c01042298c62edb39589af8599bc6400dbe",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Scaling": {
+        "path": "Scaling.lean",
+        "lines": 112,
+        "bytes": 5830,
+        "sha256": "62641bbc3c3c3e05336e012ec247e13f7034c792c5249af9f0bdb7e298f140cd",
+        "imports": [
+          "PoleProof"
+        ]
+      },
+      "PoleProof": {
+        "path": "PoleProof.lean",
+        "lines": 86,
+        "bytes": 4334,
+        "sha256": "b2f51aafe43b22b17113d06203322007e76ee3d773806e1ef22b6f0a6c5ad8d8",
+        "imports": [
+          "Kernel",
+          "Statement"
+        ]
+      },
+      "Statement": {
+        "path": "Statement.lean",
+        "lines": 77,
+        "bytes": 3884,
+        "sha256": "d041cd9323e53f9f120ad9c21d87b3993ec2408746b57c34336e266e3af44851",
+        "imports": [
+          "BAnalyticMoments",
+          "Zeta5S.Pullback"
+        ]
+      },
+      "BAnalyticMoments": {
+        "path": "BAnalyticMoments.lean",
+        "lines": 168,
+        "bytes": 7568,
+        "sha256": "f2b70273716fd10775a3f8eb9f0d04429fe4ae7af6790de3b201696a65d32009",
+        "imports": [
+          "BAnalyticIntegral",
+          "Zeta5S.Monomial"
+        ]
+      },
+      "Kernel": {
+        "path": "Kernel.lean",
+        "lines": 121,
+        "bytes": 5412,
+        "sha256": "9f20744fa5233c76c3e1ca08ee5ff5e32b16282db9800a73ea523ac8b4e24656",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "RealScalar": {
+        "path": "RealScalar.lean",
+        "lines": 92,
+        "bytes": 4617,
+        "sha256": "a3daeab20850a32d56bbfd2adc121c6c9bcd634033de0c62a39b5176f0052dfd",
+        "imports": [
+          "AnalyticInterface"
+        ]
+      },
+      "AnalyticInterface": {
+        "path": "AnalyticInterface.lean",
+        "lines": 74,
+        "bytes": 3431,
+        "sha256": "d320ed2dc9f6b473666d2551e5970581ae7010bfa652984494bafafdd7370640",
+        "imports": [
+          "BRealStatement",
+          "Apery.EnergyRaw",
+          "Apery.Table.Tail"
+        ]
+      },
+      "Apery.Table.Tail": {
+        "path": "Apery/Table/Tail.lean",
+        "lines": 97,
+        "bytes": 7242,
+        "sha256": "1addea0ffcf74fd4876e41ba69c9e79bed39481e72a4cb2eecc6201d6d8020d8",
+        "imports": [
+          "Apery.TableCheck"
+        ]
+      },
+      "Apery.TableCheck": {
+        "path": "Apery/TableCheck.lean",
+        "lines": 258,
+        "bytes": 14658,
+        "sha256": "e6b9e6d069e274c26d6d5bfef6da859a85d71e1c71a573528b1ab621acb55b20",
+        "imports": [
+          "Mathlib",
+          "Apery.Potential"
+        ]
+      },
+      "Apery.Potential": {
+        "path": "Apery/Potential.lean",
+        "lines": 412,
+        "bytes": 21090,
+        "sha256": "eed6831a39c6495d78e3082d2274b46e9c13a498eaa92f28995d7f2749edf324",
+        "imports": [
+          "Mathlib",
+          "Apery.PotentialV",
+          "Apery.Certificates",
+          "Apery.Measure"
+        ]
+      },
+      "Apery.Measure": {
+        "path": "Apery/Measure.lean",
+        "lines": 63,
+        "bytes": 2275,
+        "sha256": "b80933c5e97698ccd60c7f95e6d5486de8041a1c848c8ddce309404dfd449b98",
+        "imports": [
+          "Mathlib",
+          "Apery.Constants"
+        ]
+      },
+      "Apery.Constants": {
+        "path": "Apery/Constants.lean",
+        "lines": 42,
+        "bytes": 1356,
+        "sha256": "a8aa527f8dad150d71faf114e5c5fa698981bfecc07a4d598f402da6874f86ab",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Certificates": {
+        "path": "Apery/Certificates.lean",
+        "lines": 134,
+        "bytes": 6878,
+        "sha256": "453f0fc53d635f657928156bd6b751381e50797cef8f490cda54ea67ad3cb543",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyConst"
+        ]
+      },
+      "Apery.EnergyConst": {
+        "path": "Apery/EnergyConst.lean",
+        "lines": 221,
+        "bytes": 13622,
+        "sha256": "1f31dbc4d1ad66253a6e0e29e89e63573b03c7e4c190ddca7b7777eec9516561",
+        "imports": [
+          "Apery.Measure"
+        ]
+      },
+      "Apery.PotentialV": {
+        "path": "Apery/PotentialV.lean",
+        "lines": 58,
+        "bytes": 2584,
+        "sha256": "769045f06631cd80df96c61eda8f5cd7feb976705d563681cffaa2490262bc9a",
+        "imports": [
+          "Mathlib",
+          "Apery.Energy"
+        ]
+      },
+      "Apery.Energy": {
+        "path": "Apery/Energy.lean",
+        "lines": 278,
+        "bytes": 14745,
+        "sha256": "095075837888809fb0ca4cd60f64f451151d300606ae8c897b2f03289b56da38",
+        "imports": [
+          "Mathlib",
+          "Apery.HermiteIBP",
+          "Apery.DetIntegral"
+        ]
+      },
+      "Apery.DetIntegral": {
+        "path": "Apery/DetIntegral.lean",
+        "lines": 59,
+        "bytes": 2783,
+        "sha256": "765b40383b8d14f8216a07d321e68705935bef9090e1466d404af8358a9b920c",
+        "imports": [
+          "Mathlib",
+          "Apery.Andreief",
+          "Apery.Positivity"
+        ]
+      },
+      "Apery.Positivity": {
+        "path": "Apery/Positivity.lean",
+        "lines": 223,
+        "bytes": 11155,
+        "sha256": "1bb3cde19d09ec4e0353a82d2426b74af0ea35d3aaf4d3c87beb2136d994a5e8",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight",
+          "Apery.Moments",
+          "Apery.PartialFractions",
+          "Apery.Zeta5",
+          "Apery.HermiteFormula"
+        ]
+      },
+      "Apery.HermiteFormula": {
+        "path": "Apery/HermiteFormula.lean",
+        "lines": 162,
+        "bytes": 8346,
+        "sha256": "b0f70e33b415555196a695c4bd8065c3b4b3917fd4d41c69489bc3771e86b7c5",
+        "imports": [
+          "Mathlib",
+          "Apery.HermiteIBP",
+          "Apery.HermiteIntegrals",
+          "Apery.Zeta5",
+          "Apery.Construction"
+        ]
+      },
+      "Apery.Construction": {
+        "path": "Apery/Construction.lean",
+        "lines": 73,
+        "bytes": 3324,
+        "sha256": "3d68e36fd05c72ebed98b1f50d031bae46d6d68b20bc87f7e24306a293a804b1",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Zeta5": {
+        "path": "Apery/Zeta5.lean",
+        "lines": 20,
+        "bytes": 446,
+        "sha256": "65cdbfef3a6832a14c3f98417a825f6099c48c3aaa6e49d9f750abcbe7d36721",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.HermiteIntegrals": {
+        "path": "Apery/HermiteIntegrals.lean",
+        "lines": 293,
+        "bytes": 15686,
+        "sha256": "91d5cc87225e0714b4088a279717085000c9b7224b6e857e6179078c294ed8d7",
+        "imports": [
+          "Mathlib",
+          "Apery.Hermite"
+        ]
+      },
+      "Apery.Hermite": {
+        "path": "Apery/Hermite.lean",
+        "lines": 391,
+        "bytes": 18428,
+        "sha256": "547c6e516ef2fdb590389b4b25d40c8a28ab1e4187f665be067e58976a31fc68",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight"
+        ]
+      },
+      "Apery.Weight": {
+        "path": "Apery/Weight.lean",
+        "lines": 135,
+        "bytes": 6631,
+        "sha256": "e14b0db381932e2dade574feb8c7ce0e8c49a5ef4fdb02b77bd35532300a0d5a",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.HermiteIBP": {
+        "path": "Apery/HermiteIBP.lean",
+        "lines": 368,
+        "bytes": 21035,
+        "sha256": "88a649bc0710feec3bbc7cf7716cd1d359a666709fe89cff55b80338df261599",
+        "imports": [
+          "Mathlib",
+          "Apery.Hermite",
+          "Apery.HermiteIntegrals",
+          "Apery.Moments"
+        ]
+      },
+      "Apery.Moments": {
+        "path": "Apery/Moments.lean",
+        "lines": 144,
+        "bytes": 6972,
+        "sha256": "0812a404882647289149adfbc5c320a26771effca8a7e5472f51b17c13bc57af",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight",
+          "Apery.Construction"
+        ]
+      },
+      "Apery.PartialFractions": {
+        "path": "Apery/PartialFractions.lean",
+        "lines": 118,
+        "bytes": 5690,
+        "sha256": "02fc010685131c58650b80a4bc54d04ccb6cbd2f84ee03b916a8f75b68ce7c76",
+        "imports": [
+          "Mathlib",
+          "Apery.Degree"
+        ]
+      },
+      "Apery.Degree": {
+        "path": "Apery/Degree.lean",
+        "lines": 180,
+        "bytes": 8194,
+        "sha256": "8cd7b35f891cf785daeb51cba621acf7fc59be82c2a05053fb3c6c29f542bd89",
+        "imports": [
+          "Apery.Construction"
+        ]
+      },
+      "Apery.EnergyRaw": {
+        "path": "Apery/EnergyRaw.lean",
+        "lines": 200,
+        "bytes": 10440,
+        "sha256": "4a1ee8cdc66e552933c6a858124111b70cb41d635d6b001962728098459dc751",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyBlocks"
+        ]
+      },
+      "Apery.EnergyBlocks": {
+        "path": "Apery/EnergyBlocks.lean",
+        "lines": 188,
+        "bytes": 10609,
+        "sha256": "b1d80ad07b2b1634b06fb8c76011ae66246b2b8dcb4e289cdafca4cf8e50b9e0",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyAtoms"
+        ]
+      },
+      "Apery.EnergyAtoms": {
+        "path": "Apery/EnergyAtoms.lean",
+        "lines": 272,
+        "bytes": 13515,
+        "sha256": "fa7c6474172e3c133eb29451f76a7fa48f813c424155b9446326104560be2226",
+        "imports": [
+          "Mathlib",
+          "Apery.ArcsinePotential",
+          "Apery.Constants",
+          "Apery.Energy"
+        ]
+      },
+      "Apery.ArcsinePotential": {
+        "path": "Apery/ArcsinePotential.lean",
+        "lines": 211,
+        "bytes": 10662,
+        "sha256": "e37b94c5f9976585634ea08a15d64a9155eaf3d2c4581bc50bef591bb3530437",
+        "imports": [
+          "Mathlib",
+          "Apery.ArcsineAtoms"
+        ]
+      },
+      "Apery.ArcsineAtoms": {
+        "path": "Apery/ArcsineAtoms.lean",
+        "lines": 143,
+        "bytes": 7344,
+        "sha256": "5fe49b1725129b9a7ec8714e8483b04ab3df79ea84544201c57be1f7b5ee37b4",
+        "imports": [
+          "Mathlib",
+          "Apery.CircleAtoms",
+          "Apery.Potential"
+        ]
+      },
+      "Apery.CircleAtoms": {
+        "path": "Apery/CircleAtoms.lean",
+        "lines": 116,
+        "bytes": 5355,
+        "sha256": "a6b6dd42698221014ee99e0d3f315caf7af4291c588ba711b08cbb10af732d1c",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyLimit"
+        ]
+      },
+      "Apery.EnergyLimit": {
+        "path": "Apery/EnergyLimit.lean",
+        "lines": 87,
+        "bytes": 4749,
+        "sha256": "597d2dd2f17c47f6e2ad5eeb698bf8e4ee4e59625bd68009ef5fd8e6f711d908",
+        "imports": [
+          "Mathlib",
+          "Apery.Kernel"
+        ]
+      },
+      "Apery.Kernel": {
+        "path": "Apery/Kernel.lean",
+        "lines": 225,
+        "bytes": 11200,
+        "sha256": "b9a861fe3eb4b662528c0cd445d7a1b1c36c33ed3da167d0fc8c11b9c9aaeed2",
+        "imports": [
+          "Mathlib",
+          "Apery.ZeroMass"
+        ]
+      },
+      "Apery.ZeroMass": {
+        "path": "Apery/ZeroMass.lean",
+        "lines": 338,
+        "bytes": 17176,
+        "sha256": "4dd6909891cd4a327d7c8f78f62d34e9e1b6d6339a76e052dc27b0dc23d83144",
+        "imports": [
+          "Mathlib",
+          "Apery.Gaussian"
+        ]
+      },
+      "Apery.Gaussian": {
+        "path": "Apery/Gaussian.lean",
+        "lines": 91,
+        "bytes": 4411,
+        "sha256": "049a486a805687650c1f3ef052583eca856f99f5bee2f4eab9adb38e87135fb3",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "BRealStatement": {
+        "path": "BRealStatement.lean",
+        "lines": 68,
+        "bytes": 3002,
+        "sha256": "7f34bfb89850c511a47037dcef17f3c66d114b644be9a280018f5b47868e2287",
+        "imports": [
+          "Gram",
+          "BAnalyticEnvelope",
+          "Zeta5S.SmallPrimeF",
+          "Apery.Energy",
+          "Apery.Measure",
+          "Apery.EnergyConst",
+          "Apery.Stirling"
+        ]
+      },
+      "Apery.Stirling": {
+        "path": "Apery/Stirling.lean",
+        "lines": 164,
+        "bytes": 7915,
+        "sha256": "24a85d4595a30e909da36494488b0a334a4ce4b0a1587c15d705f7411dd84d5e",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Zeta5S.SmallPrimeF": {
+        "path": "Zeta5S/SmallPrimeF.lean",
+        "lines": 319,
+        "bytes": 16824,
+        "sha256": "b1553c426c0e78133ad1b41383a2d09a4d1f7f038b752b143eec13705a5ce800",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.SmallPrimeTau",
+          "Zeta5S.BasisChange",
+          "Zeta5S.Base"
+        ]
+      },
+      "Zeta5S.SmallPrimeTau": {
+        "path": "Zeta5S/SmallPrimeTau.lean",
+        "lines": 204,
+        "bytes": 10834,
+        "sha256": "b7d7ff5b7f4a00ff744c5ef5c9a6beb3da770a8ebf7f6b2453ac3d1609f88015",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.SmallPrimeRes"
+        ]
+      },
+      "Zeta5S.SmallPrimeRes": {
+        "path": "Zeta5S/SmallPrimeRes.lean",
+        "lines": 192,
+        "bytes": 10280,
+        "sha256": "8a743dc443d3b7d02b26a9db3562e211bf9e6efb4320e292092b9cd749a31f7f",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.SmallPrime"
+        ]
+      },
+      "Zeta5S.SmallPrime": {
+        "path": "Zeta5S/SmallPrime.lean",
+        "lines": 108,
+        "bytes": 4836,
+        "sha256": "02b58b218bd1c9bff625a722474ea8843ec0bf673f9fadb1218e2a9176cbbf2f",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.TauBound",
+          "Zeta5S.Pullback",
+          "Zeta5S.DirectBound"
+        ]
+      },
+      "Zeta5S.DirectBound": {
+        "path": "Zeta5S/DirectBound.lean",
+        "lines": 197,
+        "bytes": 9717,
+        "sha256": "b4c135ca180f229527029d8c6ad7b516c801dd3107e0117c8cdbaaf3e08c16bd",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.PoleFun",
+          "Zeta5S.IntPoly"
+        ]
+      },
+      "Zeta5S.IntPoly": {
+        "path": "Zeta5S/IntPoly.lean",
+        "lines": 85,
+        "bytes": 4225,
+        "sha256": "b118120a22c0bc8cf85a9018fbc1e4eab4482b39fadeb8c31531a249854b446a",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Val"
+        ]
+      },
+      "BAnalyticEnvelope": {
+        "path": "BAnalyticEnvelope.lean",
+        "lines": 146,
+        "bytes": 6425,
+        "sha256": "3f537a1ba6c7ec1abfdb2c6ccdf4829c8d2f44daae54379b1340481964d359fe",
+        "imports": [
+          "BAnalyticMoments",
+          "Mathlib.Analysis.SpecificLimits.Normed"
+        ]
+      },
+      "ConfigurationTransport": {
+        "path": "ConfigurationTransport.lean",
+        "lines": 89,
+        "bytes": 4372,
+        "sha256": "41a404efeaa1d8b3854a49638814b8322f51df7924656091327f72de4704ee62",
+        "imports": [
+          "PriorRegularization",
+          "CompactTransports"
+        ]
+      },
+      "CompactTransports": {
+        "path": "CompactTransports.lean",
+        "lines": 69,
+        "bytes": 2933,
+        "sha256": "d6b8dab0d5508188d750312bbf13d03b6cab437501e2199dfcaa2f9998d3f310",
+        "imports": [
+          "TransportGoals",
+          "PriorTailFinal"
+        ]
+      },
+      "PriorTailFinal": {
+        "path": "PriorTailFinal.lean",
+        "lines": 33,
+        "bytes": 1536,
+        "sha256": "cabcc3ae6ad3ba5d755b933d16869f1932ee4dd5f233c2afc9ab866e881b76b4",
+        "imports": [
+          "Apery.Table.Tail"
+        ]
+      },
+      "TransportGoals": {
+        "path": "TransportGoals.lean",
+        "lines": 7,
+        "bytes": 334,
+        "sha256": "0094f5a3dc35fd0769602388e4fbe393639401c880521b86515e73e515a62ea0",
+        "imports": [
+          "AnalyticInterface"
+        ]
+      },
+      "PriorRegularization": {
+        "path": "PriorRegularization.lean",
+        "lines": 101,
+        "bytes": 5198,
+        "sha256": "70f56c98d913a538142dc00f6bf8510118d00f8d4a371d194f3b15aebeeab377",
+        "imports": [
+          "Apery.EnergyRaw"
+        ]
+      },
+      "LocalField": {
+        "path": "LocalField.lean",
+        "lines": 1036,
+        "bytes": 44255,
+        "sha256": "7a029aa9d4801190b65f883c29eea0a375f6a849441e085c2702b747b6a3c6c9",
+        "imports": [
+          "Intervals.I000",
+          "Intervals.I001",
+          "Intervals.I002",
+          "Intervals.I003",
+          "Intervals.I004",
+          "Intervals.I005",
+          "Intervals.I006",
+          "Intervals.I007",
+          "Intervals.I008",
+          "Intervals.I009",
+          "Intervals.I010",
+          "Intervals.I011",
+          "Intervals.I012",
+          "Intervals.I013",
+          "Intervals.I014",
+          "Intervals.I015",
+          "Intervals.I016"
+        ]
+      },
+      "Intervals.I016": {
+        "path": "Intervals/I016.lean",
+        "lines": 83,
+        "bytes": 3373,
+        "sha256": "c61b82a4db8e75021d3d7eed88bf321c13dd283e256e211131dd9c14ad849416",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P031",
+          "Points.P032",
+          "Points.P033",
+          "Points.P065",
+          "Points.P066"
+        ]
+      },
+      "Points.P066": {
+        "path": "Points/P066.lean",
+        "lines": 145,
+        "bytes": 11161,
+        "sha256": "feb7dcdf8390829eb4ece542e7014aa2c1cb8de0b999125d99a0c14f45a2984c",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Data": {
+        "path": "Data.lean",
+        "lines": 197,
+        "bytes": 11132,
+        "sha256": "817a7131a93a736bcd6d5a4c513eba5a36226c67d5e6ec33941af97b2d0d447d",
+        "imports": [
+          "Cells"
+        ]
+      },
+      "Cells": {
+        "path": "Cells.lean",
+        "lines": 64,
+        "bytes": 3160,
+        "sha256": "cc72bfaa760f551424db9d115ac5bff6c8b910a68c5f29cc2c8e4569f9103759",
+        "imports": [
+          "NumericBase"
+        ]
+      },
+      "NumericBase": {
+        "path": "NumericBase.lean",
+        "lines": 202,
+        "bytes": 11596,
+        "sha256": "26924a382fd3b73e8602d96bf191bfec953d45f150166a88e274f5046e6317bf",
+        "imports": [
+          "Mathlib",
+          "Apery.TableCheck"
+        ]
+      },
+      "Points.P065": {
+        "path": "Points/P065.lean",
+        "lines": 170,
+        "bytes": 12994,
+        "sha256": "5baaf0117a202707571f1299d800ae1e174d6bbcf8467b78cb05e2a69c4a99e6",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P033": {
+        "path": "Points/P033.lean",
+        "lines": 242,
+        "bytes": 25804,
+        "sha256": "57035b00d26acd235eef326e52af38256e16e65976cf3159f7aee81fdc2bc301",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P032": {
+        "path": "Points/P032.lean",
+        "lines": 350,
+        "bytes": 46189,
+        "sha256": "fc0be3bdecd454181939f89ecee43501b54ee6e0e0633296c072a8dd9c3129e8",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P031": {
+        "path": "Points/P031.lean",
+        "lines": 350,
+        "bytes": 46601,
+        "sha256": "ef66aba25af0ec1c5c68704b3e284c66d000644900bee5c7053eecb6a813ea54",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Mid": {
+        "path": "Mid.lean",
+        "lines": 14,
+        "bytes": 476,
+        "sha256": "a9e85c55ea4a7a3886e4d38ee92e7d04aff997a83f6b2c36e385ccb14b4d1fd2",
+        "imports": [
+          "Points.P001"
+        ]
+      },
+      "Points.P001": {
+        "path": "Points/P001.lean",
+        "lines": 131,
+        "bytes": 20591,
+        "sha256": "f029c2cb59a4a8c805be5ecaf21cf25521c6701f6377fc5e71b08263a5f23c2f",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Critical": {
+        "path": "Critical.lean",
+        "lines": 44,
+        "bytes": 3518,
+        "sha256": "c1c206627da2345365469a78905328c7450b9ae70511245ca6bb99b6cd954ada",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I015": {
+        "path": "Intervals/I015.lean",
+        "lines": 92,
+        "bytes": 3796,
+        "sha256": "25a2a22f4f0a1d0e2eb04c0fa36841be4a1a1ad6d428d43eafdcb2ac8500501e",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P029",
+          "Points.P030",
+          "Points.P031",
+          "Points.P063",
+          "Points.P064",
+          "Points.P065"
+        ]
+      },
+      "Points.P064": {
+        "path": "Points/P064.lean",
+        "lines": 170,
+        "bytes": 13048,
+        "sha256": "c916a7b358138bade6f3469890d3aa75c37fc2f77e2a3ba3220ff18855328168",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P063": {
+        "path": "Points/P063.lean",
+        "lines": 170,
+        "bytes": 12782,
+        "sha256": "1e388d46a29f5c3d8eb55ccac37bfba75f60e3dc84875e14b3d1e4bb8756d3f5",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P030": {
+        "path": "Points/P030.lean",
+        "lines": 350,
+        "bytes": 46791,
+        "sha256": "98c9f363be72d652a12aa47a25e3335b68c299cad3d150e286c10c060ff7f010",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P029": {
+        "path": "Points/P029.lean",
+        "lines": 341,
+        "bytes": 45611,
+        "sha256": "440a1f2377bab3029830d1bb70dc3a86e5aad1dcb7c80c25cb4b8375c2a4ca17",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I014": {
+        "path": "Intervals/I014.lean",
+        "lines": 92,
+        "bytes": 3797,
+        "sha256": "4f494e6499f92cc85bba477d5d680ed12e51b5bb7173c869f080d7422b9b3abb",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P027",
+          "Points.P028",
+          "Points.P029",
+          "Points.P061",
+          "Points.P062",
+          "Points.P063"
+        ]
+      },
+      "Points.P062": {
+        "path": "Points/P062.lean",
+        "lines": 170,
+        "bytes": 12994,
+        "sha256": "51bf72f197bb22d9e7575663aad11098724df82eed180e71e620b1960096d056",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P061": {
+        "path": "Points/P061.lean",
+        "lines": 170,
+        "bytes": 12934,
+        "sha256": "6cc2702d1b4131ee42d2a04ed888690307d3fbcce28cad346f78f12f3740a334",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P028": {
+        "path": "Points/P028.lean",
+        "lines": 323,
+        "bytes": 43455,
+        "sha256": "140ea28525a4f3d6523cf71829ea2833078c78bf300c61521aa770120bac70d7",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P027": {
+        "path": "Points/P027.lean",
+        "lines": 311,
+        "bytes": 42046,
+        "sha256": "9e010393091907cb3dffe4815acf2311d2f4ba1dbdd8e3edd15b0cbdf0582388",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I013": {
+        "path": "Intervals/I013.lean",
+        "lines": 92,
+        "bytes": 3791,
+        "sha256": "63eb6956e8363971d0504fba943d97d6be1c4aa5e9efb8a9af1209664ad5429d",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P025",
+          "Points.P026",
+          "Points.P027",
+          "Points.P059",
+          "Points.P060",
+          "Points.P061"
+        ]
+      },
+      "Points.P060": {
+        "path": "Points/P060.lean",
+        "lines": 170,
+        "bytes": 12996,
+        "sha256": "9b88594af7c81bd7108d240d7c5e9d8011a4b85d85ea95969cefd7731731c66c",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P059": {
+        "path": "Points/P059.lean",
+        "lines": 170,
+        "bytes": 12931,
+        "sha256": "fbe032754ded3f19afa8d644c1b34ba17025bbb0854170a1e3ce77dc75831f1e",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P026": {
+        "path": "Points/P026.lean",
+        "lines": 305,
+        "bytes": 41278,
+        "sha256": "193ff478b2540cfc492bd4e738c2b55ce44780405e07761be3ffe2966693c649",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P025": {
+        "path": "Points/P025.lean",
+        "lines": 293,
+        "bytes": 39856,
+        "sha256": "47a02ef428b384865cadd074aad9093515b1acf00b9628d6620c7ba5a5fa4023",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I012": {
+        "path": "Intervals/I012.lean",
+        "lines": 92,
+        "bytes": 3805,
+        "sha256": "413df8b40c85d88e41cb54df7bb35ff95569ab530a2ed4857dbf4ca7bca6a956",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P023",
+          "Points.P024",
+          "Points.P025",
+          "Points.P057",
+          "Points.P058",
+          "Points.P059"
+        ]
+      },
+      "Points.P058": {
+        "path": "Points/P058.lean",
+        "lines": 170,
+        "bytes": 12828,
+        "sha256": "a1029b48e7040597a306d533a99145bb80bab2cf7af06eec961d2c48939964a0",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P057": {
+        "path": "Points/P057.lean",
+        "lines": 170,
+        "bytes": 13013,
+        "sha256": "3344ac1cf985a606a690aa7efce6de46d1209942f984715ffe2b690b001ffa8b",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P024": {
+        "path": "Points/P024.lean",
+        "lines": 290,
+        "bytes": 39505,
+        "sha256": "8b08b561a5aaf10d53704e5ae86ef5cf2b9ed3c176c56ef51c76b1df2365b400",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P023": {
+        "path": "Points/P023.lean",
+        "lines": 290,
+        "bytes": 39565,
+        "sha256": "d876826daf2c5aed449ad7cf21b4eeb08e2a986921b0ba002995cbcb13bf3cea",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I011": {
+        "path": "Intervals/I011.lean",
+        "lines": 92,
+        "bytes": 3798,
+        "sha256": "111c9a6b5cf14e785d9cc7b926d0e74d0cfa46d2aa699e9b72049db402f2fdf4",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P021",
+          "Points.P022",
+          "Points.P023",
+          "Points.P055",
+          "Points.P056",
+          "Points.P057"
+        ]
+      },
+      "Points.P056": {
+        "path": "Points/P056.lean",
+        "lines": 170,
+        "bytes": 13015,
+        "sha256": "eec507b0de160ab579a6f956adf6a4281faa882c6a0599f61409cfe0a27d8cef",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P055": {
+        "path": "Points/P055.lean",
+        "lines": 170,
+        "bytes": 13001,
+        "sha256": "4bf2cc3ff0737c08b02ee04f77a714f0a3aed080571bba51c54d35909c45708e",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P022": {
+        "path": "Points/P022.lean",
+        "lines": 275,
+        "bytes": 37678,
+        "sha256": "1877c48355370b17420eeaad1ab0a15b5bbab7ba919abf59fc54c4ae0a77917d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P021": {
+        "path": "Points/P021.lean",
+        "lines": 275,
+        "bytes": 37790,
+        "sha256": "e1bc417849636dfe9a95af8037021c5411d9934d65b0379cf4cdd26ca33e79d9",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I010": {
+        "path": "Intervals/I010.lean",
+        "lines": 92,
+        "bytes": 3804,
+        "sha256": "8b01b7fe7fa46a2a5a6d695f308cc8c75a5a389f049e6e470e36278932fb4970",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P019",
+          "Points.P020",
+          "Points.P021",
+          "Points.P053",
+          "Points.P054",
+          "Points.P055"
+        ]
+      },
+      "Points.P054": {
+        "path": "Points/P054.lean",
+        "lines": 170,
+        "bytes": 13028,
+        "sha256": "5ed7dc5cd1a143ed2d62c76da7e9f99c781f1c9cab557838123f35b352e2bf27",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P053": {
+        "path": "Points/P053.lean",
+        "lines": 170,
+        "bytes": 12956,
+        "sha256": "7f8db254d01380121cceaee0d5ec1654e891f7d51d75dcb3cc4b70942b61103f",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P020": {
+        "path": "Points/P020.lean",
+        "lines": 272,
+        "bytes": 37400,
+        "sha256": "df238284722812bbcbc868603594b56b5966a50a720142cc9cf2067b6dbe2e11",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P019": {
+        "path": "Points/P019.lean",
+        "lines": 260,
+        "bytes": 35936,
+        "sha256": "1d0b3dc5a5dcbab77d3314851ecb2c367ee30f0fce379bd932298fd63e473567",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I009": {
+        "path": "Intervals/I009.lean",
+        "lines": 92,
+        "bytes": 3773,
+        "sha256": "136240bd8457327b4928bca46d78bd0b5af18567451f311005c281402f969887",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P017",
+          "Points.P018",
+          "Points.P019",
+          "Points.P051",
+          "Points.P052",
+          "Points.P053"
+        ]
+      },
+      "Points.P052": {
+        "path": "Points/P052.lean",
+        "lines": 170,
+        "bytes": 13049,
+        "sha256": "a7c52bb8d93d67258f308b8a86e31f632de93a1f7008c7585ab1ec69939e2da3",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P051": {
+        "path": "Points/P051.lean",
+        "lines": 170,
+        "bytes": 13029,
+        "sha256": "3d9b5e56bcde41d965fe686ca1af9184325f2655ff28a6e2df29fe420f5b4205",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P018": {
+        "path": "Points/P018.lean",
+        "lines": 260,
+        "bytes": 35900,
+        "sha256": "feb1222cc0b19df6db09aaecf66aa817ccb259a7b03f605aedc54815a0aa3df0",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P017": {
+        "path": "Points/P017.lean",
+        "lines": 260,
+        "bytes": 35949,
+        "sha256": "c39c13555cd91e813a8ed18d09fcbdd7ecd94adfff32a36c55e5bb787765e393",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I008": {
+        "path": "Intervals/I008.lean",
+        "lines": 92,
+        "bytes": 3776,
+        "sha256": "6640a78601e81e564eadc8ffad81e405c1aea26a64b356741afcdbedf0bcf41e",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P015",
+          "Points.P016",
+          "Points.P017",
+          "Points.P049",
+          "Points.P050",
+          "Points.P051"
+        ]
+      },
+      "Points.P050": {
+        "path": "Points/P050.lean",
+        "lines": 170,
+        "bytes": 12866,
+        "sha256": "fbd3b246235c16406a15a4d4280b2ce12ef912957e2729b44ff1654c954ab571",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P049": {
+        "path": "Points/P049.lean",
+        "lines": 170,
+        "bytes": 13031,
+        "sha256": "587673625b1967071efea770cad8b0a10e4fef93bca8af98310770a6bf41cc6b",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P016": {
+        "path": "Points/P016.lean",
+        "lines": 245,
+        "bytes": 34198,
+        "sha256": "9d0ef3ae8dec630a7504759f533277e29831ae67cafb688e8131dcd4377bd563",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P015": {
+        "path": "Points/P015.lean",
+        "lines": 245,
+        "bytes": 34110,
+        "sha256": "82d913970e5737af8627301bc30aef1733833eb40976ced8afb372990b3b340a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I007": {
+        "path": "Intervals/I007.lean",
+        "lines": 92,
+        "bytes": 3766,
+        "sha256": "c05e92f9610cfa716d9eccaf4f1676ddcd66831d642cc90f6be38c40955b2f4e",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P013",
+          "Points.P014",
+          "Points.P015",
+          "Points.P047",
+          "Points.P048",
+          "Points.P049"
+        ]
+      },
+      "Points.P048": {
+        "path": "Points/P048.lean",
+        "lines": 170,
+        "bytes": 13017,
+        "sha256": "f33a8921db39d962d1490ce6a2c3e8ae70f4f78e688f9b3b00c3df3f2d7ad07e",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P047": {
+        "path": "Points/P047.lean",
+        "lines": 155,
+        "bytes": 11611,
+        "sha256": "77a1b2464f1643477607e9788a754c055d1f81864b6637f1ce08949b230affbc",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P014": {
+        "path": "Points/P014.lean",
+        "lines": 245,
+        "bytes": 34152,
+        "sha256": "835b889aaeb6e1484d5f7bb2326b866c115363a55f43d61c6351aa7e4c16ee23",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P013": {
+        "path": "Points/P013.lean",
+        "lines": 230,
+        "bytes": 32291,
+        "sha256": "c059ba24b06b6b77a211f19084c95d0747f16cc3e83d8a78338a7dfc85a729da",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I006": {
+        "path": "Intervals/I006.lean",
+        "lines": 92,
+        "bytes": 3771,
+        "sha256": "6f422f8e32ff98a8e16b0f6d3eed0da6498e5ffbd933eb33ae3a0852709b18aa",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P011",
+          "Points.P012",
+          "Points.P013",
+          "Points.P045",
+          "Points.P046",
+          "Points.P047"
+        ]
+      },
+      "Points.P046": {
+        "path": "Points/P046.lean",
+        "lines": 145,
+        "bytes": 10860,
+        "sha256": "b3c17b60782ac0e0584fd3963c678c47c7c64182347c991a3ba999b4f6e99abe",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P045": {
+        "path": "Points/P045.lean",
+        "lines": 145,
+        "bytes": 10892,
+        "sha256": "915d4b0b3f658cf23504124591dfe90bfc49a2ceff2e0da99a2374086e04b78d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P012": {
+        "path": "Points/P012.lean",
+        "lines": 230,
+        "bytes": 32287,
+        "sha256": "642b8113140db537ed2ae0353578da325f8426281f75263c8e2aeef8b453324d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P011": {
+        "path": "Points/P011.lean",
+        "lines": 224,
+        "bytes": 31566,
+        "sha256": "8a6411dddcee523586501b7d57fee38ca1a571a2d7fb390c48a449d3163721b1",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I005": {
+        "path": "Intervals/I005.lean",
+        "lines": 92,
+        "bytes": 3766,
+        "sha256": "15d2789fc38ce7467f0601db0969b3571ab7e518fb89b3c662afdeda4de8f519",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P009",
+          "Points.P010",
+          "Points.P011",
+          "Points.P043",
+          "Points.P044",
+          "Points.P045"
+        ]
+      },
+      "Points.P044": {
+        "path": "Points/P044.lean",
+        "lines": 145,
+        "bytes": 10872,
+        "sha256": "34423bf5aeda31a69ad0fe82b24ac3763a8db4bc1b07e32d4d1d399bada77b7a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P043": {
+        "path": "Points/P043.lean",
+        "lines": 145,
+        "bytes": 10878,
+        "sha256": "1ce71a1654c204c5a2512bba0a7ca6aa2806084ab233eac65ade46db704ae517",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P010": {
+        "path": "Points/P010.lean",
+        "lines": 215,
+        "bytes": 30478,
+        "sha256": "00227a1da85833c2eb7ac554fa0e531572e81dbb78114f60681e96a72d8c867a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P009": {
+        "path": "Points/P009.lean",
+        "lines": 215,
+        "bytes": 30429,
+        "sha256": "93ad756e1609790c50ed427dfc1be4d93361095935ee28b9272e7c852382300c",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I004": {
+        "path": "Intervals/I004.lean",
+        "lines": 92,
+        "bytes": 3769,
+        "sha256": "5120fce506465778c36af82c5314e9f0a4f9da15b6739982bc04c33124688831",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P007",
+          "Points.P008",
+          "Points.P009",
+          "Points.P041",
+          "Points.P042",
+          "Points.P043"
+        ]
+      },
+      "Points.P042": {
+        "path": "Points/P042.lean",
+        "lines": 145,
+        "bytes": 10844,
+        "sha256": "b94ba6b2dbf961cd246ca0f1b64524e60982bf7cce0719d234b28565579424c2",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P041": {
+        "path": "Points/P041.lean",
+        "lines": 145,
+        "bytes": 10920,
+        "sha256": "28cf9001df63013b771e45cd6d8cbd235f51e521db3e783ea18da4d30a24d7c0",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P008": {
+        "path": "Points/P008.lean",
+        "lines": 200,
+        "bytes": 28600,
+        "sha256": "3b98b3d8e68c1ad657cb6258b05094b12a22ba1ff67a93e07c7d46c07d514974",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P007": {
+        "path": "Points/P007.lean",
+        "lines": 200,
+        "bytes": 28644,
+        "sha256": "6e4a14056f85c5cffe69ff0affe2fda23cffa821da0c3ae9fa05c869679efe81",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I003": {
+        "path": "Intervals/I003.lean",
+        "lines": 92,
+        "bytes": 3774,
+        "sha256": "f6db163b1d60967d622d0494292945085c4541c25eb5c7811b4efd7d1bd8e487",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P005",
+          "Points.P006",
+          "Points.P007",
+          "Points.P039",
+          "Points.P040",
+          "Points.P041"
+        ]
+      },
+      "Points.P040": {
+        "path": "Points/P040.lean",
+        "lines": 145,
+        "bytes": 10746,
+        "sha256": "694f9e8cce8886394286fbece7499cd72a08a0e0179cdadcd69d2f745d8f222f",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P039": {
+        "path": "Points/P039.lean",
+        "lines": 145,
+        "bytes": 10904,
+        "sha256": "63b1e09196166a92f60bebf3bc6213bc5d6753bdb6df8a162c2218e9f3fe619d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P006": {
+        "path": "Points/P006.lean",
+        "lines": 188,
+        "bytes": 27231,
+        "sha256": "19e22736d9e443bdcf246d2e07a1c90a343e2420e25e6f83aa1f032652db1c7a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P005": {
+        "path": "Points/P005.lean",
+        "lines": 185,
+        "bytes": 26744,
+        "sha256": "d521d26d9e145dde6a17e230b8ed45581ff8c906d7db991c0599a39f2094e697",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I002": {
+        "path": "Intervals/I002.lean",
+        "lines": 92,
+        "bytes": 3772,
+        "sha256": "d096c4488bcf876e0621447a5f05305f9459d66c581f2a296dcc41c8b716d24a",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P003",
+          "Points.P004",
+          "Points.P005",
+          "Points.P037",
+          "Points.P038",
+          "Points.P039"
+        ]
+      },
+      "Points.P038": {
+        "path": "Points/P038.lean",
+        "lines": 145,
+        "bytes": 10733,
+        "sha256": "9a76aafc7449249e24f91655651f18ad2799dbcc513944ad0d7a193570ac8f66",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P037": {
+        "path": "Points/P037.lean",
+        "lines": 145,
+        "bytes": 10869,
+        "sha256": "463236a517589d73c36fac5c21b41c5d86fd94e48c90761889554e81f6699366",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P004": {
+        "path": "Points/P004.lean",
+        "lines": 176,
+        "bytes": 25721,
+        "sha256": "f4e70929a18e2e6a3b4489b6c5a819fd12b9fdf22b232fc8ca15a401ac73d844",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P003": {
+        "path": "Points/P003.lean",
+        "lines": 164,
+        "bytes": 24267,
+        "sha256": "ee132a14ba95db8f3d9b9d2f2aef2bda6a0dd4e28967d58d48f5b84b27e7166d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I001": {
+        "path": "Intervals/I001.lean",
+        "lines": 92,
+        "bytes": 3933,
+        "sha256": "56a37571ca737391821e176caac13f4f35459adc289a2f2d409f54f4d162445f",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P001",
+          "Points.P002",
+          "Points.P003",
+          "Points.P035",
+          "Points.P036",
+          "Points.P037"
+        ]
+      },
+      "Points.P036": {
+        "path": "Points/P036.lean",
+        "lines": 150,
+        "bytes": 11148,
+        "sha256": "853fe717b6e0ec8faab2a0e112082dbd4084d57c518a219aee229bb88f2354a7",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P035": {
+        "path": "Points/P035.lean",
+        "lines": 170,
+        "bytes": 13296,
+        "sha256": "06f1b78f999c457d52947225e76771ecf7babc24150aa6d2fd35a37f060f6153",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P002": {
+        "path": "Points/P002.lean",
+        "lines": 146,
+        "bytes": 22058,
+        "sha256": "33214af42ca8458c609dc12fb636ad6fd4f384176965873ac2001662e1cffa3a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I000": {
+        "path": "Intervals/I000.lean",
+        "lines": 91,
+        "bytes": 3926,
+        "sha256": "61665be6616fea2e0b1ba0dfab1ac13db4a3de203102e89981b49d9c6f0f7b36",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P000",
+          "Points.P001",
+          "Points.P033",
+          "Points.P034",
+          "Points.P035"
+        ]
+      },
+      "Points.P034": {
+        "path": "Points/P034.lean",
+        "lines": 185,
+        "bytes": 13734,
+        "sha256": "7a3bfa4297c87f0b9cd7161a21a5bf0780842d82393333ebeda6ff8280b421e5",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P000": {
+        "path": "Points/P000.lean",
+        "lines": 248,
+        "bytes": 34215,
+        "sha256": "3cbde436d60851327cf9af06b8c08a29f40c51105f9fd23367eb7f54db882aff",
+        "imports": [
+          "Data"
+        ]
+      },
+      "ArithmeticEntry": {
+        "path": "ArithmeticEntry.lean",
+        "lines": 28,
+        "bytes": 1210,
+        "sha256": "59984cdbfbc7745f4be01152db7f8d768925779935165f0b8edb670387a772e9",
+        "imports": [
+          "Assembly",
+          "CArithProofs",
+          "LeadingInstance"
+        ]
+      },
+      "LeadingInstance": {
+        "path": "LeadingInstance.lean",
+        "lines": 102,
+        "bytes": 4352,
+        "sha256": "496db1178f0385158a06e31423a45f6dc7d6b10bf7f22c3296330cd2b5d33fca",
+        "imports": [
+          "Interface"
+        ]
+      },
+      "Interface": {
+        "path": "Interface.lean",
+        "lines": 147,
+        "bytes": 6682,
+        "sha256": "034389e9b0bf46eda1a4b543e945a167d9ff7c45089444e41bae4ca538fc391c",
+        "imports": [
+          "AnalyticInterface",
+          "BInnerStatement",
+          "Zeta5S.AtFive",
+          "Apery.Criterion",
+          "Apery.Degree",
+          "Apery.Zeta5",
+          "ZetaIdentification"
+        ]
+      },
+      "ZetaIdentification": {
+        "path": "ZetaIdentification.lean",
+        "lines": 21,
+        "bytes": 810,
+        "sha256": "957ff4c54813f25c17c6df406fa090a640bcccc65cf4f6ab1554db7013aa3bee",
+        "imports": [
+          "Statement"
+        ]
+      },
+      "Apery.Criterion": {
+        "path": "Apery/Criterion.lean",
+        "lines": 121,
+        "bytes": 6075,
+        "sha256": "21ecd2dd72b780c8734062d0a838bdeef2bbd4ee2325619e526248f6ca006473",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Zeta5S.AtFive": {
+        "path": "Zeta5S/AtFive.lean",
+        "lines": 476,
+        "bytes": 25141,
+        "sha256": "37d365e615f1e820cc353d979096fc0ef7cf2369940fe0747cc0a8c2bf0f7780",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectPoly",
+          "Zeta5S.Monomial",
+          "Zeta5S.Pullback",
+          "Zeta5S.TEntry",
+          "Zeta5S.MomentVal",
+          "Zeta5S.ClassFrame",
+          "Zeta5S.InnerAlloc",
+          "Zeta5S.PoleVal",
+          "Zeta5S.SmallPrimeF",
+          "Zeta5S.OuterFrame"
+        ]
+      },
+      "Zeta5S.OuterFrame": {
+        "path": "Zeta5S/OuterFrame.lean",
+        "lines": 229,
+        "bytes": 13501,
+        "sha256": "bc56e36b39fe6a51a9eef6b33435c3c203bf292494b7983b2a9eaa0106efb892",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.LowRank",
+          "Zeta5S.MomentVal",
+          "Zeta5S.ClassFrame",
+          "Zeta5S.BasisChange"
+        ]
+      },
+      "Zeta5S.ClassFrame": {
+        "path": "Zeta5S/ClassFrame.lean",
+        "lines": 188,
+        "bytes": 10378,
+        "sha256": "18edb51bbc0cd33e6e584070e1d18b7862549c4a780899e974d611fb3a0a5582",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.TEntry",
+          "Zeta5S.Unimodular"
+        ]
+      },
+      "Zeta5S.Unimodular": {
+        "path": "Zeta5S/Unimodular.lean",
+        "lines": 146,
+        "bytes": 7913,
+        "sha256": "66b2173794bf6dd35e92cd26a16ad4d6729f8390950b9c247fcdf10a403edee7",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.BasisChange",
+          "Zeta5S.DirectBound"
+        ]
+      },
+      "Zeta5S.TEntry": {
+        "path": "Zeta5S/TEntry.lean",
+        "lines": 102,
+        "bytes": 5365,
+        "sha256": "cd824b084084bd3772325da41e3ff98c3f9c64cff2417f8f9a52ebaab06e87e0",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Pullback",
+          "Zeta5S.DirectPoly"
+        ]
+      },
+      "Zeta5S.DirectPoly": {
+        "path": "Zeta5S/DirectPoly.lean",
+        "lines": 307,
+        "bytes": 16237,
+        "sha256": "af54610bd8169e340cc4051fee9d3fed77c77822ff01fc75ebc38f6c7816f598",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectBound"
+        ]
+      },
+      "Zeta5S.MomentVal": {
+        "path": "Zeta5S/MomentVal.lean",
+        "lines": 136,
+        "bytes": 6865,
+        "sha256": "bf68753688043c7a72ff406266e39f221b5573df603fa0c73d223ff6adea4650",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectPoly",
+          "Zeta5S.Monomial"
+        ]
+      },
+      "Zeta5S.LowRank": {
+        "path": "Zeta5S/LowRank.lean",
+        "lines": 65,
+        "bytes": 2934,
+        "sha256": "5f59cfcbcbb229fe46bc828fa5dcf5cf197e33fcff203726ed268799ca7c0f32",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Val"
+        ]
+      },
+      "Zeta5S.PoleVal": {
+        "path": "Zeta5S/PoleVal.lean",
+        "lines": 263,
+        "bytes": 15938,
+        "sha256": "3f740f1cde864c2ad5ac6b01ca53426ac76cfbeffba3779a2706727be029a283",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectPoly",
+          "Zeta5S.Pullback"
+        ]
+      },
+      "Zeta5S.InnerAlloc": {
+        "path": "Zeta5S/InnerAlloc.lean",
+        "lines": 336,
+        "bytes": 17880,
+        "sha256": "6dfad96f2d460dd9c9296930b5ae09413fe5b152332ffa3293455a11b79f5470",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.InnerWeights"
+        ]
+      },
+      "Zeta5S.InnerWeights": {
+        "path": "Zeta5S/InnerWeights.lean",
+        "lines": 207,
+        "bytes": 12395,
+        "sha256": "5301eba55cd706b99e56a56449048df188a76ac8924638b0ed0c9919694e3030",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.ClassCount"
+        ]
+      },
+      "Zeta5S.ClassCount": {
+        "path": "Zeta5S/ClassCount.lean",
+        "lines": 253,
+        "bytes": 12940,
+        "sha256": "5090166d377fee960fdd568f56ef2f9c6017028b45f756a13252485b23e2d341",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.ClassFrame"
+        ]
+      },
+      "BInnerStatement": {
+        "path": "BInnerStatement.lean",
+        "lines": 96,
+        "bytes": 4535,
+        "sha256": "450a557ab7ec29f64019ab88ab7798ea64c13aab889830dcada7d632572b952d",
+        "imports": [
+          "RangeTargets",
+          "Mathathon.P108.SStep"
+        ]
+      },
+      "RangeTargets": {
+        "path": "RangeTargets.lean",
+        "lines": 3,
+        "bytes": 154,
+        "sha256": "002e0467b85c39702204693ac3207b3491a3cddc3703f12e962ae6b94dbeaa54",
+        "imports": [
+          "OuterTargets"
+        ]
+      },
+      "OuterTargets": {
+        "path": "OuterTargets.lean",
+        "lines": 168,
+        "bytes": 7988,
+        "sha256": "2dc9b7e4c0c67df8bc4ee37a129ba6e9b2dd502f0f796d6cc0e6184dbc2665d2",
+        "imports": [
+          "Zeta5S.SharpAssembly",
+          "Zeta5S.InnerAlloc",
+          "Mathathon.P108.OuterDefs",
+          "Mathathon.P108.InnerShift"
+        ]
+      },
+      "Zeta5S.SharpAssembly": {
+        "path": "Zeta5S/SharpAssembly.lean",
+        "lines": 151,
+        "bytes": 6460,
+        "sha256": "f447e9c3bde267998c0deb9fa11cc2527f25d2efb3275f36de01350598b4347b",
+        "imports": [
+          "Zeta5S.SharpOuterScope"
+        ]
+      },
+      "Zeta5S.SharpOuterScope": {
+        "path": "Zeta5S/SharpOuterScope.lean",
+        "lines": 83,
+        "bytes": 3246,
+        "sha256": "7c641dfd5d2459688ac253f470677bb27b9bd0bfc52a882f76069eebb39704ab",
+        "imports": [
+          "Zeta5S.SharpOuterMain"
+        ]
+      },
+      "Zeta5S.SharpOuterMain": {
+        "path": "Zeta5S/SharpOuterMain.lean",
+        "lines": 44,
+        "bytes": 2466,
+        "sha256": "e71b9f87046c09e10fc5daa3701387833edb81980f9a11c995f23cbf22b40358",
+        "imports": [
+          "Zeta5S.SharpOuterWeights"
+        ]
+      },
+      "Zeta5S.SharpOuterWeights": {
+        "path": "Zeta5S/SharpOuterWeights.lean",
+        "lines": 57,
+        "bytes": 2028,
+        "sha256": "9f402128a15f8cdb5ad05686c3a7e15c15caf45bf921994c042aee4ccaf0e500",
+        "imports": [
+          "Zeta5S.SharpOuterFrame",
+          "Zeta5S.SmallFiniteStep"
+        ]
+      },
+      "Zeta5S.SmallFiniteStep": {
+        "path": "Zeta5S/SmallFiniteStep.lean",
+        "lines": 81,
+        "bytes": 3503,
+        "sha256": "a853e0e1ffb0c9afbada4161c56677c27cc7e55b9bdaf36326635a40d9f14beb",
+        "imports": [
+          "Zeta5S.OuterFiniteStep"
+        ]
+      },
+      "Zeta5S.OuterFiniteStep": {
+        "path": "Zeta5S/OuterFiniteStep.lean",
+        "lines": 143,
+        "bytes": 6381,
+        "sha256": "cca31191aeb1161aa6e63d59370a9e3f1ee8daa45424d1547bc7884170dc159f",
+        "imports": [
+          "Zeta5S.FiniteStep"
+        ]
+      },
+      "Zeta5S.FiniteStep": {
+        "path": "Zeta5S/FiniteStep.lean",
+        "lines": 201,
+        "bytes": 8756,
+        "sha256": "3b77dc0987c52f94b9a200a1cf25a60340f8cd709529de20f4042725aeed8c12",
+        "imports": [
+          "Zeta5S.NormalizationProof",
+          "Zeta5S.AssemblyAnchors"
+        ]
+      },
+      "Zeta5S.AssemblyAnchors": {
+        "path": "Zeta5S/AssemblyAnchors.lean",
+        "lines": 116,
+        "bytes": 5015,
+        "sha256": "bd8bb3ecb2f651b37d7b05c2e276edebedbec06ce0b30714d5dffbd7ccf7631c",
+        "imports": [
+          "Zeta5S.AtFiveNormData",
+          "Zeta5S.AssemblyProof"
+        ]
+      },
+      "Zeta5S.AssemblyProof": {
+        "path": "Zeta5S/AssemblyProof.lean",
+        "lines": 85,
+        "bytes": 3629,
+        "sha256": "d8fb6ade6487eab981eb5cf0f0e14207bca622607473aa513d907dad6e97fd53",
+        "imports": [
+          "Zeta5S.AssemblyData"
+        ]
+      },
+      "Zeta5S.AssemblyData": {
+        "path": "Zeta5S/AssemblyData.lean",
+        "lines": 100,
+        "bytes": 3944,
+        "sha256": "d6a2847a752003dfaa54cc73933d2af4cbb343337e2f457599bba6d289faf0d4",
+        "imports": [
+          "Zeta5S.OuterScope",
+          "Zeta5S.InnerWeights",
+          "Zeta5S.SmallPrimeF"
+        ]
+      },
+      "Zeta5S.OuterScope": {
+        "path": "Zeta5S/OuterScope.lean",
+        "lines": 124,
+        "bytes": 5607,
+        "sha256": "f501d3fbb06ce4d9906b35da86f5886215c7e9993f52a067fe74e6e1d11001d1",
+        "imports": [
+          "Zeta5S.OuterEntryMain"
+        ]
+      },
+      "Zeta5S.OuterEntryMain": {
+        "path": "Zeta5S/OuterEntryMain.lean",
+        "lines": 549,
+        "bytes": 34937,
+        "sha256": "0f08e5373d25b1888b5e51ed7b200e9f8651661a2bd0857dbbf4471d6f456451",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterEntries"
+        ]
+      },
+      "Zeta5S.OuterEntries": {
+        "path": "Zeta5S/OuterEntries.lean",
+        "lines": 296,
+        "bytes": 17354,
+        "sha256": "12b2773e0d6373cd892496785f955de3ffca3e0328c730131bd06c8d754d961c",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterBasis"
+        ]
+      },
+      "Zeta5S.OuterBasis": {
+        "path": "Zeta5S/OuterBasis.lean",
+        "lines": 164,
+        "bytes": 9666,
+        "sha256": "28571a19c49ce5d071c8dcf613712770fc7d52880a676b715a65776a92f7248f",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterEntry",
+          "Zeta5S.PoleVal"
+        ]
+      },
+      "Zeta5S.OuterEntry": {
+        "path": "Zeta5S/OuterEntry.lean",
+        "lines": 141,
+        "bytes": 6958,
+        "sha256": "38262612c898966062b161c303c5558e17b3d7c8a9f046d838f0018f37a3fe67",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterFrame",
+          "Zeta5S.ClassCount"
+        ]
+      },
+      "Zeta5S.AtFiveNormData": {
+        "path": "Zeta5S/AtFiveNormData.lean",
+        "lines": 82,
+        "bytes": 3924,
+        "sha256": "0a3110e2d781981b36893352e3127720836ac04e89b83db54d913b4453dba620",
+        "imports": [
+          "Zeta5S.AtFiveOuter",
+          "Zeta5S.InnerAlloc"
+        ]
+      },
+      "Zeta5S.AtFiveOuter": {
+        "path": "Zeta5S/AtFiveOuter.lean",
+        "lines": 62,
+        "bytes": 3165,
+        "sha256": "0fdbe785c6591843117076807697ed048725da020c53b0bfc51e4844d2222d64",
+        "imports": [
+          "Zeta5S.AtFive",
+          "Zeta5S.OuterScope"
+        ]
+      },
+      "Zeta5S.NormalizationProof": {
+        "path": "Zeta5S/NormalizationProof.lean",
+        "lines": 168,
+        "bytes": 7229,
+        "sha256": "c1d6f4962be96e4be1725ccaa6578cbf42dc3433e8d1fc0f8ba9522486d387b4",
+        "imports": [
+          "Zeta5S.AssemblyProof"
+        ]
+      },
+      "Zeta5S.SharpOuterFrame": {
+        "path": "Zeta5S/SharpOuterFrame.lean",
+        "lines": 135,
+        "bytes": 6943,
+        "sha256": "0d9745348f88740f87086fa849e743f43f4e26b16761c77d612af32f55f0cbf1",
+        "imports": [
+          "Zeta5S.OuterFrame",
+          "Zeta5S.SharpLowRank"
+        ]
+      },
+      "Zeta5S.SharpLowRank": {
+        "path": "Zeta5S/SharpLowRank.lean",
+        "lines": 71,
+        "bytes": 3427,
+        "sha256": "cdc53dbd005f014e6a99dc36b1753747ec989e33357e9aab746502b9e3e708c8",
+        "imports": [
+          "Zeta5S.LowRank"
+        ]
+      },
+      "CArithProofs": {
+        "path": "CArithProofs.lean",
+        "lines": 114,
+        "bytes": 4815,
+        "sha256": "80963483ac8a33627e9d5c0fc77694bf14a12797a4fac42672b9746a706436ce",
+        "imports": [
+          "ArithInterface"
+        ]
+      },
+      "ArithInterface": {
+        "path": "ArithInterface.lean",
+        "lines": 55,
+        "bytes": 2211,
+        "sha256": "fcf4be519267fdbd631c859aee5c101b572ee4e73899adf8a4afa1138d14a48f",
+        "imports": [
+          "Interface",
+          "Final"
+        ]
+      },
+      "Final": {
+        "path": "Final.lean",
+        "lines": 41,
+        "bytes": 1893,
+        "sha256": "77a38e9b9f36f3ab3660d2b2f12532f97c3e88096470c110d3c87b4da9efa067",
+        "imports": [
+          "Completion",
+          "InnerSum",
+          "InnerLocal"
+        ]
+      },
+      "InnerLocal": {
+        "path": "InnerLocal.lean",
+        "lines": 219,
+        "bytes": 10956,
+        "sha256": "9d976a9abc79aea77a1b3dec59439b7850671a470195e93c44eb3a79870f4d9f",
+        "imports": [
+          "PhiGamma",
+          "InnerWeight",
+          "InnerScalar"
+        ]
+      },
+      "InnerScalar": {
+        "path": "InnerScalar.lean",
+        "lines": 108,
+        "bytes": 4986,
+        "sha256": "c06858b0c69d0e9ef4414188d0da549ce86ed04cac8c0bb74307cbdb660ebfbe",
+        "imports": [
+          "OuterScalar"
+        ]
+      },
+      "OuterScalar": {
+        "path": "OuterScalar.lean",
+        "lines": 193,
+        "bytes": 9206,
+        "sha256": "1934949938d93c033d3d6dc0bc80f3c46d1559a4eb017adcf661b359f3eef6a4",
+        "imports": [
+          "Scalar"
+        ]
+      },
+      "Scalar": {
+        "path": "Scalar.lean",
+        "lines": 112,
+        "bytes": 4774,
+        "sha256": "e18923f0f985028eb151af50b92768f127b04d966e3a6e9b1eb1502fa34aa89d",
+        "imports": [
+          "OuterTargets"
+        ]
+      },
+      "InnerWeight": {
+        "path": "InnerWeight.lean",
+        "lines": 367,
+        "bytes": 16812,
+        "sha256": "391db4579d50fd0f0e5966e9317209c5411441d92ce500f76c6b7ddc56572c0e",
+        "imports": [
+          "CostBounds"
+        ]
+      },
+      "CostBounds": {
+        "path": "CostBounds.lean",
+        "lines": 128,
+        "bytes": 6439,
+        "sha256": "ed3d617be91a69fb928134aa42ede52738296c89361de6f0180d937028463f57",
+        "imports": [
+          "Allocation"
+        ]
+      },
+      "Allocation": {
+        "path": "Allocation.lean",
+        "lines": 223,
+        "bytes": 10529,
+        "sha256": "bfd7bcc007a6e17ba5ee0edc0d952b521d96a223ed6027b2bff3de7896999991",
+        "imports": [
+          "Classes"
+        ]
+      },
+      "Classes": {
+        "path": "Classes.lean",
+        "lines": 85,
+        "bytes": 3892,
+        "sha256": "86f3da527f5670e4c669b498da2f0f439d93e2cf7bbcce662c87845661d3dec1",
+        "imports": [
+          "BInnerStatement"
+        ]
+      },
+      "PhiGamma": {
+        "path": "PhiGamma.lean",
+        "lines": 195,
+        "bytes": 10580,
+        "sha256": "35da8cc39a18680462c27daa44d4abe2419067fbf3ed5860adfbd61982857f63",
+        "imports": [
+          "PhaseErrors"
+        ]
+      },
+      "PhaseErrors": {
+        "path": "PhaseErrors.lean",
+        "lines": 152,
+        "bytes": 7870,
+        "sha256": "cdc3343492848d643e7f03b252984b72af7d8ee260548aa1ba940882ab2f46d7",
+        "imports": [
+          "ModelData",
+          "NextRows"
+        ]
+      },
+      "NextRows": {
+        "path": "NextRows.lean",
+        "lines": 65,
+        "bytes": 2969,
+        "sha256": "97be51514a6d34940aba9c8876dc828b104672b75757a4d2440d1f1f04826b53",
+        "imports": [
+          "ClassRows"
+        ]
+      },
+      "ClassRows": {
+        "path": "ClassRows.lean",
+        "lines": 125,
+        "bytes": 5704,
+        "sha256": "7625a15adfb5a7cc61c3330a4f7659e0e4003a69ccb098e5078042a3a4824ef9",
+        "imports": [
+          "MeshCounts"
+        ]
+      },
+      "MeshCounts": {
+        "path": "MeshCounts.lean",
+        "lines": 94,
+        "bytes": 4259,
+        "sha256": "c4de012c1b04454dc6d6d922dca6c31b39e86c18e7f5e8a74705fa9baa36769f",
+        "imports": [
+          "ContinuousClasses",
+          "Dictionary"
+        ]
+      },
+      "Dictionary": {
+        "path": "Dictionary.lean",
+        "lines": 51,
+        "bytes": 1796,
+        "sha256": "fa33e007004c79d6099ed4b322e7c24ff0d24b4a3251aaae9e2b7e1770d6b08e",
+        "imports": [
+          "InnerModelTargets"
+        ]
+      },
+      "InnerModelTargets": {
+        "path": "InnerModelTargets.lean",
+        "lines": 26,
+        "bytes": 1150,
+        "sha256": "8213a1963d20ae8fb9c2432308fca5edd8161ccc44989571cdead92e50e52edf",
+        "imports": [
+          "Mathathon.P108.InnerShift",
+          "Mathlib"
+        ]
+      },
+      "ContinuousClasses": {
+        "path": "ContinuousClasses.lean",
+        "lines": 129,
+        "bytes": 6494,
+        "sha256": "428da0082d72cbb93a2acc5e0d45d0c2593b141d4ba6a25aaf8e3c07293a9a04",
+        "imports": [
+          "ClassSums",
+          "ModelAlgebra"
+        ]
+      },
+      "ModelAlgebra": {
+        "path": "ModelAlgebra.lean",
+        "lines": 100,
+        "bytes": 4191,
+        "sha256": "e5fa1200da5bf40420fb838ae6fbbe76e857a3a475febb0cdeb62303a5a5f4aa",
+        "imports": [
+          "CostBounds"
+        ]
+      },
+      "ClassSums": {
+        "path": "ClassSums.lean",
+        "lines": 172,
+        "bytes": 8461,
+        "sha256": "a9aca49cdf283fafcf458ff955be03c6b2d5b37855494559cc52efded1123baf",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.ClassCount"
+        ]
+      },
+      "ModelData": {
+        "path": "ModelData.lean",
+        "lines": 137,
+        "bytes": 6895,
+        "sha256": "e5c8b9ff3858a4fa9d0cb7961e91ffdb5a56c56cc5493100fe2a28241fd009f4",
+        "imports": [
+          "GammaApprox"
+        ]
+      },
+      "GammaApprox": {
+        "path": "GammaApprox.lean",
+        "lines": 105,
+        "bytes": 4934,
+        "sha256": "2f94d71063bf00c46325023a6ab3000919d09a86a5dd863a3ee88de2ab019f7f",
+        "imports": [
+          "UniformClasses",
+          "ClassRows",
+          "GammaCells"
+        ]
+      },
+      "GammaCells": {
+        "path": "GammaCells.lean",
+        "lines": 2,
+        "bytes": 121,
+        "sha256": "5f9cdc1157016b409d07a08aa25a0c6efc47554f3c7832010be6c0341be987d9",
+        "imports": [
+          "Continuity"
+        ]
+      },
+      "Continuity": {
+        "path": "Continuity.lean",
+        "lines": 92,
+        "bytes": 4532,
+        "sha256": "a77decb751623e84a82c4233fcb2501a2c643fc023afff46cc20c062a63da29e",
+        "imports": [
+          "Dictionary",
+          "ContinuousClasses"
+        ]
+      },
+      "UniformClasses": {
+        "path": "UniformClasses.lean",
+        "lines": 77,
+        "bytes": 3791,
+        "sha256": "f9b98f77d8230c02493fdc70e025b85edbfdc9479256491482fd2c66f567effc",
+        "imports": [
+          "ContinuousClasses"
+        ]
+      },
+      "InnerSum": {
+        "path": "InnerSum.lean",
+        "lines": 133,
+        "bytes": 6174,
+        "sha256": "1c5dc048e44b67697b9f9fbc7f0b7d719800d64679b1638a962c3f497c36ac44",
+        "imports": [
+          "TransferStatement"
+        ]
+      },
+      "TransferStatement": {
+        "path": "TransferStatement.lean",
+        "lines": 11,
+        "bytes": 424,
+        "sha256": "78d1401d7f9d2a6c85944c779eea66bcb49dce50f036fd6e4610ee9fb9000483",
+        "imports": [
+          "BInnerStatement",
+          "BInnerLimitFinish",
+          "Transfer"
+        ]
+      },
+      "Transfer": {
+        "path": "Transfer.lean",
+        "lines": 129,
+        "bytes": 6110,
+        "sha256": "89576e19aaa36c3ddc27b37410c6ee52b80042af24254cdfb194e7fe16cdef72",
+        "imports": [
+          "PriorPrime"
+        ]
+      },
+      "PriorPrime": {
+        "path": "PriorPrime.lean",
+        "lines": 446,
+        "bytes": 22486,
+        "sha256": "fccb0d299e3ccdb5a671fe4ffe0aa36026d73246ebda6a3b7b12d798bfd742db",
+        "imports": [
+          "Mathlib",
+          "PrimeNumberTheoremAnd.Consequences"
+        ]
+      },
+      "BInnerLimitFinish": {
+        "path": "BInnerLimitFinish.lean",
+        "lines": 13,
+        "bytes": 430,
+        "sha256": "47c7b55a899d13ed248ba65277b5e19016238551d4cc5c923905f4ffe2cc54b2",
+        "imports": [
+          "Bounds",
+          "Discontinuities",
+          "Inversion",
+          "Integrability"
+        ]
+      },
+      "Integrability": {
+        "path": "Integrability.lean",
+        "lines": 64,
+        "bytes": 3105,
+        "sha256": "6c11004e997c98070d0d334416f13614bf12dfeaab50bc38aa302263e9a92d0f",
+        "imports": [
+          "Bounds"
+        ]
+      },
+      "Bounds": {
+        "path": "Bounds.lean",
+        "lines": 120,
+        "bytes": 4911,
+        "sha256": "d35611489c90522e62dc1970778918a04cf12b29d29b3fa8379b4d9f32f6fa07",
+        "imports": [
+          "Continuity"
+        ]
+      },
+      "Inversion": {
+        "path": "Inversion.lean",
+        "lines": 56,
+        "bytes": 2825,
+        "sha256": "462ccafa377957e4e7cc9b67cab62b6a464c944cbd23f833e3f8968c83d8b555",
+        "imports": [
+          "InnerModelTargets"
+        ]
+      },
+      "Discontinuities": {
+        "path": "Discontinuities.lean",
+        "lines": 88,
+        "bytes": 3753,
+        "sha256": "308fd9520974f00e9a973f6acb728bedc59bad0b1550c4cee026b5c63f2df555",
+        "imports": [
+          "Continuity"
+        ]
+      },
+      "Completion": {
+        "path": "Completion.lean",
+        "lines": 20,
+        "bytes": 843,
+        "sha256": "adfe0016ab5a996e28134819b33e71539b6541cfc75c2fcde98f7cec6a1791d8",
+        "imports": [
+          "Capstone",
+          "OuterSum"
+        ]
+      },
+      "OuterSum": {
+        "path": "OuterSum.lean",
+        "lines": 132,
+        "bytes": 5767,
+        "sha256": "0baf1e44498c7d2cf71f51a425c1877d0a9cc8e64b7d40d92838d3d0159413f3",
+        "imports": [
+          "Regularity",
+          "FinalLocal"
+        ]
+      },
+      "FinalLocal": {
+        "path": "FinalLocal.lean",
+        "lines": 61,
+        "bytes": 2397,
+        "sha256": "be5b4824be5522d21422e055ad5c901dc332bf07fa39416b0520d4a45fa3ce7d",
+        "imports": [
+          "OuterLocal",
+          "OuterScalar",
+          "AboveK"
+        ]
+      },
+      "AboveK": {
+        "path": "AboveK.lean",
+        "lines": 139,
+        "bytes": 5293,
+        "sha256": "f9210b2e1c3286b058f7b142b3f4a5ddcd04d3bb3e4b6e7fc39cc4dcc2aca6f5",
+        "imports": [
+          "Scalar"
+        ]
+      },
+      "OuterLocal": {
+        "path": "OuterLocal.lean",
+        "lines": 778,
+        "bytes": 34709,
+        "sha256": "02853cec505910f6f57eeda60cbb474b02bfe53cf5a0348d7916e98424d7482b",
+        "imports": [
+          "ClassData"
+        ]
+      },
+      "ClassData": {
+        "path": "ClassData.lean",
+        "lines": 97,
+        "bytes": 4003,
+        "sha256": "0cea3c0c2f1f322a15e722c2294cc22bb10c0a06838e8d9237339cf3be483464",
+        "imports": [
+          "Mathlib",
+          "ClassSum"
+        ]
+      },
+      "ClassSum": {
+        "path": "ClassSum.lean",
+        "lines": 172,
+        "bytes": 8355,
+        "sha256": "620d2c06c0d150b481641e2434c741c9265074d327b562c0c0a7f9edd17e49bc",
+        "imports": [
+          "Mathlib",
+          "OuterTargets"
+        ]
+      },
+      "Regularity": {
+        "path": "Regularity.lean",
+        "lines": 130,
+        "bytes": 6188,
+        "sha256": "153cd9af86bec2c5a1920221aebf9da5e48e2f1b36b1900dea4efab769dff6ae",
+        "imports": [
+          "Mathathon.P108.OuterDefs",
+          "Transfer"
+        ]
+      },
+      "Capstone": {
+        "path": "Capstone.lean",
+        "lines": 78,
+        "bytes": 3294,
+        "sha256": "ecada6606e8f05491658450646cd0ac8ddb8789cb5e22fca604102e1bbf4c6c0",
+        "imports": [
+          "BInnerStatement",
+          "Asymptotic",
+          "SharpSplit"
+        ]
+      },
+      "SharpSplit": {
+        "path": "SharpSplit.lean",
+        "lines": 92,
+        "bytes": 3952,
+        "sha256": "67d1f713123986d2070fa50e95b1178b61f5187dce349f377ee7372d793eeff9",
+        "imports": [
+          "OuterTargets",
+          "BridgeTargets"
+        ]
+      },
+      "BridgeTargets": {
+        "path": "BridgeTargets.lean",
+        "lines": 89,
+        "bytes": 4216,
+        "sha256": "020b41792723b1c94334c8f54f3d6113167deee24ae69b923598499b3cf3d4a4",
+        "imports": [
+          "Zeta5S.AssemblyData",
+          "Mathathon.P108.SStep"
+        ]
+      },
+      "Asymptotic": {
+        "path": "Asymptotic.lean",
+        "lines": 287,
+        "bytes": 13512,
+        "sha256": "d0ff9415ebfc13c7023351428a9b66ff329a1d9012d6940ed3fe8424eacacb4e",
+        "imports": [
+          "FiniteProof",
+          "PrimeNumberTheoremAnd.Consequences"
+        ]
+      },
+      "FiniteProof": {
+        "path": "FiniteProof.lean",
+        "lines": 252,
+        "bytes": 11826,
+        "sha256": "99188b0501af97542d6f84ea0b9359c687edbcbd0689667be11cf8f83c859450",
+        "imports": [
+          "BridgeTargets"
+        ]
+      },
+      "Assembly": {
+        "path": "Assembly.lean",
+        "lines": 85,
+        "bytes": 3599,
+        "sha256": "a43e370af202e72e7fb672ef014cc8454f8b3d55f45c084e57db90a45bf2ba7f",
+        "imports": [
+          "Interface"
+        ]
+      }
+    },
+    "external_imports": [
+      "Mathlib",
+      "Mathlib.Analysis.Calculus.Deriv.ZPow",
+      "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+      "Mathlib.Analysis.SpecificLimits.Normed",
+      "Mathlib.MeasureTheory.Function.Floor",
+      "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+      "Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts",
+      "Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic",
+      "Mathlib.MeasureTheory.Integral.Prod",
+      "Mathlib.Tactic",
+      "PrimeNumberTheoremAnd.Consequences"
+    ]
+  },
+  "baseline": {
+    "root": "CompactEntry",
+    "files": 282,
+    "lines": 69392,
+    "bytes": 4450943,
+    "modules": {
+      "CompactEntry": {
+        "path": "CompactEntry.lean",
+        "lines": 33,
+        "bytes": 1427,
+        "sha256": "8394c702c47e3d4720093b76e73ae80804e9080f0f1f0d9a2483170f5b602ed7",
+        "imports": [
+          "ClosingEntry",
+          "LocalField",
+          "ConfigurationTransport",
+          "RealTransport"
+        ]
+      },
+      "RealTransport": {
+        "path": "RealTransport.lean",
+        "lines": 49,
+        "bytes": 2458,
+        "sha256": "8e29a025ca8ee7d64f8a79924cee5b9c81576e0bfb27007e1bf3eefab0ff5fcd",
+        "imports": [
+          "RealIntegral"
+        ]
+      },
+      "RealIntegral": {
+        "path": "RealIntegral.lean",
+        "lines": 104,
+        "bytes": 5404,
+        "sha256": "922e0847671aec0c7ad84423dfce855f22596607a987da6c223d12906cec04b2",
+        "imports": [
+          "RealPointwise"
+        ]
+      },
+      "RealPointwise": {
+        "path": "RealPointwise.lean",
+        "lines": 197,
+        "bytes": 10484,
+        "sha256": "a4eb5d7415f2e99640270721496210573a2049212852773c717b0098b9ea7653",
+        "imports": [
+          "RealScalar",
+          "RealDeterminant"
+        ]
+      },
+      "RealDeterminant": {
+        "path": "RealDeterminant.lean",
+        "lines": 86,
+        "bytes": 4368,
+        "sha256": "07b106c121c37cf72e5a868c9ac2138c065c89fbb9ed9a14b098e48085244748",
+        "imports": [
+          "RealDetStatement",
+          "RealAndreief"
+        ]
+      },
+      "RealAndreief": {
+        "path": "RealAndreief.lean",
+        "lines": 36,
+        "bytes": 2084,
+        "sha256": "fec5660f826a51b7ccf47ad5b5e72767af27081b922ad3ed6ed84edd4e1ccddf",
+        "imports": [
+          "Apery.Andreief"
+        ]
+      },
+      "Apery.Andreief": {
+        "path": "Apery/Andreief.lean",
+        "lines": 115,
+        "bytes": 5757,
+        "sha256": "fd3c752dbd71d658deaf5765bfadb9e5a5f24028dd9fe5e38205708a279d039a",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "RealDetStatement": {
+        "path": "RealDetStatement.lean",
+        "lines": 26,
+        "bytes": 1187,
+        "sha256": "0a39985e6e5cdff8349fa1df5e1ff35ac703a42f6399403dcc57ac7602b6cc78",
+        "imports": [
+          "Gram"
+        ]
+      },
+      "Gram": {
+        "path": "Gram.lean",
+        "lines": 146,
+        "bytes": 7688,
+        "sha256": "6fecca4e0a6f71fea8b14e497431363c3cb3f287c201a3c2ded435756e317736",
+        "imports": [
+          "GramStatement"
+        ]
+      },
+      "GramStatement": {
+        "path": "GramStatement.lean",
+        "lines": 27,
+        "bytes": 1211,
+        "sha256": "6fb93b22a88b864ec9137a6f5d6fb5f8c646c48c6cc87ef4179c8e6ed13d7f16",
+        "imports": [
+          "Functional",
+          "Zeta5S.BasisChange"
+        ]
+      },
+      "Zeta5S.BasisChange": {
+        "path": "Zeta5S/BasisChange.lean",
+        "lines": 122,
+        "bytes": 6851,
+        "sha256": "0badc7cfbb56039972ff863e6d2bcfb863c5687f3ec12b068383573c4ef1b15c",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Pullback",
+          "Zeta5S.Base"
+        ]
+      },
+      "Zeta5S.Base": {
+        "path": "Zeta5S/Base.lean",
+        "lines": 128,
+        "bytes": 6829,
+        "sha256": "bd61eb7ae3a16f9d2d324e55122cc979def37ccfb74dccff231a635777b41640",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Zeta5S.Pullback": {
+        "path": "Zeta5S/Pullback.lean",
+        "lines": 293,
+        "bytes": 16207,
+        "sha256": "ebffb5ad911323534bbaed2d316e4e07907cf42db30f8e82720a3b8406ad76e4",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Monomial",
+          "Zeta5S.Base"
+        ]
+      },
+      "Zeta5S.Monomial": {
+        "path": "Zeta5S/Monomial.lean",
+        "lines": 99,
+        "bytes": 5096,
+        "sha256": "206e3fc33d8cd65a3ada6f4f1f90237c8cf7c0e93b7282b652962c02791eb697",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.PoleFun"
+        ]
+      },
+      "Zeta5S.PoleFun": {
+        "path": "Zeta5S/PoleFun.lean",
+        "lines": 99,
+        "bytes": 5135,
+        "sha256": "2fe575dea9273336fe7b8b3d6c4dfdf38a89068120cd4f3a9c80143a0a63a633",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.TauBound"
+        ]
+      },
+      "Zeta5S.TauBound": {
+        "path": "Zeta5S/TauBound.lean",
+        "lines": 167,
+        "bytes": 8555,
+        "sha256": "4cafd8b0f285e774a5191ef47ff4a32b6624d3f66a89376a4553f340d97887e2",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.BinomBasis"
+        ]
+      },
+      "Zeta5S.BinomBasis": {
+        "path": "Zeta5S/BinomBasis.lean",
+        "lines": 249,
+        "bytes": 12346,
+        "sha256": "d69355164de0504b0badf41d651947e50e384a89fb85c4e5781931e695bb1349",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Val"
+        ]
+      },
+      "Zeta5S.Val": {
+        "path": "Zeta5S/Val.lean",
+        "lines": 230,
+        "bytes": 11087,
+        "sha256": "dcbf5c6d62626ab49dc9323fac395240415b846a4c7b4d3a447385f4bf5f4544",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Functional": {
+        "path": "Functional.lean",
+        "lines": 88,
+        "bytes": 4356,
+        "sha256": "6d28259c1a43b8c4f5ca0d621919ce08c5ab43c74e4e7317b9c0423aff4adf44",
+        "imports": [
+          "FunctionalStatement",
+          "PartialFractions"
+        ]
+      },
+      "PartialFractions": {
+        "path": "PartialFractions.lean",
+        "lines": 43,
+        "bytes": 2068,
+        "sha256": "598f63902bc375c7ec470c825318fb5010c2fe59778e19255b7425017e57b424",
+        "imports": [
+          "Zeta5S.Base"
+        ]
+      },
+      "FunctionalStatement": {
+        "path": "FunctionalStatement.lean",
+        "lines": 20,
+        "bytes": 873,
+        "sha256": "77e4bae84f348f9e82ee6783e4ccf8b845a1d298b42a6b4ca760bba9958f4e66",
+        "imports": [
+          "Finish"
+        ]
+      },
+      "Finish": {
+        "path": "Finish.lean",
+        "lines": 114,
+        "bytes": 5574,
+        "sha256": "e114c71860247367c199990a3e0816c87dd1d1f7967614901df340798d0f5a90",
+        "imports": [
+          "Scaling",
+          "Bose"
+        ]
+      },
+      "Bose": {
+        "path": "Bose.lean",
+        "lines": 100,
+        "bytes": 4260,
+        "sha256": "7615ebb89a7b1b0b1fa2c573bf9e590830f68faa36c0ce2ab26d3739e465f75d",
+        "imports": [
+          "BAnalyticIntegral"
+        ]
+      },
+      "BAnalyticIntegral": {
+        "path": "BAnalyticIntegral.lean",
+        "lines": 159,
+        "bytes": 7767,
+        "sha256": "eefc453a2515068c1576200e4f414c01042298c62edb39589af8599bc6400dbe",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Scaling": {
+        "path": "Scaling.lean",
+        "lines": 112,
+        "bytes": 5830,
+        "sha256": "62641bbc3c3c3e05336e012ec247e13f7034c792c5249af9f0bdb7e298f140cd",
+        "imports": [
+          "PoleProof"
+        ]
+      },
+      "PoleProof": {
+        "path": "PoleProof.lean",
+        "lines": 86,
+        "bytes": 4334,
+        "sha256": "b2f51aafe43b22b17113d06203322007e76ee3d773806e1ef22b6f0a6c5ad8d8",
+        "imports": [
+          "Kernel",
+          "Statement"
+        ]
+      },
+      "Statement": {
+        "path": "Statement.lean",
+        "lines": 77,
+        "bytes": 3884,
+        "sha256": "d041cd9323e53f9f120ad9c21d87b3993ec2408746b57c34336e266e3af44851",
+        "imports": [
+          "BAnalyticMoments",
+          "Zeta5S.Pullback"
+        ]
+      },
+      "BAnalyticMoments": {
+        "path": "BAnalyticMoments.lean",
+        "lines": 168,
+        "bytes": 7568,
+        "sha256": "f2b70273716fd10775a3f8eb9f0d04429fe4ae7af6790de3b201696a65d32009",
+        "imports": [
+          "BAnalyticIntegral",
+          "Zeta5S.Monomial"
+        ]
+      },
+      "Kernel": {
+        "path": "Kernel.lean",
+        "lines": 121,
+        "bytes": 5412,
+        "sha256": "9f20744fa5233c76c3e1ca08ee5ff5e32b16282db9800a73ea523ac8b4e24656",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "RealScalar": {
+        "path": "RealScalar.lean",
+        "lines": 92,
+        "bytes": 4617,
+        "sha256": "a3daeab20850a32d56bbfd2adc121c6c9bcd634033de0c62a39b5176f0052dfd",
+        "imports": [
+          "AnalyticInterface"
+        ]
+      },
+      "AnalyticInterface": {
+        "path": "AnalyticInterface.lean",
+        "lines": 74,
+        "bytes": 3431,
+        "sha256": "d320ed2dc9f6b473666d2551e5970581ae7010bfa652984494bafafdd7370640",
+        "imports": [
+          "BRealStatement",
+          "Apery.EnergyRaw",
+          "Apery.Table.Tail"
+        ]
+      },
+      "Apery.Table.Tail": {
+        "path": "Apery/Table/Tail.lean",
+        "lines": 97,
+        "bytes": 7242,
+        "sha256": "1addea0ffcf74fd4876e41ba69c9e79bed39481e72a4cb2eecc6201d6d8020d8",
+        "imports": [
+          "Apery.TableCheck"
+        ]
+      },
+      "Apery.TableCheck": {
+        "path": "Apery/TableCheck.lean",
+        "lines": 258,
+        "bytes": 14658,
+        "sha256": "e6b9e6d069e274c26d6d5bfef6da859a85d71e1c71a573528b1ab621acb55b20",
+        "imports": [
+          "Mathlib",
+          "Apery.Potential"
+        ]
+      },
+      "Apery.Potential": {
+        "path": "Apery/Potential.lean",
+        "lines": 412,
+        "bytes": 21090,
+        "sha256": "eed6831a39c6495d78e3082d2274b46e9c13a498eaa92f28995d7f2749edf324",
+        "imports": [
+          "Mathlib",
+          "Apery.PotentialV",
+          "Apery.Certificates",
+          "Apery.Measure"
+        ]
+      },
+      "Apery.Measure": {
+        "path": "Apery/Measure.lean",
+        "lines": 63,
+        "bytes": 2275,
+        "sha256": "b80933c5e97698ccd60c7f95e6d5486de8041a1c848c8ddce309404dfd449b98",
+        "imports": [
+          "Mathlib",
+          "Apery.Constants"
+        ]
+      },
+      "Apery.Constants": {
+        "path": "Apery/Constants.lean",
+        "lines": 42,
+        "bytes": 1356,
+        "sha256": "a8aa527f8dad150d71faf114e5c5fa698981bfecc07a4d598f402da6874f86ab",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Certificates": {
+        "path": "Apery/Certificates.lean",
+        "lines": 134,
+        "bytes": 6878,
+        "sha256": "453f0fc53d635f657928156bd6b751381e50797cef8f490cda54ea67ad3cb543",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyConst"
+        ]
+      },
+      "Apery.EnergyConst": {
+        "path": "Apery/EnergyConst.lean",
+        "lines": 221,
+        "bytes": 13622,
+        "sha256": "1f31dbc4d1ad66253a6e0e29e89e63573b03c7e4c190ddca7b7777eec9516561",
+        "imports": [
+          "Apery.Measure"
+        ]
+      },
+      "Apery.PotentialV": {
+        "path": "Apery/PotentialV.lean",
+        "lines": 58,
+        "bytes": 2584,
+        "sha256": "769045f06631cd80df96c61eda8f5cd7feb976705d563681cffaa2490262bc9a",
+        "imports": [
+          "Mathlib",
+          "Apery.Energy"
+        ]
+      },
+      "Apery.Energy": {
+        "path": "Apery/Energy.lean",
+        "lines": 278,
+        "bytes": 14745,
+        "sha256": "095075837888809fb0ca4cd60f64f451151d300606ae8c897b2f03289b56da38",
+        "imports": [
+          "Mathlib",
+          "Apery.HermiteIBP",
+          "Apery.DetIntegral"
+        ]
+      },
+      "Apery.DetIntegral": {
+        "path": "Apery/DetIntegral.lean",
+        "lines": 59,
+        "bytes": 2783,
+        "sha256": "765b40383b8d14f8216a07d321e68705935bef9090e1466d404af8358a9b920c",
+        "imports": [
+          "Mathlib",
+          "Apery.Andreief",
+          "Apery.Positivity"
+        ]
+      },
+      "Apery.Positivity": {
+        "path": "Apery/Positivity.lean",
+        "lines": 223,
+        "bytes": 11155,
+        "sha256": "1bb3cde19d09ec4e0353a82d2426b74af0ea35d3aaf4d3c87beb2136d994a5e8",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight",
+          "Apery.Moments",
+          "Apery.PartialFractions",
+          "Apery.Zeta5",
+          "Apery.HermiteFormula"
+        ]
+      },
+      "Apery.HermiteFormula": {
+        "path": "Apery/HermiteFormula.lean",
+        "lines": 162,
+        "bytes": 8346,
+        "sha256": "b0f70e33b415555196a695c4bd8065c3b4b3917fd4d41c69489bc3771e86b7c5",
+        "imports": [
+          "Mathlib",
+          "Apery.HermiteIBP",
+          "Apery.HermiteIntegrals",
+          "Apery.Zeta5",
+          "Apery.Construction"
+        ]
+      },
+      "Apery.Construction": {
+        "path": "Apery/Construction.lean",
+        "lines": 73,
+        "bytes": 3324,
+        "sha256": "3d68e36fd05c72ebed98b1f50d031bae46d6d68b20bc87f7e24306a293a804b1",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Zeta5": {
+        "path": "Apery/Zeta5.lean",
+        "lines": 20,
+        "bytes": 446,
+        "sha256": "65cdbfef3a6832a14c3f98417a825f6099c48c3aaa6e49d9f750abcbe7d36721",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.HermiteIntegrals": {
+        "path": "Apery/HermiteIntegrals.lean",
+        "lines": 293,
+        "bytes": 15686,
+        "sha256": "91d5cc87225e0714b4088a279717085000c9b7224b6e857e6179078c294ed8d7",
+        "imports": [
+          "Mathlib",
+          "Apery.Hermite"
+        ]
+      },
+      "Apery.Hermite": {
+        "path": "Apery/Hermite.lean",
+        "lines": 391,
+        "bytes": 18428,
+        "sha256": "547c6e516ef2fdb590389b4b25d40c8a28ab1e4187f665be067e58976a31fc68",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight"
+        ]
+      },
+      "Apery.Weight": {
+        "path": "Apery/Weight.lean",
+        "lines": 135,
+        "bytes": 6631,
+        "sha256": "e14b0db381932e2dade574feb8c7ce0e8c49a5ef4fdb02b77bd35532300a0d5a",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.HermiteIBP": {
+        "path": "Apery/HermiteIBP.lean",
+        "lines": 368,
+        "bytes": 21035,
+        "sha256": "88a649bc0710feec3bbc7cf7716cd1d359a666709fe89cff55b80338df261599",
+        "imports": [
+          "Mathlib",
+          "Apery.Hermite",
+          "Apery.HermiteIntegrals",
+          "Apery.Moments"
+        ]
+      },
+      "Apery.Moments": {
+        "path": "Apery/Moments.lean",
+        "lines": 144,
+        "bytes": 6972,
+        "sha256": "0812a404882647289149adfbc5c320a26771effca8a7e5472f51b17c13bc57af",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight",
+          "Apery.Construction"
+        ]
+      },
+      "Apery.PartialFractions": {
+        "path": "Apery/PartialFractions.lean",
+        "lines": 118,
+        "bytes": 5690,
+        "sha256": "02fc010685131c58650b80a4bc54d04ccb6cbd2f84ee03b916a8f75b68ce7c76",
+        "imports": [
+          "Mathlib",
+          "Apery.Degree"
+        ]
+      },
+      "Apery.Degree": {
+        "path": "Apery/Degree.lean",
+        "lines": 180,
+        "bytes": 8194,
+        "sha256": "8cd7b35f891cf785daeb51cba621acf7fc59be82c2a05053fb3c6c29f542bd89",
+        "imports": [
+          "Apery.Construction"
+        ]
+      },
+      "Apery.EnergyRaw": {
+        "path": "Apery/EnergyRaw.lean",
+        "lines": 200,
+        "bytes": 10440,
+        "sha256": "4a1ee8cdc66e552933c6a858124111b70cb41d635d6b001962728098459dc751",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyBlocks"
+        ]
+      },
+      "Apery.EnergyBlocks": {
+        "path": "Apery/EnergyBlocks.lean",
+        "lines": 188,
+        "bytes": 10609,
+        "sha256": "b1d80ad07b2b1634b06fb8c76011ae66246b2b8dcb4e289cdafca4cf8e50b9e0",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyAtoms"
+        ]
+      },
+      "Apery.EnergyAtoms": {
+        "path": "Apery/EnergyAtoms.lean",
+        "lines": 272,
+        "bytes": 13515,
+        "sha256": "fa7c6474172e3c133eb29451f76a7fa48f813c424155b9446326104560be2226",
+        "imports": [
+          "Mathlib",
+          "Apery.ArcsinePotential",
+          "Apery.Constants",
+          "Apery.Energy"
+        ]
+      },
+      "Apery.ArcsinePotential": {
+        "path": "Apery/ArcsinePotential.lean",
+        "lines": 211,
+        "bytes": 10662,
+        "sha256": "e37b94c5f9976585634ea08a15d64a9155eaf3d2c4581bc50bef591bb3530437",
+        "imports": [
+          "Mathlib",
+          "Apery.ArcsineAtoms"
+        ]
+      },
+      "Apery.ArcsineAtoms": {
+        "path": "Apery/ArcsineAtoms.lean",
+        "lines": 143,
+        "bytes": 7344,
+        "sha256": "5fe49b1725129b9a7ec8714e8483b04ab3df79ea84544201c57be1f7b5ee37b4",
+        "imports": [
+          "Mathlib",
+          "Apery.CircleAtoms",
+          "Apery.Potential"
+        ]
+      },
+      "Apery.CircleAtoms": {
+        "path": "Apery/CircleAtoms.lean",
+        "lines": 116,
+        "bytes": 5355,
+        "sha256": "a6b6dd42698221014ee99e0d3f315caf7af4291c588ba711b08cbb10af732d1c",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyLimit"
+        ]
+      },
+      "Apery.EnergyLimit": {
+        "path": "Apery/EnergyLimit.lean",
+        "lines": 87,
+        "bytes": 4749,
+        "sha256": "597d2dd2f17c47f6e2ad5eeb698bf8e4ee4e59625bd68009ef5fd8e6f711d908",
+        "imports": [
+          "Mathlib",
+          "Apery.Kernel"
+        ]
+      },
+      "Apery.Kernel": {
+        "path": "Apery/Kernel.lean",
+        "lines": 225,
+        "bytes": 11200,
+        "sha256": "b9a861fe3eb4b662528c0cd445d7a1b1c36c33ed3da167d0fc8c11b9c9aaeed2",
+        "imports": [
+          "Mathlib",
+          "Apery.ZeroMass"
+        ]
+      },
+      "Apery.ZeroMass": {
+        "path": "Apery/ZeroMass.lean",
+        "lines": 338,
+        "bytes": 17176,
+        "sha256": "4dd6909891cd4a327d7c8f78f62d34e9e1b6d6339a76e052dc27b0dc23d83144",
+        "imports": [
+          "Mathlib",
+          "Apery.Gaussian"
+        ]
+      },
+      "Apery.Gaussian": {
+        "path": "Apery/Gaussian.lean",
+        "lines": 91,
+        "bytes": 4411,
+        "sha256": "049a486a805687650c1f3ef052583eca856f99f5bee2f4eab9adb38e87135fb3",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "BRealStatement": {
+        "path": "BRealStatement.lean",
+        "lines": 68,
+        "bytes": 3002,
+        "sha256": "7f34bfb89850c511a47037dcef17f3c66d114b644be9a280018f5b47868e2287",
+        "imports": [
+          "Gram",
+          "BAnalyticEnvelope",
+          "Zeta5S.SmallPrimeF",
+          "Apery.Energy",
+          "Apery.Measure",
+          "Apery.EnergyConst",
+          "Apery.Stirling"
+        ]
+      },
+      "Apery.Stirling": {
+        "path": "Apery/Stirling.lean",
+        "lines": 164,
+        "bytes": 7915,
+        "sha256": "24a85d4595a30e909da36494488b0a334a4ce4b0a1587c15d705f7411dd84d5e",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Zeta5S.SmallPrimeF": {
+        "path": "Zeta5S/SmallPrimeF.lean",
+        "lines": 319,
+        "bytes": 16824,
+        "sha256": "b1553c426c0e78133ad1b41383a2d09a4d1f7f038b752b143eec13705a5ce800",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.SmallPrimeTau",
+          "Zeta5S.BasisChange",
+          "Zeta5S.Base"
+        ]
+      },
+      "Zeta5S.SmallPrimeTau": {
+        "path": "Zeta5S/SmallPrimeTau.lean",
+        "lines": 204,
+        "bytes": 10834,
+        "sha256": "b7d7ff5b7f4a00ff744c5ef5c9a6beb3da770a8ebf7f6b2453ac3d1609f88015",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.SmallPrimeRes"
+        ]
+      },
+      "Zeta5S.SmallPrimeRes": {
+        "path": "Zeta5S/SmallPrimeRes.lean",
+        "lines": 192,
+        "bytes": 10280,
+        "sha256": "8a743dc443d3b7d02b26a9db3562e211bf9e6efb4320e292092b9cd749a31f7f",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.SmallPrime"
+        ]
+      },
+      "Zeta5S.SmallPrime": {
+        "path": "Zeta5S/SmallPrime.lean",
+        "lines": 108,
+        "bytes": 4836,
+        "sha256": "02b58b218bd1c9bff625a722474ea8843ec0bf673f9fadb1218e2a9176cbbf2f",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.TauBound",
+          "Zeta5S.Pullback",
+          "Zeta5S.DirectBound"
+        ]
+      },
+      "Zeta5S.DirectBound": {
+        "path": "Zeta5S/DirectBound.lean",
+        "lines": 197,
+        "bytes": 9717,
+        "sha256": "b4c135ca180f229527029d8c6ad7b516c801dd3107e0117c8cdbaaf3e08c16bd",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.PoleFun",
+          "Zeta5S.IntPoly"
+        ]
+      },
+      "Zeta5S.IntPoly": {
+        "path": "Zeta5S/IntPoly.lean",
+        "lines": 85,
+        "bytes": 4225,
+        "sha256": "b118120a22c0bc8cf85a9018fbc1e4eab4482b39fadeb8c31531a249854b446a",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Val"
+        ]
+      },
+      "BAnalyticEnvelope": {
+        "path": "BAnalyticEnvelope.lean",
+        "lines": 146,
+        "bytes": 6425,
+        "sha256": "3f537a1ba6c7ec1abfdb2c6ccdf4829c8d2f44daae54379b1340481964d359fe",
+        "imports": [
+          "BAnalyticMoments",
+          "Mathlib.Analysis.SpecificLimits.Normed"
+        ]
+      },
+      "ConfigurationTransport": {
+        "path": "ConfigurationTransport.lean",
+        "lines": 89,
+        "bytes": 4372,
+        "sha256": "41a404efeaa1d8b3854a49638814b8322f51df7924656091327f72de4704ee62",
+        "imports": [
+          "PriorRegularization",
+          "CompactTransports"
+        ]
+      },
+      "CompactTransports": {
+        "path": "CompactTransports.lean",
+        "lines": 69,
+        "bytes": 2933,
+        "sha256": "d6b8dab0d5508188d750312bbf13d03b6cab437501e2199dfcaa2f9998d3f310",
+        "imports": [
+          "TransportGoals",
+          "PriorTailFinal"
+        ]
+      },
+      "PriorTailFinal": {
+        "path": "PriorTailFinal.lean",
+        "lines": 33,
+        "bytes": 1536,
+        "sha256": "cabcc3ae6ad3ba5d755b933d16869f1932ee4dd5f233c2afc9ab866e881b76b4",
+        "imports": [
+          "Apery.Table.Tail"
+        ]
+      },
+      "TransportGoals": {
+        "path": "TransportGoals.lean",
+        "lines": 7,
+        "bytes": 334,
+        "sha256": "0094f5a3dc35fd0769602388e4fbe393639401c880521b86515e73e515a62ea0",
+        "imports": [
+          "AnalyticInterface"
+        ]
+      },
+      "PriorRegularization": {
+        "path": "PriorRegularization.lean",
+        "lines": 101,
+        "bytes": 5198,
+        "sha256": "70f56c98d913a538142dc00f6bf8510118d00f8d4a371d194f3b15aebeeab377",
+        "imports": [
+          "Apery.EnergyRaw"
+        ]
+      },
+      "LocalField": {
+        "path": "LocalField.lean",
+        "lines": 1036,
+        "bytes": 44255,
+        "sha256": "7a029aa9d4801190b65f883c29eea0a375f6a849441e085c2702b747b6a3c6c9",
+        "imports": [
+          "Intervals.I000",
+          "Intervals.I001",
+          "Intervals.I002",
+          "Intervals.I003",
+          "Intervals.I004",
+          "Intervals.I005",
+          "Intervals.I006",
+          "Intervals.I007",
+          "Intervals.I008",
+          "Intervals.I009",
+          "Intervals.I010",
+          "Intervals.I011",
+          "Intervals.I012",
+          "Intervals.I013",
+          "Intervals.I014",
+          "Intervals.I015",
+          "Intervals.I016"
+        ]
+      },
+      "Intervals.I016": {
+        "path": "Intervals/I016.lean",
+        "lines": 83,
+        "bytes": 3373,
+        "sha256": "c61b82a4db8e75021d3d7eed88bf321c13dd283e256e211131dd9c14ad849416",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P031",
+          "Points.P032",
+          "Points.P033",
+          "Points.P065",
+          "Points.P066"
+        ]
+      },
+      "Points.P066": {
+        "path": "Points/P066.lean",
+        "lines": 145,
+        "bytes": 11161,
+        "sha256": "feb7dcdf8390829eb4ece542e7014aa2c1cb8de0b999125d99a0c14f45a2984c",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Data": {
+        "path": "Data.lean",
+        "lines": 197,
+        "bytes": 11132,
+        "sha256": "817a7131a93a736bcd6d5a4c513eba5a36226c67d5e6ec33941af97b2d0d447d",
+        "imports": [
+          "Cells"
+        ]
+      },
+      "Cells": {
+        "path": "Cells.lean",
+        "lines": 64,
+        "bytes": 3160,
+        "sha256": "cc72bfaa760f551424db9d115ac5bff6c8b910a68c5f29cc2c8e4569f9103759",
+        "imports": [
+          "NumericBase"
+        ]
+      },
+      "NumericBase": {
+        "path": "NumericBase.lean",
+        "lines": 202,
+        "bytes": 11596,
+        "sha256": "26924a382fd3b73e8602d96bf191bfec953d45f150166a88e274f5046e6317bf",
+        "imports": [
+          "Mathlib",
+          "Apery.TableCheck"
+        ]
+      },
+      "Points.P065": {
+        "path": "Points/P065.lean",
+        "lines": 170,
+        "bytes": 12994,
+        "sha256": "5baaf0117a202707571f1299d800ae1e174d6bbcf8467b78cb05e2a69c4a99e6",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P033": {
+        "path": "Points/P033.lean",
+        "lines": 242,
+        "bytes": 25804,
+        "sha256": "57035b00d26acd235eef326e52af38256e16e65976cf3159f7aee81fdc2bc301",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P032": {
+        "path": "Points/P032.lean",
+        "lines": 350,
+        "bytes": 46189,
+        "sha256": "fc0be3bdecd454181939f89ecee43501b54ee6e0e0633296c072a8dd9c3129e8",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P031": {
+        "path": "Points/P031.lean",
+        "lines": 350,
+        "bytes": 46601,
+        "sha256": "ef66aba25af0ec1c5c68704b3e284c66d000644900bee5c7053eecb6a813ea54",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Mid": {
+        "path": "Mid.lean",
+        "lines": 14,
+        "bytes": 476,
+        "sha256": "a9e85c55ea4a7a3886e4d38ee92e7d04aff997a83f6b2c36e385ccb14b4d1fd2",
+        "imports": [
+          "Points.P001"
+        ]
+      },
+      "Points.P001": {
+        "path": "Points/P001.lean",
+        "lines": 131,
+        "bytes": 20591,
+        "sha256": "f029c2cb59a4a8c805be5ecaf21cf25521c6701f6377fc5e71b08263a5f23c2f",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Critical": {
+        "path": "Critical.lean",
+        "lines": 44,
+        "bytes": 3518,
+        "sha256": "c1c206627da2345365469a78905328c7450b9ae70511245ca6bb99b6cd954ada",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I015": {
+        "path": "Intervals/I015.lean",
+        "lines": 92,
+        "bytes": 3796,
+        "sha256": "25a2a22f4f0a1d0e2eb04c0fa36841be4a1a1ad6d428d43eafdcb2ac8500501e",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P029",
+          "Points.P030",
+          "Points.P031",
+          "Points.P063",
+          "Points.P064",
+          "Points.P065"
+        ]
+      },
+      "Points.P064": {
+        "path": "Points/P064.lean",
+        "lines": 170,
+        "bytes": 13048,
+        "sha256": "c916a7b358138bade6f3469890d3aa75c37fc2f77e2a3ba3220ff18855328168",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P063": {
+        "path": "Points/P063.lean",
+        "lines": 170,
+        "bytes": 12782,
+        "sha256": "1e388d46a29f5c3d8eb55ccac37bfba75f60e3dc84875e14b3d1e4bb8756d3f5",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P030": {
+        "path": "Points/P030.lean",
+        "lines": 350,
+        "bytes": 46791,
+        "sha256": "98c9f363be72d652a12aa47a25e3335b68c299cad3d150e286c10c060ff7f010",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P029": {
+        "path": "Points/P029.lean",
+        "lines": 341,
+        "bytes": 45611,
+        "sha256": "440a1f2377bab3029830d1bb70dc3a86e5aad1dcb7c80c25cb4b8375c2a4ca17",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I014": {
+        "path": "Intervals/I014.lean",
+        "lines": 92,
+        "bytes": 3797,
+        "sha256": "4f494e6499f92cc85bba477d5d680ed12e51b5bb7173c869f080d7422b9b3abb",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P027",
+          "Points.P028",
+          "Points.P029",
+          "Points.P061",
+          "Points.P062",
+          "Points.P063"
+        ]
+      },
+      "Points.P062": {
+        "path": "Points/P062.lean",
+        "lines": 170,
+        "bytes": 12994,
+        "sha256": "51bf72f197bb22d9e7575663aad11098724df82eed180e71e620b1960096d056",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P061": {
+        "path": "Points/P061.lean",
+        "lines": 170,
+        "bytes": 12934,
+        "sha256": "6cc2702d1b4131ee42d2a04ed888690307d3fbcce28cad346f78f12f3740a334",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P028": {
+        "path": "Points/P028.lean",
+        "lines": 323,
+        "bytes": 43455,
+        "sha256": "140ea28525a4f3d6523cf71829ea2833078c78bf300c61521aa770120bac70d7",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P027": {
+        "path": "Points/P027.lean",
+        "lines": 311,
+        "bytes": 42046,
+        "sha256": "9e010393091907cb3dffe4815acf2311d2f4ba1dbdd8e3edd15b0cbdf0582388",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I013": {
+        "path": "Intervals/I013.lean",
+        "lines": 92,
+        "bytes": 3791,
+        "sha256": "63eb6956e8363971d0504fba943d97d6be1c4aa5e9efb8a9af1209664ad5429d",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P025",
+          "Points.P026",
+          "Points.P027",
+          "Points.P059",
+          "Points.P060",
+          "Points.P061"
+        ]
+      },
+      "Points.P060": {
+        "path": "Points/P060.lean",
+        "lines": 170,
+        "bytes": 12996,
+        "sha256": "9b88594af7c81bd7108d240d7c5e9d8011a4b85d85ea95969cefd7731731c66c",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P059": {
+        "path": "Points/P059.lean",
+        "lines": 170,
+        "bytes": 12931,
+        "sha256": "fbe032754ded3f19afa8d644c1b34ba17025bbb0854170a1e3ce77dc75831f1e",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P026": {
+        "path": "Points/P026.lean",
+        "lines": 305,
+        "bytes": 41278,
+        "sha256": "193ff478b2540cfc492bd4e738c2b55ce44780405e07761be3ffe2966693c649",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P025": {
+        "path": "Points/P025.lean",
+        "lines": 293,
+        "bytes": 39856,
+        "sha256": "47a02ef428b384865cadd074aad9093515b1acf00b9628d6620c7ba5a5fa4023",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I012": {
+        "path": "Intervals/I012.lean",
+        "lines": 92,
+        "bytes": 3805,
+        "sha256": "413df8b40c85d88e41cb54df7bb35ff95569ab530a2ed4857dbf4ca7bca6a956",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P023",
+          "Points.P024",
+          "Points.P025",
+          "Points.P057",
+          "Points.P058",
+          "Points.P059"
+        ]
+      },
+      "Points.P058": {
+        "path": "Points/P058.lean",
+        "lines": 170,
+        "bytes": 12828,
+        "sha256": "a1029b48e7040597a306d533a99145bb80bab2cf7af06eec961d2c48939964a0",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P057": {
+        "path": "Points/P057.lean",
+        "lines": 170,
+        "bytes": 13013,
+        "sha256": "3344ac1cf985a606a690aa7efce6de46d1209942f984715ffe2b690b001ffa8b",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P024": {
+        "path": "Points/P024.lean",
+        "lines": 290,
+        "bytes": 39505,
+        "sha256": "8b08b561a5aaf10d53704e5ae86ef5cf2b9ed3c176c56ef51c76b1df2365b400",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P023": {
+        "path": "Points/P023.lean",
+        "lines": 290,
+        "bytes": 39565,
+        "sha256": "d876826daf2c5aed449ad7cf21b4eeb08e2a986921b0ba002995cbcb13bf3cea",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I011": {
+        "path": "Intervals/I011.lean",
+        "lines": 92,
+        "bytes": 3798,
+        "sha256": "111c9a6b5cf14e785d9cc7b926d0e74d0cfa46d2aa699e9b72049db402f2fdf4",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P021",
+          "Points.P022",
+          "Points.P023",
+          "Points.P055",
+          "Points.P056",
+          "Points.P057"
+        ]
+      },
+      "Points.P056": {
+        "path": "Points/P056.lean",
+        "lines": 170,
+        "bytes": 13015,
+        "sha256": "eec507b0de160ab579a6f956adf6a4281faa882c6a0599f61409cfe0a27d8cef",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P055": {
+        "path": "Points/P055.lean",
+        "lines": 170,
+        "bytes": 13001,
+        "sha256": "4bf2cc3ff0737c08b02ee04f77a714f0a3aed080571bba51c54d35909c45708e",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P022": {
+        "path": "Points/P022.lean",
+        "lines": 275,
+        "bytes": 37678,
+        "sha256": "1877c48355370b17420eeaad1ab0a15b5bbab7ba919abf59fc54c4ae0a77917d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P021": {
+        "path": "Points/P021.lean",
+        "lines": 275,
+        "bytes": 37790,
+        "sha256": "e1bc417849636dfe9a95af8037021c5411d9934d65b0379cf4cdd26ca33e79d9",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I010": {
+        "path": "Intervals/I010.lean",
+        "lines": 92,
+        "bytes": 3804,
+        "sha256": "8b01b7fe7fa46a2a5a6d695f308cc8c75a5a389f049e6e470e36278932fb4970",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P019",
+          "Points.P020",
+          "Points.P021",
+          "Points.P053",
+          "Points.P054",
+          "Points.P055"
+        ]
+      },
+      "Points.P054": {
+        "path": "Points/P054.lean",
+        "lines": 170,
+        "bytes": 13028,
+        "sha256": "5ed7dc5cd1a143ed2d62c76da7e9f99c781f1c9cab557838123f35b352e2bf27",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P053": {
+        "path": "Points/P053.lean",
+        "lines": 170,
+        "bytes": 12956,
+        "sha256": "7f8db254d01380121cceaee0d5ec1654e891f7d51d75dcb3cc4b70942b61103f",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P020": {
+        "path": "Points/P020.lean",
+        "lines": 272,
+        "bytes": 37400,
+        "sha256": "df238284722812bbcbc868603594b56b5966a50a720142cc9cf2067b6dbe2e11",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P019": {
+        "path": "Points/P019.lean",
+        "lines": 260,
+        "bytes": 35936,
+        "sha256": "1d0b3dc5a5dcbab77d3314851ecb2c367ee30f0fce379bd932298fd63e473567",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I009": {
+        "path": "Intervals/I009.lean",
+        "lines": 92,
+        "bytes": 3773,
+        "sha256": "136240bd8457327b4928bca46d78bd0b5af18567451f311005c281402f969887",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P017",
+          "Points.P018",
+          "Points.P019",
+          "Points.P051",
+          "Points.P052",
+          "Points.P053"
+        ]
+      },
+      "Points.P052": {
+        "path": "Points/P052.lean",
+        "lines": 170,
+        "bytes": 13049,
+        "sha256": "a7c52bb8d93d67258f308b8a86e31f632de93a1f7008c7585ab1ec69939e2da3",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P051": {
+        "path": "Points/P051.lean",
+        "lines": 170,
+        "bytes": 13029,
+        "sha256": "3d9b5e56bcde41d965fe686ca1af9184325f2655ff28a6e2df29fe420f5b4205",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P018": {
+        "path": "Points/P018.lean",
+        "lines": 260,
+        "bytes": 35900,
+        "sha256": "feb1222cc0b19df6db09aaecf66aa817ccb259a7b03f605aedc54815a0aa3df0",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P017": {
+        "path": "Points/P017.lean",
+        "lines": 260,
+        "bytes": 35949,
+        "sha256": "c39c13555cd91e813a8ed18d09fcbdd7ecd94adfff32a36c55e5bb787765e393",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I008": {
+        "path": "Intervals/I008.lean",
+        "lines": 92,
+        "bytes": 3776,
+        "sha256": "6640a78601e81e564eadc8ffad81e405c1aea26a64b356741afcdbedf0bcf41e",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P015",
+          "Points.P016",
+          "Points.P017",
+          "Points.P049",
+          "Points.P050",
+          "Points.P051"
+        ]
+      },
+      "Points.P050": {
+        "path": "Points/P050.lean",
+        "lines": 170,
+        "bytes": 12866,
+        "sha256": "fbd3b246235c16406a15a4d4280b2ce12ef912957e2729b44ff1654c954ab571",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P049": {
+        "path": "Points/P049.lean",
+        "lines": 170,
+        "bytes": 13031,
+        "sha256": "587673625b1967071efea770cad8b0a10e4fef93bca8af98310770a6bf41cc6b",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P016": {
+        "path": "Points/P016.lean",
+        "lines": 245,
+        "bytes": 34198,
+        "sha256": "9d0ef3ae8dec630a7504759f533277e29831ae67cafb688e8131dcd4377bd563",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P015": {
+        "path": "Points/P015.lean",
+        "lines": 245,
+        "bytes": 34110,
+        "sha256": "82d913970e5737af8627301bc30aef1733833eb40976ced8afb372990b3b340a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I007": {
+        "path": "Intervals/I007.lean",
+        "lines": 92,
+        "bytes": 3766,
+        "sha256": "c05e92f9610cfa716d9eccaf4f1676ddcd66831d642cc90f6be38c40955b2f4e",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P013",
+          "Points.P014",
+          "Points.P015",
+          "Points.P047",
+          "Points.P048",
+          "Points.P049"
+        ]
+      },
+      "Points.P048": {
+        "path": "Points/P048.lean",
+        "lines": 170,
+        "bytes": 13017,
+        "sha256": "f33a8921db39d962d1490ce6a2c3e8ae70f4f78e688f9b3b00c3df3f2d7ad07e",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P047": {
+        "path": "Points/P047.lean",
+        "lines": 155,
+        "bytes": 11611,
+        "sha256": "77a1b2464f1643477607e9788a754c055d1f81864b6637f1ce08949b230affbc",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P014": {
+        "path": "Points/P014.lean",
+        "lines": 245,
+        "bytes": 34152,
+        "sha256": "835b889aaeb6e1484d5f7bb2326b866c115363a55f43d61c6351aa7e4c16ee23",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P013": {
+        "path": "Points/P013.lean",
+        "lines": 230,
+        "bytes": 32291,
+        "sha256": "c059ba24b06b6b77a211f19084c95d0747f16cc3e83d8a78338a7dfc85a729da",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I006": {
+        "path": "Intervals/I006.lean",
+        "lines": 92,
+        "bytes": 3771,
+        "sha256": "6f422f8e32ff98a8e16b0f6d3eed0da6498e5ffbd933eb33ae3a0852709b18aa",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P011",
+          "Points.P012",
+          "Points.P013",
+          "Points.P045",
+          "Points.P046",
+          "Points.P047"
+        ]
+      },
+      "Points.P046": {
+        "path": "Points/P046.lean",
+        "lines": 145,
+        "bytes": 10860,
+        "sha256": "b3c17b60782ac0e0584fd3963c678c47c7c64182347c991a3ba999b4f6e99abe",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P045": {
+        "path": "Points/P045.lean",
+        "lines": 145,
+        "bytes": 10892,
+        "sha256": "915d4b0b3f658cf23504124591dfe90bfc49a2ceff2e0da99a2374086e04b78d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P012": {
+        "path": "Points/P012.lean",
+        "lines": 230,
+        "bytes": 32287,
+        "sha256": "642b8113140db537ed2ae0353578da325f8426281f75263c8e2aeef8b453324d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P011": {
+        "path": "Points/P011.lean",
+        "lines": 224,
+        "bytes": 31566,
+        "sha256": "8a6411dddcee523586501b7d57fee38ca1a571a2d7fb390c48a449d3163721b1",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I005": {
+        "path": "Intervals/I005.lean",
+        "lines": 92,
+        "bytes": 3766,
+        "sha256": "15d2789fc38ce7467f0601db0969b3571ab7e518fb89b3c662afdeda4de8f519",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P009",
+          "Points.P010",
+          "Points.P011",
+          "Points.P043",
+          "Points.P044",
+          "Points.P045"
+        ]
+      },
+      "Points.P044": {
+        "path": "Points/P044.lean",
+        "lines": 145,
+        "bytes": 10872,
+        "sha256": "34423bf5aeda31a69ad0fe82b24ac3763a8db4bc1b07e32d4d1d399bada77b7a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P043": {
+        "path": "Points/P043.lean",
+        "lines": 145,
+        "bytes": 10878,
+        "sha256": "1ce71a1654c204c5a2512bba0a7ca6aa2806084ab233eac65ade46db704ae517",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P010": {
+        "path": "Points/P010.lean",
+        "lines": 215,
+        "bytes": 30478,
+        "sha256": "00227a1da85833c2eb7ac554fa0e531572e81dbb78114f60681e96a72d8c867a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P009": {
+        "path": "Points/P009.lean",
+        "lines": 215,
+        "bytes": 30429,
+        "sha256": "93ad756e1609790c50ed427dfc1be4d93361095935ee28b9272e7c852382300c",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I004": {
+        "path": "Intervals/I004.lean",
+        "lines": 92,
+        "bytes": 3769,
+        "sha256": "5120fce506465778c36af82c5314e9f0a4f9da15b6739982bc04c33124688831",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P007",
+          "Points.P008",
+          "Points.P009",
+          "Points.P041",
+          "Points.P042",
+          "Points.P043"
+        ]
+      },
+      "Points.P042": {
+        "path": "Points/P042.lean",
+        "lines": 145,
+        "bytes": 10844,
+        "sha256": "b94ba6b2dbf961cd246ca0f1b64524e60982bf7cce0719d234b28565579424c2",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P041": {
+        "path": "Points/P041.lean",
+        "lines": 145,
+        "bytes": 10920,
+        "sha256": "28cf9001df63013b771e45cd6d8cbd235f51e521db3e783ea18da4d30a24d7c0",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P008": {
+        "path": "Points/P008.lean",
+        "lines": 200,
+        "bytes": 28600,
+        "sha256": "3b98b3d8e68c1ad657cb6258b05094b12a22ba1ff67a93e07c7d46c07d514974",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P007": {
+        "path": "Points/P007.lean",
+        "lines": 200,
+        "bytes": 28644,
+        "sha256": "6e4a14056f85c5cffe69ff0affe2fda23cffa821da0c3ae9fa05c869679efe81",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I003": {
+        "path": "Intervals/I003.lean",
+        "lines": 92,
+        "bytes": 3774,
+        "sha256": "f6db163b1d60967d622d0494292945085c4541c25eb5c7811b4efd7d1bd8e487",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P005",
+          "Points.P006",
+          "Points.P007",
+          "Points.P039",
+          "Points.P040",
+          "Points.P041"
+        ]
+      },
+      "Points.P040": {
+        "path": "Points/P040.lean",
+        "lines": 145,
+        "bytes": 10746,
+        "sha256": "694f9e8cce8886394286fbece7499cd72a08a0e0179cdadcd69d2f745d8f222f",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P039": {
+        "path": "Points/P039.lean",
+        "lines": 145,
+        "bytes": 10904,
+        "sha256": "63b1e09196166a92f60bebf3bc6213bc5d6753bdb6df8a162c2218e9f3fe619d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P006": {
+        "path": "Points/P006.lean",
+        "lines": 188,
+        "bytes": 27231,
+        "sha256": "19e22736d9e443bdcf246d2e07a1c90a343e2420e25e6f83aa1f032652db1c7a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P005": {
+        "path": "Points/P005.lean",
+        "lines": 185,
+        "bytes": 26744,
+        "sha256": "d521d26d9e145dde6a17e230b8ed45581ff8c906d7db991c0599a39f2094e697",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I002": {
+        "path": "Intervals/I002.lean",
+        "lines": 92,
+        "bytes": 3772,
+        "sha256": "d096c4488bcf876e0621447a5f05305f9459d66c581f2a296dcc41c8b716d24a",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P003",
+          "Points.P004",
+          "Points.P005",
+          "Points.P037",
+          "Points.P038",
+          "Points.P039"
+        ]
+      },
+      "Points.P038": {
+        "path": "Points/P038.lean",
+        "lines": 145,
+        "bytes": 10733,
+        "sha256": "9a76aafc7449249e24f91655651f18ad2799dbcc513944ad0d7a193570ac8f66",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P037": {
+        "path": "Points/P037.lean",
+        "lines": 145,
+        "bytes": 10869,
+        "sha256": "463236a517589d73c36fac5c21b41c5d86fd94e48c90761889554e81f6699366",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P004": {
+        "path": "Points/P004.lean",
+        "lines": 176,
+        "bytes": 25721,
+        "sha256": "f4e70929a18e2e6a3b4489b6c5a819fd12b9fdf22b232fc8ca15a401ac73d844",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P003": {
+        "path": "Points/P003.lean",
+        "lines": 164,
+        "bytes": 24267,
+        "sha256": "ee132a14ba95db8f3d9b9d2f2aef2bda6a0dd4e28967d58d48f5b84b27e7166d",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I001": {
+        "path": "Intervals/I001.lean",
+        "lines": 92,
+        "bytes": 3933,
+        "sha256": "56a37571ca737391821e176caac13f4f35459adc289a2f2d409f54f4d162445f",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P001",
+          "Points.P002",
+          "Points.P003",
+          "Points.P035",
+          "Points.P036",
+          "Points.P037"
+        ]
+      },
+      "Points.P036": {
+        "path": "Points/P036.lean",
+        "lines": 150,
+        "bytes": 11148,
+        "sha256": "853fe717b6e0ec8faab2a0e112082dbd4084d57c518a219aee229bb88f2354a7",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P035": {
+        "path": "Points/P035.lean",
+        "lines": 170,
+        "bytes": 13296,
+        "sha256": "06f1b78f999c457d52947225e76771ecf7babc24150aa6d2fd35a37f060f6153",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P002": {
+        "path": "Points/P002.lean",
+        "lines": 146,
+        "bytes": 22058,
+        "sha256": "33214af42ca8458c609dc12fb636ad6fd4f384176965873ac2001662e1cffa3a",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Intervals.I000": {
+        "path": "Intervals/I000.lean",
+        "lines": 91,
+        "bytes": 3926,
+        "sha256": "61665be6616fea2e0b1ba0dfab1ac13db4a3de203102e89981b49d9c6f0f7b36",
+        "imports": [
+          "Critical",
+          "Mid",
+          "Points.P000",
+          "Points.P001",
+          "Points.P033",
+          "Points.P034",
+          "Points.P035"
+        ]
+      },
+      "Points.P034": {
+        "path": "Points/P034.lean",
+        "lines": 185,
+        "bytes": 13734,
+        "sha256": "7a3bfa4297c87f0b9cd7161a21a5bf0780842d82393333ebeda6ff8280b421e5",
+        "imports": [
+          "Data"
+        ]
+      },
+      "Points.P000": {
+        "path": "Points/P000.lean",
+        "lines": 248,
+        "bytes": 34215,
+        "sha256": "3cbde436d60851327cf9af06b8c08a29f40c51105f9fd23367eb7f54db882aff",
+        "imports": [
+          "Data"
+        ]
+      },
+      "ClosingEntry": {
+        "path": "ClosingEntry.lean",
+        "lines": 27,
+        "bytes": 1160,
+        "sha256": "ef08be2748a06b45405b25de5b490f481877f34d28d1d4ca883093fa66155d5f",
+        "imports": [
+          "ArithmeticEntry",
+          "CompactClosingLite"
+        ]
+      },
+      "CompactClosingLite": {
+        "path": "CompactClosingLite.lean",
+        "lines": 281,
+        "bytes": 17332,
+        "sha256": "490220c7f6456c142848ddb5bff85d7f67ebe8c9e300447d9558e9583d8e0951",
+        "imports": [
+          "MarginPieces.Chunk000",
+          "MarginPieces.Chunk001",
+          "MarginPieces.Chunk002",
+          "MarginPieces.Chunk003",
+          "MarginPieces.Chunk004",
+          "MarginPieces.Chunk005",
+          "MarginPieces.Chunk006",
+          "MarginPieces.Chunk007",
+          "MarginPieces.Chunk008",
+          "MarginPieces.Chunk009",
+          "MarginPieces.Chunk010",
+          "MarginPieces.Chunk011",
+          "MarginPieces.Chunk012",
+          "MarginPieces.Chunk013",
+          "MarginPieces.Chunk014",
+          "MarginPieces.Chunk015",
+          "PackageTail.Primitive",
+          "Mathlib.Analysis.Calculus.Deriv.ZPow"
+        ]
+      },
+      "PackageTail.Primitive": {
+        "path": "PackageTail/Primitive.lean",
+        "lines": 81,
+        "bytes": 3541,
+        "sha256": "1139dda15c5efedaa4dc51bdafd3913918652f25e30fd0f29aec0aa7ee66517e",
+        "imports": [
+          "PackageTail.Centered",
+          "Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts"
+        ]
+      },
+      "PackageTail.Centered": {
+        "path": "PackageTail/Centered.lean",
+        "lines": 125,
+        "bytes": 5444,
+        "sha256": "684d111dc1eadc27c6287dd340c6d2d2f3bbbaa9002c3a5ae10f6772d54f0f8d",
+        "imports": [
+          "PeriodShift"
+        ]
+      },
+      "PeriodShift": {
+        "path": "PeriodShift.lean",
+        "lines": 94,
+        "bytes": 3737,
+        "sha256": "2cde0701ceb230e42aaa6b6277d2aba99c6b0bfec16517f5485d4ea45023ae53",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces": {
+        "path": "MarginPieces.lean",
+        "lines": 64,
+        "bytes": 2412,
+        "sha256": "0f3a85630d56fee941de079e39ce6ecc85f7eb3fe1050b9c6ac932e3e7691f9f",
+        "imports": [
+          "Mathathon.P108.SStep",
+          "Mathlib.Tactic"
+        ]
+      },
+      "Mathathon.P108.SStep": {
+        "path": "Mathathon/P108/SStep.lean",
+        "lines": 79,
+        "bytes": 3458,
+        "sha256": "e8df3748c2fca958b9e3044ac9c724721a356f2fb28b50fce8a6fad328a9b357",
+        "imports": [
+          "Mathathon.P108.InnerShift",
+          "Mathathon.P108.Integrable",
+          "Mathathon.P108.OuterValues"
+        ]
+      },
+      "Mathathon.P108.OuterValues": {
+        "path": "Mathathon/P108/OuterValues.lean",
+        "lines": 331,
+        "bytes": 19861,
+        "sha256": "06a8e24517c0d4b9597e5e04112394ead44abeacaac6e60916323c00caa57f2d",
+        "imports": [
+          "Mathathon.P108.OuterDefs"
+        ]
+      },
+      "Mathathon.P108.OuterDefs": {
+        "path": "Mathathon/P108/OuterDefs.lean",
+        "lines": 172,
+        "bytes": 9040,
+        "sha256": "7c3393f0e32c3d87ec111751daae82fef1d0116041e3b7fe13710ae0186c072f",
+        "imports": [
+          "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+          "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+        ]
+      },
+      "Mathathon.P108.Integrable": {
+        "path": "Mathathon/P108/Integrable.lean",
+        "lines": 156,
+        "bytes": 6415,
+        "sha256": "cd26e55c30ded633c1e78258dc9f76085e2bc10ad13aaba58b8c5c8d886d39cd",
+        "imports": [
+          "Mathathon.P108.InnerShift",
+          "Mathlib.MeasureTheory.Integral.Prod"
+        ]
+      },
+      "Mathathon.P108.InnerShift": {
+        "path": "Mathathon/P108/InnerShift.lean",
+        "lines": 254,
+        "bytes": 12278,
+        "sha256": "01768a13661727e9d0c74491c4afd3193b5c30593124cb7bff27a71613cf0e81",
+        "imports": [
+          "Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic",
+          "Mathlib.MeasureTheory.Function.Floor",
+          "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+        ]
+      },
+      "MarginPieces.Chunk015": {
+        "path": "MarginPieces/Chunk015.lean",
+        "lines": 1690,
+        "bytes": 92299,
+        "sha256": "80cb0c1f45ffa1de3bf2f42f0162ccb3ab7adbdc58068de9a22c45a304e95c82",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk014": {
+        "path": "MarginPieces/Chunk014.lean",
+        "lines": 1690,
+        "bytes": 92476,
+        "sha256": "d62aaaf8e600e924bffe5d3e7a3a1f9c008f95ecff539f566a06c82e7e5d6a5a",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk013": {
+        "path": "MarginPieces/Chunk013.lean",
+        "lines": 1690,
+        "bytes": 92366,
+        "sha256": "a2f2cdffe01b2b36602a3f585b17d6978f58796bc422401c06090ebd1219c724",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk012": {
+        "path": "MarginPieces/Chunk012.lean",
+        "lines": 1690,
+        "bytes": 91849,
+        "sha256": "d9cea29dad6042f98459c8d1047b26f285800603310a66d7b0c34d4a7fa9c4ae",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk011": {
+        "path": "MarginPieces/Chunk011.lean",
+        "lines": 1690,
+        "bytes": 91900,
+        "sha256": "412cb25be406e22d8a5d4a95d2e8fc726bce9aeb7a7f9dbeed79737a8c1c1caf",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk010": {
+        "path": "MarginPieces/Chunk010.lean",
+        "lines": 1690,
+        "bytes": 91754,
+        "sha256": "1821f4c38ca2c551e244d0f2786e20e815058a096afef53b9aabd82326ca4a04",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk009": {
+        "path": "MarginPieces/Chunk009.lean",
+        "lines": 1690,
+        "bytes": 91939,
+        "sha256": "11776df4a7337ed7c953e22caf07980630004d20d4c56ac66445f9e2bbd65fd9",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk008": {
+        "path": "MarginPieces/Chunk008.lean",
+        "lines": 1690,
+        "bytes": 92037,
+        "sha256": "4250f00606fff24814080378a27a351426e7d784e77c9c5ad73c03642e4e0b05",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk007": {
+        "path": "MarginPieces/Chunk007.lean",
+        "lines": 1690,
+        "bytes": 91708,
+        "sha256": "c5f9602b754895c82a7fc278b78369d6e94e37ecab2c9426e69c1b565458f8ea",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk006": {
+        "path": "MarginPieces/Chunk006.lean",
+        "lines": 1690,
+        "bytes": 91532,
+        "sha256": "8382376aae7e4ada60e09cf8f774be3cfc77468ed4f280f5f87c22f3c1e5aaa4",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk005": {
+        "path": "MarginPieces/Chunk005.lean",
+        "lines": 1690,
+        "bytes": 91432,
+        "sha256": "d80f9f6621a4845002ee7dc8b027990e4f49a3da77e9694211508909178b8eb6",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk004": {
+        "path": "MarginPieces/Chunk004.lean",
+        "lines": 1690,
+        "bytes": 91500,
+        "sha256": "ad05e234d88b52f6898cbde7e98e8c31000b5b9e54a51d2c946ab25c7837784a",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk003": {
+        "path": "MarginPieces/Chunk003.lean",
+        "lines": 1690,
+        "bytes": 91573,
+        "sha256": "088540abb3fcc44defe5e5c46652002a84ed0446aaf913da2a4cc1bae3598459",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk002": {
+        "path": "MarginPieces/Chunk002.lean",
+        "lines": 1690,
+        "bytes": 91127,
+        "sha256": "a55a6fd78c09332173bc508c6773513eb6a4c669655e2c5b0945aa1fa89fd435",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk001": {
+        "path": "MarginPieces/Chunk001.lean",
+        "lines": 1690,
+        "bytes": 90747,
+        "sha256": "a824a84d764278f2a746da18877da2e5f7b2338120f259d6ec87b84b7d4ee76b",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "MarginPieces.Chunk000": {
+        "path": "MarginPieces/Chunk000.lean",
+        "lines": 1690,
+        "bytes": 90304,
+        "sha256": "4d404cf8831f8eda22b107284ecc434aedc79aeecd389987c6ba885c7f97d2c5",
+        "imports": [
+          "MarginPieces"
+        ]
+      },
+      "ArithmeticEntry": {
+        "path": "ArithmeticEntry.lean",
+        "lines": 28,
+        "bytes": 1210,
+        "sha256": "59984cdbfbc7745f4be01152db7f8d768925779935165f0b8edb670387a772e9",
+        "imports": [
+          "Assembly",
+          "CArithProofs",
+          "LeadingInstance"
+        ]
+      },
+      "LeadingInstance": {
+        "path": "LeadingInstance.lean",
+        "lines": 102,
+        "bytes": 4352,
+        "sha256": "496db1178f0385158a06e31423a45f6dc7d6b10bf7f22c3296330cd2b5d33fca",
+        "imports": [
+          "Interface"
+        ]
+      },
+      "Interface": {
+        "path": "Interface.lean",
+        "lines": 147,
+        "bytes": 6646,
+        "sha256": "9892e2a1a2ef33befac506b5b1ce1172b1806383a0d600a7ddd36e3c6c797109",
+        "imports": [
+          "AnalyticInterface",
+          "BInnerStatement",
+          "Zeta5S.AtFive",
+          "Apery.Criterion",
+          "Apery.Degree",
+          "Apery.Zeta5",
+          "ZetaIdentification"
+        ]
+      },
+      "ZetaIdentification": {
+        "path": "ZetaIdentification.lean",
+        "lines": 21,
+        "bytes": 810,
+        "sha256": "957ff4c54813f25c17c6df406fa090a640bcccc65cf4f6ab1554db7013aa3bee",
+        "imports": [
+          "Statement"
+        ]
+      },
+      "Apery.Criterion": {
+        "path": "Apery/Criterion.lean",
+        "lines": 121,
+        "bytes": 6075,
+        "sha256": "21ecd2dd72b780c8734062d0a838bdeef2bbd4ee2325619e526248f6ca006473",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Zeta5S.AtFive": {
+        "path": "Zeta5S/AtFive.lean",
+        "lines": 476,
+        "bytes": 25141,
+        "sha256": "37d365e615f1e820cc353d979096fc0ef7cf2369940fe0747cc0a8c2bf0f7780",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectPoly",
+          "Zeta5S.Monomial",
+          "Zeta5S.Pullback",
+          "Zeta5S.TEntry",
+          "Zeta5S.MomentVal",
+          "Zeta5S.ClassFrame",
+          "Zeta5S.InnerAlloc",
+          "Zeta5S.PoleVal",
+          "Zeta5S.SmallPrimeF",
+          "Zeta5S.OuterFrame"
+        ]
+      },
+      "Zeta5S.OuterFrame": {
+        "path": "Zeta5S/OuterFrame.lean",
+        "lines": 229,
+        "bytes": 13501,
+        "sha256": "bc56e36b39fe6a51a9eef6b33435c3c203bf292494b7983b2a9eaa0106efb892",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.LowRank",
+          "Zeta5S.MomentVal",
+          "Zeta5S.ClassFrame",
+          "Zeta5S.BasisChange"
+        ]
+      },
+      "Zeta5S.ClassFrame": {
+        "path": "Zeta5S/ClassFrame.lean",
+        "lines": 188,
+        "bytes": 10378,
+        "sha256": "18edb51bbc0cd33e6e584070e1d18b7862549c4a780899e974d611fb3a0a5582",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.TEntry",
+          "Zeta5S.Unimodular"
+        ]
+      },
+      "Zeta5S.Unimodular": {
+        "path": "Zeta5S/Unimodular.lean",
+        "lines": 146,
+        "bytes": 7913,
+        "sha256": "66b2173794bf6dd35e92cd26a16ad4d6729f8390950b9c247fcdf10a403edee7",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.BasisChange",
+          "Zeta5S.DirectBound"
+        ]
+      },
+      "Zeta5S.TEntry": {
+        "path": "Zeta5S/TEntry.lean",
+        "lines": 102,
+        "bytes": 5365,
+        "sha256": "cd824b084084bd3772325da41e3ff98c3f9c64cff2417f8f9a52ebaab06e87e0",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Pullback",
+          "Zeta5S.DirectPoly"
+        ]
+      },
+      "Zeta5S.DirectPoly": {
+        "path": "Zeta5S/DirectPoly.lean",
+        "lines": 307,
+        "bytes": 16237,
+        "sha256": "af54610bd8169e340cc4051fee9d3fed77c77822ff01fc75ebc38f6c7816f598",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectBound"
+        ]
+      },
+      "Zeta5S.MomentVal": {
+        "path": "Zeta5S/MomentVal.lean",
+        "lines": 136,
+        "bytes": 6865,
+        "sha256": "bf68753688043c7a72ff406266e39f221b5573df603fa0c73d223ff6adea4650",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectPoly",
+          "Zeta5S.Monomial"
+        ]
+      },
+      "Zeta5S.LowRank": {
+        "path": "Zeta5S/LowRank.lean",
+        "lines": 65,
+        "bytes": 2934,
+        "sha256": "5f59cfcbcbb229fe46bc828fa5dcf5cf197e33fcff203726ed268799ca7c0f32",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Val"
+        ]
+      },
+      "Zeta5S.PoleVal": {
+        "path": "Zeta5S/PoleVal.lean",
+        "lines": 263,
+        "bytes": 15938,
+        "sha256": "3f740f1cde864c2ad5ac6b01ca53426ac76cfbeffba3779a2706727be029a283",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectPoly",
+          "Zeta5S.Pullback"
+        ]
+      },
+      "Zeta5S.InnerAlloc": {
+        "path": "Zeta5S/InnerAlloc.lean",
+        "lines": 336,
+        "bytes": 17880,
+        "sha256": "6dfad96f2d460dd9c9296930b5ae09413fe5b152332ffa3293455a11b79f5470",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.InnerWeights"
+        ]
+      },
+      "Zeta5S.InnerWeights": {
+        "path": "Zeta5S/InnerWeights.lean",
+        "lines": 207,
+        "bytes": 12395,
+        "sha256": "5301eba55cd706b99e56a56449048df188a76ac8924638b0ed0c9919694e3030",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.ClassCount"
+        ]
+      },
+      "Zeta5S.ClassCount": {
+        "path": "Zeta5S/ClassCount.lean",
+        "lines": 253,
+        "bytes": 12940,
+        "sha256": "5090166d377fee960fdd568f56ef2f9c6017028b45f756a13252485b23e2d341",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.ClassFrame"
+        ]
+      },
+      "BInnerStatement": {
+        "path": "BInnerStatement.lean",
+        "lines": 96,
+        "bytes": 4535,
+        "sha256": "450a557ab7ec29f64019ab88ab7798ea64c13aab889830dcada7d632572b952d",
+        "imports": [
+          "RangeTargets",
+          "Mathathon.P108.SStep"
+        ]
+      },
+      "RangeTargets": {
+        "path": "RangeTargets.lean",
+        "lines": 3,
+        "bytes": 154,
+        "sha256": "002e0467b85c39702204693ac3207b3491a3cddc3703f12e962ae6b94dbeaa54",
+        "imports": [
+          "OuterTargets"
+        ]
+      },
+      "OuterTargets": {
+        "path": "OuterTargets.lean",
+        "lines": 168,
+        "bytes": 7988,
+        "sha256": "2dc9b7e4c0c67df8bc4ee37a129ba6e9b2dd502f0f796d6cc0e6184dbc2665d2",
+        "imports": [
+          "Zeta5S.SharpAssembly",
+          "Zeta5S.InnerAlloc",
+          "Mathathon.P108.OuterDefs",
+          "Mathathon.P108.InnerShift"
+        ]
+      },
+      "Zeta5S.SharpAssembly": {
+        "path": "Zeta5S/SharpAssembly.lean",
+        "lines": 151,
+        "bytes": 6460,
+        "sha256": "f447e9c3bde267998c0deb9fa11cc2527f25d2efb3275f36de01350598b4347b",
+        "imports": [
+          "Zeta5S.SharpOuterScope"
+        ]
+      },
+      "Zeta5S.SharpOuterScope": {
+        "path": "Zeta5S/SharpOuterScope.lean",
+        "lines": 83,
+        "bytes": 3246,
+        "sha256": "7c641dfd5d2459688ac253f470677bb27b9bd0bfc52a882f76069eebb39704ab",
+        "imports": [
+          "Zeta5S.SharpOuterMain"
+        ]
+      },
+      "Zeta5S.SharpOuterMain": {
+        "path": "Zeta5S/SharpOuterMain.lean",
+        "lines": 44,
+        "bytes": 2466,
+        "sha256": "e71b9f87046c09e10fc5daa3701387833edb81980f9a11c995f23cbf22b40358",
+        "imports": [
+          "Zeta5S.SharpOuterWeights"
+        ]
+      },
+      "Zeta5S.SharpOuterWeights": {
+        "path": "Zeta5S/SharpOuterWeights.lean",
+        "lines": 57,
+        "bytes": 2028,
+        "sha256": "9f402128a15f8cdb5ad05686c3a7e15c15caf45bf921994c042aee4ccaf0e500",
+        "imports": [
+          "Zeta5S.SharpOuterFrame",
+          "Zeta5S.SmallFiniteStep"
+        ]
+      },
+      "Zeta5S.SmallFiniteStep": {
+        "path": "Zeta5S/SmallFiniteStep.lean",
+        "lines": 81,
+        "bytes": 3503,
+        "sha256": "a853e0e1ffb0c9afbada4161c56677c27cc7e55b9bdaf36326635a40d9f14beb",
+        "imports": [
+          "Zeta5S.OuterFiniteStep"
+        ]
+      },
+      "Zeta5S.OuterFiniteStep": {
+        "path": "Zeta5S/OuterFiniteStep.lean",
+        "lines": 143,
+        "bytes": 6381,
+        "sha256": "cca31191aeb1161aa6e63d59370a9e3f1ee8daa45424d1547bc7884170dc159f",
+        "imports": [
+          "Zeta5S.FiniteStep"
+        ]
+      },
+      "Zeta5S.FiniteStep": {
+        "path": "Zeta5S/FiniteStep.lean",
+        "lines": 201,
+        "bytes": 8756,
+        "sha256": "3b77dc0987c52f94b9a200a1cf25a60340f8cd709529de20f4042725aeed8c12",
+        "imports": [
+          "Zeta5S.NormalizationProof",
+          "Zeta5S.AssemblyAnchors"
+        ]
+      },
+      "Zeta5S.AssemblyAnchors": {
+        "path": "Zeta5S/AssemblyAnchors.lean",
+        "lines": 116,
+        "bytes": 5015,
+        "sha256": "bd8bb3ecb2f651b37d7b05c2e276edebedbec06ce0b30714d5dffbd7ccf7631c",
+        "imports": [
+          "Zeta5S.AtFiveNormData",
+          "Zeta5S.AssemblyProof"
+        ]
+      },
+      "Zeta5S.AssemblyProof": {
+        "path": "Zeta5S/AssemblyProof.lean",
+        "lines": 85,
+        "bytes": 3629,
+        "sha256": "d8fb6ade6487eab981eb5cf0f0e14207bca622607473aa513d907dad6e97fd53",
+        "imports": [
+          "Zeta5S.AssemblyData"
+        ]
+      },
+      "Zeta5S.AssemblyData": {
+        "path": "Zeta5S/AssemblyData.lean",
+        "lines": 100,
+        "bytes": 3944,
+        "sha256": "d6a2847a752003dfaa54cc73933d2af4cbb343337e2f457599bba6d289faf0d4",
+        "imports": [
+          "Zeta5S.OuterScope",
+          "Zeta5S.InnerWeights",
+          "Zeta5S.SmallPrimeF"
+        ]
+      },
+      "Zeta5S.OuterScope": {
+        "path": "Zeta5S/OuterScope.lean",
+        "lines": 124,
+        "bytes": 5607,
+        "sha256": "f501d3fbb06ce4d9906b35da86f5886215c7e9993f52a067fe74e6e1d11001d1",
+        "imports": [
+          "Zeta5S.OuterEntryMain"
+        ]
+      },
+      "Zeta5S.OuterEntryMain": {
+        "path": "Zeta5S/OuterEntryMain.lean",
+        "lines": 549,
+        "bytes": 34937,
+        "sha256": "0f08e5373d25b1888b5e51ed7b200e9f8651661a2bd0857dbbf4471d6f456451",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterEntries"
+        ]
+      },
+      "Zeta5S.OuterEntries": {
+        "path": "Zeta5S/OuterEntries.lean",
+        "lines": 296,
+        "bytes": 17354,
+        "sha256": "12b2773e0d6373cd892496785f955de3ffca3e0328c730131bd06c8d754d961c",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterBasis"
+        ]
+      },
+      "Zeta5S.OuterBasis": {
+        "path": "Zeta5S/OuterBasis.lean",
+        "lines": 164,
+        "bytes": 9666,
+        "sha256": "28571a19c49ce5d071c8dcf613712770fc7d52880a676b715a65776a92f7248f",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterEntry",
+          "Zeta5S.PoleVal"
+        ]
+      },
+      "Zeta5S.OuterEntry": {
+        "path": "Zeta5S/OuterEntry.lean",
+        "lines": 141,
+        "bytes": 6958,
+        "sha256": "38262612c898966062b161c303c5558e17b3d7c8a9f046d838f0018f37a3fe67",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterFrame",
+          "Zeta5S.ClassCount"
+        ]
+      },
+      "Zeta5S.AtFiveNormData": {
+        "path": "Zeta5S/AtFiveNormData.lean",
+        "lines": 82,
+        "bytes": 3924,
+        "sha256": "0a3110e2d781981b36893352e3127720836ac04e89b83db54d913b4453dba620",
+        "imports": [
+          "Zeta5S.AtFiveOuter",
+          "Zeta5S.InnerAlloc"
+        ]
+      },
+      "Zeta5S.AtFiveOuter": {
+        "path": "Zeta5S/AtFiveOuter.lean",
+        "lines": 62,
+        "bytes": 3165,
+        "sha256": "0fdbe785c6591843117076807697ed048725da020c53b0bfc51e4844d2222d64",
+        "imports": [
+          "Zeta5S.AtFive",
+          "Zeta5S.OuterScope"
+        ]
+      },
+      "Zeta5S.NormalizationProof": {
+        "path": "Zeta5S/NormalizationProof.lean",
+        "lines": 168,
+        "bytes": 7229,
+        "sha256": "c1d6f4962be96e4be1725ccaa6578cbf42dc3433e8d1fc0f8ba9522486d387b4",
+        "imports": [
+          "Zeta5S.AssemblyProof"
+        ]
+      },
+      "Zeta5S.SharpOuterFrame": {
+        "path": "Zeta5S/SharpOuterFrame.lean",
+        "lines": 135,
+        "bytes": 6943,
+        "sha256": "0d9745348f88740f87086fa849e743f43f4e26b16761c77d612af32f55f0cbf1",
+        "imports": [
+          "Zeta5S.OuterFrame",
+          "Zeta5S.SharpLowRank"
+        ]
+      },
+      "Zeta5S.SharpLowRank": {
+        "path": "Zeta5S/SharpLowRank.lean",
+        "lines": 71,
+        "bytes": 3427,
+        "sha256": "cdc53dbd005f014e6a99dc36b1753747ec989e33357e9aab746502b9e3e708c8",
+        "imports": [
+          "Zeta5S.LowRank"
+        ]
+      },
+      "CArithProofs": {
+        "path": "CArithProofs.lean",
+        "lines": 114,
+        "bytes": 4791,
+        "sha256": "8fd8d44c4044795835754a54999aa9663ea13a5d1586a50cebb56d90231d9b26",
+        "imports": [
+          "ArithInterface"
+        ]
+      },
+      "ArithInterface": {
+        "path": "ArithInterface.lean",
+        "lines": 55,
+        "bytes": 2207,
+        "sha256": "539949919f72c5675d8d9436584c2fb4e11c40a0a2327a401cd02ca34e552eba",
+        "imports": [
+          "Interface",
+          "Final"
+        ]
+      },
+      "Final": {
+        "path": "Final.lean",
+        "lines": 41,
+        "bytes": 1893,
+        "sha256": "77a38e9b9f36f3ab3660d2b2f12532f97c3e88096470c110d3c87b4da9efa067",
+        "imports": [
+          "Completion",
+          "InnerSum",
+          "InnerLocal"
+        ]
+      },
+      "InnerLocal": {
+        "path": "InnerLocal.lean",
+        "lines": 219,
+        "bytes": 10956,
+        "sha256": "9d976a9abc79aea77a1b3dec59439b7850671a470195e93c44eb3a79870f4d9f",
+        "imports": [
+          "PhiGamma",
+          "InnerWeight",
+          "InnerScalar"
+        ]
+      },
+      "InnerScalar": {
+        "path": "InnerScalar.lean",
+        "lines": 108,
+        "bytes": 4986,
+        "sha256": "c06858b0c69d0e9ef4414188d0da549ce86ed04cac8c0bb74307cbdb660ebfbe",
+        "imports": [
+          "OuterScalar"
+        ]
+      },
+      "OuterScalar": {
+        "path": "OuterScalar.lean",
+        "lines": 193,
+        "bytes": 9206,
+        "sha256": "1934949938d93c033d3d6dc0bc80f3c46d1559a4eb017adcf661b359f3eef6a4",
+        "imports": [
+          "Scalar"
+        ]
+      },
+      "Scalar": {
+        "path": "Scalar.lean",
+        "lines": 112,
+        "bytes": 4774,
+        "sha256": "e18923f0f985028eb151af50b92768f127b04d966e3a6e9b1eb1502fa34aa89d",
+        "imports": [
+          "OuterTargets"
+        ]
+      },
+      "InnerWeight": {
+        "path": "InnerWeight.lean",
+        "lines": 367,
+        "bytes": 16812,
+        "sha256": "391db4579d50fd0f0e5966e9317209c5411441d92ce500f76c6b7ddc56572c0e",
+        "imports": [
+          "CostBounds"
+        ]
+      },
+      "CostBounds": {
+        "path": "CostBounds.lean",
+        "lines": 128,
+        "bytes": 6439,
+        "sha256": "ed3d617be91a69fb928134aa42ede52738296c89361de6f0180d937028463f57",
+        "imports": [
+          "Allocation"
+        ]
+      },
+      "Allocation": {
+        "path": "Allocation.lean",
+        "lines": 223,
+        "bytes": 10529,
+        "sha256": "bfd7bcc007a6e17ba5ee0edc0d952b521d96a223ed6027b2bff3de7896999991",
+        "imports": [
+          "Classes"
+        ]
+      },
+      "Classes": {
+        "path": "Classes.lean",
+        "lines": 85,
+        "bytes": 3892,
+        "sha256": "86f3da527f5670e4c669b498da2f0f439d93e2cf7bbcce662c87845661d3dec1",
+        "imports": [
+          "BInnerStatement"
+        ]
+      },
+      "PhiGamma": {
+        "path": "PhiGamma.lean",
+        "lines": 195,
+        "bytes": 10580,
+        "sha256": "35da8cc39a18680462c27daa44d4abe2419067fbf3ed5860adfbd61982857f63",
+        "imports": [
+          "PhaseErrors"
+        ]
+      },
+      "PhaseErrors": {
+        "path": "PhaseErrors.lean",
+        "lines": 152,
+        "bytes": 7870,
+        "sha256": "cdc3343492848d643e7f03b252984b72af7d8ee260548aa1ba940882ab2f46d7",
+        "imports": [
+          "ModelData",
+          "NextRows"
+        ]
+      },
+      "NextRows": {
+        "path": "NextRows.lean",
+        "lines": 65,
+        "bytes": 2969,
+        "sha256": "97be51514a6d34940aba9c8876dc828b104672b75757a4d2440d1f1f04826b53",
+        "imports": [
+          "ClassRows"
+        ]
+      },
+      "ClassRows": {
+        "path": "ClassRows.lean",
+        "lines": 125,
+        "bytes": 5704,
+        "sha256": "7625a15adfb5a7cc61c3330a4f7659e0e4003a69ccb098e5078042a3a4824ef9",
+        "imports": [
+          "MeshCounts"
+        ]
+      },
+      "MeshCounts": {
+        "path": "MeshCounts.lean",
+        "lines": 94,
+        "bytes": 4259,
+        "sha256": "c4de012c1b04454dc6d6d922dca6c31b39e86c18e7f5e8a74705fa9baa36769f",
+        "imports": [
+          "ContinuousClasses",
+          "Dictionary"
+        ]
+      },
+      "Dictionary": {
+        "path": "Dictionary.lean",
+        "lines": 51,
+        "bytes": 1796,
+        "sha256": "fa33e007004c79d6099ed4b322e7c24ff0d24b4a3251aaae9e2b7e1770d6b08e",
+        "imports": [
+          "InnerModelTargets"
+        ]
+      },
+      "InnerModelTargets": {
+        "path": "InnerModelTargets.lean",
+        "lines": 26,
+        "bytes": 1150,
+        "sha256": "8213a1963d20ae8fb9c2432308fca5edd8161ccc44989571cdead92e50e52edf",
+        "imports": [
+          "Mathathon.P108.InnerShift",
+          "Mathlib"
+        ]
+      },
+      "ContinuousClasses": {
+        "path": "ContinuousClasses.lean",
+        "lines": 129,
+        "bytes": 6494,
+        "sha256": "428da0082d72cbb93a2acc5e0d45d0c2593b141d4ba6a25aaf8e3c07293a9a04",
+        "imports": [
+          "ClassSums",
+          "ModelAlgebra"
+        ]
+      },
+      "ModelAlgebra": {
+        "path": "ModelAlgebra.lean",
+        "lines": 100,
+        "bytes": 4191,
+        "sha256": "e5fa1200da5bf40420fb838ae6fbbe76e857a3a475febb0cdeb62303a5a5f4aa",
+        "imports": [
+          "CostBounds"
+        ]
+      },
+      "ClassSums": {
+        "path": "ClassSums.lean",
+        "lines": 172,
+        "bytes": 8461,
+        "sha256": "a9aca49cdf283fafcf458ff955be03c6b2d5b37855494559cc52efded1123baf",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.ClassCount"
+        ]
+      },
+      "ModelData": {
+        "path": "ModelData.lean",
+        "lines": 137,
+        "bytes": 6895,
+        "sha256": "e5c8b9ff3858a4fa9d0cb7961e91ffdb5a56c56cc5493100fe2a28241fd009f4",
+        "imports": [
+          "GammaApprox"
+        ]
+      },
+      "GammaApprox": {
+        "path": "GammaApprox.lean",
+        "lines": 105,
+        "bytes": 4934,
+        "sha256": "2f94d71063bf00c46325023a6ab3000919d09a86a5dd863a3ee88de2ab019f7f",
+        "imports": [
+          "UniformClasses",
+          "ClassRows",
+          "GammaCells"
+        ]
+      },
+      "GammaCells": {
+        "path": "GammaCells.lean",
+        "lines": 2,
+        "bytes": 121,
+        "sha256": "5f9cdc1157016b409d07a08aa25a0c6efc47554f3c7832010be6c0341be987d9",
+        "imports": [
+          "Continuity"
+        ]
+      },
+      "Continuity": {
+        "path": "Continuity.lean",
+        "lines": 92,
+        "bytes": 4532,
+        "sha256": "a77decb751623e84a82c4233fcb2501a2c643fc023afff46cc20c062a63da29e",
+        "imports": [
+          "Dictionary",
+          "ContinuousClasses"
+        ]
+      },
+      "UniformClasses": {
+        "path": "UniformClasses.lean",
+        "lines": 77,
+        "bytes": 3791,
+        "sha256": "f9b98f77d8230c02493fdc70e025b85edbfdc9479256491482fd2c66f567effc",
+        "imports": [
+          "ContinuousClasses"
+        ]
+      },
+      "InnerSum": {
+        "path": "InnerSum.lean",
+        "lines": 133,
+        "bytes": 6174,
+        "sha256": "1c5dc048e44b67697b9f9fbc7f0b7d719800d64679b1638a962c3f497c36ac44",
+        "imports": [
+          "TransferStatement"
+        ]
+      },
+      "TransferStatement": {
+        "path": "TransferStatement.lean",
+        "lines": 11,
+        "bytes": 424,
+        "sha256": "78d1401d7f9d2a6c85944c779eea66bcb49dce50f036fd6e4610ee9fb9000483",
+        "imports": [
+          "BInnerStatement",
+          "BInnerLimitFinish",
+          "Transfer"
+        ]
+      },
+      "Transfer": {
+        "path": "Transfer.lean",
+        "lines": 129,
+        "bytes": 6110,
+        "sha256": "89576e19aaa36c3ddc27b37410c6ee52b80042af24254cdfb194e7fe16cdef72",
+        "imports": [
+          "PriorPrime"
+        ]
+      },
+      "PriorPrime": {
+        "path": "PriorPrime.lean",
+        "lines": 446,
+        "bytes": 22486,
+        "sha256": "fccb0d299e3ccdb5a671fe4ffe0aa36026d73246ebda6a3b7b12d798bfd742db",
+        "imports": [
+          "Mathlib",
+          "PrimeNumberTheoremAnd.Consequences"
+        ]
+      },
+      "BInnerLimitFinish": {
+        "path": "BInnerLimitFinish.lean",
+        "lines": 13,
+        "bytes": 430,
+        "sha256": "47c7b55a899d13ed248ba65277b5e19016238551d4cc5c923905f4ffe2cc54b2",
+        "imports": [
+          "Bounds",
+          "Discontinuities",
+          "Inversion",
+          "Integrability"
+        ]
+      },
+      "Integrability": {
+        "path": "Integrability.lean",
+        "lines": 64,
+        "bytes": 3105,
+        "sha256": "6c11004e997c98070d0d334416f13614bf12dfeaab50bc38aa302263e9a92d0f",
+        "imports": [
+          "Bounds"
+        ]
+      },
+      "Bounds": {
+        "path": "Bounds.lean",
+        "lines": 120,
+        "bytes": 4911,
+        "sha256": "d35611489c90522e62dc1970778918a04cf12b29d29b3fa8379b4d9f32f6fa07",
+        "imports": [
+          "Continuity"
+        ]
+      },
+      "Inversion": {
+        "path": "Inversion.lean",
+        "lines": 56,
+        "bytes": 2825,
+        "sha256": "462ccafa377957e4e7cc9b67cab62b6a464c944cbd23f833e3f8968c83d8b555",
+        "imports": [
+          "InnerModelTargets"
+        ]
+      },
+      "Discontinuities": {
+        "path": "Discontinuities.lean",
+        "lines": 88,
+        "bytes": 3753,
+        "sha256": "308fd9520974f00e9a973f6acb728bedc59bad0b1550c4cee026b5c63f2df555",
+        "imports": [
+          "Continuity"
+        ]
+      },
+      "Completion": {
+        "path": "Completion.lean",
+        "lines": 20,
+        "bytes": 843,
+        "sha256": "adfe0016ab5a996e28134819b33e71539b6541cfc75c2fcde98f7cec6a1791d8",
+        "imports": [
+          "Capstone",
+          "OuterSum"
+        ]
+      },
+      "OuterSum": {
+        "path": "OuterSum.lean",
+        "lines": 132,
+        "bytes": 5767,
+        "sha256": "0baf1e44498c7d2cf71f51a425c1877d0a9cc8e64b7d40d92838d3d0159413f3",
+        "imports": [
+          "Regularity",
+          "FinalLocal"
+        ]
+      },
+      "FinalLocal": {
+        "path": "FinalLocal.lean",
+        "lines": 61,
+        "bytes": 2397,
+        "sha256": "be5b4824be5522d21422e055ad5c901dc332bf07fa39416b0520d4a45fa3ce7d",
+        "imports": [
+          "OuterLocal",
+          "OuterScalar",
+          "AboveK"
+        ]
+      },
+      "AboveK": {
+        "path": "AboveK.lean",
+        "lines": 139,
+        "bytes": 5293,
+        "sha256": "f9210b2e1c3286b058f7b142b3f4a5ddcd04d3bb3e4b6e7fc39cc4dcc2aca6f5",
+        "imports": [
+          "Scalar"
+        ]
+      },
+      "OuterLocal": {
+        "path": "OuterLocal.lean",
+        "lines": 778,
+        "bytes": 34709,
+        "sha256": "02853cec505910f6f57eeda60cbb474b02bfe53cf5a0348d7916e98424d7482b",
+        "imports": [
+          "ClassData"
+        ]
+      },
+      "ClassData": {
+        "path": "ClassData.lean",
+        "lines": 97,
+        "bytes": 4003,
+        "sha256": "0cea3c0c2f1f322a15e722c2294cc22bb10c0a06838e8d9237339cf3be483464",
+        "imports": [
+          "Mathlib",
+          "ClassSum"
+        ]
+      },
+      "ClassSum": {
+        "path": "ClassSum.lean",
+        "lines": 172,
+        "bytes": 8355,
+        "sha256": "620d2c06c0d150b481641e2434c741c9265074d327b562c0c0a7f9edd17e49bc",
+        "imports": [
+          "Mathlib",
+          "OuterTargets"
+        ]
+      },
+      "Regularity": {
+        "path": "Regularity.lean",
+        "lines": 130,
+        "bytes": 6188,
+        "sha256": "153cd9af86bec2c5a1920221aebf9da5e48e2f1b36b1900dea4efab769dff6ae",
+        "imports": [
+          "Mathathon.P108.OuterDefs",
+          "Transfer"
+        ]
+      },
+      "Capstone": {
+        "path": "Capstone.lean",
+        "lines": 78,
+        "bytes": 3294,
+        "sha256": "ecada6606e8f05491658450646cd0ac8ddb8789cb5e22fca604102e1bbf4c6c0",
+        "imports": [
+          "BInnerStatement",
+          "Asymptotic",
+          "SharpSplit"
+        ]
+      },
+      "SharpSplit": {
+        "path": "SharpSplit.lean",
+        "lines": 92,
+        "bytes": 3952,
+        "sha256": "67d1f713123986d2070fa50e95b1178b61f5187dce349f377ee7372d793eeff9",
+        "imports": [
+          "OuterTargets",
+          "BridgeTargets"
+        ]
+      },
+      "BridgeTargets": {
+        "path": "BridgeTargets.lean",
+        "lines": 89,
+        "bytes": 4216,
+        "sha256": "020b41792723b1c94334c8f54f3d6113167deee24ae69b923598499b3cf3d4a4",
+        "imports": [
+          "Zeta5S.AssemblyData",
+          "Mathathon.P108.SStep"
+        ]
+      },
+      "Asymptotic": {
+        "path": "Asymptotic.lean",
+        "lines": 287,
+        "bytes": 13512,
+        "sha256": "d0ff9415ebfc13c7023351428a9b66ff329a1d9012d6940ed3fe8424eacacb4e",
+        "imports": [
+          "FiniteProof",
+          "PrimeNumberTheoremAnd.Consequences"
+        ]
+      },
+      "FiniteProof": {
+        "path": "FiniteProof.lean",
+        "lines": 252,
+        "bytes": 11826,
+        "sha256": "99188b0501af97542d6f84ea0b9359c687edbcbd0689667be11cf8f83c859450",
+        "imports": [
+          "BridgeTargets"
+        ]
+      },
+      "Assembly": {
+        "path": "Assembly.lean",
+        "lines": 85,
+        "bytes": 3599,
+        "sha256": "a43e370af202e72e7fb672ef014cc8454f8b3d55f45c084e57db90a45bf2ba7f",
+        "imports": [
+          "Interface"
+        ]
+      }
+    },
+    "external_imports": [
+      "Mathlib",
+      "Mathlib.Analysis.Calculus.Deriv.ZPow",
+      "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+      "Mathlib.Analysis.SpecificLimits.Normed",
+      "Mathlib.MeasureTheory.Function.Floor",
+      "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+      "Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts",
+      "Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic",
+      "Mathlib.MeasureTheory.Integral.Prod",
+      "Mathlib.Tactic",
+      "PrimeNumberTheoremAnd.Consequences"
+    ]
+  },
+  "physical_project_files": 296,
+  "physical_project_lines": 72565,
+  "reduction_percent": 34.88586580585659,
+  "build_forecast_lines": 35123,
+  "qualification_ceiling_lines": 52044
+}

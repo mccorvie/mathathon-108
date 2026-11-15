@@ -1,0 +1,2 @@
+/- Import-only canonical E420 target adapter; exact body is in ExplicitTargets.lean. -/
+import ExplicitTargets

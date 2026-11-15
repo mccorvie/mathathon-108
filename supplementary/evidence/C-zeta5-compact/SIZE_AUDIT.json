@@ -1,0 +1,4150 @@
+{
+  "status": "COMPUTED source/import audit only",
+  "author": "Codex GPT-6.1 sol lane C",
+  "current_scope": "conditional endpoint with finite-analysis and closing premises",
+  "unit": "local Lean source lines; external dependencies excluded for BOTH closures",
+  "warning": "Conditional endpoint size is not an unconditional proof size and gives no compression claim.",
+  "current": {
+    "root": "ArithmeticEntry",
+    "files": 157,
+    "lines": 23798,
+    "groups": {
+      "other local bridge, analysis, interfaces and assembly": {
+        "files": 72,
+        "lines": 8753
+      },
+      "symbolic arithmetic and finite normalization": {
+        "files": 46,
+        "lines": 8053
+      },
+      "other prior Apery modules": {
+        "files": 33,
+        "lines": 5903
+      },
+      "local event arithmetic package and PNT interface": {
+        "files": 5,
+        "lines": 992
+      },
+      "prior energy table modules": {
+        "files": 1,
+        "lines": 97
+      }
+    },
+    "external_imports": [
+      "Mathlib",
+      "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+      "Mathlib.Analysis.SpecificLimits.Normed",
+      "Mathlib.MeasureTheory.Function.Floor",
+      "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+      "Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic",
+      "Mathlib.MeasureTheory.Integral.Prod",
+      "PrimeNumberTheoremAnd.Consequences"
+    ],
+    "modules": {
+      "ArithmeticEntry": {
+        "path": "ArithmeticEntry.lean",
+        "lines": 28,
+        "bytes": 1210,
+        "sha256": "59984cdbfbc7745f4be01152db7f8d768925779935165f0b8edb670387a772e9",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Assembly",
+          "CArithProofs",
+          "LeadingInstance"
+        ]
+      },
+      "LeadingInstance": {
+        "path": "LeadingInstance.lean",
+        "lines": 102,
+        "bytes": 4352,
+        "sha256": "496db1178f0385158a06e31423a45f6dc7d6b10bf7f22c3296330cd2b5d33fca",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Interface"
+        ]
+      },
+      "Interface": {
+        "path": "Interface.lean",
+        "lines": 147,
+        "bytes": 6646,
+        "sha256": "9892e2a1a2ef33befac506b5b1ce1172b1806383a0d600a7ddd36e3c6c797109",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "AnalyticInterface",
+          "BInnerStatement",
+          "Zeta5S.AtFive",
+          "Apery.Criterion",
+          "Apery.Degree",
+          "Apery.Zeta5",
+          "ZetaIdentification"
+        ]
+      },
+      "ZetaIdentification": {
+        "path": "ZetaIdentification.lean",
+        "lines": 21,
+        "bytes": 810,
+        "sha256": "957ff4c54813f25c17c6df406fa090a640bcccc65cf4f6ab1554db7013aa3bee",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Statement"
+        ]
+      },
+      "Statement": {
+        "path": "Statement.lean",
+        "lines": 77,
+        "bytes": 3884,
+        "sha256": "d041cd9323e53f9f120ad9c21d87b3993ec2408746b57c34336e266e3af44851",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "BAnalyticMoments",
+          "Zeta5S.Pullback"
+        ]
+      },
+      "Zeta5S.Pullback": {
+        "path": "Zeta5S/Pullback.lean",
+        "lines": 293,
+        "bytes": 16207,
+        "sha256": "ebffb5ad911323534bbaed2d316e4e07907cf42db30f8e82720a3b8406ad76e4",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Monomial",
+          "Zeta5S.Base"
+        ]
+      },
+      "Zeta5S.Base": {
+        "path": "Zeta5S/Base.lean",
+        "lines": 128,
+        "bytes": 6829,
+        "sha256": "bd61eb7ae3a16f9d2d324e55122cc979def37ccfb74dccff231a635777b41640",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Zeta5S.Monomial": {
+        "path": "Zeta5S/Monomial.lean",
+        "lines": 99,
+        "bytes": 5096,
+        "sha256": "206e3fc33d8cd65a3ada6f4f1f90237c8cf7c0e93b7282b652962c02791eb697",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.PoleFun"
+        ]
+      },
+      "Zeta5S.PoleFun": {
+        "path": "Zeta5S/PoleFun.lean",
+        "lines": 99,
+        "bytes": 5135,
+        "sha256": "2fe575dea9273336fe7b8b3d6c4dfdf38a89068120cd4f3a9c80143a0a63a633",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.TauBound"
+        ]
+      },
+      "Zeta5S.TauBound": {
+        "path": "Zeta5S/TauBound.lean",
+        "lines": 167,
+        "bytes": 8555,
+        "sha256": "4cafd8b0f285e774a5191ef47ff4a32b6624d3f66a89376a4553f340d97887e2",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.BinomBasis"
+        ]
+      },
+      "Zeta5S.BinomBasis": {
+        "path": "Zeta5S/BinomBasis.lean",
+        "lines": 249,
+        "bytes": 12346,
+        "sha256": "d69355164de0504b0badf41d651947e50e384a89fb85c4e5781931e695bb1349",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Val"
+        ]
+      },
+      "Zeta5S.Val": {
+        "path": "Zeta5S/Val.lean",
+        "lines": 230,
+        "bytes": 11087,
+        "sha256": "dcbf5c6d62626ab49dc9323fac395240415b846a4c7b4d3a447385f4bf5f4544",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "BAnalyticMoments": {
+        "path": "BAnalyticMoments.lean",
+        "lines": 168,
+        "bytes": 7568,
+        "sha256": "f2b70273716fd10775a3f8eb9f0d04429fe4ae7af6790de3b201696a65d32009",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "BAnalyticIntegral",
+          "Zeta5S.Monomial"
+        ]
+      },
+      "BAnalyticIntegral": {
+        "path": "BAnalyticIntegral.lean",
+        "lines": 159,
+        "bytes": 7767,
+        "sha256": "eefc453a2515068c1576200e4f414c01042298c62edb39589af8599bc6400dbe",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Zeta5": {
+        "path": "Apery/Zeta5.lean",
+        "lines": 20,
+        "bytes": 446,
+        "sha256": "65cdbfef3a6832a14c3f98417a825f6099c48c3aaa6e49d9f750abcbe7d36721",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Degree": {
+        "path": "Apery/Degree.lean",
+        "lines": 180,
+        "bytes": 8194,
+        "sha256": "8cd7b35f891cf785daeb51cba621acf7fc59be82c2a05053fb3c6c29f542bd89",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Apery.Construction"
+        ]
+      },
+      "Apery.Construction": {
+        "path": "Apery/Construction.lean",
+        "lines": 73,
+        "bytes": 3324,
+        "sha256": "3d68e36fd05c72ebed98b1f50d031bae46d6d68b20bc87f7e24306a293a804b1",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Criterion": {
+        "path": "Apery/Criterion.lean",
+        "lines": 121,
+        "bytes": 6075,
+        "sha256": "21ecd2dd72b780c8734062d0a838bdeef2bbd4ee2325619e526248f6ca006473",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Zeta5S.AtFive": {
+        "path": "Zeta5S/AtFive.lean",
+        "lines": 476,
+        "bytes": 25141,
+        "sha256": "37d365e615f1e820cc353d979096fc0ef7cf2369940fe0747cc0a8c2bf0f7780",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectPoly",
+          "Zeta5S.Monomial",
+          "Zeta5S.Pullback",
+          "Zeta5S.TEntry",
+          "Zeta5S.MomentVal",
+          "Zeta5S.ClassFrame",
+          "Zeta5S.InnerAlloc",
+          "Zeta5S.PoleVal",
+          "Zeta5S.SmallPrimeF",
+          "Zeta5S.OuterFrame"
+        ]
+      },
+      "Zeta5S.OuterFrame": {
+        "path": "Zeta5S/OuterFrame.lean",
+        "lines": 229,
+        "bytes": 13501,
+        "sha256": "bc56e36b39fe6a51a9eef6b33435c3c203bf292494b7983b2a9eaa0106efb892",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.LowRank",
+          "Zeta5S.MomentVal",
+          "Zeta5S.ClassFrame",
+          "Zeta5S.BasisChange"
+        ]
+      },
+      "Zeta5S.BasisChange": {
+        "path": "Zeta5S/BasisChange.lean",
+        "lines": 122,
+        "bytes": 6851,
+        "sha256": "0badc7cfbb56039972ff863e6d2bcfb863c5687f3ec12b068383573c4ef1b15c",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Pullback",
+          "Zeta5S.Base"
+        ]
+      },
+      "Zeta5S.ClassFrame": {
+        "path": "Zeta5S/ClassFrame.lean",
+        "lines": 188,
+        "bytes": 10378,
+        "sha256": "18edb51bbc0cd33e6e584070e1d18b7862549c4a780899e974d611fb3a0a5582",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.TEntry",
+          "Zeta5S.Unimodular"
+        ]
+      },
+      "Zeta5S.Unimodular": {
+        "path": "Zeta5S/Unimodular.lean",
+        "lines": 146,
+        "bytes": 7913,
+        "sha256": "66b2173794bf6dd35e92cd26a16ad4d6729f8390950b9c247fcdf10a403edee7",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.BasisChange",
+          "Zeta5S.DirectBound"
+        ]
+      },
+      "Zeta5S.DirectBound": {
+        "path": "Zeta5S/DirectBound.lean",
+        "lines": 197,
+        "bytes": 9717,
+        "sha256": "b4c135ca180f229527029d8c6ad7b516c801dd3107e0117c8cdbaaf3e08c16bd",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.PoleFun",
+          "Zeta5S.IntPoly"
+        ]
+      },
+      "Zeta5S.IntPoly": {
+        "path": "Zeta5S/IntPoly.lean",
+        "lines": 85,
+        "bytes": 4225,
+        "sha256": "b118120a22c0bc8cf85a9018fbc1e4eab4482b39fadeb8c31531a249854b446a",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Val"
+        ]
+      },
+      "Zeta5S.TEntry": {
+        "path": "Zeta5S/TEntry.lean",
+        "lines": 102,
+        "bytes": 5365,
+        "sha256": "cd824b084084bd3772325da41e3ff98c3f9c64cff2417f8f9a52ebaab06e87e0",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Pullback",
+          "Zeta5S.DirectPoly"
+        ]
+      },
+      "Zeta5S.DirectPoly": {
+        "path": "Zeta5S/DirectPoly.lean",
+        "lines": 307,
+        "bytes": 16237,
+        "sha256": "af54610bd8169e340cc4051fee9d3fed77c77822ff01fc75ebc38f6c7816f598",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectBound"
+        ]
+      },
+      "Zeta5S.MomentVal": {
+        "path": "Zeta5S/MomentVal.lean",
+        "lines": 136,
+        "bytes": 6865,
+        "sha256": "bf68753688043c7a72ff406266e39f221b5573df603fa0c73d223ff6adea4650",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectPoly",
+          "Zeta5S.Monomial"
+        ]
+      },
+      "Zeta5S.LowRank": {
+        "path": "Zeta5S/LowRank.lean",
+        "lines": 65,
+        "bytes": 2934,
+        "sha256": "5f59cfcbcbb229fe46bc828fa5dcf5cf197e33fcff203726ed268799ca7c0f32",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.Val"
+        ]
+      },
+      "Zeta5S.SmallPrimeF": {
+        "path": "Zeta5S/SmallPrimeF.lean",
+        "lines": 319,
+        "bytes": 16824,
+        "sha256": "b1553c426c0e78133ad1b41383a2d09a4d1f7f038b752b143eec13705a5ce800",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.SmallPrimeTau",
+          "Zeta5S.BasisChange",
+          "Zeta5S.Base"
+        ]
+      },
+      "Zeta5S.SmallPrimeTau": {
+        "path": "Zeta5S/SmallPrimeTau.lean",
+        "lines": 204,
+        "bytes": 10834,
+        "sha256": "b7d7ff5b7f4a00ff744c5ef5c9a6beb3da770a8ebf7f6b2453ac3d1609f88015",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.SmallPrimeRes"
+        ]
+      },
+      "Zeta5S.SmallPrimeRes": {
+        "path": "Zeta5S/SmallPrimeRes.lean",
+        "lines": 192,
+        "bytes": 10280,
+        "sha256": "8a743dc443d3b7d02b26a9db3562e211bf9e6efb4320e292092b9cd749a31f7f",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.SmallPrime"
+        ]
+      },
+      "Zeta5S.SmallPrime": {
+        "path": "Zeta5S/SmallPrime.lean",
+        "lines": 108,
+        "bytes": 4836,
+        "sha256": "02b58b218bd1c9bff625a722474ea8843ec0bf673f9fadb1218e2a9176cbbf2f",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.TauBound",
+          "Zeta5S.Pullback",
+          "Zeta5S.DirectBound"
+        ]
+      },
+      "Zeta5S.PoleVal": {
+        "path": "Zeta5S/PoleVal.lean",
+        "lines": 263,
+        "bytes": 15938,
+        "sha256": "3f740f1cde864c2ad5ac6b01ca53426ac76cfbeffba3779a2706727be029a283",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.DirectPoly",
+          "Zeta5S.Pullback"
+        ]
+      },
+      "Zeta5S.InnerAlloc": {
+        "path": "Zeta5S/InnerAlloc.lean",
+        "lines": 336,
+        "bytes": 17880,
+        "sha256": "6dfad96f2d460dd9c9296930b5ae09413fe5b152332ffa3293455a11b79f5470",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.InnerWeights"
+        ]
+      },
+      "Zeta5S.InnerWeights": {
+        "path": "Zeta5S/InnerWeights.lean",
+        "lines": 207,
+        "bytes": 12395,
+        "sha256": "5301eba55cd706b99e56a56449048df188a76ac8924638b0ed0c9919694e3030",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.ClassCount"
+        ]
+      },
+      "Zeta5S.ClassCount": {
+        "path": "Zeta5S/ClassCount.lean",
+        "lines": 253,
+        "bytes": 12940,
+        "sha256": "5090166d377fee960fdd568f56ef2f9c6017028b45f756a13252485b23e2d341",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.ClassFrame"
+        ]
+      },
+      "BInnerStatement": {
+        "path": "BInnerStatement.lean",
+        "lines": 96,
+        "bytes": 4535,
+        "sha256": "450a557ab7ec29f64019ab88ab7798ea64c13aab889830dcada7d632572b952d",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "RangeTargets",
+          "Mathathon.P108.SStep"
+        ]
+      },
+      "Mathathon.P108.SStep": {
+        "path": "Mathathon/P108/SStep.lean",
+        "lines": 79,
+        "bytes": 3458,
+        "sha256": "e8df3748c2fca958b9e3044ac9c724721a356f2fb28b50fce8a6fad328a9b357",
+        "category": "local event arithmetic package and PNT interface",
+        "imports": [
+          "Mathathon.P108.InnerShift",
+          "Mathathon.P108.Integrable",
+          "Mathathon.P108.OuterValues"
+        ]
+      },
+      "Mathathon.P108.OuterValues": {
+        "path": "Mathathon/P108/OuterValues.lean",
+        "lines": 331,
+        "bytes": 19861,
+        "sha256": "06a8e24517c0d4b9597e5e04112394ead44abeacaac6e60916323c00caa57f2d",
+        "category": "local event arithmetic package and PNT interface",
+        "imports": [
+          "Mathathon.P108.OuterDefs"
+        ]
+      },
+      "Mathathon.P108.OuterDefs": {
+        "path": "Mathathon/P108/OuterDefs.lean",
+        "lines": 172,
+        "bytes": 9040,
+        "sha256": "7c3393f0e32c3d87ec111751daae82fef1d0116041e3b7fe13710ae0186c072f",
+        "category": "local event arithmetic package and PNT interface",
+        "imports": [
+          "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+          "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+        ]
+      },
+      "Mathathon.P108.Integrable": {
+        "path": "Mathathon/P108/Integrable.lean",
+        "lines": 156,
+        "bytes": 6415,
+        "sha256": "cd26e55c30ded633c1e78258dc9f76085e2bc10ad13aaba58b8c5c8d886d39cd",
+        "category": "local event arithmetic package and PNT interface",
+        "imports": [
+          "Mathathon.P108.InnerShift",
+          "Mathlib.MeasureTheory.Integral.Prod"
+        ]
+      },
+      "Mathathon.P108.InnerShift": {
+        "path": "Mathathon/P108/InnerShift.lean",
+        "lines": 254,
+        "bytes": 12278,
+        "sha256": "01768a13661727e9d0c74491c4afd3193b5c30593124cb7bff27a71613cf0e81",
+        "category": "local event arithmetic package and PNT interface",
+        "imports": [
+          "Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic",
+          "Mathlib.MeasureTheory.Function.Floor",
+          "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+        ]
+      },
+      "RangeTargets": {
+        "path": "RangeTargets.lean",
+        "lines": 3,
+        "bytes": 154,
+        "sha256": "002e0467b85c39702204693ac3207b3491a3cddc3703f12e962ae6b94dbeaa54",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "OuterTargets"
+        ]
+      },
+      "OuterTargets": {
+        "path": "OuterTargets.lean",
+        "lines": 168,
+        "bytes": 7988,
+        "sha256": "2dc9b7e4c0c67df8bc4ee37a129ba6e9b2dd502f0f796d6cc0e6184dbc2665d2",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Zeta5S.SharpAssembly",
+          "Zeta5S.InnerAlloc",
+          "Mathathon.P108.OuterDefs",
+          "Mathathon.P108.InnerShift"
+        ]
+      },
+      "Zeta5S.SharpAssembly": {
+        "path": "Zeta5S/SharpAssembly.lean",
+        "lines": 151,
+        "bytes": 6460,
+        "sha256": "f447e9c3bde267998c0deb9fa11cc2527f25d2efb3275f36de01350598b4347b",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.SharpOuterScope"
+        ]
+      },
+      "Zeta5S.SharpOuterScope": {
+        "path": "Zeta5S/SharpOuterScope.lean",
+        "lines": 83,
+        "bytes": 3246,
+        "sha256": "7c641dfd5d2459688ac253f470677bb27b9bd0bfc52a882f76069eebb39704ab",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.SharpOuterMain"
+        ]
+      },
+      "Zeta5S.SharpOuterMain": {
+        "path": "Zeta5S/SharpOuterMain.lean",
+        "lines": 44,
+        "bytes": 2466,
+        "sha256": "e71b9f87046c09e10fc5daa3701387833edb81980f9a11c995f23cbf22b40358",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.SharpOuterWeights"
+        ]
+      },
+      "Zeta5S.SharpOuterWeights": {
+        "path": "Zeta5S/SharpOuterWeights.lean",
+        "lines": 57,
+        "bytes": 2028,
+        "sha256": "9f402128a15f8cdb5ad05686c3a7e15c15caf45bf921994c042aee4ccaf0e500",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.SharpOuterFrame",
+          "Zeta5S.SmallFiniteStep"
+        ]
+      },
+      "Zeta5S.SmallFiniteStep": {
+        "path": "Zeta5S/SmallFiniteStep.lean",
+        "lines": 81,
+        "bytes": 3503,
+        "sha256": "a853e0e1ffb0c9afbada4161c56677c27cc7e55b9bdaf36326635a40d9f14beb",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.OuterFiniteStep"
+        ]
+      },
+      "Zeta5S.OuterFiniteStep": {
+        "path": "Zeta5S/OuterFiniteStep.lean",
+        "lines": 143,
+        "bytes": 6381,
+        "sha256": "cca31191aeb1161aa6e63d59370a9e3f1ee8daa45424d1547bc7884170dc159f",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.FiniteStep"
+        ]
+      },
+      "Zeta5S.FiniteStep": {
+        "path": "Zeta5S/FiniteStep.lean",
+        "lines": 201,
+        "bytes": 8756,
+        "sha256": "3b77dc0987c52f94b9a200a1cf25a60340f8cd709529de20f4042725aeed8c12",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.NormalizationProof",
+          "Zeta5S.AssemblyAnchors"
+        ]
+      },
+      "Zeta5S.AssemblyAnchors": {
+        "path": "Zeta5S/AssemblyAnchors.lean",
+        "lines": 116,
+        "bytes": 5015,
+        "sha256": "bd8bb3ecb2f651b37d7b05c2e276edebedbec06ce0b30714d5dffbd7ccf7631c",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.AtFiveNormData",
+          "Zeta5S.AssemblyProof"
+        ]
+      },
+      "Zeta5S.AssemblyProof": {
+        "path": "Zeta5S/AssemblyProof.lean",
+        "lines": 85,
+        "bytes": 3629,
+        "sha256": "d8fb6ade6487eab981eb5cf0f0e14207bca622607473aa513d907dad6e97fd53",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.AssemblyData"
+        ]
+      },
+      "Zeta5S.AssemblyData": {
+        "path": "Zeta5S/AssemblyData.lean",
+        "lines": 100,
+        "bytes": 3944,
+        "sha256": "d6a2847a752003dfaa54cc73933d2af4cbb343337e2f457599bba6d289faf0d4",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.OuterScope",
+          "Zeta5S.InnerWeights",
+          "Zeta5S.SmallPrimeF"
+        ]
+      },
+      "Zeta5S.OuterScope": {
+        "path": "Zeta5S/OuterScope.lean",
+        "lines": 124,
+        "bytes": 5607,
+        "sha256": "f501d3fbb06ce4d9906b35da86f5886215c7e9993f52a067fe74e6e1d11001d1",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.OuterEntryMain"
+        ]
+      },
+      "Zeta5S.OuterEntryMain": {
+        "path": "Zeta5S/OuterEntryMain.lean",
+        "lines": 549,
+        "bytes": 34937,
+        "sha256": "0f08e5373d25b1888b5e51ed7b200e9f8651661a2bd0857dbbf4471d6f456451",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterEntries"
+        ]
+      },
+      "Zeta5S.OuterEntries": {
+        "path": "Zeta5S/OuterEntries.lean",
+        "lines": 296,
+        "bytes": 17354,
+        "sha256": "12b2773e0d6373cd892496785f955de3ffca3e0328c730131bd06c8d754d961c",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterBasis"
+        ]
+      },
+      "Zeta5S.OuterBasis": {
+        "path": "Zeta5S/OuterBasis.lean",
+        "lines": 164,
+        "bytes": 9666,
+        "sha256": "28571a19c49ce5d071c8dcf613712770fc7d52880a676b715a65776a92f7248f",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterEntry",
+          "Zeta5S.PoleVal"
+        ]
+      },
+      "Zeta5S.OuterEntry": {
+        "path": "Zeta5S/OuterEntry.lean",
+        "lines": 141,
+        "bytes": 6958,
+        "sha256": "38262612c898966062b161c303c5558e17b3d7c8a9f046d838f0018f37a3fe67",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.OuterFrame",
+          "Zeta5S.ClassCount"
+        ]
+      },
+      "Zeta5S.AtFiveNormData": {
+        "path": "Zeta5S/AtFiveNormData.lean",
+        "lines": 82,
+        "bytes": 3924,
+        "sha256": "0a3110e2d781981b36893352e3127720836ac04e89b83db54d913b4453dba620",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.AtFiveOuter",
+          "Zeta5S.InnerAlloc"
+        ]
+      },
+      "Zeta5S.AtFiveOuter": {
+        "path": "Zeta5S/AtFiveOuter.lean",
+        "lines": 62,
+        "bytes": 3165,
+        "sha256": "0fdbe785c6591843117076807697ed048725da020c53b0bfc51e4844d2222d64",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.AtFive",
+          "Zeta5S.OuterScope"
+        ]
+      },
+      "Zeta5S.NormalizationProof": {
+        "path": "Zeta5S/NormalizationProof.lean",
+        "lines": 168,
+        "bytes": 7229,
+        "sha256": "c1d6f4962be96e4be1725ccaa6578cbf42dc3433e8d1fc0f8ba9522486d387b4",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.AssemblyProof"
+        ]
+      },
+      "Zeta5S.SharpOuterFrame": {
+        "path": "Zeta5S/SharpOuterFrame.lean",
+        "lines": 135,
+        "bytes": 6943,
+        "sha256": "0d9745348f88740f87086fa849e743f43f4e26b16761c77d612af32f55f0cbf1",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.OuterFrame",
+          "Zeta5S.SharpLowRank"
+        ]
+      },
+      "Zeta5S.SharpLowRank": {
+        "path": "Zeta5S/SharpLowRank.lean",
+        "lines": 71,
+        "bytes": 3427,
+        "sha256": "cdc53dbd005f014e6a99dc36b1753747ec989e33357e9aab746502b9e3e708c8",
+        "category": "symbolic arithmetic and finite normalization",
+        "imports": [
+          "Zeta5S.LowRank"
+        ]
+      },
+      "AnalyticInterface": {
+        "path": "AnalyticInterface.lean",
+        "lines": 74,
+        "bytes": 3431,
+        "sha256": "d320ed2dc9f6b473666d2551e5970581ae7010bfa652984494bafafdd7370640",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "BRealStatement",
+          "Apery.EnergyRaw",
+          "Apery.Table.Tail"
+        ]
+      },
+      "Apery.Table.Tail": {
+        "path": "Apery/Table/Tail.lean",
+        "lines": 97,
+        "bytes": 7242,
+        "sha256": "1addea0ffcf74fd4876e41ba69c9e79bed39481e72a4cb2eecc6201d6d8020d8",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.TableCheck"
+        ]
+      },
+      "Apery.TableCheck": {
+        "path": "Apery/TableCheck.lean",
+        "lines": 258,
+        "bytes": 14658,
+        "sha256": "e6b9e6d069e274c26d6d5bfef6da859a85d71e1c71a573528b1ab621acb55b20",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Potential"
+        ]
+      },
+      "Apery.Potential": {
+        "path": "Apery/Potential.lean",
+        "lines": 412,
+        "bytes": 21090,
+        "sha256": "eed6831a39c6495d78e3082d2274b46e9c13a498eaa92f28995d7f2749edf324",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.PotentialV",
+          "Apery.Certificates",
+          "Apery.Measure"
+        ]
+      },
+      "Apery.Measure": {
+        "path": "Apery/Measure.lean",
+        "lines": 63,
+        "bytes": 2275,
+        "sha256": "b80933c5e97698ccd60c7f95e6d5486de8041a1c848c8ddce309404dfd449b98",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Constants"
+        ]
+      },
+      "Apery.Constants": {
+        "path": "Apery/Constants.lean",
+        "lines": 42,
+        "bytes": 1356,
+        "sha256": "a8aa527f8dad150d71faf114e5c5fa698981bfecc07a4d598f402da6874f86ab",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Certificates": {
+        "path": "Apery/Certificates.lean",
+        "lines": 134,
+        "bytes": 6878,
+        "sha256": "453f0fc53d635f657928156bd6b751381e50797cef8f490cda54ea67ad3cb543",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyConst"
+        ]
+      },
+      "Apery.EnergyConst": {
+        "path": "Apery/EnergyConst.lean",
+        "lines": 221,
+        "bytes": 13622,
+        "sha256": "1f31dbc4d1ad66253a6e0e29e89e63573b03c7e4c190ddca7b7777eec9516561",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Apery.Measure"
+        ]
+      },
+      "Apery.PotentialV": {
+        "path": "Apery/PotentialV.lean",
+        "lines": 58,
+        "bytes": 2584,
+        "sha256": "769045f06631cd80df96c61eda8f5cd7feb976705d563681cffaa2490262bc9a",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Energy"
+        ]
+      },
+      "Apery.Energy": {
+        "path": "Apery/Energy.lean",
+        "lines": 278,
+        "bytes": 14745,
+        "sha256": "095075837888809fb0ca4cd60f64f451151d300606ae8c897b2f03289b56da38",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.HermiteIBP",
+          "Apery.DetIntegral"
+        ]
+      },
+      "Apery.DetIntegral": {
+        "path": "Apery/DetIntegral.lean",
+        "lines": 59,
+        "bytes": 2783,
+        "sha256": "765b40383b8d14f8216a07d321e68705935bef9090e1466d404af8358a9b920c",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Andreief",
+          "Apery.Positivity"
+        ]
+      },
+      "Apery.Positivity": {
+        "path": "Apery/Positivity.lean",
+        "lines": 223,
+        "bytes": 11155,
+        "sha256": "1bb3cde19d09ec4e0353a82d2426b74af0ea35d3aaf4d3c87beb2136d994a5e8",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight",
+          "Apery.Moments",
+          "Apery.PartialFractions",
+          "Apery.Zeta5",
+          "Apery.HermiteFormula"
+        ]
+      },
+      "Apery.HermiteFormula": {
+        "path": "Apery/HermiteFormula.lean",
+        "lines": 162,
+        "bytes": 8346,
+        "sha256": "b0f70e33b415555196a695c4bd8065c3b4b3917fd4d41c69489bc3771e86b7c5",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.HermiteIBP",
+          "Apery.HermiteIntegrals",
+          "Apery.Zeta5",
+          "Apery.Construction"
+        ]
+      },
+      "Apery.HermiteIntegrals": {
+        "path": "Apery/HermiteIntegrals.lean",
+        "lines": 293,
+        "bytes": 15686,
+        "sha256": "91d5cc87225e0714b4088a279717085000c9b7224b6e857e6179078c294ed8d7",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Hermite"
+        ]
+      },
+      "Apery.Hermite": {
+        "path": "Apery/Hermite.lean",
+        "lines": 391,
+        "bytes": 18428,
+        "sha256": "547c6e516ef2fdb590389b4b25d40c8a28ab1e4187f665be067e58976a31fc68",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight"
+        ]
+      },
+      "Apery.Weight": {
+        "path": "Apery/Weight.lean",
+        "lines": 135,
+        "bytes": 6631,
+        "sha256": "e14b0db381932e2dade574feb8c7ce0e8c49a5ef4fdb02b77bd35532300a0d5a",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.HermiteIBP": {
+        "path": "Apery/HermiteIBP.lean",
+        "lines": 368,
+        "bytes": 21035,
+        "sha256": "88a649bc0710feec3bbc7cf7716cd1d359a666709fe89cff55b80338df261599",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Hermite",
+          "Apery.HermiteIntegrals",
+          "Apery.Moments"
+        ]
+      },
+      "Apery.Moments": {
+        "path": "Apery/Moments.lean",
+        "lines": 144,
+        "bytes": 6972,
+        "sha256": "0812a404882647289149adfbc5c320a26771effca8a7e5472f51b17c13bc57af",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight",
+          "Apery.Construction"
+        ]
+      },
+      "Apery.PartialFractions": {
+        "path": "Apery/PartialFractions.lean",
+        "lines": 118,
+        "bytes": 5690,
+        "sha256": "02fc010685131c58650b80a4bc54d04ccb6cbd2f84ee03b916a8f75b68ce7c76",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Degree"
+        ]
+      },
+      "Apery.Andreief": {
+        "path": "Apery/Andreief.lean",
+        "lines": 115,
+        "bytes": 5757,
+        "sha256": "fd3c752dbd71d658deaf5765bfadb9e5a5f24028dd9fe5e38205708a279d039a",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.EnergyRaw": {
+        "path": "Apery/EnergyRaw.lean",
+        "lines": 200,
+        "bytes": 10440,
+        "sha256": "4a1ee8cdc66e552933c6a858124111b70cb41d635d6b001962728098459dc751",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyBlocks"
+        ]
+      },
+      "Apery.EnergyBlocks": {
+        "path": "Apery/EnergyBlocks.lean",
+        "lines": 188,
+        "bytes": 10609,
+        "sha256": "b1d80ad07b2b1634b06fb8c76011ae66246b2b8dcb4e289cdafca4cf8e50b9e0",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyAtoms"
+        ]
+      },
+      "Apery.EnergyAtoms": {
+        "path": "Apery/EnergyAtoms.lean",
+        "lines": 272,
+        "bytes": 13515,
+        "sha256": "fa7c6474172e3c133eb29451f76a7fa48f813c424155b9446326104560be2226",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.ArcsinePotential",
+          "Apery.Constants",
+          "Apery.Energy"
+        ]
+      },
+      "Apery.ArcsinePotential": {
+        "path": "Apery/ArcsinePotential.lean",
+        "lines": 211,
+        "bytes": 10662,
+        "sha256": "e37b94c5f9976585634ea08a15d64a9155eaf3d2c4581bc50bef591bb3530437",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.ArcsineAtoms"
+        ]
+      },
+      "Apery.ArcsineAtoms": {
+        "path": "Apery/ArcsineAtoms.lean",
+        "lines": 143,
+        "bytes": 7344,
+        "sha256": "5fe49b1725129b9a7ec8714e8483b04ab3df79ea84544201c57be1f7b5ee37b4",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.CircleAtoms",
+          "Apery.Potential"
+        ]
+      },
+      "Apery.CircleAtoms": {
+        "path": "Apery/CircleAtoms.lean",
+        "lines": 116,
+        "bytes": 5355,
+        "sha256": "a6b6dd42698221014ee99e0d3f315caf7af4291c588ba711b08cbb10af732d1c",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyLimit"
+        ]
+      },
+      "Apery.EnergyLimit": {
+        "path": "Apery/EnergyLimit.lean",
+        "lines": 87,
+        "bytes": 4749,
+        "sha256": "597d2dd2f17c47f6e2ad5eeb698bf8e4ee4e59625bd68009ef5fd8e6f711d908",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Kernel"
+        ]
+      },
+      "Apery.Kernel": {
+        "path": "Apery/Kernel.lean",
+        "lines": 225,
+        "bytes": 11200,
+        "sha256": "b9a861fe3eb4b662528c0cd445d7a1b1c36c33ed3da167d0fc8c11b9c9aaeed2",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.ZeroMass"
+        ]
+      },
+      "Apery.ZeroMass": {
+        "path": "Apery/ZeroMass.lean",
+        "lines": 338,
+        "bytes": 17176,
+        "sha256": "4dd6909891cd4a327d7c8f78f62d34e9e1b6d6339a76e052dc27b0dc23d83144",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Gaussian"
+        ]
+      },
+      "Apery.Gaussian": {
+        "path": "Apery/Gaussian.lean",
+        "lines": 91,
+        "bytes": 4411,
+        "sha256": "049a486a805687650c1f3ef052583eca856f99f5bee2f4eab9adb38e87135fb3",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "BRealStatement": {
+        "path": "BRealStatement.lean",
+        "lines": 68,
+        "bytes": 3002,
+        "sha256": "7f34bfb89850c511a47037dcef17f3c66d114b644be9a280018f5b47868e2287",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Gram",
+          "BAnalyticEnvelope",
+          "Zeta5S.SmallPrimeF",
+          "Apery.Energy",
+          "Apery.Measure",
+          "Apery.EnergyConst",
+          "Apery.Stirling"
+        ]
+      },
+      "Apery.Stirling": {
+        "path": "Apery/Stirling.lean",
+        "lines": 164,
+        "bytes": 7915,
+        "sha256": "24a85d4595a30e909da36494488b0a334a4ce4b0a1587c15d705f7411dd84d5e",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "BAnalyticEnvelope": {
+        "path": "BAnalyticEnvelope.lean",
+        "lines": 146,
+        "bytes": 6425,
+        "sha256": "3f537a1ba6c7ec1abfdb2c6ccdf4829c8d2f44daae54379b1340481964d359fe",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "BAnalyticMoments",
+          "Mathlib.Analysis.SpecificLimits.Normed"
+        ]
+      },
+      "Gram": {
+        "path": "Gram.lean",
+        "lines": 146,
+        "bytes": 7688,
+        "sha256": "6fecca4e0a6f71fea8b14e497431363c3cb3f287c201a3c2ded435756e317736",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "GramStatement"
+        ]
+      },
+      "GramStatement": {
+        "path": "GramStatement.lean",
+        "lines": 27,
+        "bytes": 1211,
+        "sha256": "6fb93b22a88b864ec9137a6f5d6fb5f8c646c48c6cc87ef4179c8e6ed13d7f16",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Functional",
+          "Zeta5S.BasisChange"
+        ]
+      },
+      "Functional": {
+        "path": "Functional.lean",
+        "lines": 88,
+        "bytes": 4356,
+        "sha256": "6d28259c1a43b8c4f5ca0d621919ce08c5ab43c74e4e7317b9c0423aff4adf44",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "FunctionalStatement",
+          "PartialFractions"
+        ]
+      },
+      "PartialFractions": {
+        "path": "PartialFractions.lean",
+        "lines": 43,
+        "bytes": 2068,
+        "sha256": "598f63902bc375c7ec470c825318fb5010c2fe59778e19255b7425017e57b424",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Zeta5S.Base"
+        ]
+      },
+      "FunctionalStatement": {
+        "path": "FunctionalStatement.lean",
+        "lines": 20,
+        "bytes": 873,
+        "sha256": "77e4bae84f348f9e82ee6783e4ccf8b845a1d298b42a6b4ca760bba9958f4e66",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Finish"
+        ]
+      },
+      "Finish": {
+        "path": "Finish.lean",
+        "lines": 114,
+        "bytes": 5574,
+        "sha256": "e114c71860247367c199990a3e0816c87dd1d1f7967614901df340798d0f5a90",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Scaling",
+          "Bose"
+        ]
+      },
+      "Bose": {
+        "path": "Bose.lean",
+        "lines": 100,
+        "bytes": 4260,
+        "sha256": "7615ebb89a7b1b0b1fa2c573bf9e590830f68faa36c0ce2ab26d3739e465f75d",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "BAnalyticIntegral"
+        ]
+      },
+      "Scaling": {
+        "path": "Scaling.lean",
+        "lines": 112,
+        "bytes": 5830,
+        "sha256": "62641bbc3c3c3e05336e012ec247e13f7034c792c5249af9f0bdb7e298f140cd",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "PoleProof"
+        ]
+      },
+      "PoleProof": {
+        "path": "PoleProof.lean",
+        "lines": 86,
+        "bytes": 4334,
+        "sha256": "b2f51aafe43b22b17113d06203322007e76ee3d773806e1ef22b6f0a6c5ad8d8",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Kernel",
+          "Statement"
+        ]
+      },
+      "Kernel": {
+        "path": "Kernel.lean",
+        "lines": 121,
+        "bytes": 5412,
+        "sha256": "9f20744fa5233c76c3e1ca08ee5ff5e32b16282db9800a73ea523ac8b4e24656",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "CArithProofs": {
+        "path": "CArithProofs.lean",
+        "lines": 114,
+        "bytes": 4791,
+        "sha256": "8fd8d44c4044795835754a54999aa9663ea13a5d1586a50cebb56d90231d9b26",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "ArithInterface"
+        ]
+      },
+      "ArithInterface": {
+        "path": "ArithInterface.lean",
+        "lines": 55,
+        "bytes": 2207,
+        "sha256": "539949919f72c5675d8d9436584c2fb4e11c40a0a2327a401cd02ca34e552eba",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Interface",
+          "Final"
+        ]
+      },
+      "Final": {
+        "path": "Final.lean",
+        "lines": 41,
+        "bytes": 1893,
+        "sha256": "77a38e9b9f36f3ab3660d2b2f12532f97c3e88096470c110d3c87b4da9efa067",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Completion",
+          "InnerSum",
+          "InnerLocal"
+        ]
+      },
+      "InnerLocal": {
+        "path": "InnerLocal.lean",
+        "lines": 219,
+        "bytes": 10956,
+        "sha256": "9d976a9abc79aea77a1b3dec59439b7850671a470195e93c44eb3a79870f4d9f",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "PhiGamma",
+          "InnerWeight",
+          "InnerScalar"
+        ]
+      },
+      "InnerScalar": {
+        "path": "InnerScalar.lean",
+        "lines": 108,
+        "bytes": 4986,
+        "sha256": "c06858b0c69d0e9ef4414188d0da549ce86ed04cac8c0bb74307cbdb660ebfbe",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "OuterScalar"
+        ]
+      },
+      "OuterScalar": {
+        "path": "OuterScalar.lean",
+        "lines": 193,
+        "bytes": 9206,
+        "sha256": "1934949938d93c033d3d6dc0bc80f3c46d1559a4eb017adcf661b359f3eef6a4",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Scalar"
+        ]
+      },
+      "Scalar": {
+        "path": "Scalar.lean",
+        "lines": 112,
+        "bytes": 4774,
+        "sha256": "e18923f0f985028eb151af50b92768f127b04d966e3a6e9b1eb1502fa34aa89d",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "OuterTargets"
+        ]
+      },
+      "InnerWeight": {
+        "path": "InnerWeight.lean",
+        "lines": 367,
+        "bytes": 16812,
+        "sha256": "391db4579d50fd0f0e5966e9317209c5411441d92ce500f76c6b7ddc56572c0e",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "CostBounds"
+        ]
+      },
+      "CostBounds": {
+        "path": "CostBounds.lean",
+        "lines": 128,
+        "bytes": 6439,
+        "sha256": "ed3d617be91a69fb928134aa42ede52738296c89361de6f0180d937028463f57",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Allocation"
+        ]
+      },
+      "Allocation": {
+        "path": "Allocation.lean",
+        "lines": 223,
+        "bytes": 10529,
+        "sha256": "bfd7bcc007a6e17ba5ee0edc0d952b521d96a223ed6027b2bff3de7896999991",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Classes"
+        ]
+      },
+      "Classes": {
+        "path": "Classes.lean",
+        "lines": 85,
+        "bytes": 3892,
+        "sha256": "86f3da527f5670e4c669b498da2f0f439d93e2cf7bbcce662c87845661d3dec1",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "BInnerStatement"
+        ]
+      },
+      "PhiGamma": {
+        "path": "PhiGamma.lean",
+        "lines": 195,
+        "bytes": 10580,
+        "sha256": "35da8cc39a18680462c27daa44d4abe2419067fbf3ed5860adfbd61982857f63",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "PhaseErrors"
+        ]
+      },
+      "PhaseErrors": {
+        "path": "PhaseErrors.lean",
+        "lines": 152,
+        "bytes": 7870,
+        "sha256": "cdc3343492848d643e7f03b252984b72af7d8ee260548aa1ba940882ab2f46d7",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "ModelData",
+          "NextRows"
+        ]
+      },
+      "NextRows": {
+        "path": "NextRows.lean",
+        "lines": 65,
+        "bytes": 2969,
+        "sha256": "97be51514a6d34940aba9c8876dc828b104672b75757a4d2440d1f1f04826b53",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "ClassRows"
+        ]
+      },
+      "ClassRows": {
+        "path": "ClassRows.lean",
+        "lines": 125,
+        "bytes": 5704,
+        "sha256": "7625a15adfb5a7cc61c3330a4f7659e0e4003a69ccb098e5078042a3a4824ef9",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "MeshCounts"
+        ]
+      },
+      "MeshCounts": {
+        "path": "MeshCounts.lean",
+        "lines": 94,
+        "bytes": 4259,
+        "sha256": "c4de012c1b04454dc6d6d922dca6c31b39e86c18e7f5e8a74705fa9baa36769f",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "ContinuousClasses",
+          "Dictionary"
+        ]
+      },
+      "Dictionary": {
+        "path": "Dictionary.lean",
+        "lines": 51,
+        "bytes": 1796,
+        "sha256": "fa33e007004c79d6099ed4b322e7c24ff0d24b4a3251aaae9e2b7e1770d6b08e",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "InnerModelTargets"
+        ]
+      },
+      "InnerModelTargets": {
+        "path": "InnerModelTargets.lean",
+        "lines": 26,
+        "bytes": 1150,
+        "sha256": "8213a1963d20ae8fb9c2432308fca5edd8161ccc44989571cdead92e50e52edf",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Mathathon.P108.InnerShift",
+          "Mathlib"
+        ]
+      },
+      "ContinuousClasses": {
+        "path": "ContinuousClasses.lean",
+        "lines": 129,
+        "bytes": 6494,
+        "sha256": "428da0082d72cbb93a2acc5e0d45d0c2593b141d4ba6a25aaf8e3c07293a9a04",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "ClassSums",
+          "ModelAlgebra"
+        ]
+      },
+      "ModelAlgebra": {
+        "path": "ModelAlgebra.lean",
+        "lines": 100,
+        "bytes": 4191,
+        "sha256": "e5fa1200da5bf40420fb838ae6fbbe76e857a3a475febb0cdeb62303a5a5f4aa",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "CostBounds"
+        ]
+      },
+      "ClassSums": {
+        "path": "ClassSums.lean",
+        "lines": 172,
+        "bytes": 8461,
+        "sha256": "a9aca49cdf283fafcf458ff955be03c6b2d5b37855494559cc52efded1123baf",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Mathlib",
+          "Zeta5S.ClassCount"
+        ]
+      },
+      "ModelData": {
+        "path": "ModelData.lean",
+        "lines": 137,
+        "bytes": 6895,
+        "sha256": "e5c8b9ff3858a4fa9d0cb7961e91ffdb5a56c56cc5493100fe2a28241fd009f4",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "GammaApprox"
+        ]
+      },
+      "GammaApprox": {
+        "path": "GammaApprox.lean",
+        "lines": 105,
+        "bytes": 4934,
+        "sha256": "2f94d71063bf00c46325023a6ab3000919d09a86a5dd863a3ee88de2ab019f7f",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "UniformClasses",
+          "ClassRows",
+          "GammaCells"
+        ]
+      },
+      "GammaCells": {
+        "path": "GammaCells.lean",
+        "lines": 2,
+        "bytes": 121,
+        "sha256": "5f9cdc1157016b409d07a08aa25a0c6efc47554f3c7832010be6c0341be987d9",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Continuity"
+        ]
+      },
+      "Continuity": {
+        "path": "Continuity.lean",
+        "lines": 92,
+        "bytes": 4532,
+        "sha256": "a77decb751623e84a82c4233fcb2501a2c643fc023afff46cc20c062a63da29e",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Dictionary",
+          "ContinuousClasses"
+        ]
+      },
+      "UniformClasses": {
+        "path": "UniformClasses.lean",
+        "lines": 77,
+        "bytes": 3791,
+        "sha256": "f9b98f77d8230c02493fdc70e025b85edbfdc9479256491482fd2c66f567effc",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "ContinuousClasses"
+        ]
+      },
+      "InnerSum": {
+        "path": "InnerSum.lean",
+        "lines": 133,
+        "bytes": 6174,
+        "sha256": "1c5dc048e44b67697b9f9fbc7f0b7d719800d64679b1638a962c3f497c36ac44",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "TransferStatement"
+        ]
+      },
+      "TransferStatement": {
+        "path": "TransferStatement.lean",
+        "lines": 11,
+        "bytes": 424,
+        "sha256": "78d1401d7f9d2a6c85944c779eea66bcb49dce50f036fd6e4610ee9fb9000483",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "BInnerStatement",
+          "BInnerLimitFinish",
+          "Transfer"
+        ]
+      },
+      "Transfer": {
+        "path": "Transfer.lean",
+        "lines": 129,
+        "bytes": 6110,
+        "sha256": "89576e19aaa36c3ddc27b37410c6ee52b80042af24254cdfb194e7fe16cdef72",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "PriorPrime"
+        ]
+      },
+      "PriorPrime": {
+        "path": "PriorPrime.lean",
+        "lines": 446,
+        "bytes": 22486,
+        "sha256": "fccb0d299e3ccdb5a671fe4ffe0aa36026d73246ebda6a3b7b12d798bfd742db",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Mathlib",
+          "PrimeNumberTheoremAnd.Consequences"
+        ]
+      },
+      "BInnerLimitFinish": {
+        "path": "BInnerLimitFinish.lean",
+        "lines": 13,
+        "bytes": 430,
+        "sha256": "47c7b55a899d13ed248ba65277b5e19016238551d4cc5c923905f4ffe2cc54b2",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Bounds",
+          "Discontinuities",
+          "Inversion",
+          "Integrability"
+        ]
+      },
+      "Integrability": {
+        "path": "Integrability.lean",
+        "lines": 64,
+        "bytes": 3105,
+        "sha256": "6c11004e997c98070d0d334416f13614bf12dfeaab50bc38aa302263e9a92d0f",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Bounds"
+        ]
+      },
+      "Bounds": {
+        "path": "Bounds.lean",
+        "lines": 120,
+        "bytes": 4911,
+        "sha256": "d35611489c90522e62dc1970778918a04cf12b29d29b3fa8379b4d9f32f6fa07",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Continuity"
+        ]
+      },
+      "Inversion": {
+        "path": "Inversion.lean",
+        "lines": 56,
+        "bytes": 2825,
+        "sha256": "462ccafa377957e4e7cc9b67cab62b6a464c944cbd23f833e3f8968c83d8b555",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "InnerModelTargets"
+        ]
+      },
+      "Discontinuities": {
+        "path": "Discontinuities.lean",
+        "lines": 88,
+        "bytes": 3753,
+        "sha256": "308fd9520974f00e9a973f6acb728bedc59bad0b1550c4cee026b5c63f2df555",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Continuity"
+        ]
+      },
+      "Completion": {
+        "path": "Completion.lean",
+        "lines": 20,
+        "bytes": 843,
+        "sha256": "adfe0016ab5a996e28134819b33e71539b6541cfc75c2fcde98f7cec6a1791d8",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Capstone",
+          "OuterSum"
+        ]
+      },
+      "OuterSum": {
+        "path": "OuterSum.lean",
+        "lines": 132,
+        "bytes": 5767,
+        "sha256": "0baf1e44498c7d2cf71f51a425c1877d0a9cc8e64b7d40d92838d3d0159413f3",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Regularity",
+          "FinalLocal"
+        ]
+      },
+      "FinalLocal": {
+        "path": "FinalLocal.lean",
+        "lines": 61,
+        "bytes": 2397,
+        "sha256": "be5b4824be5522d21422e055ad5c901dc332bf07fa39416b0520d4a45fa3ce7d",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "OuterLocal",
+          "OuterScalar",
+          "AboveK"
+        ]
+      },
+      "AboveK": {
+        "path": "AboveK.lean",
+        "lines": 139,
+        "bytes": 5293,
+        "sha256": "f9210b2e1c3286b058f7b142b3f4a5ddcd04d3bb3e4b6e7fc39cc4dcc2aca6f5",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Scalar"
+        ]
+      },
+      "OuterLocal": {
+        "path": "OuterLocal.lean",
+        "lines": 778,
+        "bytes": 34709,
+        "sha256": "02853cec505910f6f57eeda60cbb474b02bfe53cf5a0348d7916e98424d7482b",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "ClassData"
+        ]
+      },
+      "ClassData": {
+        "path": "ClassData.lean",
+        "lines": 97,
+        "bytes": 4003,
+        "sha256": "0cea3c0c2f1f322a15e722c2294cc22bb10c0a06838e8d9237339cf3be483464",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Mathlib",
+          "ClassSum"
+        ]
+      },
+      "ClassSum": {
+        "path": "ClassSum.lean",
+        "lines": 172,
+        "bytes": 8355,
+        "sha256": "620d2c06c0d150b481641e2434c741c9265074d327b562c0c0a7f9edd17e49bc",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Mathlib",
+          "OuterTargets"
+        ]
+      },
+      "Regularity": {
+        "path": "Regularity.lean",
+        "lines": 130,
+        "bytes": 6188,
+        "sha256": "153cd9af86bec2c5a1920221aebf9da5e48e2f1b36b1900dea4efab769dff6ae",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Mathathon.P108.OuterDefs",
+          "Transfer"
+        ]
+      },
+      "Capstone": {
+        "path": "Capstone.lean",
+        "lines": 78,
+        "bytes": 3294,
+        "sha256": "ecada6606e8f05491658450646cd0ac8ddb8789cb5e22fca604102e1bbf4c6c0",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "BInnerStatement",
+          "Asymptotic",
+          "SharpSplit"
+        ]
+      },
+      "SharpSplit": {
+        "path": "SharpSplit.lean",
+        "lines": 92,
+        "bytes": 3952,
+        "sha256": "67d1f713123986d2070fa50e95b1178b61f5187dce349f377ee7372d793eeff9",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "OuterTargets",
+          "BridgeTargets"
+        ]
+      },
+      "BridgeTargets": {
+        "path": "BridgeTargets.lean",
+        "lines": 89,
+        "bytes": 4216,
+        "sha256": "020b41792723b1c94334c8f54f3d6113167deee24ae69b923598499b3cf3d4a4",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Zeta5S.AssemblyData",
+          "Mathathon.P108.SStep"
+        ]
+      },
+      "Asymptotic": {
+        "path": "Asymptotic.lean",
+        "lines": 287,
+        "bytes": 13512,
+        "sha256": "d0ff9415ebfc13c7023351428a9b66ff329a1d9012d6940ed3fe8424eacacb4e",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "FiniteProof",
+          "PrimeNumberTheoremAnd.Consequences"
+        ]
+      },
+      "FiniteProof": {
+        "path": "FiniteProof.lean",
+        "lines": 252,
+        "bytes": 11826,
+        "sha256": "99188b0501af97542d6f84ea0b9359c687edbcbd0689667be11cf8f83c859450",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "BridgeTargets"
+        ]
+      },
+      "Assembly": {
+        "path": "Assembly.lean",
+        "lines": 85,
+        "bytes": 3599,
+        "sha256": "a43e370af202e72e7fb672ef014cc8454f8b3d55f45c084e57db90a45bf2ba7f",
+        "category": "other local bridge, analysis, interfaces and assembly",
+        "imports": [
+          "Interface"
+        ]
+      }
+    }
+  },
+  "baseline": {
+    "root": "Apery.Main",
+    "files": 209,
+    "lines": 138236,
+    "groups": {
+      "other prior Apery modules": {
+        "files": 91,
+        "lines": 21207
+      },
+      "prior energy table modules": {
+        "files": 118,
+        "lines": 117029
+      }
+    },
+    "external_imports": [
+      "Mathlib",
+      "PrimeNumberTheoremAnd.Consequences"
+    ],
+    "modules": {
+      "Apery.Main": {
+        "path": "Apery/Main.lean",
+        "lines": 29,
+        "bytes": 953,
+        "sha256": "e2c92d4eb7b3872b21acb5f2fed6a662b4f3a06cde7839ae5be829e4eb7d3531",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Criterion",
+          "Apery.MainEstimate"
+        ]
+      },
+      "Apery.MainEstimate": {
+        "path": "Apery/MainEstimate.lean",
+        "lines": 100,
+        "bytes": 4979,
+        "sha256": "744660afa730c7161bd11be267baa9d95d01b4512cdfd1a700e8e90df45036f0",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth",
+          "Apery.Construction",
+          "Apery.Zeta5",
+          "Apery.Degree",
+          "Apery.Constants",
+          "Apery.RealBound"
+        ]
+      },
+      "Apery.RealBound": {
+        "path": "Apery/RealBound.lean",
+        "lines": 111,
+        "bytes": 5272,
+        "sha256": "99ae38b30756a48e254189a10e0d369e560adce36c55f0c998c448bbdad68a59",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Apery.Constants",
+          "Apery.Degree",
+          "Apery.Stirling",
+          "Apery.Zeta5",
+          "Apery.Measure",
+          "Apery.EnergyConst",
+          "Apery.Positivity",
+          "Apery.EnergyBound"
+        ]
+      },
+      "Apery.EnergyBound": {
+        "path": "Apery/EnergyBound.lean",
+        "lines": 305,
+        "bytes": 15907,
+        "sha256": "a947ac0071bb038a065f3ddb833ef2fe869dabf536f11ea95e5eb78ba0655993",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Energy",
+          "Apery.Measure",
+          "Apery.EnergyFinal"
+        ]
+      },
+      "Apery.EnergyFinal": {
+        "path": "Apery/EnergyFinal.lean",
+        "lines": 216,
+        "bytes": 10411,
+        "sha256": "7ccddf0cb6cbd6aaf449acf3dea4224ffe3f039091b041fac1f306e597d9fba6",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyRaw",
+          "Apery.Table.Intervals",
+          "Apery.Table.Tail"
+        ]
+      },
+      "Apery.Table.Tail": {
+        "path": "Apery/Table/Tail.lean",
+        "lines": 97,
+        "bytes": 7242,
+        "sha256": "1addea0ffcf74fd4876e41ba69c9e79bed39481e72a4cb2eecc6201d6d8020d8",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.TableCheck"
+        ]
+      },
+      "Apery.TableCheck": {
+        "path": "Apery/TableCheck.lean",
+        "lines": 258,
+        "bytes": 14658,
+        "sha256": "e6b9e6d069e274c26d6d5bfef6da859a85d71e1c71a573528b1ab621acb55b20",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Potential"
+        ]
+      },
+      "Apery.Potential": {
+        "path": "Apery/Potential.lean",
+        "lines": 412,
+        "bytes": 21090,
+        "sha256": "eed6831a39c6495d78e3082d2274b46e9c13a498eaa92f28995d7f2749edf324",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.PotentialV",
+          "Apery.Certificates",
+          "Apery.Measure"
+        ]
+      },
+      "Apery.Measure": {
+        "path": "Apery/Measure.lean",
+        "lines": 63,
+        "bytes": 2275,
+        "sha256": "b80933c5e97698ccd60c7f95e6d5486de8041a1c848c8ddce309404dfd449b98",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Constants"
+        ]
+      },
+      "Apery.Constants": {
+        "path": "Apery/Constants.lean",
+        "lines": 42,
+        "bytes": 1356,
+        "sha256": "a8aa527f8dad150d71faf114e5c5fa698981bfecc07a4d598f402da6874f86ab",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Certificates": {
+        "path": "Apery/Certificates.lean",
+        "lines": 134,
+        "bytes": 6878,
+        "sha256": "453f0fc53d635f657928156bd6b751381e50797cef8f490cda54ea67ad3cb543",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyConst"
+        ]
+      },
+      "Apery.EnergyConst": {
+        "path": "Apery/EnergyConst.lean",
+        "lines": 221,
+        "bytes": 13622,
+        "sha256": "1f31dbc4d1ad66253a6e0e29e89e63573b03c7e4c190ddca7b7777eec9516561",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Apery.Measure"
+        ]
+      },
+      "Apery.PotentialV": {
+        "path": "Apery/PotentialV.lean",
+        "lines": 58,
+        "bytes": 2584,
+        "sha256": "769045f06631cd80df96c61eda8f5cd7feb976705d563681cffaa2490262bc9a",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Energy"
+        ]
+      },
+      "Apery.Energy": {
+        "path": "Apery/Energy.lean",
+        "lines": 278,
+        "bytes": 14745,
+        "sha256": "095075837888809fb0ca4cd60f64f451151d300606ae8c897b2f03289b56da38",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.HermiteIBP",
+          "Apery.DetIntegral"
+        ]
+      },
+      "Apery.DetIntegral": {
+        "path": "Apery/DetIntegral.lean",
+        "lines": 59,
+        "bytes": 2783,
+        "sha256": "765b40383b8d14f8216a07d321e68705935bef9090e1466d404af8358a9b920c",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Andreief",
+          "Apery.Positivity"
+        ]
+      },
+      "Apery.Positivity": {
+        "path": "Apery/Positivity.lean",
+        "lines": 223,
+        "bytes": 11155,
+        "sha256": "1bb3cde19d09ec4e0353a82d2426b74af0ea35d3aaf4d3c87beb2136d994a5e8",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight",
+          "Apery.Moments",
+          "Apery.PartialFractions",
+          "Apery.Zeta5",
+          "Apery.HermiteFormula"
+        ]
+      },
+      "Apery.HermiteFormula": {
+        "path": "Apery/HermiteFormula.lean",
+        "lines": 162,
+        "bytes": 8346,
+        "sha256": "b0f70e33b415555196a695c4bd8065c3b4b3917fd4d41c69489bc3771e86b7c5",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.HermiteIBP",
+          "Apery.HermiteIntegrals",
+          "Apery.Zeta5",
+          "Apery.Construction"
+        ]
+      },
+      "Apery.Construction": {
+        "path": "Apery/Construction.lean",
+        "lines": 73,
+        "bytes": 3324,
+        "sha256": "3d68e36fd05c72ebed98b1f50d031bae46d6d68b20bc87f7e24306a293a804b1",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Zeta5": {
+        "path": "Apery/Zeta5.lean",
+        "lines": 20,
+        "bytes": 446,
+        "sha256": "65cdbfef3a6832a14c3f98417a825f6099c48c3aaa6e49d9f750abcbe7d36721",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.HermiteIntegrals": {
+        "path": "Apery/HermiteIntegrals.lean",
+        "lines": 293,
+        "bytes": 15686,
+        "sha256": "91d5cc87225e0714b4088a279717085000c9b7224b6e857e6179078c294ed8d7",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Hermite"
+        ]
+      },
+      "Apery.Hermite": {
+        "path": "Apery/Hermite.lean",
+        "lines": 391,
+        "bytes": 18428,
+        "sha256": "547c6e516ef2fdb590389b4b25d40c8a28ab1e4187f665be067e58976a31fc68",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight"
+        ]
+      },
+      "Apery.Weight": {
+        "path": "Apery/Weight.lean",
+        "lines": 135,
+        "bytes": 6631,
+        "sha256": "e14b0db381932e2dade574feb8c7ce0e8c49a5ef4fdb02b77bd35532300a0d5a",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.HermiteIBP": {
+        "path": "Apery/HermiteIBP.lean",
+        "lines": 368,
+        "bytes": 21035,
+        "sha256": "88a649bc0710feec3bbc7cf7716cd1d359a666709fe89cff55b80338df261599",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Hermite",
+          "Apery.HermiteIntegrals",
+          "Apery.Moments"
+        ]
+      },
+      "Apery.Moments": {
+        "path": "Apery/Moments.lean",
+        "lines": 144,
+        "bytes": 6972,
+        "sha256": "0812a404882647289149adfbc5c320a26771effca8a7e5472f51b17c13bc57af",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Weight",
+          "Apery.Construction"
+        ]
+      },
+      "Apery.PartialFractions": {
+        "path": "Apery/PartialFractions.lean",
+        "lines": 118,
+        "bytes": 5690,
+        "sha256": "02fc010685131c58650b80a4bc54d04ccb6cbd2f84ee03b916a8f75b68ce7c76",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Degree"
+        ]
+      },
+      "Apery.Degree": {
+        "path": "Apery/Degree.lean",
+        "lines": 180,
+        "bytes": 8194,
+        "sha256": "8cd7b35f891cf785daeb51cba621acf7fc59be82c2a05053fb3c6c29f542bd89",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Apery.Construction"
+        ]
+      },
+      "Apery.Andreief": {
+        "path": "Apery/Andreief.lean",
+        "lines": 115,
+        "bytes": 5757,
+        "sha256": "fd3c752dbd71d658deaf5765bfadb9e5a5f24028dd9fe5e38205708a279d039a",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Table.Intervals": {
+        "path": "Apery/Table/Intervals.lean",
+        "lines": 4235,
+        "bytes": 406571,
+        "sha256": "5caf991ebac286d1760d5c134778ab5eafc4357a36a8939211f11684992efb30",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.U00",
+          "Apery.Table.U01",
+          "Apery.Table.U02",
+          "Apery.Table.U03",
+          "Apery.Table.U04",
+          "Apery.Table.U05",
+          "Apery.Table.U06",
+          "Apery.Table.U07",
+          "Apery.Table.U08",
+          "Apery.Table.U09",
+          "Apery.Table.U10",
+          "Apery.Table.U11",
+          "Apery.Table.U12",
+          "Apery.Table.U13",
+          "Apery.Table.U14",
+          "Apery.Table.U15",
+          "Apery.Table.U16",
+          "Apery.Table.U17",
+          "Apery.Table.U18",
+          "Apery.Table.U19",
+          "Apery.Table.U20",
+          "Apery.Table.U21",
+          "Apery.Table.U22",
+          "Apery.Table.U23",
+          "Apery.Table.U24",
+          "Apery.Table.U25",
+          "Apery.Table.U26",
+          "Apery.Table.U27",
+          "Apery.Table.U28",
+          "Apery.Table.U29",
+          "Apery.Table.U30",
+          "Apery.Table.U31",
+          "Apery.Table.U32",
+          "Apery.Table.U33",
+          "Apery.Table.U34",
+          "Apery.Table.U35",
+          "Apery.Table.U36",
+          "Apery.Table.U37",
+          "Apery.Table.U38",
+          "Apery.Table.U39",
+          "Apery.Table.U40",
+          "Apery.Table.U41",
+          "Apery.Table.U42",
+          "Apery.Table.U43",
+          "Apery.Table.U44",
+          "Apery.Table.U45",
+          "Apery.Table.U46",
+          "Apery.Table.U47",
+          "Apery.Table.U48",
+          "Apery.Table.U49",
+          "Apery.Table.U50",
+          "Apery.Table.U51",
+          "Apery.Table.U52",
+          "Apery.Table.U53",
+          "Apery.Table.U54",
+          "Apery.Table.U55",
+          "Apery.Table.U56",
+          "Apery.Table.V00",
+          "Apery.Table.V01",
+          "Apery.Table.V02",
+          "Apery.Table.V03",
+          "Apery.Table.V04",
+          "Apery.Table.V05",
+          "Apery.Table.V06",
+          "Apery.Table.V07",
+          "Apery.Table.V08",
+          "Apery.Table.V09",
+          "Apery.Table.V10",
+          "Apery.Table.V11",
+          "Apery.Table.V12",
+          "Apery.Table.V13",
+          "Apery.Table.V14",
+          "Apery.Table.V15",
+          "Apery.Table.V16",
+          "Apery.Table.V17",
+          "Apery.Table.V18",
+          "Apery.Table.V19",
+          "Apery.Table.V20",
+          "Apery.Table.V21",
+          "Apery.Table.V22",
+          "Apery.Table.V23",
+          "Apery.Table.V24",
+          "Apery.Table.V25",
+          "Apery.Table.V26",
+          "Apery.Table.V27",
+          "Apery.Table.V28",
+          "Apery.Table.V29",
+          "Apery.Table.V30",
+          "Apery.Table.V31",
+          "Apery.Table.V32",
+          "Apery.Table.V33",
+          "Apery.Table.V34",
+          "Apery.Table.V35",
+          "Apery.Table.V36",
+          "Apery.Table.V37",
+          "Apery.Table.V38",
+          "Apery.Table.V39",
+          "Apery.Table.V40",
+          "Apery.Table.V41",
+          "Apery.Table.V42",
+          "Apery.Table.V43",
+          "Apery.Table.V44",
+          "Apery.Table.V45",
+          "Apery.Table.V46",
+          "Apery.Table.V47",
+          "Apery.Table.V48",
+          "Apery.Table.V49",
+          "Apery.Table.V50",
+          "Apery.Table.V51",
+          "Apery.Table.V52",
+          "Apery.Table.V53",
+          "Apery.Table.V54",
+          "Apery.Table.V55",
+          "Apery.Table.V56",
+          "Apery.Table.Bracket",
+          "Apery.Table.Tail"
+        ]
+      },
+      "Apery.Table.Bracket": {
+        "path": "Apery/Table/Bracket.lean",
+        "lines": 42,
+        "bytes": 4850,
+        "sha256": "707e7df5885f0dde4fdd1d4d42fbc0446362e621c2a82d62416ea6b064977755",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.Common": {
+        "path": "Apery/Table/Common.lean",
+        "lines": 192,
+        "bytes": 21412,
+        "sha256": "eef4190b43fe7e285d97eac7b052c4255406759959953272897c2ac3da1bd10f",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.TableCheck"
+        ]
+      },
+      "Apery.Table.V56": {
+        "path": "Apery/Table/V56.lean",
+        "lines": 337,
+        "bytes": 52667,
+        "sha256": "2633b1dac991bcd1cddcfdeb0734cc3c8edafa7fbd2b6f53ef69f4fee70a251c",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V55": {
+        "path": "Apery/Table/V55.lean",
+        "lines": 378,
+        "bytes": 59650,
+        "sha256": "b989d445a11955202af067b0d691eda6b03069cea8f84e908ba81b6c0728956e",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V54": {
+        "path": "Apery/Table/V54.lean",
+        "lines": 378,
+        "bytes": 59914,
+        "sha256": "8fbd7f6a1b0075afc79eb968ca0ee0ebf5dccf95dacc03cfa743cdf373ff7a59",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V53": {
+        "path": "Apery/Table/V53.lean",
+        "lines": 378,
+        "bytes": 59469,
+        "sha256": "a8adc7e1c68ac090a73015a2c41e047a4154d4b82214504d1915222e4e423a24",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V52": {
+        "path": "Apery/Table/V52.lean",
+        "lines": 378,
+        "bytes": 59261,
+        "sha256": "a29452f3073b6dfe92db39adf0ce8b74014071520409e2f7170cc273779f0ffe",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V51": {
+        "path": "Apery/Table/V51.lean",
+        "lines": 378,
+        "bytes": 59114,
+        "sha256": "329ae6a9c819ea2506cb7a48e8c2e45013d3cd53d1cd223279c89edae9de7c43",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V50": {
+        "path": "Apery/Table/V50.lean",
+        "lines": 378,
+        "bytes": 59250,
+        "sha256": "e912eeedfec657f644abb5f7dfc5964b77f491c1536d792a9fa2b359aaa29636",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V49": {
+        "path": "Apery/Table/V49.lean",
+        "lines": 378,
+        "bytes": 59224,
+        "sha256": "c2165d00455aff7a3a92c9dc1e29737408987b9ffea22e0e82815b5697eb2d9a",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V48": {
+        "path": "Apery/Table/V48.lean",
+        "lines": 378,
+        "bytes": 59103,
+        "sha256": "1c416206dc530af896c27f1ab171bf98bdb07c1209aa8e24fcd2ad4efed01bb0",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V47": {
+        "path": "Apery/Table/V47.lean",
+        "lines": 378,
+        "bytes": 59084,
+        "sha256": "df5398f6bf847f6c31e0818148a99baa6361d66d540475d7d8a82a14bfb878e1",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V46": {
+        "path": "Apery/Table/V46.lean",
+        "lines": 378,
+        "bytes": 59208,
+        "sha256": "4029530ec6d9803ce8b05e84e47545110d7313f70f7e6eac1ef2d9ba22d3f0bc",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V45": {
+        "path": "Apery/Table/V45.lean",
+        "lines": 378,
+        "bytes": 59299,
+        "sha256": "4a9ca9e7edd53381cec65ea8aae657bf312ea0847f080eda72c913579375bd05",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V44": {
+        "path": "Apery/Table/V44.lean",
+        "lines": 378,
+        "bytes": 59249,
+        "sha256": "48d82a94748bd8c95a0a63ffbcf97d66077bf5e06755aa843a1a70db748c4dad",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V43": {
+        "path": "Apery/Table/V43.lean",
+        "lines": 378,
+        "bytes": 59059,
+        "sha256": "1bf94ef70c44f8a715816ad0cdf0e6a01b1c6e5dfae291fc36df79b82231de4c",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V42": {
+        "path": "Apery/Table/V42.lean",
+        "lines": 378,
+        "bytes": 59216,
+        "sha256": "9d398f66c51ec9ffd320d5687aa86435d2ff948244046a42d8ee503946120ea3",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V41": {
+        "path": "Apery/Table/V41.lean",
+        "lines": 378,
+        "bytes": 59379,
+        "sha256": "6588fab90c6535bfc9da22d160591cf66cc5b5d260420d0b0d75cedeb6d3c584",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V40": {
+        "path": "Apery/Table/V40.lean",
+        "lines": 378,
+        "bytes": 59425,
+        "sha256": "2d1839a976d9543a9c5768c44e7d90d6ece5558bd9568b836861ee7121d995a8",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V39": {
+        "path": "Apery/Table/V39.lean",
+        "lines": 378,
+        "bytes": 59369,
+        "sha256": "72de1072e9999cb002fa0ff65ea560a2f2d9b709dbac2922c5cf4faafc7beea1",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V38": {
+        "path": "Apery/Table/V38.lean",
+        "lines": 378,
+        "bytes": 58543,
+        "sha256": "d44253cf22b7ba8a61baf136d3f4edda0f4c0ef64c35b12083524b80e49c2154",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V37": {
+        "path": "Apery/Table/V37.lean",
+        "lines": 378,
+        "bytes": 58545,
+        "sha256": "19159767208e25459360ad3eec96057b77af8db628b6af2b488123880ded1905",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V36": {
+        "path": "Apery/Table/V36.lean",
+        "lines": 378,
+        "bytes": 58731,
+        "sha256": "e33316ff6f9cc253d2a29fbf0d455049a8ff0851deef8fa7bfdd87e8f14bf8e6",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V35": {
+        "path": "Apery/Table/V35.lean",
+        "lines": 378,
+        "bytes": 58657,
+        "sha256": "6f9ca8e6a07b940fedda42a1106c641e4e0036316bc4b88183cf4d41b7c22c9a",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V34": {
+        "path": "Apery/Table/V34.lean",
+        "lines": 378,
+        "bytes": 58606,
+        "sha256": "f672e2f5edd5c76d6f7f03002b6345ffd3dcaf9029b9dfabb8c3cd23f175a2e4",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V33": {
+        "path": "Apery/Table/V33.lean",
+        "lines": 378,
+        "bytes": 58945,
+        "sha256": "613b27cb17f4f6055740c62571487e3354bba789c4b06f804a8f5c1fbc3d2462",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V32": {
+        "path": "Apery/Table/V32.lean",
+        "lines": 378,
+        "bytes": 59330,
+        "sha256": "114d22ada238d97516baa843a10fb630dde22753b9fe774da3609583af8866f1",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V31": {
+        "path": "Apery/Table/V31.lean",
+        "lines": 378,
+        "bytes": 59303,
+        "sha256": "c6743a75677b79a6a60421b93b7a8b2a4547438bc3a41c0b4fb483b8c881de5d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V30": {
+        "path": "Apery/Table/V30.lean",
+        "lines": 378,
+        "bytes": 59343,
+        "sha256": "c3f9559d47b90633edec2f72821307b905c9ef13476dc6a2128250d556fc5c5d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V29": {
+        "path": "Apery/Table/V29.lean",
+        "lines": 378,
+        "bytes": 59162,
+        "sha256": "96975be37feeab9e14ecedbe6eade81779715eb871617033b15ecd7fdb5a9a3a",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V28": {
+        "path": "Apery/Table/V28.lean",
+        "lines": 378,
+        "bytes": 59042,
+        "sha256": "c42a702c29c17288e031c9ee2352c68246f4e9de931581b4419bdbcfcbaa1611",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V27": {
+        "path": "Apery/Table/V27.lean",
+        "lines": 378,
+        "bytes": 59318,
+        "sha256": "107cb4a746ab5bd9802ca8de0e5b7b7c0ad17d66e8859d16778395785df086d5",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V26": {
+        "path": "Apery/Table/V26.lean",
+        "lines": 378,
+        "bytes": 59333,
+        "sha256": "8d3c96f44dea2612bdfe3c381b132449bb0503741748cd3fa3f1f67d75bcf37f",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V25": {
+        "path": "Apery/Table/V25.lean",
+        "lines": 378,
+        "bytes": 59168,
+        "sha256": "544a80ee43227776bdca7e986a964403c360c3a30adcd8d6fc2149cc0dcc1f8d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V24": {
+        "path": "Apery/Table/V24.lean",
+        "lines": 374,
+        "bytes": 57794,
+        "sha256": "404031af8eaf86e6856a2f034ca9bb802716a528abba9e24d45f0f5cd7b2a1b8",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V23": {
+        "path": "Apery/Table/V23.lean",
+        "lines": 354,
+        "bytes": 52163,
+        "sha256": "12269c6a504b70d8cf8f1cdc60c416e0851e50131ac40f8537b67809a7f6cb13",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V22": {
+        "path": "Apery/Table/V22.lean",
+        "lines": 354,
+        "bytes": 52489,
+        "sha256": "67c9ad44c2506b15b1a1959c393d80d88b15e2f34aec13e03f23abc41ab57de1",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V21": {
+        "path": "Apery/Table/V21.lean",
+        "lines": 354,
+        "bytes": 52359,
+        "sha256": "c01845933318469d258407bc570eb9b63fd4b2d4fedefaccc68a2ada5b4e5e0d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V20": {
+        "path": "Apery/Table/V20.lean",
+        "lines": 354,
+        "bytes": 52219,
+        "sha256": "f44730e73aa0bb0d0d691445aa1a486d7c0013a583f1038ce38326b524e4c407",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V19": {
+        "path": "Apery/Table/V19.lean",
+        "lines": 354,
+        "bytes": 52382,
+        "sha256": "69182d00b93c0938ad1a628fd17c96bef580c90d05700385f4b78f4a649e69a3",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V18": {
+        "path": "Apery/Table/V18.lean",
+        "lines": 354,
+        "bytes": 52583,
+        "sha256": "a5fa94d7a7c048a3345ce5bdab67c3da5b162c2aded1e864f8bb38f4d59dd92f",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V17": {
+        "path": "Apery/Table/V17.lean",
+        "lines": 354,
+        "bytes": 52585,
+        "sha256": "afa881a03ef102116a2b1ac1a74d7d5636ac31cf06cf2250caee6f748a5c2ec0",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V16": {
+        "path": "Apery/Table/V16.lean",
+        "lines": 354,
+        "bytes": 52531,
+        "sha256": "545869c2d15439f9bebdd759219b43348dded0810a74b2c916977ab95828a1f8",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V15": {
+        "path": "Apery/Table/V15.lean",
+        "lines": 354,
+        "bytes": 52023,
+        "sha256": "8d58b2d64fe2480ee7966a41b82802deb01d21c58d9efee3193943b8bf1a95f7",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V14": {
+        "path": "Apery/Table/V14.lean",
+        "lines": 354,
+        "bytes": 52210,
+        "sha256": "9ef25b52ad252fb2fdff8e68eecfaae0dfb78edb02a84d97a95767605c9aa26e",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V13": {
+        "path": "Apery/Table/V13.lean",
+        "lines": 354,
+        "bytes": 52399,
+        "sha256": "511b92547a02bfe1025776c6cc2b91b0fffc97b61e7b3bc8ba16999308a98d3c",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V12": {
+        "path": "Apery/Table/V12.lean",
+        "lines": 354,
+        "bytes": 52097,
+        "sha256": "ecf27a68df0e968a221a5cb06ff4ca3badadb7013ccd63a03de60002be5f1586",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V11": {
+        "path": "Apery/Table/V11.lean",
+        "lines": 354,
+        "bytes": 52228,
+        "sha256": "49a0a44edd61921d1cd84efb44757dc4560bdc4d4268437dfbc7b1a4476f532b",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V10": {
+        "path": "Apery/Table/V10.lean",
+        "lines": 354,
+        "bytes": 52361,
+        "sha256": "b23bbb6e61d70494be49a78b7d6fed34462c65ba1d3634c206cda7004e1ca757",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V09": {
+        "path": "Apery/Table/V09.lean",
+        "lines": 354,
+        "bytes": 52240,
+        "sha256": "1a67578a29dc41159baf8a20e2f4e36852f6630664cf73e51b405c4908eb8f0d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V08": {
+        "path": "Apery/Table/V08.lean",
+        "lines": 354,
+        "bytes": 52107,
+        "sha256": "415f8aa1da2b88269f8607db5707647b337470d6f16801b5c3aaef2bf4b1d1b5",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V07": {
+        "path": "Apery/Table/V07.lean",
+        "lines": 354,
+        "bytes": 52171,
+        "sha256": "58f5f03ebb46ccf3d8005df4972bcb17604e16d1ff04c96cf07093f520f34dec",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V06": {
+        "path": "Apery/Table/V06.lean",
+        "lines": 354,
+        "bytes": 51923,
+        "sha256": "9f417e967bf4726b5dc00dfc9d32fd9d4a63a8d65dad591164e35888b3084df1",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V05": {
+        "path": "Apery/Table/V05.lean",
+        "lines": 354,
+        "bytes": 51948,
+        "sha256": "3a49832008ded78e741dfb5dbfda24a5b57bb6817f2f9f072f4059ba106d537d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V04": {
+        "path": "Apery/Table/V04.lean",
+        "lines": 364,
+        "bytes": 54871,
+        "sha256": "d8916322d62cfc8ca3af2281d59a3691bf19d367ebd9ce685e58254572b0a6f1",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V03": {
+        "path": "Apery/Table/V03.lean",
+        "lines": 378,
+        "bytes": 58965,
+        "sha256": "04ec9bbd45ecdcec64b5495fd883508a5efd6feed500e917ee696806ff35e56d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V02": {
+        "path": "Apery/Table/V02.lean",
+        "lines": 410,
+        "bytes": 62841,
+        "sha256": "7da09536e3984d3b496dcc83a77ab74ed9815f902ae28c9c019a60d3f49e5702",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V01": {
+        "path": "Apery/Table/V01.lean",
+        "lines": 402,
+        "bytes": 58867,
+        "sha256": "08bc8b524568b7d7ee5e213aadc2cd3fb5c814fc0086bf471ab930ac7aa2a0d5",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.V00": {
+        "path": "Apery/Table/V00.lean",
+        "lines": 402,
+        "bytes": 58331,
+        "sha256": "4c36bf94fcc5c44d4d95ea62c4d78fbc35afdcbb1859c381e90e5d9e3a34217d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U56": {
+        "path": "Apery/Table/U56.lean",
+        "lines": 1556,
+        "bytes": 270225,
+        "sha256": "8450c2dc3a48f041073e1a45e6caf1f3475d697f31e436cd371397d8ebdd431c",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U55": {
+        "path": "Apery/Table/U55.lean",
+        "lines": 2166,
+        "bytes": 400955,
+        "sha256": "39e772cb4daf2ff13213904a3eb6a3102f30ea2f2e3b2a0d82be2ac6c25f354e",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U54": {
+        "path": "Apery/Table/U54.lean",
+        "lines": 2166,
+        "bytes": 403241,
+        "sha256": "aba63eafe4efad8820c1b248f0cd3cb0d710679ba33977c905733b8d67878919",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U53": {
+        "path": "Apery/Table/U53.lean",
+        "lines": 2124,
+        "bytes": 391733,
+        "sha256": "5520cc753e72993444cdbc02fa6b56955ad887e43ae1bbbcaf57b10f88961886",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U52": {
+        "path": "Apery/Table/U52.lean",
+        "lines": 2082,
+        "bytes": 378831,
+        "sha256": "dfaea6c9ed28109b63dddd0d853d8f9c20f08337e4ff202ce9ef17e9d96e24e9",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U51": {
+        "path": "Apery/Table/U51.lean",
+        "lines": 2082,
+        "bytes": 378595,
+        "sha256": "e1794c0785b2a6cf119833f84170a635201a9e2332b1fba4f3b761d206e8e6f8",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U50": {
+        "path": "Apery/Table/U50.lean",
+        "lines": 1998,
+        "bytes": 359406,
+        "sha256": "8060a332b3ed3ed8a57ab04eb9a3a5c2c8f5f6fc0628911e0a61d85900db28c9",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U49": {
+        "path": "Apery/Table/U49.lean",
+        "lines": 1998,
+        "bytes": 360504,
+        "sha256": "228b8070d419791c33c8ea1e616098d3cca595f72ce515a78dfe2005860b3832",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U48": {
+        "path": "Apery/Table/U48.lean",
+        "lines": 1998,
+        "bytes": 360332,
+        "sha256": "9b3355210df523479d62baebb6bf6efef55aef76678e8532af435dabcc53a9df",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U47": {
+        "path": "Apery/Table/U47.lean",
+        "lines": 1977,
+        "bytes": 355342,
+        "sha256": "1c93c5ebf455ca07f823d4ab2a6f23c891fb05ea1f7a56a458b90c8d99742552",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U46": {
+        "path": "Apery/Table/U46.lean",
+        "lines": 1914,
+        "bytes": 341487,
+        "sha256": "377487d49cebc8fa62753e71c1f72c63fb891420b6472124427df58af1b0c725",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U45": {
+        "path": "Apery/Table/U45.lean",
+        "lines": 1914,
+        "bytes": 341692,
+        "sha256": "9244b063d60f6dfe6a21970467c66eb72d5e3d0c0ef5c4e0dd84a15330b7650c",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U44": {
+        "path": "Apery/Table/U44.lean",
+        "lines": 1914,
+        "bytes": 341184,
+        "sha256": "42900577e65f87e862b882637f720b8bfd2a33444eb371f847c103feee92afd9",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U43": {
+        "path": "Apery/Table/U43.lean",
+        "lines": 1886,
+        "bytes": 334718,
+        "sha256": "a40530234e993c9598ef8480ab2ebd4a4dd09ef39df9e22d5c39ffb09fde88d5",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U42": {
+        "path": "Apery/Table/U42.lean",
+        "lines": 1830,
+        "bytes": 322806,
+        "sha256": "53717bb6b18d0825469f37d9379c8f51893ead2efe3886e590735be6827a206c",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U41": {
+        "path": "Apery/Table/U41.lean",
+        "lines": 1830,
+        "bytes": 323374,
+        "sha256": "c5affb839c26299b6d59c16c8a1c3b71787405e46c1bc057ab94338379cc7f42",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U40": {
+        "path": "Apery/Table/U40.lean",
+        "lines": 1830,
+        "bytes": 324543,
+        "sha256": "81caacf92aaf7f0ca91aa39220d700fb3c8850806cbc1a6b374485447163cb15",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U39": {
+        "path": "Apery/Table/U39.lean",
+        "lines": 1830,
+        "bytes": 323824,
+        "sha256": "fcc44833157efdeac79940ff22e1cd795e52d3782f6b3ed17df43c503a34e1cd",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U38": {
+        "path": "Apery/Table/U38.lean",
+        "lines": 1781,
+        "bytes": 308964,
+        "sha256": "af03f09238489a974652bbb2a2948be5ffbeaace8513ef699e352ffd1dcd1943",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U37": {
+        "path": "Apery/Table/U37.lean",
+        "lines": 1746,
+        "bytes": 299206,
+        "sha256": "259e521697c045faff59d53100520ce4b8207a70a9d81e3709d380a251ea5006",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U36": {
+        "path": "Apery/Table/U36.lean",
+        "lines": 1746,
+        "bytes": 300388,
+        "sha256": "52f6152a13d6b601ab26c4178e4b290279029cf447df1306b526bd152b2d2feb",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U35": {
+        "path": "Apery/Table/U35.lean",
+        "lines": 1746,
+        "bytes": 300292,
+        "sha256": "1cca53d1d184a7b9ab6310e7f2aede74527e0737487cc9115dd91e9f52165b74",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U34": {
+        "path": "Apery/Table/U34.lean",
+        "lines": 1746,
+        "bytes": 299814,
+        "sha256": "bd6a83441249ac02a707a0ed33bdee0a41b7fada3bd6d1ca0cf292cc0907f72a",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U33": {
+        "path": "Apery/Table/U33.lean",
+        "lines": 1690,
+        "bytes": 288897,
+        "sha256": "fe36874aff6c176a3b065fd5ee3a9b882d95bb76d64d12dfbc3da49365088862",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U32": {
+        "path": "Apery/Table/U32.lean",
+        "lines": 1662,
+        "bytes": 285247,
+        "sha256": "0909df8b751269c32ff15bc911f04caa77cf44e34fc160a8d397dbb3da68f984",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U31": {
+        "path": "Apery/Table/U31.lean",
+        "lines": 1662,
+        "bytes": 286309,
+        "sha256": "8201359588bb479fbc82da3e9473b8dc07619d76449add1e47158d01d614a103",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U30": {
+        "path": "Apery/Table/U30.lean",
+        "lines": 1662,
+        "bytes": 286322,
+        "sha256": "073c12db6edef81b644b7bae407ecf0bde73198edc80dd65aae09deb4935b66e",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U29": {
+        "path": "Apery/Table/U29.lean",
+        "lines": 1662,
+        "bytes": 285961,
+        "sha256": "3eb53131421e838860308be4a5ec48ebffdc8e4034b12795b1aab73d0f0fbfda",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U28": {
+        "path": "Apery/Table/U28.lean",
+        "lines": 1592,
+        "bytes": 267842,
+        "sha256": "4099da1d6b1123b08be8a4b2ac883d3bc64d8863f261021a1d4523ec7cd5a9b2",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U27": {
+        "path": "Apery/Table/U27.lean",
+        "lines": 1578,
+        "bytes": 266769,
+        "sha256": "b78af6d8bf24a5da0ee0c3b6d1a7c18c88e38fd720597b2ee305dd9f288d97ff",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U26": {
+        "path": "Apery/Table/U26.lean",
+        "lines": 1578,
+        "bytes": 267010,
+        "sha256": "7a3ddc2ee06b5868131c81a541cf89b50625e3ecaa6ef3f4f435bb85f9d2a59a",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U25": {
+        "path": "Apery/Table/U25.lean",
+        "lines": 1578,
+        "bytes": 267162,
+        "sha256": "e55c9869a19a7164f77cec89bc3428925104db80d2e4c7cdacab2605a3d994cf",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U24": {
+        "path": "Apery/Table/U24.lean",
+        "lines": 1557,
+        "bytes": 260483,
+        "sha256": "a490ca12c52df37ac3954ac2a9e51f493274ce98bfd6daf9e17289f0675f736e",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U23": {
+        "path": "Apery/Table/U23.lean",
+        "lines": 1494,
+        "bytes": 245919,
+        "sha256": "ae795318d6aa41620def7da4882bc9333e91e67080e48d90ebb9861551d012e4",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U22": {
+        "path": "Apery/Table/U22.lean",
+        "lines": 1494,
+        "bytes": 246876,
+        "sha256": "60363881df63729eab04b38c241c5e3158036c48d80cf8d2b0c318b9005a1f6d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U21": {
+        "path": "Apery/Table/U21.lean",
+        "lines": 1494,
+        "bytes": 246917,
+        "sha256": "459a2995929d577fa8893d5e631d0230357051c8c26fad1e43ce69eedbc6828e",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U20": {
+        "path": "Apery/Table/U20.lean",
+        "lines": 1494,
+        "bytes": 246560,
+        "sha256": "05dd080b5ef299b49c4382cddd801ee7fb972ba9e1eb54e5ecaa0033d7dfd76b",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U19": {
+        "path": "Apery/Table/U19.lean",
+        "lines": 1424,
+        "bytes": 230570,
+        "sha256": "ecb458dec451bc72da7f07cf6de576fe9ec371c9713f18d9ba7f078b3b5f1032",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U18": {
+        "path": "Apery/Table/U18.lean",
+        "lines": 1410,
+        "bytes": 228785,
+        "sha256": "277bb9633b57c1479c158e401a4767710bf47fb61f103a24fb8d556eed0f1de7",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U17": {
+        "path": "Apery/Table/U17.lean",
+        "lines": 1410,
+        "bytes": 229486,
+        "sha256": "79e7ebe41c048c136da0af290498a2e5d1cfb287f047c018dbfa49ae321f4222",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U16": {
+        "path": "Apery/Table/U16.lean",
+        "lines": 1410,
+        "bytes": 228810,
+        "sha256": "dea9453632a47dbda5444ccce57f9563cfbb80b6c7b789524a2d8b18ebc9aa9d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U15": {
+        "path": "Apery/Table/U15.lean",
+        "lines": 1354,
+        "bytes": 214766,
+        "sha256": "6287b953254168a6d3c88c9124ec133b223797f1e75ec5c026f6aa9ca0ec4b52",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U14": {
+        "path": "Apery/Table/U14.lean",
+        "lines": 1326,
+        "bytes": 208723,
+        "sha256": "23b060662c68faa37feb3a471a5a5dd8b39f1b000f4616ad6e052663aa7b2fe3",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U13": {
+        "path": "Apery/Table/U13.lean",
+        "lines": 1326,
+        "bytes": 209284,
+        "sha256": "1ed3c30d9f76985028f3b0e1791f96de1cead1d91b0420feffbe3807ed6e5fe9",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U12": {
+        "path": "Apery/Table/U12.lean",
+        "lines": 1326,
+        "bytes": 208761,
+        "sha256": "edee89d4fba115a4deac42e3225385e2f61d451161d8728723e0ba670aeb75af",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U11": {
+        "path": "Apery/Table/U11.lean",
+        "lines": 1256,
+        "bytes": 192477,
+        "sha256": "d2f57ba14423a3af578be7ce18c671206590b75f0ebf6afea13d23f306f01345",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U10": {
+        "path": "Apery/Table/U10.lean",
+        "lines": 1242,
+        "bytes": 190630,
+        "sha256": "9a7b5cb60d0b9822f6175cbe7e323c35cd0865b390b9c03066b7051c2091c53d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U09": {
+        "path": "Apery/Table/U09.lean",
+        "lines": 1242,
+        "bytes": 190804,
+        "sha256": "3f03d82ed108656d28460e55891bed37a46c872162784654307c7aa96ae4bb0b",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U08": {
+        "path": "Apery/Table/U08.lean",
+        "lines": 1193,
+        "bytes": 178663,
+        "sha256": "b7d62cb3555c804bd51ff28ec7e9bfb773d84f8549d18c52a3836eb7ba10feac",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U07": {
+        "path": "Apery/Table/U07.lean",
+        "lines": 1158,
+        "bytes": 170919,
+        "sha256": "4d727a1ce9c4a2cc47dfc4d02abc01827a892520fdbd0be82f292347e3773b68",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U06": {
+        "path": "Apery/Table/U06.lean",
+        "lines": 1137,
+        "bytes": 166074,
+        "sha256": "547ecc56372de7272245d938c096c6e253a049a81dbece9700f5709250507fdc",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U05": {
+        "path": "Apery/Table/U05.lean",
+        "lines": 1074,
+        "bytes": 151649,
+        "sha256": "5a3abd40fe647fb7077120870d73e8babedecf6e46ed3dd272aeb773042dc20d",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U04": {
+        "path": "Apery/Table/U04.lean",
+        "lines": 1046,
+        "bytes": 145183,
+        "sha256": "d061cf61f5b4afb6ac1602a44b6fc1512a4adf82117ca2e4c79197c1756faab7",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U03": {
+        "path": "Apery/Table/U03.lean",
+        "lines": 983,
+        "bytes": 131772,
+        "sha256": "6ca03ded14d49f4c51aa4f125eb1fef04ba53c2243470f2a7a2a815656544a20",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U02": {
+        "path": "Apery/Table/U02.lean",
+        "lines": 934,
+        "bytes": 119724,
+        "sha256": "aa962a33e463dfe0497a14906ea1afb535bd7fe831b2c3ba8d1fe933bbebd3a2",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U01": {
+        "path": "Apery/Table/U01.lean",
+        "lines": 1193,
+        "bytes": 175234,
+        "sha256": "1ba57720e4063f62b04f018bd9dad149c701376e9973638b0837ccf45b7070c7",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.Table.U00": {
+        "path": "Apery/Table/U00.lean",
+        "lines": 1851,
+        "bytes": 312261,
+        "sha256": "7c2a1016214512b2703105c2d636f70890ba7595c9d40fe6a99815c515949599",
+        "category": "prior energy table modules",
+        "imports": [
+          "Apery.Table.Common"
+        ]
+      },
+      "Apery.EnergyRaw": {
+        "path": "Apery/EnergyRaw.lean",
+        "lines": 200,
+        "bytes": 10440,
+        "sha256": "4a1ee8cdc66e552933c6a858124111b70cb41d635d6b001962728098459dc751",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyBlocks"
+        ]
+      },
+      "Apery.EnergyBlocks": {
+        "path": "Apery/EnergyBlocks.lean",
+        "lines": 188,
+        "bytes": 10609,
+        "sha256": "b1d80ad07b2b1634b06fb8c76011ae66246b2b8dcb4e289cdafca4cf8e50b9e0",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyAtoms"
+        ]
+      },
+      "Apery.EnergyAtoms": {
+        "path": "Apery/EnergyAtoms.lean",
+        "lines": 272,
+        "bytes": 13515,
+        "sha256": "fa7c6474172e3c133eb29451f76a7fa48f813c424155b9446326104560be2226",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.ArcsinePotential",
+          "Apery.Constants",
+          "Apery.Energy"
+        ]
+      },
+      "Apery.ArcsinePotential": {
+        "path": "Apery/ArcsinePotential.lean",
+        "lines": 211,
+        "bytes": 10662,
+        "sha256": "e37b94c5f9976585634ea08a15d64a9155eaf3d2c4581bc50bef591bb3530437",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.ArcsineAtoms"
+        ]
+      },
+      "Apery.ArcsineAtoms": {
+        "path": "Apery/ArcsineAtoms.lean",
+        "lines": 143,
+        "bytes": 7344,
+        "sha256": "5fe49b1725129b9a7ec8714e8483b04ab3df79ea84544201c57be1f7b5ee37b4",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.CircleAtoms",
+          "Apery.Potential"
+        ]
+      },
+      "Apery.CircleAtoms": {
+        "path": "Apery/CircleAtoms.lean",
+        "lines": 116,
+        "bytes": 5355,
+        "sha256": "a6b6dd42698221014ee99e0d3f315caf7af4291c588ba711b08cbb10af732d1c",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.EnergyLimit"
+        ]
+      },
+      "Apery.EnergyLimit": {
+        "path": "Apery/EnergyLimit.lean",
+        "lines": 81,
+        "bytes": 4435,
+        "sha256": "9ddc5063b1d62095f3fd90396a65932ff8a2245a7433a810096bb2b1c40a2b67",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Kernel"
+        ]
+      },
+      "Apery.Kernel": {
+        "path": "Apery/Kernel.lean",
+        "lines": 219,
+        "bytes": 10890,
+        "sha256": "8556966a93a1c5d1243de9ef00c814bdf056f58f2f9ae7009d6947c6d3653e1b",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.ZeroMass"
+        ]
+      },
+      "Apery.ZeroMass": {
+        "path": "Apery/ZeroMass.lean",
+        "lines": 332,
+        "bytes": 16864,
+        "sha256": "ac0ec23a4ac007be8fd86a267b590af7243b69fed5292e790a8c29b257cae89a",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Gaussian"
+        ]
+      },
+      "Apery.Gaussian": {
+        "path": "Apery/Gaussian.lean",
+        "lines": 85,
+        "bytes": 4100,
+        "sha256": "0cf5a66486f68b8786c9bada90ce0ef7ba5b7d90a7748d4d2ddafc85593ea3c3",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Stirling": {
+        "path": "Apery/Stirling.lean",
+        "lines": 164,
+        "bytes": 7915,
+        "sha256": "24a85d4595a30e909da36494488b0a334a4ce4b0a1587c15d705f7411dd84d5e",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Growth": {
+        "path": "Apery/Growth.lean",
+        "lines": 125,
+        "bytes": 6185,
+        "sha256": "1558ad145acf43f4b2e1f37e9aeadb8ae3d158fc05bb083a9a7c57121141c967",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.Assembly4",
+          "Apery.Constants"
+        ]
+      },
+      "Apery.Growth.Assembly4": {
+        "path": "Apery/Growth/Assembly4.lean",
+        "lines": 96,
+        "bytes": 4229,
+        "sha256": "9a7214a27e99a6cda002cb7ad518dacb2b0d7ee4fd8b9970adba29fdbe2ce14c",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.Assembly3"
+        ]
+      },
+      "Apery.Growth.Assembly3": {
+        "path": "Apery/Growth/Assembly3.lean",
+        "lines": 146,
+        "bytes": 6864,
+        "sha256": "8851c2da66d9b07cfaef1f70a5363ddaaa7b2ae533a94cf881fe64996be4e038",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.Assembly2"
+        ]
+      },
+      "Apery.Growth.Assembly2": {
+        "path": "Apery/Growth/Assembly2.lean",
+        "lines": 78,
+        "bytes": 3162,
+        "sha256": "6838093a3fb41bd1048e67a43229673c026987f04c0bf674cf86bfc01c8b0c1b",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.Assembly1",
+          "Apery.Growth.Constants",
+          "Apery.Growth.PieceIdx"
+        ]
+      },
+      "Apery.Growth.PieceIdx": {
+        "path": "Apery/Growth/PieceIdx.lean",
+        "lines": 58,
+        "bytes": 2105,
+        "sha256": "3082b1a5b59e3474fb378816b2779c12d397c44b772fd35086a64253ef50d760",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Growth.Constants": {
+        "path": "Apery/Growth/Constants.lean",
+        "lines": 108,
+        "bytes": 5198,
+        "sha256": "49c7bc6ad2bb8b6675cf0616a0aaf056c30a1121f051f0bd754644f2c0b03cf2",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.OuterPrime"
+        ]
+      },
+      "Apery.Growth.OuterPrime": {
+        "path": "Apery/Growth/OuterPrime.lean",
+        "lines": 276,
+        "bytes": 12543,
+        "sha256": "835de833f4cd7bde6210a02780614a3b6723c1d748508b3795dfedf9fc3ca08f",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.TablePrime"
+        ]
+      },
+      "Apery.Growth.TablePrime": {
+        "path": "Apery/Growth/TablePrime.lean",
+        "lines": 82,
+        "bytes": 3761,
+        "sha256": "68983df3578d76f4270d498697a517e1b5022231f765709d011c29ee740b2c1d",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.TailPrime"
+        ]
+      },
+      "Apery.Growth.TailPrime": {
+        "path": "Apery/Growth/TailPrime.lean",
+        "lines": 429,
+        "bytes": 21574,
+        "sha256": "1b24393af1518b6191517f61a9898c62de387568e95f270c724699b2e24e47d0",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.InnerPrime"
+        ]
+      },
+      "Apery.Growth.InnerPrime": {
+        "path": "Apery/Growth/InnerPrime.lean",
+        "lines": 266,
+        "bytes": 12491,
+        "sha256": "ac182d019b38efebf6777e3151332fadd42d9c9369284a4002a2fb7ffaacb778",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.ClassData",
+          "Apery.Norm"
+        ]
+      },
+      "Apery.Norm": {
+        "path": "Apery/Norm.lean",
+        "lines": 293,
+        "bytes": 12131,
+        "sha256": "bbaeb674147f5b72ca7bfb8557fdaaa03004e9750830bb21303b206b04832dc1",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.OuterEntryMain",
+          "Apery.Arith.InnerAlloc",
+          "Apery.Arith.SmallPrimeF",
+          "Apery.Legendre"
+        ]
+      },
+      "Apery.Legendre": {
+        "path": "Apery/Legendre.lean",
+        "lines": 63,
+        "bytes": 2519,
+        "sha256": "70af5d623c148b736dc40a57283e7b62f67d67d20c1e6531479e5617a210b499",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Normalization"
+        ]
+      },
+      "Apery.Normalization": {
+        "path": "Apery/Normalization.lean",
+        "lines": 113,
+        "bytes": 4207,
+        "sha256": "8d64d6f5576ed4cad9e9f44904ecbc7e7881b170ab5c1a738c2689a8b2161965",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Construction",
+          "Apery.Constants"
+        ]
+      },
+      "Apery.Arith.SmallPrimeF": {
+        "path": "Apery/Arith/SmallPrimeF.lean",
+        "lines": 283,
+        "bytes": 12982,
+        "sha256": "890a2c5a5c139f5b04ec4e9d7a4cf79b3c147055556489aba3f89307e5190176",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.SmallPrimeTau",
+          "Apery.Arith.BasisChange",
+          "Apery.PartialFractions",
+          "Apery.Legendre"
+        ]
+      },
+      "Apery.Arith.BasisChange": {
+        "path": "Apery/Arith/BasisChange.lean",
+        "lines": 100,
+        "bytes": 4474,
+        "sha256": "f7b8cf61451009d1333f4ec5bcad267870661d8853ac0d53896c27081b78ca50",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Degree",
+          "Apery.PartialFractions"
+        ]
+      },
+      "Apery.Arith.SmallPrimeTau": {
+        "path": "Apery/Arith/SmallPrimeTau.lean",
+        "lines": 193,
+        "bytes": 9520,
+        "sha256": "7e994a018cf6ed727f1e57607d3264c9b8de0b4c3c947f6926afafa077e4cd92",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.SmallPrimeRes"
+        ]
+      },
+      "Apery.Arith.SmallPrimeRes": {
+        "path": "Apery/Arith/SmallPrimeRes.lean",
+        "lines": 181,
+        "bytes": 9035,
+        "sha256": "a44e1eb9903270fc2b190d6ec18419f7bd05bf5f828453b8a2284834bfdb2b8f",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.SmallPrime"
+        ]
+      },
+      "Apery.Arith.SmallPrime": {
+        "path": "Apery/Arith/SmallPrime.lean",
+        "lines": 100,
+        "bytes": 3772,
+        "sha256": "ab0ba208261f4570aaa10c9cd70f57a036aeb42a21875f7962cf89f6d40be8cd",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.TauBound",
+          "Apery.Arith.Pullback",
+          "Apery.Arith.DirectBound"
+        ]
+      },
+      "Apery.Arith.DirectBound": {
+        "path": "Apery/Arith/DirectBound.lean",
+        "lines": 177,
+        "bytes": 7375,
+        "sha256": "e0763eab1186e763c924c9dc254ac39ed07727b345b8ff4f9baf581ca8ebeef6",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.PoleFun",
+          "Apery.Arith.IntPoly"
+        ]
+      },
+      "Apery.Arith.IntPoly": {
+        "path": "Apery/Arith/IntPoly.lean",
+        "lines": 75,
+        "bytes": 3150,
+        "sha256": "c76db89b16717b0bbecba1f35d3d08212936925f98419443f04b28e2db5a82a1",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.Val"
+        ]
+      },
+      "Apery.Arith.Val": {
+        "path": "Apery/Arith/Val.lean",
+        "lines": 196,
+        "bytes": 7388,
+        "sha256": "e6964cc73e450ab1d4c6cf0ec39281cbb89c9e410548667773723fb88cafe44f",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      },
+      "Apery.Arith.PoleFun": {
+        "path": "Apery/Arith/PoleFun.lean",
+        "lines": 83,
+        "bytes": 3425,
+        "sha256": "e4a67ef1941dc515e5796c48ce4631c2b8532542268252e740f1bfc56d736e36",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.TauBound",
+          "Apery.Construction"
+        ]
+      },
+      "Apery.Arith.TauBound": {
+        "path": "Apery/Arith/TauBound.lean",
+        "lines": 134,
+        "bytes": 5907,
+        "sha256": "34729291e5f16bf99a3b90c8fe867a9c7ce1ef80d950e86de1cc49ff3cd7c9bd",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.BinomBasis"
+        ]
+      },
+      "Apery.Arith.BinomBasis": {
+        "path": "Apery/Arith/BinomBasis.lean",
+        "lines": 223,
+        "bytes": 9373,
+        "sha256": "63d673dee1b19d7df4f2a9bf5dbe0c5f4386a9119a4bd90160a3b35767ffcb60",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.Val"
+        ]
+      },
+      "Apery.Arith.Pullback": {
+        "path": "Apery/Arith/Pullback.lean",
+        "lines": 236,
+        "bytes": 10405,
+        "sha256": "91bd7b0c607286e54c876c94170291cbaf3d1a3d4558f11798bf715b84091f77",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.PoleFun",
+          "Apery.PartialFractions"
+        ]
+      },
+      "Apery.Arith.InnerAlloc": {
+        "path": "Apery/Arith/InnerAlloc.lean",
+        "lines": 309,
+        "bytes": 14294,
+        "sha256": "42b7b597394db2762baca80355c760e4e7c21dad8a04f1fb65cebe0d2ef81955",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.InnerWeights"
+        ]
+      },
+      "Apery.Arith.InnerWeights": {
+        "path": "Apery/Arith/InnerWeights.lean",
+        "lines": 189,
+        "bytes": 9010,
+        "sha256": "203f0961bc4f0b5da469946d7b11f6b6c0676d45deac9e5a3c31a302aae333da",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.ClassCount"
+        ]
+      },
+      "Apery.Arith.ClassCount": {
+        "path": "Apery/Arith/ClassCount.lean",
+        "lines": 230,
+        "bytes": 10200,
+        "sha256": "48ec9e7d47596cfa7aa38654c1262fbc3fe0db338fa01b10524977b28b1e437b",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.ClassFrame"
+        ]
+      },
+      "Apery.Arith.ClassFrame": {
+        "path": "Apery/Arith/ClassFrame.lean",
+        "lines": 168,
+        "bytes": 8084,
+        "sha256": "b1a35d1c1534b722b7eba8614d1496d8e901b2e95d30445b9b5d90407e5b393f",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.TEntry",
+          "Apery.Arith.Unimodular"
+        ]
+      },
+      "Apery.Arith.Unimodular": {
+        "path": "Apery/Arith/Unimodular.lean",
+        "lines": 140,
+        "bytes": 7281,
+        "sha256": "62acab481fa701f81fc51bd84a7e6786cddf7bb0b2bce38e8ca5db319c1e8e48",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.BasisChange",
+          "Apery.Arith.DirectBound"
+        ]
+      },
+      "Apery.Arith.TEntry": {
+        "path": "Apery/Arith/TEntry.lean",
+        "lines": 89,
+        "bytes": 3841,
+        "sha256": "8afc4f17fdc88f9dfa05dc6a421a24805f5db079d3682e593030998f97714376",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.Pullback",
+          "Apery.Arith.DirectPoly"
+        ]
+      },
+      "Apery.Arith.DirectPoly": {
+        "path": "Apery/Arith/DirectPoly.lean",
+        "lines": 289,
+        "bytes": 14389,
+        "sha256": "7652deb392ae94d2817649e180fe05ea9dff1fa40b9055ca95555db7bf6a0663",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.DirectBound"
+        ]
+      },
+      "Apery.Arith.OuterEntryMain": {
+        "path": "Apery/Arith/OuterEntryMain.lean",
+        "lines": 511,
+        "bytes": 24999,
+        "sha256": "c4926096465c75741673d8cd0636e9418cc045fcbcaf86fe3c79ce7ec84b549a",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.OuterEntries"
+        ]
+      },
+      "Apery.Arith.OuterEntries": {
+        "path": "Apery/Arith/OuterEntries.lean",
+        "lines": 279,
+        "bytes": 14020,
+        "sha256": "04fb821c853063894d23ae1f652c909482d504ea4560820a2acde2a25be0db12",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.OuterBasis"
+        ]
+      },
+      "Apery.Arith.OuterBasis": {
+        "path": "Apery/Arith/OuterBasis.lean",
+        "lines": 145,
+        "bytes": 6402,
+        "sha256": "8311678ed948b4793ed696687e40d69077c6aee0413238c762e65e16aac7148f",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.OuterEntry",
+          "Apery.Arith.PoleVal"
+        ]
+      },
+      "Apery.Arith.PoleVal": {
+        "path": "Apery/Arith/PoleVal.lean",
+        "lines": 231,
+        "bytes": 11942,
+        "sha256": "972d0c27bce1107970466b10735138853bc4541d4f99ed935ccba9a55afff456",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.DirectPoly"
+        ]
+      },
+      "Apery.Arith.OuterEntry": {
+        "path": "Apery/Arith/OuterEntry.lean",
+        "lines": 133,
+        "bytes": 6095,
+        "sha256": "9a648493927524b8e97295a17870f5ba659edd22191445af2d92bf1d791dd1b0",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.OuterFrame",
+          "Apery.Arith.ClassCount"
+        ]
+      },
+      "Apery.Arith.OuterFrame": {
+        "path": "Apery/Arith/OuterFrame.lean",
+        "lines": 215,
+        "bytes": 10343,
+        "sha256": "5d4cda7663b64ffda6aa6852681309d0f38ca12a338f82c39b35c67d27fe9c10",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.LowRank",
+          "Apery.Arith.MomentVal",
+          "Apery.Arith.ClassFrame",
+          "Apery.Arith.BasisChange"
+        ]
+      },
+      "Apery.Arith.MomentVal": {
+        "path": "Apery/Arith/MomentVal.lean",
+        "lines": 107,
+        "bytes": 4255,
+        "sha256": "b3729c00ee72ecfc88a6615124e626e5082ee35ab9629525690dedb5a65b64a9",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.DirectPoly"
+        ]
+      },
+      "Apery.Arith.LowRank": {
+        "path": "Apery/Arith/LowRank.lean",
+        "lines": 61,
+        "bytes": 2537,
+        "sha256": "7529fc7a7bcf2a579595ab8a63455fb2e5aac22e2716861d31ade65908ed8a01",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.Val"
+        ]
+      },
+      "Apery.Growth.ClassData": {
+        "path": "Apery/Growth/ClassData.lean",
+        "lines": 148,
+        "bytes": 6348,
+        "sha256": "ab7762a71036d749e49b55668e5d550d1ec82d480b0686f3dd403b3078a6e483",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.ClassSum",
+          "Apery.Legendre"
+        ]
+      },
+      "Apery.Growth.ClassSum": {
+        "path": "Apery/Growth/ClassSum.lean",
+        "lines": 171,
+        "bytes": 8229,
+        "sha256": "fe8156fbc7b2b6c11e806d8c94d3a1a66fd197db5ed8f33654e329a80ae3d914",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Arith.ClassCount"
+        ]
+      },
+      "Apery.Growth.Assembly1": {
+        "path": "Apery/Growth/Assembly1.lean",
+        "lines": 165,
+        "bytes": 7937,
+        "sha256": "6105bf5b40533705aa051e474feb65cf1be79465f814a590fec9faaca0fde51e",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.TableIntegrals",
+          "Apery.Growth.TailIntegral",
+          "Apery.PrimeSumIntegral"
+        ]
+      },
+      "Apery.PrimeSumIntegral": {
+        "path": "Apery/PrimeSumIntegral.lean",
+        "lines": 268,
+        "bytes": 12997,
+        "sha256": "ba0197f3c643d908d307d7cccb652c0e8ff3f1d9855bde8759ea96f90fb3c693",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.PrimeSumStep"
+        ]
+      },
+      "Apery.PrimeSumStep": {
+        "path": "Apery/PrimeSumStep.lean",
+        "lines": 126,
+        "bytes": 5495,
+        "sha256": "6032709d96a3bfc5fc9a3a35122b729c518438fa4461ab702eaba0b7a44d8469",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.PrimeSum"
+        ]
+      },
+      "Apery.PrimeSum": {
+        "path": "Apery/PrimeSum.lean",
+        "lines": 124,
+        "bytes": 5881,
+        "sha256": "22131aef39b2069c495b4bbe05da3201ff15c050da624b5f7263438850f82910",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.PNT"
+        ]
+      },
+      "Apery.PNT": {
+        "path": "Apery/PNT.lean",
+        "lines": 19,
+        "bytes": 585,
+        "sha256": "e52fe3b0879aaaa90d9c6990a1e4bdb2cc028594bf464ee6cd6181841f2e56c3",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "PrimeNumberTheoremAnd.Consequences"
+        ]
+      },
+      "Apery.Growth.TailIntegral": {
+        "path": "Apery/Growth/TailIntegral.lean",
+        "lines": 307,
+        "bytes": 14124,
+        "sha256": "b912cf564f7c61c8708306dd21a6173e2d00c67e25afc830dd50fc32e48b2e1f",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.TailPrime"
+        ]
+      },
+      "Apery.Growth.TableIntegrals": {
+        "path": "Apery/Growth/TableIntegrals.lean",
+        "lines": 69,
+        "bytes": 2550,
+        "sha256": "508fa6ee614f686f650d1c3b2a4a477e0d8692ad6187e501e1add14451027e57",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.InnerSum",
+          "Apery.Growth.OuterTable",
+          "Apery.Growth.PieceIdx"
+        ]
+      },
+      "Apery.Growth.OuterTable": {
+        "path": "Apery/Growth/OuterTable.lean",
+        "lines": 533,
+        "bytes": 45416,
+        "sha256": "49b32de75fc4ff7f3ee024b984d19c6ef44c675e78700e34a3df13a8e5377bda",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.TableGen"
+        ]
+      },
+      "Apery.Growth.TableGen": {
+        "path": "Apery/Growth/TableGen.lean",
+        "lines": 132,
+        "bytes": 5510,
+        "sha256": "20c1c497a78ed1c99e52fe574fa711e6fba9031dba2f0cd3e02429e44c76fd70",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.OuterPrime"
+        ]
+      },
+      "Apery.Growth.InnerSum": {
+        "path": "Apery/Growth/InnerSum.lean",
+        "lines": 1034,
+        "bytes": 62484,
+        "sha256": "002c3ab28e4888f39f70487f67bd869101f48b65b9a48066e609483dff1eeb34",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.InnerTable"
+        ]
+      },
+      "Apery.Growth.InnerTable": {
+        "path": "Apery/Growth/InnerTable.lean",
+        "lines": 4261,
+        "bytes": 383221,
+        "sha256": "499d575382e2fb37a6c80753cba219883db6351f349c0ea478006ae1db452908",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib",
+          "Apery.Growth.TableGen"
+        ]
+      },
+      "Apery.Criterion": {
+        "path": "Apery/Criterion.lean",
+        "lines": 121,
+        "bytes": 6075,
+        "sha256": "21ecd2dd72b780c8734062d0a838bdeef2bbd4ee2325619e526248f6ca006473",
+        "category": "other prior Apery modules",
+        "imports": [
+          "Mathlib"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "COMPUTED source/proof attribution record",
+  "proofs": {
+    "Assembly.lean": {
+      "sha256": "a43e370af202e72e7fb672ef014cc8454f8b3d55f45c084e57db90a45bf2ba7f",
+      "author": "Codex GPT-6.1 sol, lane C driver",
+      "status": "Assembly receiving gate passed; ArithmeticEntry receiving gate pending",
+      "adapted_from": [
+        "mo271/Zeta5@be1c0d82 Apery/MainEstimate.lean:67-109",
+        "mo271/Zeta5@be1c0d82 Apery/Main.lean:19-27"
+      ],
+      "notes": "A re-derivation of Fauzan theorem reusing Firsching formalisation; Comparator metadata Paul-Lez; actual event producers retain source attribution"
+    },
+    "ArithmeticEntry.lean": {
+      "sha256": "59984cdbfbc7745f4be01152db7f8d768925779935165f0b8edb670387a772e9",
+      "author": "Codex GPT-6.1 sol, lane C driver",
+      "status": "Receiving --final gate5/5PASS; endpoint conditional on exactly two named producer leaves",
+      "adapted_from": [
+        "mo271/Zeta5@be1c0d82 Apery/MainEstimate.lean:67-109",
+        "mo271/Zeta5@be1c0d82 Apery/Main.lean:19-27"
+      ],
+      "notes": "A re-derivation of Fauzan theorem reusing Firsching formalisation; Comparator metadata Paul-Lez; actual event producers retain source attribution"
+    },
+    "ClosingEntry.lean": {
+      "sha256": "ef08be2748a06b45405b25de5b490f481877f34d28d1d4ca883093fa66155d5f",
+      "author": "Codex GPT-6.1 sol lane C driver",
+      "status": "--final gate2/2PASS4.35.0; endpoint conditional only on finite analytic bound",
+      "provider": "U53/E248 actual closing theorem copied byte-exactly, all16chunks included"
+    },
+    "HeavyEntry.lean": {
+      "author": "Codex GPT-6.1 sol lane C driver",
+      "sha256": "980b9599aac2ca6badd834d3ba269926bc100f27e0b427d2e1cb067bd98cd502",
+      "status": "LEAN-CHECKED receiving --final3/3PASS4.35.0; literal unconditional endpoint; integrator three-part upgrade rule pending",
+      "provider": "Full prior energy tables + actual event general-s arithmetic/normalizer + U53 actual closing",
+      "upstream_statement": "Apery/Main.lean:26, mo271/Zeta5@be1c0d82"
+    },
+    "CompactEntry.lean": {
+      "author": "Codex GPT-6.1 sol lane C driver",
+      "sha256": "8394c702c47e3d4720093b76e73ae80804e9080f0f1f0d9a2483170f5b602ed7",
+      "status": "LEAN-CHECKED receiving4/4+standalone3/3finalPASS4.35.0; unconditional literal endpoint",
+      "providers": "U49/E244+U51/E246+U52/E247+U53/E248; C3/E603 and E604; unchanged prior criterion",
+      "upstream_statement": "Apery/Main.lean:26, mo271/Zeta5@be1c0d82"
+    }
+  }
+}

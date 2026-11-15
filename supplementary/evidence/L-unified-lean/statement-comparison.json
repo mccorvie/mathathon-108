@@ -1,0 +1,3578 @@
+[
+  {
+    "declaration": "Mathathon.P108.classLoss_witness",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.entry_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Z_decomp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.bernTab_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Skip.laiSkips_11_40",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_skip/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Skip.laiSkips_all_of_ge_27",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_skip/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Skip.S_val",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_skip/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Skip.DeltaLit_contentVal",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_skip/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Skip.coeffData_check",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_skip/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Skip.Delta_coeff_zero",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_skip/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Skip.det_G40_zero",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_skip/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Skip.F40_coeff_zero_val",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_skip/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Skip.F40_not_integral_at_17",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/lean_skip/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U11.lb6Square15_gt",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-energy-witness-lean/probe/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U11.margin_gt",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-energy-witness-lean/probe/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.UTranslation.arcoshPotential_translation",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-translation-lean/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.UTranslation.closedPotential_abs_sub_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-translation-lean/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.UTranslation.closedPotential_eq_arcosh",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-translation-lean/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.UTranslation.closedPotential_eq_log",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-translation-lean/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.UTranslation.closedPotential_of_mem",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-translation-lean/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Lb_distribution",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.tauS_distribution",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.tauXs_direct",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.tauX_direct",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.gB_sstep",
+    "original_report": "log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.gB_sstep_sharp",
+    "original_report": "log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ToutB_sstep",
+    "original_report": "log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ToutB_sstep_two_thirds",
+    "original_report": "log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.zB_ge",
+    "original_report": "log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.sat_of_two_thirds",
+    "original_report": "log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.FiniteDuality.matrix_weak_duality",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-energy-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.FiniteDuality.finite_curve_weak_duality",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-energy-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.FiniteDuality.curve_quadratic_nonpos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-energy-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.FiniteDuality.curveKernel_symm",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-energy-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.FiniteDuality.quadratic_curveKernel",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-energy-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Apery.energy_log_nonpos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-energy-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Apery.arc_potential_real",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-identification/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U14.omega_eq_closed",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-identification/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U14.angular_mean_closed",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-identification/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U14.angular_mean_translation",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-identification/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_boundS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_boundS_moment",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_boundS_clamped",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.outer_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.determinant_integral_above_K",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.momentCutS_spec",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_rank_loss_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_removed_poles_lt",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_rank_zero_above_K",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.local_valuation_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.local_valuation",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.GV_FS_Lsmall",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.alloc13",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.inner13_flag5",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.inner13_flag7",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.exponent5_upstream_anchors",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.exponent5_small2",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.exponent7_inner13",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.exponent7_outer17",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.normalization_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.normalization",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.normalizer_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.GV_FS_big",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.padicValRat_normalizer",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcPairs.arcsine_weak_duality",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-pairs/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcPairs.family_pair_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-pairs/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcPairs.family_pair_ae_ne",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-pairs/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcPairs.arc_point_abs_log_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-pairs/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcPairs.arc_preimage_countable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-pairs/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcPairs.family_norm_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-pairs/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U16.angularLog_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-field-average/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U16.integral_log_root",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-field-average/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U16.sqrt_angular_mean",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-field-average/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U16.joint_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-field-average/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U16.J_angular_mean",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-field-average/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U16.V6_angular_mean",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-field-average/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcMeasure.angleMeasure_probability",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-measure/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcMeasure.arcsineMeasure_probability",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-measure/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcMeasure.arcsineMeasure_ae_mem",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-measure/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcMeasure.arcsineMeasure_translate",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-measure/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcMeasure.integral_arcsineMeasure",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-measure/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcMeasure.log_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-measure/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcMeasure.log_potential_eq_closed",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-measure/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.ArcMeasure.log_potential_translation",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-measure/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U20.sigma_mass",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-integral-witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U20.sigma_pair_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-integral-witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U20.sigma_field_integral",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-integral-witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U20.energy_eq_logs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-integral-witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U20.integralWitness_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-integral-witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U20.integralWitness_gt",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-integral-witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U20.kernel_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-integral-witness/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U22.Q_centered",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-tail/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U22.Q_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-tail/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U22.G_continuous",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-tail/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U22.G_right",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-tail/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U22.G_range",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-tail/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U22.centered_weighted_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-tail/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U22.tail_integral_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-tail/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U22.arithmetic_tail_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-tail/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U22.arithmetic_tail_gt_exact",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-tail/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.WI_sstep_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.InnerOK_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.Lp_inner_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.rawRank_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.WO_sstep_exact",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.WO_sstep_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.Lp_outer_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.Lsmall_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.Lp_fallback_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.selected_Lp_can_increase",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.det_lowrank_zero_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_boundS_sharp_clamped",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.WO_le_WOsharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.GV_FS_outer_sharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.innerIntegral200_value",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.arithmetic200_strong",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.theta200_gt",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.theta200_lb6Square15",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.theta200_of_witness_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.theta200_le_of_40_le_le200",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.arithmetic_allM_strict",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.theta_allM_gt",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.theta_allM_lb6Square15",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U18.theta_allM_of_witness_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.local_valuation_sharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.normalization_sharp_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.normalizerSharp_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.normalizerSharp_le_raw",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.tauS_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.BinRep.iterate_derivative",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_Hs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.padicValNat_factorial_pred",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_polyPart_eval",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_res",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.tauS_X_pow",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.tauS_X_pow_odd",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.tauS_pull_poly",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.X_pow_odd_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.tauS_qS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.polyPart_pullS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.resP_pullS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.μXS_eq_tauXs_aux",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.μXS_eq_tauXs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.pullS_tpol",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.cnt_xrootsS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.μXS_tpol_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_μmonoS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_μmonoS_int",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.det_basis_changeS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.class_frameS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.classCount_eqS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.winner_ACIS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wcap_ACIS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.inner_boundS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.inner_bound_capS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.sum_wcap_allocKS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.GV_poleValueS_lt",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.GV_poleValueS_sq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.GV_poleValueS_mul",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_pairS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_Hs_pm1",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.GV_poleValueS_congr",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_Hs_log",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.crude_tauXs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.SS_eq_qlead",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.small_prime_boundS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_p_μGeS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_frameS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.GV_poleValue_congr",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.crude_tauX",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.S_eq_SS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.F_eq_FS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.small_prime_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.μGe_eq_μGeS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.outer_frame",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.Bse_eq_BseS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.inner_bound_cap",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.G_eq_GS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.Δ_eq_ΔS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.det_basis_change",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.class_frame",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.VG_inv24",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.VG_μmono",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.VG_μmono_int",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.xroots_eq_xrootsS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.pull_tpol",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.cnt_xroots",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.μX_tpol_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.poleValue_eq_poleValueS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.pull_eq_pullS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.μX_eq_μXS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.tau_cubic",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.polyPart_pull",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.resP_pull",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.H5_succ_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.μX_eq_tauX",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.tau_eq_tauS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.H5_eq_Hs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.tauX_eq_tauXs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.μmono_eq_μmonoS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.μpoly_eq_μpolyS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.tau_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.VG_H5",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.tau_X_pow",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.tau_X_pow_odd",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.Upstream.tau_pull_poly",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.pair_GVS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.VG_μpolyS_sub_μGeS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.μXS_sub_μGeS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_entryS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.GV_FS_inner",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.GV_FS_outer",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.outer17_flag5",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.outer17_flag7",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.exponent5_fallback2",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.exponent5_inner13",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.exponent5_outer17",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.inverse_factorial_integral",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.scalar_integral_big",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.rational_int_of_all_primes",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.BseS_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.topwS_shift",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.tminS_shift",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wrawS_shift",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.min_sub_one",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wcapS_shift_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wcapS_shift_ordinary",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wcapS_shift_zero_uncapped",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wcapS_shift_zero_capped",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.sum_wcapS_shift_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.tmin_BseS_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.BseS_zero_loss_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.switch_old_flag_false",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.switch_new_flag_true",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.switch_WI7",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.switch_Lp5",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.switch_Lp7",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outerArg_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wO_eq_min",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.min_zero_shift_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wO_sstep_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wO_sstep_unchanged",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wO_sstep_full_drop",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wO_sstep_zero_drop",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outerWeightSum_sstep_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.half_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.WO_eq_weights_rank",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.degreeBound_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.factorialVal_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.Lsmall_sstep_same_log",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.Lp_small_sstep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.Lp_eq_Lsmall_of_fallback",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.inner13_step_anchor",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.outer17_step_anchor",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.det_zero_count_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_frameS_sharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.min_zero_half_integer",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.wO_gap",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.zeroWeightCount_outer_equiv",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.outer_boundS_sharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.sharp_zero17_s5",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.sharp_zero17_s7",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.WOsharp5_17",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.WOsharp7_17",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.Lp_le_LpSharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.padicValRat_normalizerSharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.normalization_sharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.LpSharp5_outer17",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "AperyS.AssemblyTarget.LpSharp7_outer17",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/L-zeta5-general-s/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.innerR_shift",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.integral_ell",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.inner_sstep_integral",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.inner_crude_sstep",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.innerR_div_intervalIntegrable",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_5_6",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_7_6",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_7_2",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_7_8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_5_8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.thetaPkg_sstep",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_7_6",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_7_8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.sstep_value_nu6",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.sstep_value_nu8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_3_5_nu2",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_5_7_nu2",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_7_9_nu2",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_3_5_nu4",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_5_7_nu4",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_7_9_nu4",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_3_5_nu6",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_5_7_nu6",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_7_9_nu6",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_3_5_nu8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_5_7_nu8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_7_9_nu8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_3_5_nu10",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_5_7_nu10",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.theta_sstep_7_9_nu10",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_3_2",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_5_2",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_9_2",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_3_4",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_5_4",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_7_4",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_9_4",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_3_6",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_9_6",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_3_8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_9_8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_3_10",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_5_10",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_7_10",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_9_10",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.inner_integral_shift",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.lai_offset_gap_7_2",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.gain58_formal",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Iout_new_5_8",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.gain58_pos",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.gain58_end",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.IoutNew58_formal",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.sstep_ge",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.sstep_pos",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Tout_sstep",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.Tout_intervalIntegrable",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.thetaPkg_odd_ge",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.thetaPkg_odd_pos",
+    "original_report": "root fresh read-only audit15:08",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U26.half_angle_lintegral",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-density/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U26.half_angle_map",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-density/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U26.mathlib_chebyshev_integral",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-density/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticIntegral.integrableOn_g",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-integral/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticIntegral.integrableOn_g",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-integral/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticIntegral.integral_g_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-integral/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticIntegral.integral_g_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-integral/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticIntegral.integral_pi_g_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-integral/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticIntegral.integral_pi_g_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-integral/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticIntegral.integral_pi_five",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-integral/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticIntegral.integral_pi_five",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-integral/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.finite_small_prime_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.finite_small_prime_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.finite_small_prime_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.finite_small_prime_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.finite_small_prime_lower_full",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.finite_small_prime_lower_full",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.Lp_small_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.Lp_small_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.neg_Lp_small",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.neg_Lp_small",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.allocation_independent",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.allocation_independent",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.small_term_nonneg",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeFinite.small_term_nonneg",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/FINITE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.w_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.w_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.integral_monomial_gamma",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.integral_monomial_gamma",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.integrableOn_monomial",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.integrableOn_monomial",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.integral_monomial",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.integral_monomial",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.mono_moment",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticMoments.mono_moment",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-moments/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_uniform_abs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_uniform_abs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_uniform_abs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_uniform_abs",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_coefficient_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_coefficient_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_coefficient_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_coefficient_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_package_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_package_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_package_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_package_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.small_prime_bridge_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.small_prime_bridge_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.small_prime_bridge_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.small_prime_bridge_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.eventual_small_prime_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.small_prime_cost_tendsto",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.small_prime_cost_tendsto",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.small_prime_cost_tendsto",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.small_prime_cost_tendsto",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.exact_small_prime_bridge",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.exact_small_prime_bridge",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.exact_small_prime_bridge",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.exact_small_prime_bridge",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.two_sided_small_prime_bridge_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.two_sided_small_prime_bridge_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.two_sided_small_prime_bridge_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.BridgeAsymptotic.two_sided_small_prime_bridge_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-bridge/log/ASYMPTOTIC_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U25.finite_comparison_gt",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-comparison/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U25.finite_comparison_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-comparison/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U25.pair_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-comparison/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U25.kernel_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-comparison/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U25.rho_mass",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-comparison/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U25.log_rho_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-comparison/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U25.rho_pair_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-comparison/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U25.energy_rho",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-comparison/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U25.trial_row",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-finite-comparison/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U27.arcsineMeasure_eq_density",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-density-transport/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U27.arcsineMeasure_eq_density",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U27.arcsineMeasure_eq_density",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U27.arcsineMeasure_folding",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-density-transport/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U27.affine_density_transport",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-density-transport/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U27.normalized_cos_folding",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-arcsine-density-transport/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.gaussian_factorization",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.gaussian_factorization",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.gaussian_difference_nonneg",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.gaussian_difference_nonneg",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.truncatedPair_tendsto",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.truncatedPair_tendsto",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.logPair_eq_nested",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.logPair_eq_nested",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.parameter_joint_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.parameter_joint_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.parameter_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.parameter_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.truncated_swap",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.truncated_swap",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.truncated_difference_nonpos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.truncated_difference_nonpos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.log_difference_nonpos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.log_difference_nonpos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.nested_log_difference_nonpos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U28.nested_log_difference_nonpos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-scout/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.arcsine_noAtoms",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.arcsine_noAtoms",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.sigma_noAtoms",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.sigma_noAtoms",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.mixed_sigma_abs_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.mixed_sigma_abs_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.sigma_prod_mu_abs_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.sigma_prod_mu_abs_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.potential_mu_integrable_sigma",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.potential_mu_integrable_sigma",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.averaged_field_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.averaged_field_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.noAtoms_of_local_sqrt_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U30.noAtoms_of_local_sqrt_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-comparison-regularity/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U31.logPotential_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-weak-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U31.logPotential_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-weak-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U31.averaged_field_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-weak-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U31.averaged_field_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-weak-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U31.borel_weak_duality",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-weak-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U31.borel_weak_duality",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-weak-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U31.borel_weak_duality_mass",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-weak-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U31.borel_weak_duality_mass",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-weak-duality/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.product_ae_ne",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.product_ae_ne",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.uniform_witness_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.uniform_witness_lower",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.energy_floor",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.energy_floor",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.uniform_witness_lower_of_sqrt_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.uniform_witness_lower_of_sqrt_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.energy_floor_of_sqrt_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U32.energy_floor_of_sqrt_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-energy-floor/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U34.borel_package_margin",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U34.borel_package_margin_of_sqrt_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-package-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticFunctional.integrand_eq_sum",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-functional/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticFunctional.aeval_μXS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-functional/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticFunctional.moment_rep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-functional/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticFunctional.functional_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-functional/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticEnvelope.shifted_power_geometric_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-envelope/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticEnvelope.wSeries_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-envelope/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticEnvelope.exp_ratio_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-envelope/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticEnvelope.density_envelope",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-envelope/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticEnvelope.envelope_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-envelope/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticGram.gramWeight_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-gram/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticGram.gram_entry",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-gram/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticGram.delta_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-gram/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticGram.gram_entry_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-gram/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticGram.gram_positive_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-gram/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.real_pole_identity",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.real_pole_identity",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/POLE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.pole_identity",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.pole_identity",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/POLE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.general_pole_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.general_pole_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/POLE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.real_pole_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.real_pole_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/POLE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.ML.remainder_eq_tsum",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.ML.remainder_eq_tsum",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/POLE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.integral_remainder_eq_pole",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.integral_remainder_eq_pole",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/POLE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.integral_remainder_evaluated",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticPoles.integral_remainder_evaluated",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-poles/log/POLE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticDet.determinant_rep",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-determinant/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticDet.det_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-determinant/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticDet.delta_eq_integral",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-determinant/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticDet.determinant_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-determinant/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BZetaIdentification.riemannZeta_eq_zetaS",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-zeta-identification/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterAboveK.outer_local_above_K_exact",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/above-k/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterAboveK.outer_local_above_K_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/above-k/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BPrimeTransfer.uniform_weighted_prime_limit",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-prime-transfer/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BPrimeTransfer.weighted_sum_error",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-prime-transfer/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BPriorPrime.tendsto_primeRiemannSum",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-prime-transfer/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BPriorPrime.theta_isEquivalent_id",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-prime-transfer/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.explicit_row_sum_and_reserve",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/DISCRETE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.explicit_row_sum_and_reserve",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/ALLOCATION_AND_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.explicit_zero_condition",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/DISCRETE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.explicit_zero_condition",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/ALLOCATION_AND_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.explicit_innerOK_fixed_shape",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/DISCRETE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.explicit_innerOK_fixed_shape",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/ALLOCATION_AND_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.eventual_explicit_innerOK",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/DISCRETE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.eventual_explicit_innerOK",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/ALLOCATION_AND_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.selected_explicit_inner",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/DISCRETE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.selected_explicit_inner",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/ALLOCATION_AND_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.explicit_weight_ge_Phi",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/DISCRETE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.explicit_weight_ge_Phi",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/ALLOCATION_AND_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.explicit_weight_ge_Phi",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/COST_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.zeroDeficit_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/DISCRETE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.zeroDeficit_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/ALLOCATION_AND_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.zeroDeficit_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/COST_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.selected_cost_le_Phi",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/DISCRETE_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.selected_cost_le_Phi",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/ALLOCATION_AND_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.selected_cost_le_Phi",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/COST_PHI_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.lrow_model_level",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.lrow_model_level",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/MODEL_ALGEBRA_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.lrow_next_model_level",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.lrow_next_model_level",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/MODEL_ALGEBRA_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.two_mul_psiR",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.two_mul_psiR",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/MODEL_ALGEBRA_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.psiR_model_level",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.psiR_model_level",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/MODEL_ALGEBRA_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.PhiK_model_level",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerExplicit.PhiK_model_level",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-explicit/log/MODEL_ALGEBRA_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterScalar.scalar_legendre_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-scalar/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterScalar.vSK_outer_formula",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-scalar/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterScalar.K_mul_legendre",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-scalar/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterScalar.jfun_sum_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-scalar/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.SharpSplit.LpSharp_eq_raw_of_small",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-sharp-split/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.SharpSplit.small_prime_sharp_eq_raw",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-sharp-split/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.SharpSplit.log_normalizerSharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-sharp-split/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.SharpSplit.log_normalizerSharp_split_sharp",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-sharp-split/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "Mathathon.P108.SharpSplit.log_normalizerSharp_split",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-sharp-split/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterBridge.outer_local_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterBridge.outer_local_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/log/OUTER_LOCAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterBridge.outer_local_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterBridge.outer_local_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/log/OUTER_LOCAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterBridge.sharp_pole_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterBridge.sharp_pole_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/log/OUTER_LOCAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterBridge.scaled_gOuter_profile",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterBridge.scaled_gOuter_profile",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-bridge/log/OUTER_LOCAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterLimit.Tout_bounded",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-limit/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterLimit.Tout_bounded",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-limit/log/REGULARITY_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterLimit.Tout_finite_discontinuities",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-limit/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterLimit.Tout_finite_discontinuities",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-limit/log/REGULARITY_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterLimit.actual_outer_model_limit",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-limit/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterLimit.actual_outer_model_limit",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-limit/log/REGULARITY_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterSum.outer_sum_eq_weighted",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-sum/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterSum.outer_limit_of_local",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-sum/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterSum.outer_limit_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-sum/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterSum.outer_bridge_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-sum/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BOuterSum.outer_cost_tendsto",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-outer-sum/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerScalar.vSK_small_square_formula",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-scalar/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerScalar.scalar_inner_bounds",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-scalar/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BInnerScalar.scalar_inner_fixed_shape",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-inner-scalar/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.real_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.real_bound",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/CONDITIONAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.real_bound_from_configuration",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.real_bound_from_configuration",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/CONDITIONAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.scalar_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.scalar_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/CONDITIONAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.FS_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.FS_pos",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/CONDITIONAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.integrand_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.integrand_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/CONDITIONAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.log_delta_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BAnalyticRealBound.log_delta_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-analytic-real-bound/log/CONDITIONAL_LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U36.uniform_witness_lower_ae",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-ae-field/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U36.uniform_witness_lower_on_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-ae-field/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U36.energy_floor_ae",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-ae-field/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U36.energy_floor_on_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-ae-field/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U36.package_margin_ae",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-ae-field/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U36.package_margin_on_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-borel-ae-field/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U37.lintegral_logMinus_eq",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-extended-potential/probe/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U37.lintegral_logPlus_ne_top",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-extended-potential/probe/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U37.lintegral_logMinus_ne_top",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-extended-potential/probe/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U37.extendedPotential_eq_integral",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-extended-potential/probe/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U37.real_majorant_of_extendedPotential_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-extended-potential/probe/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U38.logPlus_lintegral_le",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-log-positive-part/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U38.logPlus_lintegral_ne_top",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-log-positive-part/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U38.positiveLog_integrable",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-log-positive-part/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U39.extendedPotential_ne_top",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-extended-field-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U39.uniform_witness_lower_extended",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-extended-field-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U39.energy_floor_extended",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-extended-field-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "U39.package_margin_extended",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/U-extended-field-margin/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BFullBridge.inner_local_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-full-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BFullBridge.inner_limit_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-full-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BFullBridge.explicit_normalizer_limit_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-full-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  },
+  {
+    "declaration": "BFullBridge.zeta_seven_explicit_margin_limit_statement",
+    "original_report": "problems/108-zeta-odd-autopsy/evidence/B-full-bridge/log/LEAN_CHECK.md",
+    "byte_identical_statement": true,
+    "whitespace_identical_statement": true
+  }
+]

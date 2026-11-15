@@ -1,0 +1,57 @@
+{
+  "status": "PROOF-DRAFT; local COMPUTED build/source/axiom checks pass; parent repository gate and human receipt separate",
+  "author": "Codex native outer_sum, lane B, E432",
+  "proof_source": "Final.lean",
+  "exports": [
+    {
+      "declaration": "BFullBridge.inner_local_statement",
+      "literal_target": "Mathathon.P108.InnerExplicitTarget.InnerExplicitLocalStatement",
+      "caller_hypotheses": []
+    },
+    {
+      "declaration": "BFullBridge.inner_limit_statement",
+      "literal_target": "Mathathon.P108.InnerExplicitTarget.InnerExplicitLimitStatement",
+      "caller_hypotheses": []
+    },
+    {
+      "declaration": "BFullBridge.explicit_normalizer_limit_statement",
+      "literal_target": "Mathathon.P108.InnerExplicitTarget.ExplicitNormalizerLimitStatement",
+      "caller_hypotheses": []
+    },
+    {
+      "declaration": "BFullBridge.zeta_seven_explicit_margin_limit_statement",
+      "literal_target": "Mathathon.P108.InnerExplicitTarget.ZetaSevenExplicitMarginLimitStatement",
+      "caller_hypotheses": []
+    }
+  ],
+  "exact_target_origins": {
+    "RangeTargets.lean": "B-range-statements/Statement.lean",
+    "ExplicitTargets.lean": "B-inner-explicit/Statement.lean"
+  },
+  "scope": "Fixed natural odd s>=5, even 2<=nu<=10, fixed natural M>=40; K=40n,N=3n,h=37n; literal E405 explicitAllocation; margin corollary s=7,nu=6 and any fixed real U.",
+  "canonical_adapters": {
+    "Statement": "imports ExplicitTargets",
+    "GammaCells": "imports Continuity; exact three extracted bodies retained there"
+  },
+  "omitted_extraction": "ClassCells is unnecessary because full ContinuousClasses imports full ClassSums; all four extracted definitions compared exactly.",
+  "standard_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_checks": "source_check.json",
+  "shared_body_checks": "CANONICAL_SHARED_CHECK.json",
+  "local_replay": "build-check.json",
+  "parent_gate": "owned by /root, separate from this local replay",
+  "human_receipt": "pending",
+  "interpretation_boundary": "No all-allocation optimum, varying-M limit, actual determinant valuation equality, positive-margin or irrationality assertion.",
+  "file_sha256": {
+    "Final.lean": "77a38e9b9f36f3ab3660d2b2f12532f97c3e88096470c110d3c87b4da9efa067",
+    "Audit.lean": "11df683ba474ebae52af18edfce13fbf49c798dee3acbdf19d80527400577219",
+    "ExplicitTargets.lean": "450a557ab7ec29f64019ab88ab7798ea64c13aab889830dcada7d632572b952d",
+    "RangeTargets.lean": "2dc9b7e4c0c67df8bc4ee37a129ba6e9b2dd502f0f796d6cc0e6184dbc2665d2",
+    "lakefile.toml": "6974cdc2bb97e34fef1e432aab8641c3dfdb17baf36d4132de049dd9fc009d5b",
+    "lake-manifest.json": "7e1ebe0f8838f3da57e374d6cf1cd3c52f0c4e9541b1ac27c54c070f51ffc2bd",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  }
+}

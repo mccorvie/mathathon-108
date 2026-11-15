@@ -1,0 +1,8 @@
+PROOF-DRAFT: exact theorem signature copied from the source that built successfully.
+theorem riemannZeta_eq_zetaS (s : ℕ) (hs : 2 ≤ s) :
+    riemannZeta (s : ℂ) = (BAnalyticPoles.zetaS s : ℂ)
+
+COMPUTED: own completed build output (build.log):
+info: ZetaIdentification.lean:20:0: 'BZetaIdentification.riemannZeta_eq_zetaS' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Optional Audit.lean was stopped after prolonged startup; no separate printed-type check is claimed.

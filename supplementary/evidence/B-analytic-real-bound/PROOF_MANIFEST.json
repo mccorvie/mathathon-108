@@ -1,0 +1,83 @@
+{
+  "status": "COMPUTED hashes and source provenance",
+  "files": [
+    {
+      "file": "Scalar.lean",
+      "sha256": "b448e9fd4946d057dc54978e95e2506e0707a0ac290e05e100776d8cdaee39dd",
+      "status": "PROOF-DRAFT; conditional staging only",
+      "adapted_sources": [
+        {
+          "path": "/tmp/lane-b-zeta5/Apery/RealBound.lean",
+          "sha256": "99ae38b30756a48e254189a10e0d369e560adce36c55f0c998c448bbdad68a59",
+          "lines": "36-85",
+          "upstream_commit": "be1c0d82070da93c343f93bffd495b8ebc323645",
+          "authors": "Moritz Firsching; Paul-Lez",
+          "license": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "file": "Pointwise.lean",
+      "sha256": "c4253bb31d089322fddfa6d5c3068d57ae41e4e6caa23d3d1420ee3482d5f2a0",
+      "status": "PROOF-DRAFT; conditional staging only",
+      "adapted_sources": [
+        {
+          "path": "/tmp/lane-b-zeta5/Apery/EnergyAtoms.lean",
+          "sha256": "fa7c6474172e3c133eb29451f76a7fa48f813c424155b9446326104560be2226",
+          "lines": "19-25",
+          "upstream_commit": "be1c0d82070da93c343f93bffd495b8ebc323645",
+          "authors": "Moritz Firsching; Paul-Lez",
+          "license": "Apache-2.0"
+        },
+        {
+          "path": "/tmp/lane-b-zeta5/Apery/EnergyBound.lean",
+          "sha256": "a947ac0071bb038a065f3ddb833ef2fe869dabf536f11ea95e5eb78ba0655993",
+          "lines": "27-194",
+          "upstream_commit": "be1c0d82070da93c343f93bffd495b8ebc323645",
+          "authors": "Moritz Firsching; Paul-Lez",
+          "license": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "file": "IntegralBound.lean",
+      "sha256": "3d710c07de2a61021b4cc71dbc2cf2a61b0af96c268992a5f264c2c1f650c036",
+      "status": "PROOF-DRAFT; conditional staging only",
+      "adapted_sources": [
+        {
+          "path": "/tmp/lane-b-zeta5/Apery/EnergyBound.lean",
+          "sha256": "a947ac0071bb038a065f3ddb833ef2fe869dabf536f11ea95e5eb78ba0655993",
+          "lines": "243-303",
+          "upstream_commit": "be1c0d82070da93c343f93bffd495b8ebc323645",
+          "authors": "Moritz Firsching; Paul-Lez",
+          "license": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "file": "RealProof.lean",
+      "sha256": "64a774837d55210067ea4b143c133b11b63423ad9b98cbbb3e3df55c994c5b76",
+      "status": "PROOF-DRAFT; conditional staging only",
+      "adapted_sources": [
+        {
+          "path": "/tmp/lane-b-zeta5/Apery/RealBound.lean",
+          "sha256": "99ae38b30756a48e254189a10e0d369e560adce36c55f0c998c448bbdad68a59",
+          "lines": "88-109",
+          "upstream_commit": "be1c0d82070da93c343f93bffd495b8ebc323645",
+          "authors": "Moritz Firsching; Paul-Lez",
+          "license": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "file": "Statement.lean",
+      "sha256": "7f34bfb89850c511a47037dcef17f3c66d114b644be9a280018f5b47868e2287",
+      "status": "CONJECTURE targets only"
+    },
+    {
+      "file": "Audit.lean",
+      "sha256": "3a88028dbabbdd855e2138cdee2acc9b23348347ee371ba1b8ccc8191e439974",
+      "status": "COMPUTED statement/axiom audit commands"
+    }
+  ]
+}

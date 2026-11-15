@@ -1,0 +1,44 @@
+BAnalyticRealBound.scalar_pos (ν K N h : ℕ) : 0 < ↑(AperyS.SS ν K N h)
+BAnalyticRealBound.FS_pos (s : ℕ) (hs : 2 ≤ s) (ν K N h : ℕ) :
+  0 < (Polynomial.aeval (BAnalyticPoles.zetaS s)) (AperyS.FS s ν K N h)
+BAnalyticRealBound.log_SS_fixed_le (n : ℕ) (hn : 1 ≤ n) :
+  Real.log ↑(AperyS.SS 6 (40 * n) (3 * n) (37 * n)) ≤
+    (2 * Apery.lam - 12 * Apery.alph * Apery.lam - 2 * Apery.lam ^ 2) * Apery.Kr n ^ 2 * Real.log (Apery.Kr n) +
+          Apery.Cstar * Apery.Kr n ^ 2 +
+        6 * (37 * ↑n) * Real.log (Apery.Kr n) +
+      6 * (37 * ↑n)
+BAnalyticRealBound.integrand_le (hConfig : BAnalyticRealBound.PriorConfigurationEnergyStatement) (s : ℕ) (hs : 2 ≤ s)
+  (n : ℕ) (hn : 1 ≤ n) (y : Fin (37 * n) → ℝ) (hy : ∀ (i : Fin (37 * n)), 0 < y i) (hinj : Function.Injective y) :
+  (Matrix.vandermonde fun j => y j ^ 2).det ^ 2 * ∏ j, BAnalyticGram.gramWeight s 6 (40 * n) (3 * n) (y j) ≤
+    Real.exp (BAnalyticRealBound.Aconst n) * ∏ i, BAnalyticRealBound.gK s n (y i)
+BAnalyticRealBound.log_delta_le (hConfig : BAnalyticRealBound.PriorConfigurationEnergyStatement) (s : ℕ) (hs : 2 ≤ s)
+  (n : ℕ) (hn : 1 ≤ n) :
+  Real.log ((Polynomial.aeval (BAnalyticPoles.zetaS s)) (AperyS.ΔS s 6 (40 * n) (3 * n) (37 * n))) ≤
+    BAnalyticRealBound.Aconst n +
+      ↑(37 * n) * (Real.log (BAnalyticIntegral.C s (2 * Real.pi)) + (↑s + 1) * Real.log (Apery.Kr n))
+BAnalyticRealBound.real_bound (hConfig : BAnalyticRealBound.PriorConfigurationEnergyStatement) (s n : ℕ) (hs : 2 ≤ s)
+  (hn : 1 ≤ n) :
+  0 < (Polynomial.aeval (BAnalyticPoles.zetaS s)) (AperyS.FS s 6 (40 * n) (3 * n) (37 * n)) ∧
+    Real.log ((Polynomial.aeval (BAnalyticPoles.zetaS s)) (AperyS.FS s 6 (40 * n) (3 * n) (37 * n))) ≤
+      ↑Apery.U * ↑(40 * n) ^ 2 + (↑s + 23) * ↑(37 * n) * Real.log ↑(40 * n) +
+        (12 * Real.log 2 + 23 + Real.log (BAnalyticIntegral.C s (2 * Real.pi))) * ↑(37 * n)
+BAnalyticRealBound.real_bound_from_configuration : BAnalyticRealBound.RealBoundFromConfigurationStatement
+def BAnalyticRealBound.RealBoundFromConfigurationStatement : Prop :=
+BAnalyticRealBound.PriorConfigurationEnergyStatement → BAnalyticRealBound.RealBoundStatement
+def BAnalyticRealBound.PriorConfigurationEnergyStatement : Prop :=
+∀ (n : ℕ),
+  1 ≤ n →
+    ∀ (t : Fin (37 * n) → ℝ),
+      (∀ (i : Fin (37 * n)), 0 < t i) →
+        Function.Injective t →
+          ∑ i, ∑ j > i, 2 * Real.log |t j - t i| - Apery.Kr n * ∑ i, Apery.Vfield (t i) + ∑ i, √(t i) ≤
+            (Apery.lam * Apery.M0 - Apery.Irho) * Apery.Kr n ^ 2 + 5 * ↑(37 * n) + 6 * ↑(37 * n) * Real.log (Apery.Kr n)
+def BAnalyticRealBound.RealBoundStatement : Prop :=
+∀ (s n : ℕ),
+  2 ≤ s →
+    1 ≤ n →
+      0 < (Polynomial.aeval (BAnalyticPoles.zetaS s)) (AperyS.FS s 6 (40 * n) (3 * n) (37 * n)) ∧
+        Real.log ((Polynomial.aeval (BAnalyticPoles.zetaS s)) (AperyS.FS s 6 (40 * n) (3 * n) (37 * n))) ≤
+          ↑Apery.U * ↑(40 * n) ^ 2 + (↑s + 23) * ↑(37 * n) * Real.log ↑(40 * n) +
+            (12 * Real.log 2 + 23 + Real.log (BAnalyticIntegral.C s (2 * Real.pi))) * ↑(37 * n)
+'BAnalyticRealBound.real_bound_from_configuration' depends on axioms: [propext, Classical.choice, Quot.sound]
