@@ -160,8 +160,6 @@ name = "ClosingEntry"
 [[lean_lib]]
 name = "CompactAnalyticBound"
 
-[[lean_lib]]
-name = "CompactClosingLite"
 
 [[lean_lib]]
 name = "CompactTransports"
@@ -495,3 +493,12 @@ name = "ZetaBridge"
 
 [[lean_lib]]
 name = "ZetaIdentification"
+
+[[lean_lib]]
+name = "FloorRows"
+
+[[lean_lib]]
+name = "Prefix40"
+
+[[lean_lib]]
+name = "AnalyticHelpers"

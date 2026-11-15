@@ -1,5 +1,5 @@
 # Lean check
-Run 2026-11-14T22:21-08:00 on `MergeEntry` in `/Users/mathathon/code/mathathon/problems/108-zeta-odd-autopsy/evidence/L-merge/project`.
+Run 2026-11-14T22:58-08:00 on `MergeEntry`, `Mathathon.Zeta5Comparator.Solution` in `/Users/mathathon/code/mathathon/problems/108-zeta-odd-autopsy/evidence/L-merge/project`.
 **Overall: PASS**
 
 
@@ -52,6 +52,7 @@ Run 2026-11-14T22:21-08:00 on `MergeEntry` in `/Users/mathathon/code/mathathon/p
 | `LMergeCompactAnalytic.finite_real_bound` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `CCertificateSplit.closing` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `SplitClosing.closing_neg` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `RiemannZetaValues.irrational_five` | **PASS** | propext, Classical.choice, Quot.sound |  |
 
 ## Statements (a human must compare each with the claim in the report)
 
@@ -291,6 +292,10 @@ CCertificateSplit.closing : CCompact.ClosingStatement
 ### `SplitClosing.closing_neg`
 ```lean
 SplitClosing.closing_neg : Mathathon.P108.thetaPkg 5 6 (3 / 40) 1000000 (-2650371 / 2000000) < 0
+```
+### `RiemannZetaValues.irrational_five`
+```lean
+RiemannZetaValues.irrational_five : ∃ x, Irrational x ∧ riemannZeta 5 = ↑x
 ```
 
 ## Source scan (warnings)

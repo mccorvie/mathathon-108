@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Mathathon.Zeta5Comparator.Challenge",
+  "solution_module": "Mathathon.Zeta5Comparator.Solution",
+  "theorem_names": [
+    "RiemannZetaValues.irrational_five"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}
