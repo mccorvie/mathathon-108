@@ -108,3 +108,10 @@ lake env lean .lake/CheckAxioms.lean
 The historical stronger energy-table bounds (report D15/D16) and heavy zeta(5)
 variant (D21) are not submitted here. Claim 4's interval table and claim 6's
 obstruction conjecture are evidence in the report, not additional Lean theorems.
+
+## Computations that are not Lean
+
+[`computations/`](computations/README.md) holds the interval-arithmetic cover behind the report's statement that the margin of
+the estimates at zeta(7) stays positive (at least +0.486) over the whole region of proportions of the construction, with the
+code, its result files and a second run. It is a computation relative to a written derivation, not a Lean proof, and `lake build`
+does not touch it.

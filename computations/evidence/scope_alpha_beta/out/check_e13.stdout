@@ -1,0 +1,70 @@
+C1  beta = lam: pkg_ab == theta reading S (exact)
+  alpha=1/40  s=5 nu= 2: R True Tout True I_out True (1.8331666667) int_3^20 True  -> PASS
+  alpha=1/40  s=5 nu= 4: R True Tout True I_out True (1.7918125000) int_3^20 True  -> PASS
+  alpha=1/40  s=5 nu= 6: R True Tout True I_out True (1.7558229167) int_3^20 True  -> PASS
+  alpha=1/40  s=5 nu= 8: R True Tout True I_out True (1.7415520833) int_3^20 True  -> PASS
+  alpha=1/40  s=5 nu=10: R True Tout True I_out True (1.7490000000) int_3^20 True  -> PASS
+  alpha=1/40  s=7 nu= 2: R True Tout True I_out True (2.2499375000) int_3^20 True  -> PASS
+  alpha=1/40  s=7 nu= 4: R True Tout True I_out True (2.2007708333) int_3^20 True  -> PASS
+  alpha=1/40  s=7 nu= 6: R True Tout True I_out True (2.1524375000) int_3^20 True  -> PASS
+  alpha=1/40  s=7 nu= 8: R True Tout True I_out True (2.1090520833) int_3^20 True  -> PASS
+  alpha=1/40  s=7 nu=10: R True Tout True I_out True (2.0871770833) int_3^20 True  -> PASS
+  alpha=1/20  s=5 nu= 2: R True Tout True I_out True (1.6893333333) int_3^20 True  -> PASS
+  alpha=1/20  s=5 nu= 4: R True Tout True I_out True (1.6072500000) int_3^20 True  -> PASS
+  alpha=1/20  s=5 nu= 6: R True Tout True I_out True (1.5382916667) int_3^20 True  -> PASS
+  alpha=1/20  s=5 nu= 8: R True Tout True I_out True (1.5145416667) int_3^20 True  -> PASS
+  alpha=1/20  s=5 nu=10: R True Tout True I_out True (1.5360000000) int_3^20 True  -> PASS
+  alpha=1/20  s=7 nu= 2: R True Tout True I_out True (2.1064166667) int_3^20 True  -> PASS
+  alpha=1/20  s=7 nu= 4: R True Tout True I_out True (2.0097500000) int_3^20 True  -> PASS
+  alpha=1/20  s=7 nu= 6: R True Tout True I_out True (1.9164166667) int_3^20 True  -> PASS
+  alpha=1/20  s=7 nu= 8: R True Tout True I_out True (1.8345416667) int_3^20 True  -> PASS
+  alpha=1/20  s=7 nu=10: R True Tout True I_out True (1.7970416667) int_3^20 True  -> PASS
+  alpha=3/40  s=5 nu= 2: R True Tout True I_out True (1.5518333333) int_3^20 True  -> PASS
+  alpha=3/40  s=5 nu= 4: R True Tout True I_out True (1.4296458333) int_3^20 True  -> PASS
+  alpha=3/40  s=5 nu= 6: R True Tout True I_out True (1.3307395833) int_3^20 True  -> PASS
+  alpha=3/40  s=5 nu= 8: R True Tout True I_out True (1.3023020833) int_3^20 True  -> PASS
+  alpha=3/40  s=5 nu=10: R True Tout True I_out True (1.3430312500) int_3^20 True  -> PASS
+  alpha=3/40  s=7 nu= 2: R True Tout True I_out True (1.9694375000) int_3^20 True  -> PASS
+  alpha=3/40  s=7 nu= 4: R True Tout True I_out True (1.8269375000) int_3^20 True  -> PASS
+  alpha=3/40  s=7 nu= 6: R True Tout True I_out True (1.6919375000) int_3^20 True  -> PASS
+  alpha=3/40  s=7 nu= 8: R True Tout True I_out True (1.5757048611) int_3^20 True  -> PASS
+  alpha=3/40  s=7 nu=10: R True Tout True I_out True (1.5259392361) int_3^20 True  -> PASS
+  alpha=1/10  s=5 nu= 2: R True Tout True I_out True (1.4206666667) int_3^20 True  -> PASS
+  alpha=1/10  s=5 nu= 4: R True Tout True I_out True (1.2590000000) int_3^20 True  -> PASS
+  alpha=1/10  s=5 nu= 6: R True Tout True I_out True (1.1331666667) int_3^20 True  -> PASS
+  alpha=1/10  s=5 nu= 8: R True Tout True I_out True (1.1048333333) int_3^20 True  -> PASS
+  alpha=1/10  s=5 nu=10: R True Tout True I_out True (1.1606666667) int_3^20 True  -> PASS
+  alpha=1/10  s=7 nu= 2: R True Tout True I_out True (1.8390000000) int_3^20 True  -> PASS
+  alpha=1/10  s=7 nu= 4: R True Tout True I_out True (1.6523333333) int_3^20 True  -> PASS
+  alpha=1/10  s=7 nu= 6: R True Tout True I_out True (1.4771944444) int_3^20 True  -> PASS
+  alpha=1/10  s=7 nu= 8: R True Tout True I_out True (1.3276111111) int_3^20 True  -> PASS
+  alpha=1/10  s=7 nu=10: R True Tout True I_out True (1.2696944444) int_3^20 True  -> PASS
+  alpha=1/8   s=5 nu= 2: R True Tout True I_out True (1.2958333333) int_3^20 True  -> PASS
+  alpha=1/8   s=5 nu= 4: R True Tout True I_out True (1.0953125000) int_3^20 True  -> PASS
+  alpha=1/8   s=5 nu= 6: R True Tout True I_out True (0.9455729167) int_3^20 True  -> PASS
+  alpha=1/8   s=5 nu= 8: R True Tout True I_out True (0.9182291667) int_3^20 True  -> PASS
+  alpha=1/8   s=5 nu=10: R True Tout True I_out True (0.9937500000) int_3^20 True  -> PASS
+  alpha=1/8   s=7 nu= 2: R True Tout True I_out True (1.7151041667) int_3^20 True  -> PASS
+  alpha=1/8   s=7 nu= 4: R True Tout True I_out True (1.4857204861) int_3^20 True  -> PASS
+  alpha=1/8   s=7 nu= 6: R True Tout True I_out True (1.2695746528) int_3^20 True  -> PASS
+  alpha=1/8   s=7 nu= 8: R True Tout True I_out True (1.0905381944) int_3^20 True  -> PASS
+  alpha=1/8   s=7 nu=10: R True Tout True I_out True (1.0286892361) int_3^20 True  -> PASS
+  alpha=3/20  s=5 nu= 2: R True Tout True I_out True (1.1773333333) int_3^20 True  -> PASS
+  alpha=3/20  s=5 nu= 4: R True Tout True I_out True (0.9385833333) int_3^20 True  -> PASS
+  alpha=3/20  s=5 nu= 6: R True Tout True I_out True (0.7648333333) int_3^20 True  -> PASS
+  alpha=3/20  s=5 nu= 8: R True Tout True I_out True (0.7435833333) int_3^20 True  -> PASS
+  alpha=3/20  s=5 nu=10: R True Tout True I_out True (0.8323333333) int_3^20 True  -> PASS
+  alpha=3/20  s=7 nu= 2: R True Tout True I_out True (1.5977500000) int_3^20 True  -> PASS
+  alpha=3/20  s=7 nu= 4: R True Tout True I_out True (1.3260486111) int_3^20 True  -> PASS
+  alpha=3/20  s=7 nu= 6: R True Tout True I_out True (1.0697986111) int_3^20 True  -> PASS
+  alpha=3/20  s=7 nu= 8: R True Tout True I_out True (0.8644861111) int_3^20 True  -> PASS
+  alpha=3/20  s=7 nu=10: R True Tout True I_out True (0.8026111111) int_3^20 True  -> PASS
+C2  anchors at (3/40, 37/40) through pkg_ab
+  I_out(5,6) = 127751/96000: True;  Lai (103): True;  I_out(7,8) = 453803/288000: True;  A_40(7,6) - A_40(5,6) = 751/768 == 751/768: True
+C3  Prop. 1': R = x F_beta + Q (exact), beta != lam
+  1800 points, and R_(s+2) - R_s = 2 beta x at 30 points per row: PASS
+C4  U-free s-step at free beta (alpha = 3/40, nu = 6): 2 beta/3 + Delta I_out, exact
+  beta=17/20: Theta_40(7) - Theta_40(5) = 18277/19200 = 0.951927  == 2beta/3 + dI_out: True
+  beta=37/40: Theta_40(7) - Theta_40(5) = 751/768 = 0.977865  == 2beta/3 + dI_out: True
+  beta=1: Theta_40(7) - Theta_40(5) = 57667/57600 = 1.001163  == 2beta/3 + dI_out: True
+ALL PASS: True

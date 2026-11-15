@@ -1,0 +1,5 @@
+  nu= 2 opt36    N=2000: CERTIFIED LB(nu) >= -2.512144377   (criterion5 float N=12000: -2.512301068; 37.8 s)
+  nu= 4 opt36    N=2000: CERTIFIED LB(nu) >= -1.967889060   (criterion5 float N=12000: -1.968095889; 44.3 s)
+  nu= 6 fauzan16 N=2000: CERTIFIED LB(nu) >= -1.387164049   (criterion5 float N=12000: -1.387406863; 26.0 s)
+  nu= 8 opt36    N=2000: CERTIFIED LB(nu) >= -0.775172750   (criterion5 float N=12000: -0.775484225; 32.5 s)
+  nu=10 opt36    N=2000: CERTIFIED LB(nu) >= -0.130163993   (criterion5 float N=12000: -0.130530233; 31.8 s)

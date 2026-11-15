@@ -1,0 +1,3 @@
+(a) even nu, La_check < 0: 120 points (11 window-valid), 7680 x values, R_window != pkg_ab.R at 0
+(b) odd nu, La_check < 2: 120 points, 7680 x; R_window - R_rel in [-0.12500, +0.12500] (|.| <= 1/8?), min Q_true +0.00000 (>= -3/8?)
+(c) nu = 2 cover, column alpha in [0, 1/48] with beta1 > 2/3: 27 boxes {'certified': 27}, min floor_lo 1.0459

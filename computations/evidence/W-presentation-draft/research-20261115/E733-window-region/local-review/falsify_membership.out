@@ -1,0 +1,3 @@
+35925 draws, 4954 window-valid points outside the derived region (34s); in a non-certified box (HOLE): 0; window-valid points strictly below the x = 3 line: 0
+per nu: {5: 23, 7: 79, 8: 7, 9: 338, 10: 90, 11: 512, 12: 306, 13: 494, 14: 239, 15: 474, 16: 215, 17: 391, 18: 212, 19: 407, 20: 201, 21: 343, 22: 206, 23: 227, 24: 190}
+lowest containing-box bound among them: [0.5595833886582879, 0.5595833886582879, 0.5595833886582879]

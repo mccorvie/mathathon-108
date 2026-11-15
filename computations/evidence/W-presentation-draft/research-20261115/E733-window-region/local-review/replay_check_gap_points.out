@@ -1,0 +1,2 @@
+points 36; in no certified extension box: 0; bound above floor: 0; min slack 0.26158689734098006
+python3 -B check_gap_points.py  780.06s user 17.39s system 482% cpu 2:45.26 total

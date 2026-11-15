@@ -1,0 +1,3 @@
+band at x = 3 + 1e-9: below the line 1156 points, feasible 0 (must be 0); above 1155, infeasible 0
+extend.json window(x=3) boxes: 1352; upper corner feasible at x = 3 + 1e-9: 0 (must be 0)
+example nu=24 (13/96, 3/40) feasible at 3+1e-9: False

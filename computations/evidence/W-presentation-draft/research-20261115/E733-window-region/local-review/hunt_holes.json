@@ -1,0 +1,128 @@
+{
+ "reviewer": "Claude Opus 5.5 (local fresh-context subagent; same model family as the author)",
+ "a": {
+  "points": 13520,
+  "boxes": 1352,
+  "feasible_anyway": [],
+  "n_feasible": 0,
+  "max_first_bad_x": 3.246445256218073
+ },
+ "b": {
+  "points": 5180,
+  "errors": 0,
+  "zmin_nonneg": [],
+  "n_zmin_nonneg": 0,
+  "holes": [],
+  "max_zmin": -0.04999997777777778
+ },
+ "c": {
+  "below": 458,
+  "below_feasible": [],
+  "n_below_feasible": 0,
+  "above": 458,
+  "above_infeasible_just_above_3": 0,
+  "above_infeasible_somewhere_in_3_3p5": 61
+ },
+ "d": [
+  {
+   "nu": 9,
+   "alpha": "1/96",
+   "beta": "31/50",
+   "side": "below",
+   "finite_p_feasible": false,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  },
+  {
+   "nu": 9,
+   "alpha": "1/96",
+   "beta": "63/100",
+   "side": "above",
+   "finite_p_feasible": true,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  },
+  {
+   "nu": 12,
+   "alpha": "1/96",
+   "beta": "621/800",
+   "side": "below",
+   "finite_p_feasible": false,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  },
+  {
+   "nu": 12,
+   "alpha": "1/96",
+   "beta": "629/800",
+   "side": "above",
+   "finite_p_feasible": true,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  },
+  {
+   "nu": 17,
+   "alpha": "1/96",
+   "beta": "249/200",
+   "side": "below",
+   "finite_p_feasible": false,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  },
+  {
+   "nu": 17,
+   "alpha": "1/96",
+   "beta": "251/200",
+   "side": "above",
+   "finite_p_feasible": true,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  },
+  {
+   "nu": 23,
+   "alpha": "1/96",
+   "beta": "1371/800",
+   "side": "below",
+   "finite_p_feasible": false,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  },
+  {
+   "nu": 23,
+   "alpha": "1/96",
+   "beta": "1379/800",
+   "side": "above",
+   "finite_p_feasible": true,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  },
+  {
+   "nu": 24,
+   "alpha": "1/96",
+   "beta": "1371/800",
+   "side": "below",
+   "finite_p_feasible": false,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  },
+  {
+   "nu": 24,
+   "alpha": "1/96",
+   "beta": "1379/800",
+   "side": "above",
+   "finite_p_feasible": true,
+   "p": 106649,
+   "K": 320000,
+   "x": 3.0004969573085543
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+flagged points 793: valid at x = 3 + 1e-6 anyway (unsound): 0  (must be 0)
+unflagged points 1236: infeasible at x = 3 + 1e-6 (test not sharp there): 0
+  review point nu=23 (1/240, 9/5): window3_fails=False, feasible at 3+ = True
+  review point nu=17 (1/240, 53/40): window3_fails=False, feasible at 3+ = True
+  review point nu=23 (7/240, 3/2): window3_fails=True, feasible at 3+ = False
+  review point nu=25 (1/240, 19/10): window3_fails=True, feasible at 3+ = False
+  review point nu=24 (1/240, 9/5): window3_fails=False, feasible at 3+ = True

@@ -1,0 +1,83 @@
+ANCHOR 1  Lai zeta(5), D_N^6  [Lai (84) p.14, (103)-(104) p.17]
+  I_out             = 127751/96000  == 127751/96000: True
+  int_3^20 R/x^3    = 322437603634266857629/7535670527041937280000  == (103): True
+  A* (tail <= -2689/48000) == (103): True
+  A_200 by (102)    = 127125602969131786927559/94195881588024216000000 = +1.3495876977  == (104): True
+  I(rho_Fauzan)     = -2.126593445147050403253601   (Lai p.15: -2.126593445147050403253601)
+  C*(6)             = 2.65303599034048866112925   (Lai p.15: 2.65303599034048866112925)
+  lam*M0-I+C*       = -1.3669955645124609356  with M0=-1329/200 (Lai p.15: -1.366995564512460936)
+  <= U = -2733991/2000000 = -1.3669955: True
+  grid sup 2U^rho - V_6 = -6.64989388  (Lai (93): -6.64989...; M0 = -6.645)  [HEURISTIC, float64 grid]
+  A_200 + U         = -0.0174078023   (Lai (108): -0.0174078)
+  package A_200 (Thm 9.3 RHS, exact, c_cr=6) = +1.3455147648  (<= Lai's (102) by +0.0040729329)
+ANCHOR 2  audit zeta(7), D_N^8  [[team handle]/zeta7-irrational@be55b3a4 FinalMargins.lean l.40-64]
+  I_out             = 453803/288000  == 453803/288000: True
+  int_3^20 R/x^3    = 120667538150827615739401/708353029541942104320000  == innerIntegral_value: True
+  A_200 + 44/25 by Anand (89) = 6626902387705935050696033/1362217364503734816000000 = +4.8647907158  == audit: True
+  NOTE Anand's A_0 = 1.3175069 stands where int_20^oo R/x^3 belongs; package value:
+  package A_200 (Thm 9.3 RHS, exact, c_cr=8) = +1.7230965709;  package A_200 + 44/25 = +3.4830965709
+ANCHOR 3  mo271/Zeta5 Lean (Comparator-verified d38a2888), cutoff M = 400  [Apery/Constants.lean l.13,33,36]
+  int_(1/3)^(1/2) d(y) dy = 9/640  (Lai Lemma 10.1: 9/640);  Zeta5 outer = I_out + 9/640 = 129101/96000  (Zeta5 scripts/growth/outer_gen.py: 129101/96000: True)
+  Zeta5 route: outer + (5.18) + int_20^400 (xF+27/16)/x^3 + 6lam/400 = 1.34475217368  <= Aeff = 136/100: True
+  package A_400 with Zeta5's outer (exact R on [3,400]) = +1.3436254170
+  Aeff + U = 136/100 - 2733991/2000000 = -13991/2000000 = -0.0069955000
+  slack of the rounded certificate: 1.36 - route = 0.015247826
+  Zeta5 proved sum (Growth.lean:115-116): -6843153/128000000 + (5.18) + 129101/96000 + 22.2/1600 = 2031621487545722214389669/1507134105408387456000000 = +1.3480031274  == INSIGHTS A_Z5: True
+  its tail term: exact int_20^400 (xF+27/16)/x^3 = -0.0567130865658 <= -6843153/128000000 = -0.0534621328: True
+  Lai/Fauzan (102) at M=400 = +1.3336203696;  A_Z5 - A_400(102) = 1840993/128000000  == 9/640 + 40993/128000000: True
+  A_Z5 + U = -0.0189923726  (unrounded Zeta5 margin; certificate uses 1.36: -0.0069955)
+ALL ANCHORS REPRODUCED: True
+REVISION CHECKS  (reading S outer = class sums of criterion5/derivation.md section 3, E13)
+  class form == pre-revision linear form on nu = s+1 (s = 3..11, 400 exact points each): True
+  Theta(7,6) - Theta(5,6) (U cancels) at M = 40, 200: 751/768, 751/768  == 751/768: True;  I_out step = 1387/3840 == 1387/3840: True
+  I_out(7,2) = 31511/16000  == 31511/16000: True
+REVISION CHECKS PASS: True
+LAI nu=2 (09_final_constants.txt inputs vs exact recomputation with Lai's own formulas)
+  I_inner (Prog 06, 'old coeff' N = nu*lam*x[ax]) exact = -0.2252285088   Lai: -0.2252285088
+  I_inner (2*nu coefficient, Prog 08 'CORRECTED')  exact = -0.1789785088   Lai robustness: -0.18
+  I_out (Prog 07 formula, K->oo, exact)                    = +2.0092465278   Lai (K=4e7 Simpson): +2.0093485686
+  A_0 = int_20^oo R/x^3 (corrected formulas)               = -0.0512341755   Lai Prog 08: -0.0512225151   [F-mean -0.925000]
+  Lai's A_200 (his inputs, Anand's polynomial 9lam/M-11549/(720M^2)+44/M^3) = +1.7741270378; + U_upper = -0.5319858474  (Lai: about -0.53)
+  U for nu=2 (this tool, best comparison measure found: opt36) = -2.468652   Lai Prog 04: -2.3061128852
+  LAI-formulas, 'old coeff' (as run)       I_out=+2.009247 int3^20=-0.225229 A_200=+1.498904 A_200+U_Lai=-0.807209 A_200+U_ours=-0.969749
+  LAI-formulas, 2nu fixed                  I_out=+2.009247 int3^20=-0.178979 A_200=+1.820558 A_200+U_Lai=-0.485555 A_200+U_ours=-0.648094
+  LAI-formulas, 2nu fixed, c_in=7 only     I_out=+2.009247 int3^20=+1.393521 A_200=+3.642808 A_200+U_Lai=+1.336695 A_200+U_ours=+1.174156
+  LAI-formulas, 2nu fixed, rho_r=3 only    I_out=+1.981469 int3^20=-0.178979 A_200=+1.792780 A_200+U_Lai=-0.513333 A_200+U_ours=-0.675872
+  reading N (all nu-attributed)            I_out=+1.057424 int3^20=-0.178979 A_200=+0.840985 A_200+U_Lai=-1.465128 A_200+U_ours=-1.627667
+  reading S (s-attributed)                 I_out=+1.969437 int3^20=+1.393521 A_200=+3.602999 A_200+U_Lai=+1.296886 A_200+U_ours=+1.134346
+  U(nu=4) = -1.959093  [opt36, M0=-6.401479, I=-2.305539, C*=+1.656737; alternatives {'opt36': -1.959092509685977, 'fauzan16': -1.4189483279236779}]
+  U(nu=5) = -1.671180  [opt36, M0=-6.525313, I=-2.209849, C*=+2.154886; alternatives {'opt36': -1.6711795175726603, 'fauzan16': -1.4016970087180693}]
+  U(nu=6) = -1.371522  [fauzan16, M0=-6.649893, I=-2.126593, C*=+2.653036; alternatives {'fauzan16': -1.3715215895124608, 'opt36': -1.369888106897118}]
+  U(nu=7) = -1.057168  [opt36, M0=-6.754221, I=-2.039301, C*=+3.151186; alternatives {'opt36': -1.0571680124171674, 'fauzan16': -0.8950419953068525}]
+  U(nu=8) = -0.734103  [opt36, M0=-6.860088, I=-1.962143, C*=+3.649335; alternatives {'opt36': -0.7341031187691379, 'fauzan16': -0.417087951101244}]
+  U(nu=9) = -0.401503  [opt36, M0=-6.959783, I=-1.888812, C*=+4.147485; alternatives {'opt36': -0.4015029118814122, 'fauzan16': 0.06173189310436439}]
+  U(nu=10) = -0.060015  [opt36, M0=-7.050257, I=-1.815838, C*=+4.645634; alternatives {'opt36': -0.06001530851459717, 'fauzan16': 0.5411159873099728}]
+  U(nu=2) = -2.468652  [opt36, M0=-6.124578, I=-2.536145, C*=+0.660438; alternatives {'opt36': -2.468652377926589, 'fauzan16': -1.4256140163348947}]
+  S s=5 nu= 4  I_out=+1.429646 A_200=+1.937911 A_inf=+1.914992 U=-1.959093 A_200+U=-0.021182 A_inf+U=-0.044100
+  S s=5 nu= 5* I_out=+1.376052 A_200=+1.636445 A_inf=+1.608955 U=-1.671180 A_200+U=-0.034734 A_inf+U=-0.062224
+  S s=5 nu= 6  I_out=+1.330740 A_200=+1.345515 A_inf=+1.313454 U=-1.371522 A_200+U=-0.026007 A_inf+U=-0.058068
+  S s=5 nu= 7* I_out=+1.296677 A_200=+1.067670 A_inf=+1.031039 U=-1.057168 A_200+U=+0.010502 A_inf+U=-0.026129
+  S s=5 nu= 8  I_out=+1.302302 A_200=+0.833027 A_inf=+0.791826 U=-0.734103 A_200+U=+0.098924 A_inf+U=+0.057723
+  S s=5 nu= 9* I_out=+1.321052 A_200=+0.614737 A_inf=+0.568967 U=-0.401503 A_200+U=+0.213234 A_inf+U=+0.167464
+  S s=5 nu=10  I_out=+1.343031 A_200=+0.402383 A_inf=+0.352045 U=-0.060015 A_200+U=+0.342368 A_inf+U=+0.292029
+  S s=7 nu= 4  I_out=+1.826938 A_200=+2.951869 A_inf=+2.928951 U=-1.959093 A_200+U=+0.992777 A_inf+U=+0.969858
+  S s=7 nu= 5* I_out=+1.758500 A_200=+2.635560 A_inf=+2.608070 U=-1.671180 A_200+U=+0.964380 A_inf+U=+0.936890
+  S s=7 nu= 6  I_out=+1.691938 A_200=+2.323379 A_inf=+2.291319 U=-1.371522 A_200+U=+0.951858 A_inf+U=+0.919797
+  S s=7 nu= 7* I_out=+1.627970 A_200=+2.015630 A_inf=+1.978999 U=-1.057168 A_200+U=+0.958462 A_inf+U=+0.921831
+  S s=7 nu= 8  I_out=+1.575705 A_200=+1.723097 A_inf=+1.681896 U=-0.734103 A_200+U=+0.988993 A_inf+U=+0.947793
+  S s=7 nu= 9* I_out=+1.528674 A_200=+1.439025 A_inf=+1.393255 U=-0.401503 A_200+U=+1.037522 A_inf+U=+0.991752
+  S s=7 nu=10  I_out=+1.525939 A_200=+1.201958 A_inf=+1.151619 U=-0.060015 A_200+U=+1.141943 A_inf+U=+1.091604
+  S s=9 nu= 4  I_out=+2.267632 A_200=+4.009230 A_inf=+3.986312 U=-1.959093 A_200+U=+2.050138 A_inf+U=+2.027219
+  S s=9 nu= 5* I_out=+2.194507 A_200=+3.688233 A_inf=+3.660743 U=-1.671180 A_200+U=+2.017054 A_inf+U=+1.989564
+  S s=9 nu= 6  I_out=+2.121382 A_200=+3.369490 A_inf=+3.337430 U=-1.371522 A_200+U=+1.997969 A_inf+U=+1.965908
+  S s=9 nu= 7* I_out=+2.048474 A_200=+3.052801 A_inf=+3.016170 U=-1.057168 A_200+U=+1.995633 A_inf+U=+1.959002
+  S s=9 nu= 8  I_out=+1.976833 A_200=+2.740892 A_inf=+2.699691 U=-0.734103 A_200+U=+2.006789 A_inf+U=+1.965588
+  S s=9 nu= 9* I_out=+1.907536 A_200=+2.434554 A_inf=+2.388785 U=-0.401503 A_200+U=+2.033052 A_inf+U=+1.987282
+  S s=9 nu=10  I_out=+1.849802 A_200=+2.142488 A_inf=+2.092149 U=-0.060015 A_200+U=+2.082472 A_inf+U=+2.032134
+  N s=any nu= 4  I_out=+1.205462 A_200=+1.097060 A_inf=+1.074142 U=-1.959093 A_200+U=-0.862032 A_inf+U=-0.884951
+  N s=any nu= 5* I_out=+1.240892 A_200=+1.192952 A_inf=+1.165462 U=-1.671180 A_200+U=-0.478227 A_inf+U=-0.505717
+  N s=any nu= 6  I_out=+1.330740 A_200=+1.345515 A_inf=+1.313454 U=-1.371522 A_200+U=-0.026007 A_inf+U=-0.058068
+  N s=any nu= 7* I_out=+1.447039 A_200=+1.526366 A_inf=+1.489735 U=-1.057168 A_200+U=+0.469198 A_inf+U=+0.432567
+  N s=any nu= 8  I_out=+1.575705 A_200=+1.723097 A_inf=+1.681896 U=-0.734103 A_200+U=+0.988993 A_inf+U=+0.947793
+  N s=any nu= 9* I_out=+1.710159 A_200=+1.928844 A_inf=+1.883074 U=-0.401503 A_200+U=+1.527341 A_inf+U=+1.481571
+  N s=any nu=10  I_out=+1.849802 A_200=+2.142488 A_inf=+2.092149 U=-0.060015 A_200+U=+2.082472 A_inf+U=+2.032134

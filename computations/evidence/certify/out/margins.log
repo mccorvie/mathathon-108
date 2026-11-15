@@ -1,0 +1,27 @@
+# certified margins (run.py margins, 2026-11-14 02:54); intervals are rigorous enclosures
+## analytic side: U(nu; rho_theta) = lam*M0bar - I(rho) + C*(nu)  (upper bound), LB(nu) (lower bound)
+  nu= 2 opt36   : M0bar = -3062289/500000 (-6.124578; theta grid sup -6.1245787884); I(rho) in [-2.53614455855536, -2.53614455855536]; C* in [0.660437713518055, 0.660437713518055]
+           U <= -2.4686523779  (theta float -2.4686523779);   LB >= -2.5121443774
+  nu= 4 opt36   : M0bar = -6401479/1000000 (-6.401479; theta grid sup -6.4014790396); I(rho) in [-2.30553871338475, -2.30553871338475]; C* in [1.65673685192927, 1.65673685192927]
+           U <= -1.9590925097  (theta float -1.9590925097);   LB >= -1.9678890603
+  nu= 6 fauzan16: M0bar = -6649893/1000000 (-6.649893; theta grid sup -6.6498938806); I(rho) in [-2.12659344514705, -2.12659344514705]; C* in [2.65303599034049, 2.65303599034049]
+           U <= -1.3715215895  (theta float -1.3715215895);   LB >= -1.3871640488
+  nu= 8 opt36   : M0bar = -857511/125000 (-6.860088; theta grid sup -6.8600887337); I(rho) in [-1.96214315247916, -1.96214315247916]; C* in [3.64933512875171, 3.64933512875171]
+           U <= -0.7341031188  (theta float -0.7341031188);   LB >= -0.7751727496
+  nu=10 opt36   : M0bar = -7050257/1000000 (-7.050257; theta grid sup -7.0502570036); I(rho) in [-1.81583814932248, -1.81583814932248]; C* in [4.64563426716292, 4.64563426716292]
+           U <= -0.0600153085  (theta float -0.0600153085);   LB >= -0.1301639932
+## decisive signs
+  zeta(7), nu= 2:  A*(7,nu) + U >= A* + LB >= +1.077080   CERTIFIED > 0
+  zeta(7), nu= 4:  A*(7,nu) + U >= A* + LB >= +0.961062   CERTIFIED > 0
+  zeta(7), nu= 6:  A*(7,nu) + U >= A* + LB >= +0.904155   CERTIFIED > 0
+  zeta(7), nu= 8:  A*(7,nu) + U >= A* + LB >= +0.906723   CERTIFIED > 0
+  zeta(7), nu=10:  A*(7,nu) + U >= A* + LB >= +1.021455   CERTIFIED > 0
+  zeta(5), nu= 6:  A*(5,6) + U(6; Fauzan rho) <= -0.058068;  A_200(5,6) + U <= -0.026007   CERTIFIED < 0
+## brackets [A* + LB, A* + U(rho_theta)] (M -> oo), certified ends
+  s=3: nu=2: [-0.8637,-0.8202]  nu=4: [-0.8937,-0.8850]  nu=6: [-0.8111,-0.7955]  nu=8: [-0.6464,-0.6053]  nu=10: [-0.4463,-0.3761]
+  s=5: nu=2: [+0.0428,+0.0863]  nu=4: [-0.0529,-0.0441]  nu=6: [-0.0737,-0.0581]  nu=8: [+0.0167,+0.0577]  nu=10: [+0.2219,+0.2920]
+  s=7: nu=2: [+1.0771,+1.1206]  nu=4: [+0.9611,+0.9699]  nu=6: [+0.9042,+0.9198]  nu=8: [+0.9067,+0.9478]  nu=10: [+1.0215,+1.0916]
+  s=9: nu=2: [+2.1382,+2.1817]  nu=4: [+2.0184,+2.0272]  nu=6: [+1.9503,+1.9659]  nu=8: [+1.9245,+1.9656]  nu=10: [+1.9620,+2.0321]
+## finite M (A_M = I_out + c_cr lam/M + int_3^M R/x^3): A_M - A* >= c/M - K2/M^2, c = (nu+1) lam
+  max over the 20 (s,nu) pairs of K2/c = 3.5945 < 40, so A_M >= A* for every real M >= 40: True.  Hence every 'zeta(7) > 0' line above holds for every M >= 40 as well.
+ALL DECISIVE SIGNS CERTIFIED: True

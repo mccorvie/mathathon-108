@@ -1,0 +1,22 @@
+start 09:07:26 boxes=2038 workers=7 maxdepth=4
+      137s level done; 2038 final, next level 0 boxes
+nu=1: 0 certified (min None), invalid {'saturation': 17}, unresolved 0
+nu=3: 0 certified (min None), invalid {'window(x=3), alpha > 0': 8, 'saturation': 20}, unresolved 0
+nu=5: 0 certified (min None), invalid {'window(x=3), alpha > 0': 19, 'saturation': 20}, unresolved 0
+nu=7: 1 certified (min 1.2116), invalid {'window(x=3), alpha > 0': 31, 'saturation': 20}, unresolved 0
+nu=9: 13 certified (min 0.7476), invalid {'window(x=3), alpha > 0': 42, 'saturation': 8}, unresolved 0
+nu=11: 15 certified (min 0.6847), invalid {'window(x=3), alpha > 0': 56, 'saturation': 3}, unresolved 0
+nu=12: 12 certified (min 0.7245), invalid {'window(x=3), alpha > 0': 56}, unresolved 0
+nu=13: 18 certified (min 0.7589), invalid {'window(x=3), alpha > 0': 65, 'saturation': 3}, unresolved 0
+nu=14: 12 certified (min 0.7958), invalid {'window(x=3), alpha > 0': 65, 'saturation': 1}, unresolved 0
+nu=15: 18 certified (min 0.8375), invalid {'window(x=3), alpha > 0': 77, 'saturation': 3}, unresolved 0
+nu=16: 13 certified (min 0.8288), invalid {'window(x=3), alpha > 0': 77, 'saturation': 1}, unresolved 0
+nu=17: 18 certified (min 0.8335), invalid {'window(x=3), alpha > 0': 89, 'saturation': 2}, unresolved 0
+nu=18: 13 certified (min 0.838), invalid {'window(x=3), alpha > 0': 89}, unresolved 0
+nu=19: 17 certified (min 0.9148), invalid {'window(x=3), alpha > 0': 101, 'saturation': 2}, unresolved 0
+nu=20: 12 certified (min 0.9268), invalid {'window(x=3), alpha > 0': 101, 'saturation': 1}, unresolved 0
+nu=21: 19 certified (min 1.0208), invalid {'window(x=3), alpha > 0': 113, 'saturation': 1}, unresolved 0
+nu=22: 13 certified (min 1.0655), invalid {'window(x=3), alpha > 0': 113}, unresolved 0
+nu=23: 62 certified (min 1.0575), invalid {'window(x=3), alpha > 0': 125, 'iii': 130, 'saturation': 3}, unresolved 0
+nu=24: 52 certified (min 1.1319), invalid {'window(x=3), alpha > 0': 125, 'iii': 140, 'saturation': 3}, unresolved 0
+end 09:09:43 total 137s

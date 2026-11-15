@@ -1,0 +1,16 @@
+252 cells, 252 to do, 4 workers
+  1/252  0s  last: a=1/10 b=1/2 nu=6 floor7=+nan (0.0s)
+  21/252  2s  last: a=1/10 b=5/8 nu=8 floor7=+0.8326 (0.8s)
+  41/252  7s  last: a=9/80 b=1/2 nu=8 floor7=+nan (0.0s)
+  61/252  12s  last: a=9/80 b=3/5 nu=8 floor7=+0.8015 (2.6s)
+  81/252  26s  last: a=9/80 b=29/40 nu=8 floor7=+0.8188 (3.0s)
+  101/252  29s  last: a=1/8 b=23/40 nu=8 floor7=+0.7761 (1.3s)
+  121/252  35s  last: a=1/8 b=29/40 nu=6 floor7=+0.8159 (1.3s)
+  141/252  41s  last: a=11/80 b=9/16 nu=8 floor7=+0.7573 (2.9s)
+  161/252  55s  last: a=11/80 b=57/80 nu=6 floor7=+0.8076 (3.2s)
+  181/252  61s  last: a=3/20 b=43/80 nu=8 floor7=+0.7412 (1.6s)
+  201/252  67s  last: a=3/20 b=11/16 nu=6 floor7=+0.8010 (1.6s)
+  221/252  74s  last: a=13/80 b=43/80 nu=8 floor7=+0.7406 (3.3s)
+  241/252  89s  last: a=13/80 b=11/16 nu=6 floor7=+0.8058 (3.2s)
+  252/252  97s  last: a=13/80 b=3/4 nu=8 floor7=+0.9616 (3.0s)
+wrote /Users/[user]/Library/Application Support/Claude/scratch-workspaces/f84c0719-1fc3-4a02-8618-d18d9fee307c/41484cae-f9fd-4f1a-aadb-82b393529446/scratch-2026-11-13-630807/mathathon/problems/108-zeta-odd-autopsy/evidence/scope_alpha_beta/out/scan_out_cells_fine.json

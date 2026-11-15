@@ -1,0 +1,19 @@
+cells: 1486; admissible: 931
+zeta(7) dual floor, valid region (alpha < 1/6, admissible): min = +0.757284 at alpha = 11/80, beta = 9/16, nu = 8  (top +0.814379; A*(7) = 0.153389, LB = +0.603895)
+  outside the derivation (alpha >= 1/6, formula continuation only): min = +0.792138 at alpha = 7/40, beta = 5/8, nu = 6
+  valid cells with floor < +0.84: 104; with floor < +0.80: 45
+  alpha=1/40 : beta range [0.6500, 1.1250] admissible; min floor +1.05132 at beta=1 (nu=8); at template beta=1-alpha: +1.05307 (nu=8); gain +0.00175
+  alpha=1/20 : beta range [0.6000, 1.1250] admissible; min floor +0.95387 at beta=9/10 (nu=8); at template beta=1-alpha: +0.95920 (nu=8); gain +0.00533
+  alpha=3/40 : beta range [0.5000, 1.1250] admissible; min floor +0.87986 at beta=4/5 (nu=8); at template beta=1-alpha: +0.90438 (nu=6); gain +0.02452
+  alpha=1/10 : beta range [0.5250, 1.1250] admissible; min floor +0.82438 at beta=11/16 (nu=8); at template beta=1-alpha: +0.87277 (nu=6); gain +0.04838
+  alpha=9/80 : beta range [0.5250, 0.7500] admissible; min floor +0.79993 at beta=5/8 (nu=8); at template beta=1-alpha: n/a; gain +nan
+  alpha=1/8  : beta range [0.5125, 1.1250] admissible; min floor +0.77605 at beta=9/16 (nu=8); at template beta=1-alpha: +0.87046 (nu=6); gain +0.09442
+  alpha=21/160: beta range [0.5375, 0.5813] admissible; min floor +0.76413 at beta=43/80 (nu=8); at template beta=1-alpha: n/a; gain +nan
+  alpha=11/80: beta range [0.5625, 0.7500] admissible; min floor +0.75728 at beta=9/16 (nu=8); at template beta=1-alpha: n/a; gain +nan
+  alpha=3/20 : beta range [0.6125, 1.1250] admissible; min floor +0.77491 at beta=49/80 (nu=8); at template beta=1-alpha: +0.89707 (nu=6); gain +0.12215
+  alpha=13/80: beta range [0.6125, 0.7500] admissible; min floor +0.78730 at beta=49/80 (nu=6); at template beta=1-alpha: n/a; gain +nan
+  alpha=7/40 : beta range [0.6250, 1.1250] admissible; min floor +0.79214 at beta=5/8 (nu=6); at template beta=1-alpha: +0.90709 (nu=4); gain +0.11495
+  alpha=1/5  : beta range [0.5500, 1.1250] admissible; min floor +0.79286 at beta=3/5 (nu=6); at template beta=1-alpha: +0.92213 (nu=4); gain +0.12927
+zeta(5) calibration (valid region): best upper end A*(5) + U = -0.057764 at alpha = 1/8, beta = 9/10, nu = 4 (lower end there -0.074878; U is a float-grid HEURISTIC value)
+  most negative lower end A*(5) + LB = -0.083633 at alpha = 1/10, beta = 39/40, nu = 4; at Fauzan's (3/40, 37/40, 6): [-0.073486, ...]
+decisive cells -> out/decisive_cells.json: [['11/80', '9/16', 8], ['1/40', '1', 8], ['1/20', '9/10', 8], ['3/40', '4/5', 8], ['1/10', '11/16', 8], ['9/80', '5/8', 8], ['1/8', '9/16', 8], ['21/160', '43/80', 8], ['3/20', '49/80', 8], ['13/80', '49/80', 6]]

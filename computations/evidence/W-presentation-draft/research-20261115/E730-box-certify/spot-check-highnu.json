@@ -1,0 +1,670 @@
+{
+ "points": 48,
+ "violations": [],
+ "in_no_certified_box": [],
+ "min_slack": 0.317604374254302,
+ "min_floor7": {
+  "12": 1.1637907867852184,
+  "14": 1.2192488035917037,
+  "16": 1.4745108055377294,
+  "18": 1.9766904891559798,
+  "20": 2.5084970899665793,
+  "22": 3.177656057241041
+ },
+ "rows": [
+  {
+   "nu": 12,
+   "alpha": "7/60",
+   "beta": "121/120",
+   "admissible": true,
+   "floor7": 1.9897276583563008,
+   "box_bounds": [
+    1.462353385304272
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 12,
+   "alpha": "3/40",
+   "beta": "1",
+   "admissible": true,
+   "floor7": 1.4055128511890849,
+   "box_bounds": [
+    0.8860139003932231,
+    0.9440457273934039
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 12,
+   "alpha": "1/24",
+   "beta": "59/40",
+   "admissible": true,
+   "floor7": 2.1103703227914092,
+   "box_bounds": [
+    1.3779208745876477,
+    1.6713991390354321
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 12,
+   "alpha": "1/30",
+   "beta": "127/120",
+   "admissible": true,
+   "floor7": 1.18727456214843,
+   "box_bounds": [
+    0.8535727045265439
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 12,
+   "alpha": "17/120",
+   "beta": "23/24",
+   "admissible": true,
+   "floor7": 2.2812717411763783,
+   "box_bounds": [
+    1.667894962154548
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 12,
+   "alpha": "1/80",
+   "beta": "39/40",
+   "admissible": true,
+   "floor7": 1.1637907867852184,
+   "box_bounds": [
+    0.844251988899464
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 12,
+   "alpha": "1/10",
+   "beta": "143/120",
+   "admissible": true,
+   "floor7": 2.315847856803402,
+   "box_bounds": [
+    1.530862023429323
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 12,
+   "alpha": "1/60",
+   "beta": "77/60",
+   "admissible": true,
+   "floor7": 1.3349385470522463,
+   "box_bounds": [
+    1.0173341727979444
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 14,
+   "alpha": "1/24",
+   "beta": "41/30",
+   "admissible": true,
+   "floor7": 2.0257066256101073,
+   "box_bounds": [
+    1.1986601259749665,
+    1.524052790751268
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 14,
+   "alpha": "1/80",
+   "beta": "67/60",
+   "admissible": true,
+   "floor7": 1.2192488035917037,
+   "box_bounds": [
+    0.8812600066487751
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 14,
+   "alpha": "1/30",
+   "beta": "61/40",
+   "admissible": true,
+   "floor7": 2.3310807562446376,
+   "box_bounds": [
+    1.5606256534949778
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 14,
+   "alpha": "7/240",
+   "beta": "17/10",
+   "admissible": true,
+   "floor7": 2.9136758572102597,
+   "box_bounds": [
+    2.058674342709339,
+    2.2618111669898315
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 14,
+   "alpha": "7/60",
+   "beta": "43/40",
+   "admissible": true,
+   "floor7": 2.8324833975535415,
+   "box_bounds": [
+    2.047241399217783
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 14,
+   "alpha": "5/48",
+   "beta": "61/60",
+   "admissible": true,
+   "floor7": 2.295206166306191,
+   "box_bounds": [
+    1.4351930051116526,
+    1.8674307888888972
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 14,
+   "alpha": "1/60",
+   "beta": "17/10",
+   "admissible": true,
+   "floor7": 2.5232326552462023,
+   "box_bounds": [
+    1.7275737955985728,
+    1.8802520423267588
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 14,
+   "alpha": "13/240",
+   "beta": "47/40",
+   "admissible": true,
+   "floor7": 1.7738696188440493,
+   "box_bounds": [
+    1.076305527647712
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 16,
+   "alpha": "3/40",
+   "beta": "29/30",
+   "admissible": true,
+   "floor7": 1.9861802802217787,
+   "box_bounds": [
+    1.1934340243661097
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 16,
+   "alpha": "19/240",
+   "beta": "39/40",
+   "admissible": true,
+   "floor7": 2.0871525463574168,
+   "box_bounds": [
+    1.1934340243661097
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 16,
+   "alpha": "1/16",
+   "beta": "13/15",
+   "admissible": true,
+   "floor7": 1.612679502460265,
+   "box_bounds": [
+    0.8684118334957939,
+    1.0432358671634354
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 16,
+   "alpha": "1/12",
+   "beta": "143/120",
+   "admissible": true,
+   "floor7": 2.9310863057818355,
+   "box_bounds": [
+    1.646044474783499,
+    2.261826252983159
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 16,
+   "alpha": "1/30",
+   "beta": "49/30",
+   "admissible": true,
+   "floor7": 3.0173514913469237,
+   "box_bounds": [
+    1.9289917890247714
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 16,
+   "alpha": "7/60",
+   "beta": "29/30",
+   "admissible": true,
+   "floor7": 2.9758875635960402,
+   "box_bounds": [
+    2.1220967068954457
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 16,
+   "alpha": "1/48",
+   "beta": "73/60",
+   "admissible": true,
+   "floor7": 1.4745108055377294,
+   "box_bounds": [
+    0.9884174512014106,
+    0.9762500841401393
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 16,
+   "alpha": "1/12",
+   "beta": "101/120",
+   "admissible": true,
+   "floor7": 1.84513311638269,
+   "box_bounds": [
+    0.9917330251318768,
+    1.256988715729131
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 18,
+   "alpha": "1/40",
+   "beta": "5/3",
+   "admissible": true,
+   "floor7": 3.040616090730162,
+   "box_bounds": [
+    2.214471125979558
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 18,
+   "alpha": "1/20",
+   "beta": "53/40",
+   "admissible": true,
+   "floor7": 2.745989342216129,
+   "box_bounds": [
+    1.696541557839808
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 18,
+   "alpha": "3/80",
+   "beta": "6/5",
+   "admissible": true,
+   "floor7": 1.9766904891559798,
+   "box_bounds": [
+    0.9491190888446303,
+    1.0083288443778111
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 18,
+   "alpha": "1/20",
+   "beta": "37/30",
+   "admissible": true,
+   "floor7": 2.43823975863189,
+   "box_bounds": [
+    1.427603192055438
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 18,
+   "alpha": "1/20",
+   "beta": "19/15",
+   "admissible": true,
+   "floor7": 2.543997252123719,
+   "box_bounds": [
+    1.554316684550449
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 18,
+   "alpha": "17/240",
+   "beta": "31/24",
+   "admissible": true,
+   "floor7": 3.426746016713678,
+   "box_bounds": [
+    2.261606649452075
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 18,
+   "alpha": "7/80",
+   "beta": "4/5",
+   "admissible": true,
+   "floor7": 2.17126822850398,
+   "box_bounds": [
+    1.3781822482926527,
+    1.4887581421880884
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 18,
+   "alpha": "17/240",
+   "beta": "29/24",
+   "admissible": true,
+   "floor7": 3.061273376578102,
+   "box_bounds": [
+    2.0659652107123248
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 20,
+   "alpha": "7/240",
+   "beta": "17/12",
+   "admissible": true,
+   "floor7": 2.5084970899665793,
+   "box_bounds": [
+    1.4472183004221117
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 20,
+   "alpha": "1/80",
+   "beta": "53/30",
+   "admissible": true,
+   "floor7": 2.996417471333057,
+   "box_bounds": [
+    1.9689477412518683
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 20,
+   "alpha": "7/80",
+   "beta": "53/60",
+   "admissible": true,
+   "floor7": 2.832861157248042,
+   "box_bounds": [
+    1.8892881077559445
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 20,
+   "alpha": "1/15",
+   "beta": "41/40",
+   "admissible": true,
+   "floor7": 2.6816992058394966,
+   "box_bounds": [
+    1.6893126167184438
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 20,
+   "alpha": "1/15",
+   "beta": "151/120",
+   "admissible": true,
+   "floor7": 3.5838184441517016,
+   "box_bounds": [
+    2.585769670573453
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 20,
+   "alpha": "1/24",
+   "beta": "79/60",
+   "admissible": true,
+   "floor7": 2.7186212351022347,
+   "box_bounds": [
+    1.2139190087120526,
+    1.861749735951607
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 20,
+   "alpha": "7/240",
+   "beta": "63/40",
+   "admissible": true,
+   "floor7": 3.1003271750524117,
+   "box_bounds": [
+    1.909277661710525
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 20,
+   "alpha": "19/240",
+   "beta": "113/120",
+   "admissible": true,
+   "floor7": 2.7909358267527082,
+   "box_bounds": [
+    1.444384111791092
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 22,
+   "alpha": "19/240",
+   "beta": "1",
+   "admissible": true,
+   "floor7": 3.4736120381625466,
+   "box_bounds": [
+    1.767022344394424,
+    1.9146626573137915
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 22,
+   "alpha": "7/80",
+   "beta": "119/120",
+   "admissible": true,
+   "floor7": 3.7834992728330166,
+   "box_bounds": [
+    2.6037900729716
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 22,
+   "alpha": "11/240",
+   "beta": "57/40",
+   "admissible": true,
+   "floor7": 3.7152803369947938,
+   "box_bounds": [
+    2.4517585595232445
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 22,
+   "alpha": "1/24",
+   "beta": "181/120",
+   "admissible": true,
+   "floor7": 3.858424530018217,
+   "box_bounds": [
+    1.7978865671606532,
+    2.9166442128112586
+   ],
+   "statuses": [
+    "certified",
+    "certified"
+   ]
+  },
+  {
+   "nu": 22,
+   "alpha": "11/240",
+   "beta": "43/30",
+   "admissible": true,
+   "floor7": 3.7543667522604305,
+   "box_bounds": [
+    2.4517585595232445
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 22,
+   "alpha": "1/120",
+   "beta": "221/120",
+   "admissible": true,
+   "floor7": 3.177656057241041,
+   "box_bounds": [
+    2.1358934695267706
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 22,
+   "alpha": "1/15",
+   "beta": "71/60",
+   "admissible": true,
+   "floor7": 3.7250257862279437,
+   "box_bounds": [
+    2.4722439567161802
+   ],
+   "statuses": [
+    "certified"
+   ]
+  },
+  {
+   "nu": 22,
+   "alpha": "3/40",
+   "beta": "139/120",
+   "admissible": true,
+   "floor7": 4.019984109172258,
+   "box_bounds": [
+    2.4722439567161802
+   ],
+   "statuses": [
+    "certified"
+   ]
+  }
+ ]
+}

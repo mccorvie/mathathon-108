@@ -1,0 +1,6 @@
+== M0 run 2026-11-14 02:51:08 (iv prec 113 bits)
+  nu= 2 opt36    CERTIFIED sup_[0,oo) 2U-V <= -6.124578302252 <= tau = -3062289/500000 (-6.124578000);  lower (point value) -6.124578792529 at t~0.020951;  267 cells, tail B(4) = -11.180, 1.8 s
+  nu= 4 opt36    CERTIFIED sup_[0,oo) 2U-V <= -6.401479029522 <= tau = -6401479/1000000 (-6.401479000);  lower (point value) -6.401479039899 at t~0.007313;  301 cells, tail B(4) = -10.972, 2.1 s
+  nu= 6 fauzan16 CERTIFIED sup_[0,oo) 2U-V <= -6.649893079020 <= tau = -6649893/1000000 (-6.649893000);  lower (point value) -6.649893913353 at t~0.619499;  286 cells, tail B(4) = -10.764, 1.7 s
+  nu= 8 opt36    CERTIFIED sup_[0,oo) 2U-V <= -6.860088105266 <= tau = -857511/125000 (-6.860088000);  lower (point value) -6.860088735520 at t~0.035576;  262 cells, tail B(4) = -10.555, 1.6 s
+  nu=10 opt36    CERTIFIED sup_[0,oo) 2U-V <= -7.050257002005 <= tau = -7050257/1000000 (-7.050257000);  lower (point value) -7.050257003614 at t~0.123001;  288 cells, tail B(4) = -10.347, 1.9 s

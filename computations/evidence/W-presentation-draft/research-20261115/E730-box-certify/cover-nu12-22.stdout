@@ -1,0 +1,9 @@
+start 07:19:51 nus=[12, 14, 16, 18, 20, 22] boxes=1920 workers=7 maxdepth=6
+      460s level done; next level 0 boxes; nu=12: 179 cert, 141 inval, 0 unres; nu=14: 161 cert, 159 inval, 0 unres; nu=16: 134 cert, 186 inval, 0 unres; nu=18: 112 cert, 208 inval, 0 unres; nu=20: 89 cert, 231 inval, 0 unres; nu=22: 66 cert, 254 inval, 0 unres
+nu=12: 179 certified (min floor lower bound 0.5326), 141 invalid, 0 unresolved; covered area 0.333333 of 0.333333
+nu=14: 161 certified (min floor lower bound 0.6152), 159 invalid, 0 unresolved; covered area 0.333333 of 0.333333
+nu=16: 134 certified (min floor lower bound 0.7118), 186 invalid, 0 unresolved; covered area 0.333333 of 0.333333
+nu=18: 112 certified (min floor lower bound 0.7929), 208 invalid, 0 unresolved; covered area 0.333333 of 0.333333
+nu=20: 89 certified (min floor lower bound 0.8777), 231 invalid, 0 unresolved; covered area 0.333333 of 0.333333
+nu=22: 66 certified (min floor lower bound 0.9843), 254 invalid, 0 unresolved; covered area 0.333333 of 0.333333
+end 07:27:31 total 460s

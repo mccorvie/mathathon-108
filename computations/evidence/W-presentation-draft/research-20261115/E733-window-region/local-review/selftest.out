@@ -1,0 +1,7 @@
+feasible_at vs E733 check_window3.feasible: 2012 (point, x) pairs, 0 disagreements
+R_window (mine) vs E732 window.R_window: 0 mismatches; even nu vs pkg_ab.R: 0 mismatches of 612; odd nu R_win - R_rel in [-0.10121, +0.10839] (588 pts)
+  nu=23 (1/240,9/5) valid_all=True first_bad=None evals=111 expect=True (0.0s)
+  nu=17 (1/240,53/40) valid_all=True first_bad=None evals=91 expect=True (0.0s)
+  nu=23 (7/240,3/2) valid_all=False first_bad=2631/874 evals=1 expect=False (0.0s)
+  nu=25 (1/240,19/10) valid_all=False first_bad=1437/478 evals=1 expect=False (0.0s)
+  nu=24 (1/240,9/5) valid_all=True first_bad=None evals=111 expect=True (0.0s)

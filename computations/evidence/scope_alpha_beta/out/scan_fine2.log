@@ -1,0 +1,5 @@
+24 cells, 24 to do, 4 workers
+  1/24  6s  last: a=21/160 b=43/80 nu=8 floor7=+0.7641 (6.2s)
+  21/24  29s  last: a=23/160 b=91/160 nu=8 floor7=+0.7539 (4.9s)
+  24/24  31s  last: a=23/160 b=93/160 nu=8 floor7=+0.7580 (6.1s)
+wrote /Users/[user]/Library/Application Support/Claude/scratch-workspaces/f84c0719-1fc3-4a02-8618-d18d9fee307c/41484cae-f9fd-4f1a-aadb-82b393529446/scratch-2026-11-13-630807/mathathon/problems/108-zeta-odd-autopsy/evidence/scope_alpha_beta/out/scan_out_cells_fine2.json

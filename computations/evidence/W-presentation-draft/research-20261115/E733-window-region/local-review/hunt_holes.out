@@ -1,0 +1,13 @@
+(a) window(x=3) boxes: 13520 points, window-feasible on (3, 3.5] anyway: 0; largest first failing x: 3.246445
+(b) saturation boxes: 5180 points, z_7 >= 0 at 0, of which window-valid with (iii): 0; max z_7 seen -0.05000
+(c) band: below the line 458 points, feasible anyway 0; above the line 458, infeasible just above 3: 0, infeasible somewhere in (3, 3.5]: 61
+(d) nu=9 alpha=1/96 beta=31/50 (below): finite-p feasible=False at p=106649, K=320000, x=3.000497
+(d) nu=9 alpha=1/96 beta=63/100 (above): finite-p feasible=True at p=106649, K=320000, x=3.000497
+(d) nu=12 alpha=1/96 beta=621/800 (below): finite-p feasible=False at p=106649, K=320000, x=3.000497
+(d) nu=12 alpha=1/96 beta=629/800 (above): finite-p feasible=True at p=106649, K=320000, x=3.000497
+(d) nu=17 alpha=1/96 beta=249/200 (below): finite-p feasible=False at p=106649, K=320000, x=3.000497
+(d) nu=17 alpha=1/96 beta=251/200 (above): finite-p feasible=True at p=106649, K=320000, x=3.000497
+(d) nu=23 alpha=1/96 beta=1371/800 (below): finite-p feasible=False at p=106649, K=320000, x=3.000497
+(d) nu=23 alpha=1/96 beta=1379/800 (above): finite-p feasible=True at p=106649, K=320000, x=3.000497
+(d) nu=24 alpha=1/96 beta=1371/800 (below): finite-p feasible=False at p=106649, K=320000, x=3.000497
+(d) nu=24 alpha=1/96 beta=1379/800 (above): finite-p feasible=True at p=106649, K=320000, x=3.000497

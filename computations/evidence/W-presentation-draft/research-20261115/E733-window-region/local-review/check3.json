@@ -1,0 +1,23 @@
+{
+ "a": {
+  "points": 120,
+  "window_valid_points": 11,
+  "x_evals": 7680,
+  "mismatches": 0
+ },
+ "b": {
+  "points": 120,
+  "x_evals": 7680,
+  "diff_min": -0.12499949166666667,
+  "diff_max": 0.12499949895833333,
+  "Qtrue_min": 4.165948611111111e-09
+ },
+ "c": {
+  "boxes": 27,
+  "statuses": {
+   "certified": 27
+  },
+  "min_floor_lo": 1.0458637463229346
+ },
+ "reviewer": "Claude Opus 5.5 (local fresh-context subagent; same model family as the author)"
+}
