@@ -1,0 +1,5 @@
+5->7: 679 admissible points (alpha < 1/6, a < 2), 56 with a >= 2 skipped; violations 0
+  tightest ('1/10', '21/40', 10): step 0.587396, bound 0.313264; bound/step in [0.248, 0.588]
+  template (3/40, 37/40, 6): step 0.977865 (751/768 = 0.977865), bound 0.516389; s >= 7 bound at nu = 10: 0.556667 (167/300 = 0.556667)
+7->9: 40 sampled points, 1 outside the s = 9 validity region; violations 0
+  tightest ('1/10', '33/40', 10): step 0.848863, bound 0.479583

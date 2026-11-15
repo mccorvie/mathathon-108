@@ -1,0 +1,16 @@
+s=5 nu=6 alpha=3/40 beta=beta*-0: exact zmin(s+2) = +0.000e+00  PkgAB.zmin = +5.000e-08  pkg_ab test passes;  I_out runs; lower<=step<=upper: True
+s=5 nu=6 alpha=3/40 beta=beta*-1/1000000000: exact zmin(s+2) = -1.000e-09  PkgAB.zmin = +4.900e-08  pkg_ab test passes;  I_out raises ValueError
+s=5 nu=6 alpha=3/40 beta=beta*-1/10000000: exact zmin(s+2) = -1.000e-07  PkgAB.zmin = -5.000e-08  pkg_ab test fails;  I_out raises ValueError
+s=5 nu=6 alpha=3/40 beta=beta*-1/100000: exact zmin(s+2) = -1.000e-05  PkgAB.zmin = -9.950e-06  pkg_ab test fails;  I_out raises ValueError
+s=3 nu=9 alpha=1/10 beta=beta*-0: exact zmin(s+2) = +0.000e+00  PkgAB.zmin = +3.333e-08  pkg_ab test passes;  I_out runs; lower<=step<=upper: True
+s=3 nu=9 alpha=1/10 beta=beta*-1/1000000000: exact zmin(s+2) = -1.000e-09  PkgAB.zmin = +3.233e-08  pkg_ab test passes;  I_out raises ValueError
+s=3 nu=9 alpha=1/10 beta=beta*-1/10000000: exact zmin(s+2) = -1.000e-07  PkgAB.zmin = -6.667e-08  pkg_ab test fails;  I_out raises ValueError
+s=3 nu=9 alpha=1/10 beta=beta*-1/100000: exact zmin(s+2) = -1.000e-05  PkgAB.zmin = -9.967e-06  pkg_ab test fails;  I_out raises ValueError
+s=5 nu=8 alpha=11/80 beta=beta*-0: exact zmin(s+2) = +0.000e+00  PkgAB.zmin = +4.722e-08  pkg_ab test passes;  I_out runs; lower<=step<=upper: True
+s=5 nu=8 alpha=11/80 beta=beta*-1/1000000000: exact zmin(s+2) = -1.000e-09  PkgAB.zmin = +4.622e-08  pkg_ab test passes;  I_out raises ValueError
+s=5 nu=8 alpha=11/80 beta=beta*-1/10000000: exact zmin(s+2) = -1.000e-07  PkgAB.zmin = -5.278e-08  pkg_ab test fails;  I_out raises ValueError
+s=5 nu=8 alpha=11/80 beta=beta*-1/100000: exact zmin(s+2) = -1.000e-05  PkgAB.zmin = -9.953e-06  pkg_ab test fails;  I_out raises ValueError
+s=9 nu=14 alpha=3/40 beta=beta*-0: exact zmin(s+2) = +0.000e+00  PkgAB.zmin = +5.000e-08  pkg_ab test passes;  I_out runs; lower<=step<=upper: True
+s=9 nu=14 alpha=3/40 beta=beta*-1/1000000000: exact zmin(s+2) = -1.000e-09  PkgAB.zmin = +4.900e-08  pkg_ab test passes;  I_out raises ValueError
+s=9 nu=14 alpha=3/40 beta=beta*-1/10000000: exact zmin(s+2) = -1.000e-07  PkgAB.zmin = -5.000e-08  pkg_ab test fails;  I_out raises ValueError
+s=9 nu=14 alpha=3/40 beta=beta*-1/100000: exact zmin(s+2) = -1.000e-05  PkgAB.zmin = -9.950e-06  pkg_ab test fails;  I_out raises ValueError

@@ -1,0 +1,128 @@
+rv_exact.py  n_random=300 seed=20261115
+
+A. Prop. 1' in pkg_ab: R_{s+2}(x) - R_s(x) = 2 beta x, and the M-free step of A_M
+  [PASS] R_{s+2} - R_s == 2 beta x exactly  320 points, 8 parameter sets (incl. alpha=0, odd nu, nu=45)
+    pkg_ab.int_R_x3 cannot run at alpha = 0 (s=3, nu=0): ZeroDivisionError Fraction(1, 0)
+  [PASS] A_M(s+2) - A_M(s) == 2 beta/3 + I_out(s+2) - I_out(s) at M = 3, 40, 97/2
+
+B. pkg_ab Tout on 1 < y <= 2 beta does not depend on s (also where (iii) fails)
+  [PASS] Tout_{s+2}(y) == Tout_s(y) for y in (1, 2 beta]  240 points; incl. (3,10,3/40,37/40) and (5,30,1/10,9/5) where (iii) fails
+
+C. own outer function (rv_core.Out) == PkgAB.outer_parts (cost, z, rank) at random y in (1/3, 1]
+  [PASS] outer pieces identical  1620 evaluations
+
+D. per-index facts: delta(m) = (m+2)_+ - (m)_+, e(m) = 1[m in {-1,0}]
+  [PASS] e(m) <= delta(m) <= 2 for m in [-30, 30]
+  [PASS] delta = 2,2,1,0 for m>=1, m=0, m=-1, m<=-2
+  [PASS] 0 <= Delta z1(l) <= Delta c(l) <= 2(l-2), and the index-sum forms, s=3..29, nu=0..49, l=2..8
+  [PASS] 0 <= min(a,b) - min(a',b') <= (a-a') + (b-b') for a>=a', b>=b' (20000 random)
+  [PASS] rhat and z nonincreasing in s (3000 random points)
+
+E. int_{1/3}^1 P dy = 2/9 - alpha + alpha^2/3 (own exact piecewise integral)
+    alpha=             0  int P =                    2/9  closed =                    2/9  equal
+    alpha=         1/240  int P =           37681/172800  closed =           37681/172800  equal
+    alpha=          3/40  int P =             2147/14400  closed =             2147/14400  equal
+    alpha=          1/10  int P =                113/900  closed =                113/900  equal
+    alpha=         13/80  int P =             3947/57600  closed =             3947/57600  equal
+    alpha=499997/3000000  int P = 1750024000009/27000000000000  closed = 1750024000009/27000000000000  equal
+    alpha=           1/6  int P =                  7/108  closed =                  7/108  equal
+    alpha=           1/5  int P =                  8/225  closed =                  8/225  equal
+    alpha=           1/4  int P =                 -1/144  closed =                 -1/144  equal
+    alpha=          3/10  int P =                -43/900  closed =                -43/900  equal
+    alpha=           1/3  int P =                  -2/27  closed =                  -2/27  equal
+    alpha=         17/50  int P =            -7133/90000  closed =            -1783/22500  DIFFERENT
+    alpha=           2/5  int P =               -113/900  closed =                -28/225  DIFFERENT
+    alpha=           1/2  int P =                -29/144  closed =                  -7/36  DIFFERENT
+  [PASS] closed form exact for every tested alpha <= 1/3
+  [PASS] int_{1/2}^1 sum d(l-2) = alpha/2 - alpha^2/4 and int_{1/3}^{1/2} = alpha/2 - alpha^2/12 (7 alphas in [0, 1/3])
+    (for alpha > 1/3 it is expected to fail; the README states validity for 0 <= alpha <= 1/3)
+  [PASS] densities >= 0 and sum to alpha for 0 <= alpha <= 1/3 (5000 random)
+
+F. uniform floor f(alpha) = 4/9 - 2 alpha + (2/3) alpha^2
+  [PASS] f(1/6) == 7/54  7/54
+  [PASS] f'(alpha) = -2 + (4/3) alpha < 0 on [0, 1/6] (so f > 7/54 on [0, 1/6))
+  [PASS] f(0) == 4/9 == int 2(1-y) over (1/3,1]
+
+G. J_s: closed form vs own integrator; J_s <= 2 beta/3
+  [PASS] J integrator == J closed form (600 random)
+  [PASS] 0 <= J_s <= 2 beta/3 (600 random)
+
+H. edge cases: step = 2beta/3 + I_out(s+2) - I_out(s) from PkgAB (exact) vs own integral; both bounds
+  alpha=0                            s=3  nu=0  a=0            b=9/10             dom=yes          zmin(s+2)=+0.2333  step=0.953611  lo=0.940000  up=1.044444  pkg==own:True  bounds:ok
+  alpha=0, sat edge beta=2/3         s=3  nu=5  a=0            b=2/3              dom=yes          zmin(s+2)=+0.0000  step=0.888889  lo=0.888889  up=0.888889  pkg==own:True  bounds:ok
+  alpha=0                            s=5  nu=7  a=0            b=1                dom=yes          zmin(s+2)=+0.3333  step=1.083333  lo=1.083333  up=1.111111  pkg==own:True  bounds:ok
+  alpha=0                            s=7  nu=30 a=0            b=3/2              dom=yes          zmin(s+2)=+0.8333  step=1.336806  lo=1.333333  up=1.444444  pkg==own:True  bounds:ok
+  alpha=0, beta=2                    s=9  nu=3  a=0            b=2                dom=yes          zmin(s+2)=+1.3333  step=1.619444  lo=1.608333  up=1.777778  pkg==own:True  bounds:ok
+  alpha=0, beta=2                    s=11 nu=0  a=0            b=2                dom=yes          zmin(s+2)=+1.3333  step=1.683333  lo=1.683333  up=1.777778  pkg==own:True  bounds:ok
+  alpha=1/6-1e-6                     s=5  nu=6  a=499997/3000000 b=9/10             dom=yes          zmin(s+2)=+0.2889  step=0.864677  lo=0.528799  up=1.044444  pkg==own:True  bounds:ok
+  alpha=1/6-1e-6                     s=7  nu=10 a=499997/3000000 b=1/2              dom=yes          zmin(s+2)=+0.0556  step=0.580326  lo=0.407410  up=0.777778  pkg==own:True  bounds:ok
+  alpha=39/240                       s=5  nu=6  a=13/80        b=7/10             dom=yes          zmin(s+2)=+0.0875  step=0.813468  lo=0.501736  up=0.911111  pkg==own:True  bounds:ok
+  alpha=1/6-1e-6                     s=3  nu=0  a=499997/3000000 b=9/10             dom=yes          zmin(s+2)=+0.2333  step=0.953611  lo=0.625187  up=1.044444  pkg==own:True  bounds:ok
+  alpha=1/6-1e-6, odd nu             s=9  nu=15 a=499997/3000000 b=3/2              dom=NO (iii)     zmin(s+2)=+1.2500  step=0.899539  lo=0.879631  up=1.444444  pkg==own:True  bounds:ok
+  sat edge s+2 (beta*)               s=5  nu=6  a=3/40         b=77/120           dom=yes          zmin(s+2)=+0.0000  step=0.859080  lo=0.724861  up=0.872222  pkg==own:True  bounds:ok
+  sat edge + 1e-6                    s=5  nu=6  a=3/40         b=1925003/3000000  dom=yes          zmin(s+2)=+0.0000  step=0.859080  lo=0.724862  up=0.872223  pkg==own:True  bounds:ok
+  between sat(s) and sat(s+2)        s=5  nu=6  a=3/40         b=29/48            dom=NO sat_s+2   zmin(s+2)=-0.0375  step=0.834136  lo=0.700972  up=0.847222  pkg==own:None  bounds:ok  pkg_ab: beta below the outer saturation bound at y=1159/3360 (z = -3
+  sat edge s+2 (beta*)               s=5  nu=8  a=11/80        b=29/60            dom=yes          zmin(s+2)=+0.0000  step=0.608903  lo=0.465012  up=0.766667  pkg==own:True  bounds:ok
+  sat edge + 1e-6                    s=5  nu=8  a=11/80        b=1450003/3000000  dom=yes          zmin(s+2)=+0.0000  step=0.608904  lo=0.465012  up=0.766667  pkg==own:True  bounds:ok
+  between sat(s) and sat(s+2)        s=5  nu=8  a=11/80        b=199/480          dom=NO sat_s+2   zmin(s+2)=-0.0688  step=0.575002  lo=0.441211  up=0.720833  pkg==own:None  bounds:ok  pkg_ab: beta below the outer saturation bound at y=2383/6720 (z = -1
+  sat edge s+2 (beta*)               s=3  nu=9  a=1/10         b=11/30            dom=yes          zmin(s+2)=+0.0000  step=0.479722  lo=0.450556  up=0.688889  pkg==own:True  bounds:ok
+  sat edge + 1e-6                    s=3  nu=9  a=1/10         b=1100003/3000000  dom=yes          zmin(s+2)=+0.0000  step=0.479723  lo=0.450556  up=0.688890  pkg==own:True  bounds:ok
+  between sat(s) and sat(s+2)        s=3  nu=9  a=1/10         b=43/120           dom=NO sat_s+2   zmin(s+2)=-0.0083  step=0.476927  lo=0.449861  up=0.683333  pkg==own:None  bounds:ok  pkg_ab: beta below the outer saturation bound at y=47/140 (z = -1/16
+  sat edge s+2 (beta*)               s=7  nu=2  a=1/8          b=2/3              dom=yes          zmin(s+2)=+0.0000  step=0.888889  lo=0.649306  up=0.888889  pkg==own:True  bounds:ok
+  sat edge + 1e-6                    s=7  nu=2  a=1/8          b=2000003/3000000  dom=yes          zmin(s+2)=+0.0000  step=0.888890  lo=0.649306  up=0.888890  pkg==own:True  bounds:ok
+  sat edge s+2 (beta*)               s=5  nu=0  a=1/20         b=2/3              dom=yes          zmin(s+2)=+0.0000  step=0.888889  lo=0.790556  up=0.888889  pkg==own:True  bounds:ok
+  sat edge + 1e-6                    s=5  nu=0  a=1/20         b=2000003/3000000  dom=yes          zmin(s+2)=+0.0000  step=0.888890  lo=0.790556  up=0.888890  pkg==own:True  bounds:ok
+  sat edge s+2 (beta*)               s=7  nu=21 a=1/40         b=7/12             dom=yes          zmin(s+2)=+0.0000  step=0.783750  lo=0.783750  up=0.833333  pkg==own:True  bounds:ok
+  sat edge + 1e-6                    s=7  nu=21 a=1/40         b=1750003/3000000  dom=yes          zmin(s+2)=+0.0000  step=0.783751  lo=0.783751  up=0.833334  pkg==own:True  bounds:ok
+  sat edge s+2 (beta*)               s=9  nu=14 a=3/40         b=59/120           dom=yes          zmin(s+2)=+0.0000  step=0.638003  lo=0.625972  up=0.772222  pkg==own:True  bounds:ok
+  sat edge + 1e-6                    s=9  nu=14 a=3/40         b=1475003/3000000  dom=yes          zmin(s+2)=+0.0000  step=0.638004  lo=0.625973  up=0.772223  pkg==own:True  bounds:ok
+  between sat(s) and sat(s+2)        s=9  nu=14 a=3/40         b=109/240          dom=NO sat_s+2   zmin(s+2)=-0.0375  step=0.611949  lo=0.600972  up=0.747222  pkg==own:None  bounds:ok  pkg_ab: beta below the outer saturation bound at y=1159/3360 (z = -3
+  sat edge s+2 (beta*)               s=11 nu=30 a=1/50         b=3/5              dom=yes          zmin(s+2)=+0.0000  step=0.804711  lo=0.804711  up=0.844444  pkg==own:True  bounds:ok
+  sat edge + 1e-6                    s=11 nu=30 a=1/50         b=600001/1000000   dom=yes          zmin(s+2)=+0.0000  step=0.804712  lo=0.804712  up=0.844445  pkg==own:True  bounds:ok
+  sat edge s+2 (beta*)               s=3  nu=1  a=1/7          b=2/3              dom=yes          zmin(s+2)=+0.0000  step=0.883787  lo=0.606576  up=0.888889  pkg==own:True  bounds:ok
+  sat edge + 1e-6                    s=3  nu=1  a=1/7          b=2000003/3000000  dom=yes          zmin(s+2)=+0.0000  step=0.883787  lo=0.606576  up=0.888890  pkg==own:True  bounds:ok
+  large beta                         s=9  nu=6  a=1/12         b=2                dom=yes          zmin(s+2)=+1.3333  step=1.575694  lo=1.368519  up=1.777778  pkg==own:True  bounds:ok
+  large beta                         s=11 nu=13 a=1/7          b=2                dom=yes          zmin(s+2)=+1.4762  step=1.468157  lo=1.248526  up=1.777778  pkg==own:True  bounds:ok
+  large beta                         s=11 nu=2  a=1/10         b=199/100          dom=yes          zmin(s+2)=+1.3233  step=1.661135  lo=1.464793  up=1.771111  pkg==own:True  bounds:ok
+  beta=12/5 (>2)                     s=11 nu=1  a=1/20         b=12/5             dom=yes          zmin(s+2)=+1.7333  step=1.868861  lo=1.754625  up=2.044444  pkg==own:True  bounds:ok
+  beta=5/2                           s=13 nu=4  a=1/9          b=5/2              dom=yes          zmin(s+2)=+1.8333  step=1.953364  lo=1.717519  up=2.111111  pkg==own:True  bounds:ok
+  large beta, s=9                    s=9  nu=0  a=499997/3000000 b=199/100          dom=yes          zmin(s+2)=+1.3233  step=1.615111  lo=1.289844  up=1.771111  pkg==own:True  bounds:ok
+  A = r_s - 1/1000                   s=3  nu=7  a=1/20         b=1649/2000        dom=yes          zmin(s+2)=+0.2578  step=0.753728  lo=0.701833  up=0.994111  pkg==own:True  bounds:ok
+  A = r_s exactly (iii fails)        s=3  nu=7  a=1/20         b=33/40            dom=NO (iii)     zmin(s+2)=+0.2583  step=0.753663  lo=0.701667  up=0.994444  pkg==own:True  bounds:ok
+  A = r_s - 1/1000                   s=5  nu=4  a=1/10         b=2599/2000        dom=yes          zmin(s+2)=+0.6328  step=1.096457  lo=0.840269  up=1.310778  pkg==own:True  bounds:ok
+  A = r_s exactly (iii fails)        s=5  nu=4  a=1/10         b=13/10            dom=NO (iii)     zmin(s+2)=+0.6333  step=1.096528  lo=0.840278  up=1.311111  pkg==own:True  bounds:ok
+  A = r_s - 1/1000                   s=7  nu=10 a=3/40         b=3249/2000        dom=yes          zmin(s+2)=+1.0578  step=1.197856  lo=1.085163  up=1.527444  pkg==own:True  bounds:ok
+  A = r_s exactly (iii fails)        s=7  nu=10 a=3/40         b=13/8             dom=NO (iii)     zmin(s+2)=+1.0583  step=1.197997  lo=1.085304  up=1.527778  pkg==own:True  bounds:ok
+  A = r_s - 1/1000                   s=9  nu=21 a=1/30         b=4299/2000        dom=yes          zmin(s+2)=+1.5939  step=1.541485  lo=1.497235  up=1.877444  pkg==own:True  bounds:ok
+  A = r_s exactly (iii fails)        s=9  nu=21 a=1/30         b=43/20            dom=NO (iii)     zmin(s+2)=+1.5944  step=1.541671  lo=1.497414  up=1.877778  pkg==own:True  bounds:ok
+  A = r_s - 1/1000                   s=11 nu=1  a=497/3000     b=35/12            dom=yes          zmin(s+2)=+2.2500  step=2.085493  lo=1.731621  up=2.388889  pkg==own:True  bounds:ok
+  A = r_s exactly (iii fails)        s=11 nu=1  a=497/3000     b=17503/6000       dom=NO (iii)     zmin(s+2)=+2.2505  step=2.085697  lo=1.731822  up=2.389222  pkg==own:True  bounds:ok
+  odd nu=21                          s=7  nu=21 a=1/100        b=13/10            dom=yes          zmin(s+2)=+0.6667  step=1.212901  lo=1.210229  up=1.311111  pkg==own:True  bounds:ok
+  nu=45                              s=9  nu=45 a=1/60         b=3/2              dom=yes          zmin(s+2)=+0.8889  step=1.302900  lo=1.277789  up=1.444444  pkg==own:True  bounds:ok
+  nu=31 odd                          s=11 nu=31 a=1/31         b=2                dom=yes          zmin(s+2)=+1.4409  step=1.547631  lo=1.513955  up=1.777778  pkg==own:True  bounds:ok
+  nu=61                              s=13 nu=61 a=1/61         b=9/5              dom=yes          zmin(s+2)=+1.1880  step=1.525114  lo=1.513107  up=1.644444  pkg==own:True  bounds:ok
+  nu=1                               s=3  nu=1  a=1/7          b=1/2              dom=NO sat_s,sat_s+2 zmin(s+2)=-0.1667  step=0.777778  lo=0.505669  up=0.777778  pkg==own:None  bounds:ok  pkg_ab: beta below the outer saturation bound at y=17/49 (z = -15/98
+  z binds, Delta z > 0               s=3  nu=9  a=1/10         b=2/5              dom=yes          zmin(s+2)=+0.0333  step=0.488611  lo=0.450833  up=0.711111  pkg==own:True  bounds:ok
+  z binds, Delta z > 0               s=3  nu=9  a=1/10         b=3/10             dom=NO sat_s,sat_s+2 zmin(s+2)=-0.0667  step=0.448611  lo=0.437222  up=0.644444  pkg==own:None  bounds:ok  pkg_ab: beta below the outer saturation bound at y=12/35 (z = -2/35)
+  z binds                            s=5  nu=11 a=1/10         b=1/2              dom=yes          zmin(s+2)=+0.1333  step=0.554167  lo=0.539167  up=0.777778  pkg==own:True  bounds:ok
+  z binds                            s=7  nu=13 a=1/12         b=3/4              dom=yes          zmin(s+2)=+0.3333  step=0.741319  lo=0.733507  up=0.944444  pkg==own:True  bounds:ok
+  template                           s=5  nu=2  a=3/40         b=37/40            dom=yes          zmin(s+2)=+0.2583  step=1.034271  lo=0.887083  up=1.061111  pkg==own:True  bounds:ok
+  template                           s=5  nu=6  a=3/40         b=37/40            dom=yes          zmin(s+2)=+0.2833  step=0.977865  lo=0.829583  up=1.061111  pkg==own:True  bounds:ok
+  template                           s=5  nu=8  a=3/40         b=37/40            dom=yes          zmin(s+2)=+0.3583  step=0.890069  lo=0.795208  up=1.061111  pkg==own:True  bounds:ok
+  template                           s=5  nu=10 a=3/40         b=37/40            dom=yes          zmin(s+2)=+0.4333  step=0.799575  lo=0.757101  up=1.061111  pkg==own:True  bounds:ok
+  [PASS] edge points in the domain: pkg_ab step == own step (50 points)
+  [PASS] edge points in the domain: lower <= step <= upper (50 points)
+  outside the domain (12 points): pkg_ab raised at 6; bounds hold for the formula at 12 of 12
+
+I. pointwise: 2P - (rhat_s - rhat_{s+2}) <= T_{s+2} - T_s <= 2(1-y) on PkgAB.outer_parts (z>=0 not required)
+  [PASS] pointwise upper  10000 points
+  [PASS] pointwise lower  10000 points
+
+J. 300 random points in the README domain (beta biased to the saturation and (iii) edges)
+  [PASS] PkgAB step == own exact step  300 points (69 draws skipped: empty domain)
+  [PASS] lower <= step <= upper
+    tightest lower: step - lower = 0 (0) at s=9 nu=40 alpha=0 beta=26867/20000
+    tightest upper: upper - step = 0 (0) at s=11 nu=4 alpha=85693/514194 beta=2/3
+    lower/step: min 0.5983  median 0.9751  max 1.0000
+
+SUMMARY: 0 failed checks []   (17 s)

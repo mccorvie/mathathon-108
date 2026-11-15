@@ -1,0 +1,5 @@
+cells (alpha<1/6, A<2): 679; lower violations 0; upper violations 0
+lower/step: min 0.612 median 0.843 max 0.996
+laneW/step: min 0.248 median 0.513 max 0.588
+tightest lower (gap, a, b, nu, step, lower): (Fraction(79, 19200), '1/40', '29/40', 10, 0.88203125, 0.8779166666666667)
+template (3/40, 37/40, 6): lower 0.8295833333333333 upper 1.0611111111111111 uniform 0.29819444444444443 true 0.9778645833333334

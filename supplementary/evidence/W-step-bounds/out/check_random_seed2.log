@@ -1,0 +1,7 @@
+250 valid random points, 0 violations, 8s
+  step 3->5: min lower/step 0.952 at nu=1 a=1/48 b=61/80 step=0.9336 lower=0.8888
+  step 5->7: min lower/step 0.634 at nu=7 a=29/180 b=31/40 step=0.7740 lower=0.4911
+  step 7->9: min lower/step 0.656 at nu=9 a=13/80 b=27/40 step=0.7761 lower=0.5089
+  step 9->11: min lower/step 0.685 at nu=6 a=59/360 b=67/80 step=0.9920 lower=0.6797
+  step 11->13: min lower/step 0.723 at nu=5 a=23/144 b=39/40 step=1.0938 lower=0.7913
+smallest true step seen: (0.2994791666666667, 5, 14, '23/144', '5/16', 0.2615459426440329)

@@ -1,0 +1,45 @@
+1. Values table at (3/40, 37/40, nu), step 5 -> 7
+   nu= 6: lower 1991/2400 (0.8296)  true 751/768 (0.9779)  upper 191/180 (1.0611)  own==pkg True  in domain True  README ('1991/2400', '751/768', '191/180')  -> MATCH   [2beta/3 - J_5 = 0.516, cf. README's W-generic-step column]
+   nu= 8: lower 3817/4800 (0.7952)  true 12817/14400 (0.8901)  upper 191/180 (1.0611)  own==pkg True  in domain True  README ('3817/4800', '12817/14400', '191/180')  -> MATCH   [2beta/3 - J_5 = 0.463, cf. README's W-generic-step column]
+   nu=10: lower 43609/57600 (0.7571)  true 92111/115200 (0.7996)  upper 191/180 (1.0611)  own==pkg True  in domain True  README ('43609/57600', '92111/115200', '191/180')  -> MATCH   [2beta/3 - J_5 = 0.399, cf. README's W-generic-step column]
+   nu= 2: lower 2129/2400 (0.8871)  true 9929/9600 (1.0343)  upper 191/180 (1.0611)  own==pkg True  in domain True  README ('2129/2400', '9929/9600', '191/180')  -> MATCH   [2beta/3 - J_5 = 0.589, cf. README's W-generic-step column]
+
+2. min of the lower bound over odd s = 7..99, nu = 0..10 at (3/40, 37/40)
+   min = 691/800 = 0.863750 at s=7, nu=10;  == 691/800: True;  > 167/300: True
+   restricted to s = 7..39: min = 691/800 at s=7, nu=10
+   max_nu J_s for s = 7, 9, 11, 13: [(7, '3/50'), (9, '2/225'), (11, '0'), (13, '0')] (J_s = 0 from s = 11: the range s <= 39 is enough)
+   true step min over s = 7, 9, 11 and nu = 0..10: 108349/115200 (0.940530) at s=7, nu=10
+
+3. bounds at the team scan's exact steps (2 beta/3 + I_out7 - I_out5)
+   files: {'scan_coarse.json': 800, 'scan_fine.json': 252, 'scan_fine2.json': 24, 'scan_lowbeta.json': 480}  distinct rows with I_out: 1052
+   cells with alpha < 1/6 and A < 2: 754 (README/report: 651)
+   of these: scan 'admissible' (La >= 0 and z >= 0) 679; La_min >= 0: 679; even nu <= 10: 754; La < 0 (not in the derived region): 75
+   lower violations 0, upper violations 0;  cells outside the README domain (own zmin, (iii)): 0
+   own step != scan step on every 5th cell: 0 of 151
+   lower/true: min 0.6123  median 0.8426  max 0.9956   (README: 0.612-0.996, median 0.842)
+   max |exact step - row sstep| = 0.00e+00;  max |(floor7 - floor5) - step| = 6.66e-16  (the scan's floor7 is BUILT as floor5 + step: A7 = A5 + dI_out + 2 beta/3)
+
+4. zeta(5) side on the same cells (floor5 = A*(5) + LB, float, from the scan rows)
+   [team's set: admissible cells of scan_coarse + scan_fine only] 651 cells; min floor5 = -0.08363 at (1/10, 39/40, 4)
+      floor5 < 0 at 194 cells, nu in [2, 4, 6];  top5 < 0 (heuristic achievable U) at 87 cells
+      at those: min lower = 0.48422, min true step = 0.78974, min floor5 + lower = +0.48347, min floor7 = +0.78900
+      over ALL these cells: min floor5 + lower = +0.48275 at (13/80, 49/80, 6); min floor5 + 7/54 = +0.04600; min floor7 = +0.75728
+   [all four scan files: alpha<1/6, A<2, z>=0 (README domain)] 754 cells; min floor5 = -0.08363 at (1/10, 39/40, 4)
+      floor5 < 0 at 194 cells, nu in [2, 4, 6];  top5 < 0 (heuristic achievable U) at 87 cells
+      at those: min lower = 0.48422, min true step = 0.78974, min floor5 + lower = +0.48347, min floor7 = +0.78900
+      over ALL these cells: min floor5 + lower = +0.48275 at (13/80, 49/80, 6); min floor5 + 7/54 = +0.04600; min floor7 = +0.72387
+   [same, La >= 0 only] 679 cells; min floor5 = -0.08363 at (1/10, 39/40, 4)
+      floor5 < 0 at 194 cells, nu in [2, 4, 6];  top5 < 0 (heuristic achievable U) at 87 cells
+      at those: min lower = 0.48422, min true step = 0.78974, min floor5 + lower = +0.48347, min floor7 = +0.78900
+      over ALL these cells: min floor5 + lower = +0.48275 at (13/80, 49/80, 6); min floor5 + 7/54 = +0.04600; min floor7 = +0.75728
+   [same, La >= 0, even nu <= 10] 679 cells; min floor5 = -0.08363 at (1/10, 39/40, 4)
+      floor5 < 0 at 194 cells, nu in [2, 4, 6];  top5 < 0 (heuristic achievable U) at 87 cells
+      at those: min lower = 0.48422, min true step = 0.78974, min floor5 + lower = +0.48347, min floor7 = +0.78900
+      over ALL these cells: min floor5 + lower = +0.48275 at (13/80, 49/80, 6); min floor5 + 7/54 = +0.04600; min floor7 = +0.75728
+   of the floor5 < 0 cells, 0 have La < 0 (outside the derived region)
+
+5. min of the lower bound 5 -> 7 over alpha = k/240 < 1/6, beta = m/80 <= 2, nu = 0..24 (saturation at 5, 7; A < 2)
+   41933 points; global min 0.2319 at (13/80, 21/80, 15)
+   min for nu <= 5: 0.5300;  nu <= 10: 0.2794   (README: 0.530, 0.279, 0.2319 at (13/80, 21/80, 15))
+
+(4 s)

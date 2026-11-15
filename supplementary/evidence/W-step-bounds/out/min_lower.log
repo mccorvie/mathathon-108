@@ -1,0 +1,26 @@
+nu= 0 outer-valid points  2640  min lower bound   0.5870 at a=13/80 b=27/40
+nu= 1 outer-valid points  2526  min lower bound   0.5870 at a=13/80 b=27/40
+nu= 2 outer-valid points  2393  min lower bound   0.5870 at a=13/80 b=27/40
+nu= 3 outer-valid points  2260  min lower bound   0.5797 at a=13/80 b=27/40
+nu= 4 outer-valid points  2133  min lower bound   0.5592 at a=13/80 b=27/40
+nu= 5 outer-valid points  2007  min lower bound   0.5299 at a=13/80 b=27/40
+nu= 6 outer-valid points  1955  min lower bound   0.4809 at a=13/80 b=49/80
+nu= 7 outer-valid points  2019  min lower bound   0.4216 at a=13/80 b=41/80
+nu= 8 outer-valid points  1969  min lower bound   0.3743 at a=13/80 b=9/20
+nu= 9 outer-valid points  2013  min lower bound   0.3186 at a=13/80 b=7/20
+nu=10 outer-valid points  1969  min lower bound   0.2793 at a=13/80 b=23/80
+nu=11 outer-valid points  1971  min lower bound   0.2603 at a=13/80 b=21/80
+nu=12 outer-valid points  1863  min lower bound   0.2532 at a=13/80 b=21/80
+nu=13 outer-valid points  1749  min lower bound   0.2461 at a=13/80 b=21/80
+nu=14 outer-valid points  1616  min lower bound   0.2390 at a=13/80 b=21/80
+nu=15 outer-valid points  1483  min lower bound   0.2319 at a=13/80 b=21/80
+nu=16 outer-valid points  1363  min lower bound   0.2597 at a=3/20 b=11/40
+nu=17 outer-valid points  1261  min lower bound   0.2780 at a=17/120 b=23/80
+nu=18 outer-valid points  1155  min lower bound   0.3121 at a=31/240 b=5/16
+nu=19 outer-valid points  1088  min lower bound   0.3325 at a=29/240 b=13/40
+nu=20 outer-valid points  1015  min lower bound   0.3382 at a=7/60 b=13/40
+nu=21 outer-valid points   950  min lower bound   0.3604 at a=13/120 b=27/80
+nu=22 outer-valid points   896  min lower bound   0.3707 at a=5/48 b=7/20
+nu=23 outer-valid points   847  min lower bound   0.3949 at a=23/240 b=29/80
+nu=24 outer-valid points   792  min lower bound   0.4030 at a=11/120 b=29/80
+GLOBAL min of explicit lower bound over the outer-valid superset (s=5,7): (15, 1483, 0.2319314236111111, '13/80', '21/80') 38s

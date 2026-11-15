@@ -1,0 +1,9 @@
+cells with both s=5 and s=7 in the derived region: 679; floor5 < 0 (zeta(5) not excluded) at 194
+min floor5 (deepest point of the zeta(5) floor): -0.0836
+min explicit lower bound where floor5 < 0: 0.4842;  min true step there: 0.7897
+step-based floor7 bound  min(floor5 + lower) = +0.4828 at a=13/80 b=49/80 nu=6 (true floor7 +0.7873)
+with the uniform 7/54 only: min(floor5) + 7/54 = +0.0460
+nu values with floor5 < 0: [2, 4, 6]
+  nu=2: 30 cells, alpha in [0.0500,0.1500], beta in [0.9500,1.1250], deepest -0.0322
+  nu=4: 63 cells, alpha in [0.0250,0.1500], beta in [0.7250,1.1250], deepest -0.0836
+  nu=6: 101 cells, alpha in [0.0250,0.1625], beta in [0.6250,1.1250], deepest -0.0751

@@ -1,0 +1,14 @@
+Actual 5 -> 7 step at finite K (alpha = 3/40, beta = 37/40); e_n = log Q^prim_K(zeta(s)) / K^2
+ nu  n    K     e_n(5)     e_n(7)  actual step  package step   sources (s=5 | s=7)
+  2  1   40   -0.06483   +0.88277      0.94760       1.03427   witness | witness
+  2  2   80   -0.00223   +0.97044      0.97268       1.03427   witness, boundary5 | witness
+  2  3  120   +0.02252   +0.99200      0.96948       1.03427   boundary5 | witness
+  2  4  160   +0.01804   +1.00613      0.98809       1.03427   boundary5 | witness
+    nu=2: package step = 9929/9600 exactly
+  6  1   40   -0.16571   +0.76695      0.93266       0.97786   witness | witness
+  6  2   80   -0.13021   +0.84597      0.97618       0.97786   witness | obstacles
+  6  3  120   -0.12528   +0.85476      0.98003       0.97786   witness | obstacles
+    nu=6: package step = 751/768 exactly
+  8  1   40   -0.07517   +0.79648      0.87166       0.89007   witness | witness
+  8  2   80   -0.04058   +0.87122      0.91180       0.89007   boundary5 | witness
+    nu=8: package step = 12817/14400 exactly

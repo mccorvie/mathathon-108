@@ -32,7 +32,7 @@ mismatches (no ⚠ needed):
   Classical.choice, Quot.sound` everywhere, except `beta_eq` (none) and `laiSkips_all_of_ge_27`
   (`propext, Quot.sound`). The four C108-LS2 theorems and the two sorries show `sorryAx`, as stated.
   This is not a `lean_check.py` run. Outputs:
-  `/private/tmp/claude-501/-Users-jack-Library-Application-Support-Claude-scratch-workspaces-f84c0719-1fc3-4a02-8618-d18d9fee307c-41484cae-f9fd-4f1a-aadb-82b393529446-scratch-2026-11-13-630807/06c2099f-dc87-4dcb-a268-9095e8abfc2a/scratchpad/humancheck/{AxW,AxS,AxC}.out`.
+  `/private/tmp/claude-501/-Users-[team member]-Library-Application-Support-Claude-scratch-workspaces-f84c0719-1fc3-4a02-8618-d18d9fee307c-41484cae-f9fd-4f1a-aadb-82b393529446-scratch-2026-11-13-630807/06c2099f-dc87-4dcb-a268-9095e8abfc2a/scratchpad/humancheck/{AxW,AxS,AxC}.out`.
 - `classLoss_witness` does **not** depend on `Z_decomp`. `Z_decomp` is what certifies that `entry` really
   is μ_X(Z/D_40) (see §1 (d) Q4), so read its statement too. Its axioms are standard (my re-print above).
 
@@ -563,7 +563,7 @@ Nothing in this section is pending.
 **Automatic cross-check (done for you).** The 20 values `Iout s ν (3/40)` and the 15 s-steps proved in Lean
 are identical, as exact rationals, to the advocate's `criterion5/sstep_exact.out`. Each Lean s-step also equals
 2·(37/40)/3 + ΔI_out (0 mismatches). Script:
-`/private/tmp/claude-501/-Users-jack-Library-Application-Support-Claude-scratch-workspaces-f84c0719-1fc3-4a02-8618-d18d9fee307c-41484cae-f9fd-4f1a-aadb-82b393529446-scratch-2026-11-13-630807/06c2099f-dc87-4dcb-a268-9095e8abfc2a/scratchpad/humancheck/xcheck.py`
+`/private/tmp/claude-501/-Users-[team member]-Library-Application-Support-Claude-scratch-workspaces-f84c0719-1fc3-4a02-8618-d18d9fee307c-41484cae-f9fd-4f1a-aadb-82b393529446-scratch-2026-11-13-630807/06c2099f-dc87-4dcb-a268-9095e8abfc2a/scratchpad/humancheck/xcheck.py`
 (Lean output against `sstep_exact.out`). This checks Lean against the advocate's code. It does not check either
 of them against Fauzan.
 
@@ -872,7 +872,7 @@ LC5, the table (OuterValues2.lean, SStepTable.lean l. 19-123). There are 15 more
 `theta_sstep_{3_5,5_7,7_9}_nu{2,4,6,8,10}`, each of the form
 `∀ (M U : ℝ), 3 ≤ M → thetaPkg (s+2) ν (3 / 40) M U - thetaPkg s ν (3 / 40) M U = q`. All 30 printed statements
 are in
-`/private/tmp/claude-501/-Users-jack-Library-Application-Support-Claude-scratch-workspaces-f84c0719-1fc3-4a02-8618-d18d9fee307c-41484cae-f9fd-4f1a-aadb-82b393529446-scratch-2026-11-13-630807/06c2099f-dc87-4dcb-a268-9095e8abfc2a/scratchpad/humancheck/AxC.out`.
+`/private/tmp/claude-501/-Users-[team member]-Library-Application-Support-Claude-scratch-workspaces-f84c0719-1fc3-4a02-8618-d18d9fee307c-41484cae-f9fd-4f1a-aadb-82b393529446-scratch-2026-11-13-630807/06c2099f-dc87-4dcb-a268-9095e8abfc2a/scratchpad/humancheck/AxC.out`.
 All 30 values equal `criterion5/sstep_exact.out` (cross-check above). Example:
 ```lean
 Mathathon.P108.theta_sstep_3_5_nu2 : ∀ (M U : ℝ),
