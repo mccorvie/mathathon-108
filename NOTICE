@@ -1,0 +1,21 @@
+E600 / C0, Codex lane C driver for Ryan McCorvie, 14 November 2026.
+
+This project is a re-derivation of Fauzan's theorem that reuses Moritz
+Firsching's formalisation mo271/Zeta5 at be1c0d82070da93c343f93bffd495b8ebc323645
+(Apache License 2.0); Comparator metadata by Paul-Lez. The proof is not
+claimed independent or mathematically new. The upstream LICENSE is retained.
+
+Lane L supplies the general-s arithmetic and sharp normalization; lane B
+supplies the growth bridge, analytic polynomial family, and zeta identification;
+lane U owns the compact numerical field leaf and its analytic transports.
+Copied source headers retain their exact prior and event attribution.
+Source manifests record each copied file and byte hash. Team prior work
+Deicyde/zeta7-irrational supplies attributed generic PNT/Riemann machinery
+where recorded by the inherited headers. PNT dependency: AlexKontorovich/
+PrimeNumberTheoremAnd 127b50e33f6033e2147921167a117af96d9ba4ea.
+
+C0 introduced target propositions and route documentation only. Later stages
+E603/E604/E606/E607 supply the attributed arithmetic, analytic and final
+criterion proofs. The compact endpoint and heavy fallback have separate final
+gate receipts. No human comparison is assumed; label upgrades follow the
+integrator's submitted-project, report-printing and cross-family-review rule.

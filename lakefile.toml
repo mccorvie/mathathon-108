@@ -1,6 +1,327 @@
-name = "mathathon-108"
-version = "0.1.0"
-defaultTargets = ["Mathathon108"]
+name = "Unified108"
+defaultTargets = ["CompactEntry"]
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.35.0"
+
+[[require]]
+name = "PrimeNumberTheoremAnd"
+git = "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd"
+rev = "127b50e33f6033e2147921167a117af96d9ba4ea"
+
+
+
+
+
+
 
 [[lean_lib]]
-name = "Mathathon108"
+name = "AboveK"
+
+[[lean_lib]]
+name = "Allocation"
+
+[[lean_lib]]
+name = "AnalyticInterface"
+
+[[lean_lib]]
+name = "Apery"
+
+[[lean_lib]]
+name = "ArithInterface"
+
+[[lean_lib]]
+name = "ArithmeticEntry"
+
+[[lean_lib]]
+name = "Assembly"
+
+[[lean_lib]]
+name = "Asymptotic"
+
+[[lean_lib]]
+name = "BAnalyticEnvelope"
+
+[[lean_lib]]
+name = "BAnalyticIntegral"
+
+[[lean_lib]]
+name = "BAnalyticMoments"
+
+[[lean_lib]]
+name = "BInnerLimitFinish"
+
+[[lean_lib]]
+name = "BInnerStatement"
+
+[[lean_lib]]
+name = "BRealStatement"
+
+[[lean_lib]]
+name = "Bose"
+
+[[lean_lib]]
+name = "Bounds"
+
+[[lean_lib]]
+name = "BridgeTargets"
+
+[[lean_lib]]
+name = "CArithProofs"
+
+[[lean_lib]]
+name = "Capstone"
+
+[[lean_lib]]
+name = "Cells"
+
+[[lean_lib]]
+name = "ClassData"
+
+[[lean_lib]]
+name = "ClassRows"
+
+[[lean_lib]]
+name = "ClassSum"
+
+[[lean_lib]]
+name = "ClassSums"
+
+[[lean_lib]]
+name = "Classes"
+
+[[lean_lib]]
+name = "ClosingEntry"
+
+[[lean_lib]]
+name = "CompactClosingLite"
+
+[[lean_lib]]
+name = "CompactEntry"
+
+[[lean_lib]]
+name = "CompactTransports"
+
+[[lean_lib]]
+name = "Completion"
+
+[[lean_lib]]
+name = "ConfigurationTransport"
+
+[[lean_lib]]
+name = "Continuity"
+
+[[lean_lib]]
+name = "ContinuousClasses"
+
+[[lean_lib]]
+name = "CostBounds"
+
+[[lean_lib]]
+name = "Critical"
+
+[[lean_lib]]
+name = "Data"
+
+[[lean_lib]]
+name = "Dictionary"
+
+[[lean_lib]]
+name = "Discontinuities"
+
+[[lean_lib]]
+name = "Final"
+
+[[lean_lib]]
+name = "FinalLocal"
+
+[[lean_lib]]
+name = "Finish"
+
+[[lean_lib]]
+name = "FiniteProof"
+
+[[lean_lib]]
+name = "Functional"
+
+[[lean_lib]]
+name = "FunctionalStatement"
+
+[[lean_lib]]
+name = "GammaApprox"
+
+[[lean_lib]]
+name = "GammaCells"
+
+[[lean_lib]]
+name = "Gram"
+
+[[lean_lib]]
+name = "GramStatement"
+
+[[lean_lib]]
+name = "InnerLocal"
+
+[[lean_lib]]
+name = "InnerModelTargets"
+
+[[lean_lib]]
+name = "InnerScalar"
+
+[[lean_lib]]
+name = "InnerSum"
+
+[[lean_lib]]
+name = "InnerWeight"
+
+[[lean_lib]]
+name = "Integrability"
+
+[[lean_lib]]
+name = "Interface"
+
+[[lean_lib]]
+name = "Intervals"
+
+[[lean_lib]]
+name = "Inversion"
+
+[[lean_lib]]
+name = "Kernel"
+
+[[lean_lib]]
+name = "LeadingInstance"
+
+[[lean_lib]]
+name = "LocalField"
+
+[[lean_lib]]
+name = "MarginPieces"
+
+[[lean_lib]]
+name = "Mathathon"
+
+[[lean_lib]]
+name = "MeshCounts"
+
+[[lean_lib]]
+name = "Mid"
+
+[[lean_lib]]
+name = "ModelAlgebra"
+
+[[lean_lib]]
+name = "ModelData"
+
+[[lean_lib]]
+name = "NextRows"
+
+[[lean_lib]]
+name = "NumericBase"
+
+[[lean_lib]]
+name = "OuterLocal"
+
+[[lean_lib]]
+name = "OuterScalar"
+
+[[lean_lib]]
+name = "OuterSum"
+
+[[lean_lib]]
+name = "OuterTargets"
+
+[[lean_lib]]
+name = "PackageTail"
+
+[[lean_lib]]
+name = "PartialFractions"
+
+[[lean_lib]]
+name = "PeriodShift"
+
+[[lean_lib]]
+name = "PhaseErrors"
+
+[[lean_lib]]
+name = "PhiGamma"
+
+[[lean_lib]]
+name = "Points"
+
+[[lean_lib]]
+name = "PoleProof"
+
+[[lean_lib]]
+name = "PriorPrime"
+
+[[lean_lib]]
+name = "PriorRegularization"
+
+[[lean_lib]]
+name = "PriorTailFinal"
+
+[[lean_lib]]
+name = "RangeTargets"
+
+[[lean_lib]]
+name = "RealAndreief"
+
+[[lean_lib]]
+name = "RealDetStatement"
+
+[[lean_lib]]
+name = "RealDeterminant"
+
+[[lean_lib]]
+name = "RealIntegral"
+
+[[lean_lib]]
+name = "RealPointwise"
+
+[[lean_lib]]
+name = "RealScalar"
+
+[[lean_lib]]
+name = "RealTransport"
+
+[[lean_lib]]
+name = "Regularity"
+
+[[lean_lib]]
+name = "Scalar"
+
+[[lean_lib]]
+name = "Scaling"
+
+[[lean_lib]]
+name = "SharpSplit"
+
+[[lean_lib]]
+name = "Statement"
+
+[[lean_lib]]
+name = "Transfer"
+
+[[lean_lib]]
+name = "TransferStatement"
+
+[[lean_lib]]
+name = "TransportGoals"
+
+[[lean_lib]]
+name = "UniformClasses"
+
+[[lean_lib]]
+name = "Zeta5S"
+
+[[lean_lib]]
+name = "ZetaIdentification"

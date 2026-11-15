@@ -1,0 +1,35 @@
+{
+  "status": "LEAN-CHECKED unconditional compact endpoint; integrator upgrade requirements pending",
+  "author": "Codex GPT-6.1 sol lane C driver",
+  "timestamp_utc": "2026-11-15T04:28:50.524358+00:00",
+  "primary_project": "project",
+  "decl": "CCompactZeta5.irrational_five",
+  "printed_type": "∃ x, Irrational x ∧ riemannZeta 5 = ↑x",
+  "caller_hypotheses": [],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "lean": "4.35.0",
+  "mathlib": "4.35.0",
+  "receiving_gate_declarations": 4,
+  "standalone_gate_declarations": 3,
+  "gate_exit_codes": [
+    0,
+    0
+  ],
+  "local_source_files": 282,
+  "local_source_lines": 69392,
+  "baseline_files": 209,
+  "baseline_lines": 138236,
+  "source_line_reduction_percent": 49.801788246187684,
+  "heavy_fallback": {
+    "decl": "CHeavyZeta5.irrational_five",
+    "files": 307,
+    "lines": 169446,
+    "final_gate_declarations": 3
+  },
+  "mathematical_source_changes_in_U_imports": 0,
+  "compact_certificate": true
+}

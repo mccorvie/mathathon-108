@@ -1,0 +1,1704 @@
+{
+  "status": "COMPUTED exact standalone source closure; actual final3/3gatePASS4.35.0",
+  "author": "Codex GPT-6.1 sol lane C",
+  "root": "CompactEntry",
+  "files": [
+    {
+      "module": "CompactEntry",
+      "path": "CompactEntry.lean",
+      "sha256": "8394c702c47e3d4720093b76e73ae80804e9080f0f1f0d9a2483170f5b602ed7",
+      "lines": 33
+    },
+    {
+      "module": "RealTransport",
+      "path": "RealTransport.lean",
+      "sha256": "8e29a025ca8ee7d64f8a79924cee5b9c81576e0bfb27007e1bf3eefab0ff5fcd",
+      "lines": 49
+    },
+    {
+      "module": "RealIntegral",
+      "path": "RealIntegral.lean",
+      "sha256": "922e0847671aec0c7ad84423dfce855f22596607a987da6c223d12906cec04b2",
+      "lines": 104
+    },
+    {
+      "module": "RealPointwise",
+      "path": "RealPointwise.lean",
+      "sha256": "a4eb5d7415f2e99640270721496210573a2049212852773c717b0098b9ea7653",
+      "lines": 197
+    },
+    {
+      "module": "RealDeterminant",
+      "path": "RealDeterminant.lean",
+      "sha256": "07b106c121c37cf72e5a868c9ac2138c065c89fbb9ed9a14b098e48085244748",
+      "lines": 86
+    },
+    {
+      "module": "RealAndreief",
+      "path": "RealAndreief.lean",
+      "sha256": "fec5660f826a51b7ccf47ad5b5e72767af27081b922ad3ed6ed84edd4e1ccddf",
+      "lines": 36
+    },
+    {
+      "module": "Apery.Andreief",
+      "path": "Apery/Andreief.lean",
+      "sha256": "fd3c752dbd71d658deaf5765bfadb9e5a5f24028dd9fe5e38205708a279d039a",
+      "lines": 115
+    },
+    {
+      "module": "RealDetStatement",
+      "path": "RealDetStatement.lean",
+      "sha256": "0a39985e6e5cdff8349fa1df5e1ff35ac703a42f6399403dcc57ac7602b6cc78",
+      "lines": 26
+    },
+    {
+      "module": "Gram",
+      "path": "Gram.lean",
+      "sha256": "6fecca4e0a6f71fea8b14e497431363c3cb3f287c201a3c2ded435756e317736",
+      "lines": 146
+    },
+    {
+      "module": "GramStatement",
+      "path": "GramStatement.lean",
+      "sha256": "6fb93b22a88b864ec9137a6f5d6fb5f8c646c48c6cc87ef4179c8e6ed13d7f16",
+      "lines": 27
+    },
+    {
+      "module": "Zeta5S.BasisChange",
+      "path": "Zeta5S/BasisChange.lean",
+      "sha256": "0badc7cfbb56039972ff863e6d2bcfb863c5687f3ec12b068383573c4ef1b15c",
+      "lines": 122
+    },
+    {
+      "module": "Zeta5S.Base",
+      "path": "Zeta5S/Base.lean",
+      "sha256": "bd61eb7ae3a16f9d2d324e55122cc979def37ccfb74dccff231a635777b41640",
+      "lines": 128
+    },
+    {
+      "module": "Zeta5S.Pullback",
+      "path": "Zeta5S/Pullback.lean",
+      "sha256": "ebffb5ad911323534bbaed2d316e4e07907cf42db30f8e82720a3b8406ad76e4",
+      "lines": 293
+    },
+    {
+      "module": "Zeta5S.Monomial",
+      "path": "Zeta5S/Monomial.lean",
+      "sha256": "206e3fc33d8cd65a3ada6f4f1f90237c8cf7c0e93b7282b652962c02791eb697",
+      "lines": 99
+    },
+    {
+      "module": "Zeta5S.PoleFun",
+      "path": "Zeta5S/PoleFun.lean",
+      "sha256": "2fe575dea9273336fe7b8b3d6c4dfdf38a89068120cd4f3a9c80143a0a63a633",
+      "lines": 99
+    },
+    {
+      "module": "Zeta5S.TauBound",
+      "path": "Zeta5S/TauBound.lean",
+      "sha256": "4cafd8b0f285e774a5191ef47ff4a32b6624d3f66a89376a4553f340d97887e2",
+      "lines": 167
+    },
+    {
+      "module": "Zeta5S.BinomBasis",
+      "path": "Zeta5S/BinomBasis.lean",
+      "sha256": "d69355164de0504b0badf41d651947e50e384a89fb85c4e5781931e695bb1349",
+      "lines": 249
+    },
+    {
+      "module": "Zeta5S.Val",
+      "path": "Zeta5S/Val.lean",
+      "sha256": "dcbf5c6d62626ab49dc9323fac395240415b846a4c7b4d3a447385f4bf5f4544",
+      "lines": 230
+    },
+    {
+      "module": "Functional",
+      "path": "Functional.lean",
+      "sha256": "6d28259c1a43b8c4f5ca0d621919ce08c5ab43c74e4e7317b9c0423aff4adf44",
+      "lines": 88
+    },
+    {
+      "module": "PartialFractions",
+      "path": "PartialFractions.lean",
+      "sha256": "598f63902bc375c7ec470c825318fb5010c2fe59778e19255b7425017e57b424",
+      "lines": 43
+    },
+    {
+      "module": "FunctionalStatement",
+      "path": "FunctionalStatement.lean",
+      "sha256": "77e4bae84f348f9e82ee6783e4ccf8b845a1d298b42a6b4ca760bba9958f4e66",
+      "lines": 20
+    },
+    {
+      "module": "Finish",
+      "path": "Finish.lean",
+      "sha256": "e114c71860247367c199990a3e0816c87dd1d1f7967614901df340798d0f5a90",
+      "lines": 114
+    },
+    {
+      "module": "Bose",
+      "path": "Bose.lean",
+      "sha256": "7615ebb89a7b1b0b1fa2c573bf9e590830f68faa36c0ce2ab26d3739e465f75d",
+      "lines": 100
+    },
+    {
+      "module": "BAnalyticIntegral",
+      "path": "BAnalyticIntegral.lean",
+      "sha256": "eefc453a2515068c1576200e4f414c01042298c62edb39589af8599bc6400dbe",
+      "lines": 159
+    },
+    {
+      "module": "Scaling",
+      "path": "Scaling.lean",
+      "sha256": "62641bbc3c3c3e05336e012ec247e13f7034c792c5249af9f0bdb7e298f140cd",
+      "lines": 112
+    },
+    {
+      "module": "PoleProof",
+      "path": "PoleProof.lean",
+      "sha256": "b2f51aafe43b22b17113d06203322007e76ee3d773806e1ef22b6f0a6c5ad8d8",
+      "lines": 86
+    },
+    {
+      "module": "Statement",
+      "path": "Statement.lean",
+      "sha256": "d041cd9323e53f9f120ad9c21d87b3993ec2408746b57c34336e266e3af44851",
+      "lines": 77
+    },
+    {
+      "module": "BAnalyticMoments",
+      "path": "BAnalyticMoments.lean",
+      "sha256": "f2b70273716fd10775a3f8eb9f0d04429fe4ae7af6790de3b201696a65d32009",
+      "lines": 168
+    },
+    {
+      "module": "Kernel",
+      "path": "Kernel.lean",
+      "sha256": "9f20744fa5233c76c3e1ca08ee5ff5e32b16282db9800a73ea523ac8b4e24656",
+      "lines": 121
+    },
+    {
+      "module": "RealScalar",
+      "path": "RealScalar.lean",
+      "sha256": "a3daeab20850a32d56bbfd2adc121c6c9bcd634033de0c62a39b5176f0052dfd",
+      "lines": 92
+    },
+    {
+      "module": "AnalyticInterface",
+      "path": "AnalyticInterface.lean",
+      "sha256": "d320ed2dc9f6b473666d2551e5970581ae7010bfa652984494bafafdd7370640",
+      "lines": 74
+    },
+    {
+      "module": "Apery.Table.Tail",
+      "path": "Apery/Table/Tail.lean",
+      "sha256": "1addea0ffcf74fd4876e41ba69c9e79bed39481e72a4cb2eecc6201d6d8020d8",
+      "lines": 97
+    },
+    {
+      "module": "Apery.TableCheck",
+      "path": "Apery/TableCheck.lean",
+      "sha256": "e6b9e6d069e274c26d6d5bfef6da859a85d71e1c71a573528b1ab621acb55b20",
+      "lines": 258
+    },
+    {
+      "module": "Apery.Potential",
+      "path": "Apery/Potential.lean",
+      "sha256": "eed6831a39c6495d78e3082d2274b46e9c13a498eaa92f28995d7f2749edf324",
+      "lines": 412
+    },
+    {
+      "module": "Apery.Measure",
+      "path": "Apery/Measure.lean",
+      "sha256": "b80933c5e97698ccd60c7f95e6d5486de8041a1c848c8ddce309404dfd449b98",
+      "lines": 63
+    },
+    {
+      "module": "Apery.Constants",
+      "path": "Apery/Constants.lean",
+      "sha256": "a8aa527f8dad150d71faf114e5c5fa698981bfecc07a4d598f402da6874f86ab",
+      "lines": 42
+    },
+    {
+      "module": "Apery.Certificates",
+      "path": "Apery/Certificates.lean",
+      "sha256": "453f0fc53d635f657928156bd6b751381e50797cef8f490cda54ea67ad3cb543",
+      "lines": 134
+    },
+    {
+      "module": "Apery.EnergyConst",
+      "path": "Apery/EnergyConst.lean",
+      "sha256": "1f31dbc4d1ad66253a6e0e29e89e63573b03c7e4c190ddca7b7777eec9516561",
+      "lines": 221
+    },
+    {
+      "module": "Apery.PotentialV",
+      "path": "Apery/PotentialV.lean",
+      "sha256": "769045f06631cd80df96c61eda8f5cd7feb976705d563681cffaa2490262bc9a",
+      "lines": 58
+    },
+    {
+      "module": "Apery.Energy",
+      "path": "Apery/Energy.lean",
+      "sha256": "095075837888809fb0ca4cd60f64f451151d300606ae8c897b2f03289b56da38",
+      "lines": 278
+    },
+    {
+      "module": "Apery.DetIntegral",
+      "path": "Apery/DetIntegral.lean",
+      "sha256": "765b40383b8d14f8216a07d321e68705935bef9090e1466d404af8358a9b920c",
+      "lines": 59
+    },
+    {
+      "module": "Apery.Positivity",
+      "path": "Apery/Positivity.lean",
+      "sha256": "1bb3cde19d09ec4e0353a82d2426b74af0ea35d3aaf4d3c87beb2136d994a5e8",
+      "lines": 223
+    },
+    {
+      "module": "Apery.HermiteFormula",
+      "path": "Apery/HermiteFormula.lean",
+      "sha256": "b0f70e33b415555196a695c4bd8065c3b4b3917fd4d41c69489bc3771e86b7c5",
+      "lines": 162
+    },
+    {
+      "module": "Apery.Construction",
+      "path": "Apery/Construction.lean",
+      "sha256": "3d68e36fd05c72ebed98b1f50d031bae46d6d68b20bc87f7e24306a293a804b1",
+      "lines": 73
+    },
+    {
+      "module": "Apery.Zeta5",
+      "path": "Apery/Zeta5.lean",
+      "sha256": "65cdbfef3a6832a14c3f98417a825f6099c48c3aaa6e49d9f750abcbe7d36721",
+      "lines": 20
+    },
+    {
+      "module": "Apery.HermiteIntegrals",
+      "path": "Apery/HermiteIntegrals.lean",
+      "sha256": "91d5cc87225e0714b4088a279717085000c9b7224b6e857e6179078c294ed8d7",
+      "lines": 293
+    },
+    {
+      "module": "Apery.Hermite",
+      "path": "Apery/Hermite.lean",
+      "sha256": "547c6e516ef2fdb590389b4b25d40c8a28ab1e4187f665be067e58976a31fc68",
+      "lines": 391
+    },
+    {
+      "module": "Apery.Weight",
+      "path": "Apery/Weight.lean",
+      "sha256": "e14b0db381932e2dade574feb8c7ce0e8c49a5ef4fdb02b77bd35532300a0d5a",
+      "lines": 135
+    },
+    {
+      "module": "Apery.HermiteIBP",
+      "path": "Apery/HermiteIBP.lean",
+      "sha256": "88a649bc0710feec3bbc7cf7716cd1d359a666709fe89cff55b80338df261599",
+      "lines": 368
+    },
+    {
+      "module": "Apery.Moments",
+      "path": "Apery/Moments.lean",
+      "sha256": "0812a404882647289149adfbc5c320a26771effca8a7e5472f51b17c13bc57af",
+      "lines": 144
+    },
+    {
+      "module": "Apery.PartialFractions",
+      "path": "Apery/PartialFractions.lean",
+      "sha256": "02fc010685131c58650b80a4bc54d04ccb6cbd2f84ee03b916a8f75b68ce7c76",
+      "lines": 118
+    },
+    {
+      "module": "Apery.Degree",
+      "path": "Apery/Degree.lean",
+      "sha256": "8cd7b35f891cf785daeb51cba621acf7fc59be82c2a05053fb3c6c29f542bd89",
+      "lines": 180
+    },
+    {
+      "module": "Apery.EnergyRaw",
+      "path": "Apery/EnergyRaw.lean",
+      "sha256": "4a1ee8cdc66e552933c6a858124111b70cb41d635d6b001962728098459dc751",
+      "lines": 200
+    },
+    {
+      "module": "Apery.EnergyBlocks",
+      "path": "Apery/EnergyBlocks.lean",
+      "sha256": "b1d80ad07b2b1634b06fb8c76011ae66246b2b8dcb4e289cdafca4cf8e50b9e0",
+      "lines": 188
+    },
+    {
+      "module": "Apery.EnergyAtoms",
+      "path": "Apery/EnergyAtoms.lean",
+      "sha256": "fa7c6474172e3c133eb29451f76a7fa48f813c424155b9446326104560be2226",
+      "lines": 272
+    },
+    {
+      "module": "Apery.ArcsinePotential",
+      "path": "Apery/ArcsinePotential.lean",
+      "sha256": "e37b94c5f9976585634ea08a15d64a9155eaf3d2c4581bc50bef591bb3530437",
+      "lines": 211
+    },
+    {
+      "module": "Apery.ArcsineAtoms",
+      "path": "Apery/ArcsineAtoms.lean",
+      "sha256": "5fe49b1725129b9a7ec8714e8483b04ab3df79ea84544201c57be1f7b5ee37b4",
+      "lines": 143
+    },
+    {
+      "module": "Apery.CircleAtoms",
+      "path": "Apery/CircleAtoms.lean",
+      "sha256": "a6b6dd42698221014ee99e0d3f315caf7af4291c588ba711b08cbb10af732d1c",
+      "lines": 116
+    },
+    {
+      "module": "Apery.EnergyLimit",
+      "path": "Apery/EnergyLimit.lean",
+      "sha256": "597d2dd2f17c47f6e2ad5eeb698bf8e4ee4e59625bd68009ef5fd8e6f711d908",
+      "lines": 87
+    },
+    {
+      "module": "Apery.Kernel",
+      "path": "Apery/Kernel.lean",
+      "sha256": "b9a861fe3eb4b662528c0cd445d7a1b1c36c33ed3da167d0fc8c11b9c9aaeed2",
+      "lines": 225
+    },
+    {
+      "module": "Apery.ZeroMass",
+      "path": "Apery/ZeroMass.lean",
+      "sha256": "4dd6909891cd4a327d7c8f78f62d34e9e1b6d6339a76e052dc27b0dc23d83144",
+      "lines": 338
+    },
+    {
+      "module": "Apery.Gaussian",
+      "path": "Apery/Gaussian.lean",
+      "sha256": "049a486a805687650c1f3ef052583eca856f99f5bee2f4eab9adb38e87135fb3",
+      "lines": 91
+    },
+    {
+      "module": "BRealStatement",
+      "path": "BRealStatement.lean",
+      "sha256": "7f34bfb89850c511a47037dcef17f3c66d114b644be9a280018f5b47868e2287",
+      "lines": 68
+    },
+    {
+      "module": "Apery.Stirling",
+      "path": "Apery/Stirling.lean",
+      "sha256": "24a85d4595a30e909da36494488b0a334a4ce4b0a1587c15d705f7411dd84d5e",
+      "lines": 164
+    },
+    {
+      "module": "Zeta5S.SmallPrimeF",
+      "path": "Zeta5S/SmallPrimeF.lean",
+      "sha256": "b1553c426c0e78133ad1b41383a2d09a4d1f7f038b752b143eec13705a5ce800",
+      "lines": 319
+    },
+    {
+      "module": "Zeta5S.SmallPrimeTau",
+      "path": "Zeta5S/SmallPrimeTau.lean",
+      "sha256": "b7d7ff5b7f4a00ff744c5ef5c9a6beb3da770a8ebf7f6b2453ac3d1609f88015",
+      "lines": 204
+    },
+    {
+      "module": "Zeta5S.SmallPrimeRes",
+      "path": "Zeta5S/SmallPrimeRes.lean",
+      "sha256": "8a743dc443d3b7d02b26a9db3562e211bf9e6efb4320e292092b9cd749a31f7f",
+      "lines": 192
+    },
+    {
+      "module": "Zeta5S.SmallPrime",
+      "path": "Zeta5S/SmallPrime.lean",
+      "sha256": "02b58b218bd1c9bff625a722474ea8843ec0bf673f9fadb1218e2a9176cbbf2f",
+      "lines": 108
+    },
+    {
+      "module": "Zeta5S.DirectBound",
+      "path": "Zeta5S/DirectBound.lean",
+      "sha256": "b4c135ca180f229527029d8c6ad7b516c801dd3107e0117c8cdbaaf3e08c16bd",
+      "lines": 197
+    },
+    {
+      "module": "Zeta5S.IntPoly",
+      "path": "Zeta5S/IntPoly.lean",
+      "sha256": "b118120a22c0bc8cf85a9018fbc1e4eab4482b39fadeb8c31531a249854b446a",
+      "lines": 85
+    },
+    {
+      "module": "BAnalyticEnvelope",
+      "path": "BAnalyticEnvelope.lean",
+      "sha256": "3f537a1ba6c7ec1abfdb2c6ccdf4829c8d2f44daae54379b1340481964d359fe",
+      "lines": 146
+    },
+    {
+      "module": "ConfigurationTransport",
+      "path": "ConfigurationTransport.lean",
+      "sha256": "41a404efeaa1d8b3854a49638814b8322f51df7924656091327f72de4704ee62",
+      "lines": 89
+    },
+    {
+      "module": "CompactTransports",
+      "path": "CompactTransports.lean",
+      "sha256": "d6b8dab0d5508188d750312bbf13d03b6cab437501e2199dfcaa2f9998d3f310",
+      "lines": 69
+    },
+    {
+      "module": "PriorTailFinal",
+      "path": "PriorTailFinal.lean",
+      "sha256": "cabcc3ae6ad3ba5d755b933d16869f1932ee4dd5f233c2afc9ab866e881b76b4",
+      "lines": 33
+    },
+    {
+      "module": "TransportGoals",
+      "path": "TransportGoals.lean",
+      "sha256": "0094f5a3dc35fd0769602388e4fbe393639401c880521b86515e73e515a62ea0",
+      "lines": 7
+    },
+    {
+      "module": "PriorRegularization",
+      "path": "PriorRegularization.lean",
+      "sha256": "70f56c98d913a538142dc00f6bf8510118d00f8d4a371d194f3b15aebeeab377",
+      "lines": 101
+    },
+    {
+      "module": "LocalField",
+      "path": "LocalField.lean",
+      "sha256": "7a029aa9d4801190b65f883c29eea0a375f6a849441e085c2702b747b6a3c6c9",
+      "lines": 1036
+    },
+    {
+      "module": "Intervals.I016",
+      "path": "Intervals/I016.lean",
+      "sha256": "c61b82a4db8e75021d3d7eed88bf321c13dd283e256e211131dd9c14ad849416",
+      "lines": 83
+    },
+    {
+      "module": "Points.P066",
+      "path": "Points/P066.lean",
+      "sha256": "feb7dcdf8390829eb4ece542e7014aa2c1cb8de0b999125d99a0c14f45a2984c",
+      "lines": 145
+    },
+    {
+      "module": "Data",
+      "path": "Data.lean",
+      "sha256": "817a7131a93a736bcd6d5a4c513eba5a36226c67d5e6ec33941af97b2d0d447d",
+      "lines": 197
+    },
+    {
+      "module": "Cells",
+      "path": "Cells.lean",
+      "sha256": "cc72bfaa760f551424db9d115ac5bff6c8b910a68c5f29cc2c8e4569f9103759",
+      "lines": 64
+    },
+    {
+      "module": "NumericBase",
+      "path": "NumericBase.lean",
+      "sha256": "26924a382fd3b73e8602d96bf191bfec953d45f150166a88e274f5046e6317bf",
+      "lines": 202
+    },
+    {
+      "module": "Points.P065",
+      "path": "Points/P065.lean",
+      "sha256": "5baaf0117a202707571f1299d800ae1e174d6bbcf8467b78cb05e2a69c4a99e6",
+      "lines": 170
+    },
+    {
+      "module": "Points.P033",
+      "path": "Points/P033.lean",
+      "sha256": "57035b00d26acd235eef326e52af38256e16e65976cf3159f7aee81fdc2bc301",
+      "lines": 242
+    },
+    {
+      "module": "Points.P032",
+      "path": "Points/P032.lean",
+      "sha256": "fc0be3bdecd454181939f89ecee43501b54ee6e0e0633296c072a8dd9c3129e8",
+      "lines": 350
+    },
+    {
+      "module": "Points.P031",
+      "path": "Points/P031.lean",
+      "sha256": "ef66aba25af0ec1c5c68704b3e284c66d000644900bee5c7053eecb6a813ea54",
+      "lines": 350
+    },
+    {
+      "module": "Mid",
+      "path": "Mid.lean",
+      "sha256": "a9e85c55ea4a7a3886e4d38ee92e7d04aff997a83f6b2c36e385ccb14b4d1fd2",
+      "lines": 14
+    },
+    {
+      "module": "Points.P001",
+      "path": "Points/P001.lean",
+      "sha256": "f029c2cb59a4a8c805be5ecaf21cf25521c6701f6377fc5e71b08263a5f23c2f",
+      "lines": 131
+    },
+    {
+      "module": "Critical",
+      "path": "Critical.lean",
+      "sha256": "c1c206627da2345365469a78905328c7450b9ae70511245ca6bb99b6cd954ada",
+      "lines": 44
+    },
+    {
+      "module": "Intervals.I015",
+      "path": "Intervals/I015.lean",
+      "sha256": "25a2a22f4f0a1d0e2eb04c0fa36841be4a1a1ad6d428d43eafdcb2ac8500501e",
+      "lines": 92
+    },
+    {
+      "module": "Points.P064",
+      "path": "Points/P064.lean",
+      "sha256": "c916a7b358138bade6f3469890d3aa75c37fc2f77e2a3ba3220ff18855328168",
+      "lines": 170
+    },
+    {
+      "module": "Points.P063",
+      "path": "Points/P063.lean",
+      "sha256": "1e388d46a29f5c3d8eb55ccac37bfba75f60e3dc84875e14b3d1e4bb8756d3f5",
+      "lines": 170
+    },
+    {
+      "module": "Points.P030",
+      "path": "Points/P030.lean",
+      "sha256": "98c9f363be72d652a12aa47a25e3335b68c299cad3d150e286c10c060ff7f010",
+      "lines": 350
+    },
+    {
+      "module": "Points.P029",
+      "path": "Points/P029.lean",
+      "sha256": "440a1f2377bab3029830d1bb70dc3a86e5aad1dcb7c80c25cb4b8375c2a4ca17",
+      "lines": 341
+    },
+    {
+      "module": "Intervals.I014",
+      "path": "Intervals/I014.lean",
+      "sha256": "4f494e6499f92cc85bba477d5d680ed12e51b5bb7173c869f080d7422b9b3abb",
+      "lines": 92
+    },
+    {
+      "module": "Points.P062",
+      "path": "Points/P062.lean",
+      "sha256": "51bf72f197bb22d9e7575663aad11098724df82eed180e71e620b1960096d056",
+      "lines": 170
+    },
+    {
+      "module": "Points.P061",
+      "path": "Points/P061.lean",
+      "sha256": "6cc2702d1b4131ee42d2a04ed888690307d3fbcce28cad346f78f12f3740a334",
+      "lines": 170
+    },
+    {
+      "module": "Points.P028",
+      "path": "Points/P028.lean",
+      "sha256": "140ea28525a4f3d6523cf71829ea2833078c78bf300c61521aa770120bac70d7",
+      "lines": 323
+    },
+    {
+      "module": "Points.P027",
+      "path": "Points/P027.lean",
+      "sha256": "9e010393091907cb3dffe4815acf2311d2f4ba1dbdd8e3edd15b0cbdf0582388",
+      "lines": 311
+    },
+    {
+      "module": "Intervals.I013",
+      "path": "Intervals/I013.lean",
+      "sha256": "63eb6956e8363971d0504fba943d97d6be1c4aa5e9efb8a9af1209664ad5429d",
+      "lines": 92
+    },
+    {
+      "module": "Points.P060",
+      "path": "Points/P060.lean",
+      "sha256": "9b88594af7c81bd7108d240d7c5e9d8011a4b85d85ea95969cefd7731731c66c",
+      "lines": 170
+    },
+    {
+      "module": "Points.P059",
+      "path": "Points/P059.lean",
+      "sha256": "fbe032754ded3f19afa8d644c1b34ba17025bbb0854170a1e3ce77dc75831f1e",
+      "lines": 170
+    },
+    {
+      "module": "Points.P026",
+      "path": "Points/P026.lean",
+      "sha256": "193ff478b2540cfc492bd4e738c2b55ce44780405e07761be3ffe2966693c649",
+      "lines": 305
+    },
+    {
+      "module": "Points.P025",
+      "path": "Points/P025.lean",
+      "sha256": "47a02ef428b384865cadd074aad9093515b1acf00b9628d6620c7ba5a5fa4023",
+      "lines": 293
+    },
+    {
+      "module": "Intervals.I012",
+      "path": "Intervals/I012.lean",
+      "sha256": "413df8b40c85d88e41cb54df7bb35ff95569ab530a2ed4857dbf4ca7bca6a956",
+      "lines": 92
+    },
+    {
+      "module": "Points.P058",
+      "path": "Points/P058.lean",
+      "sha256": "a1029b48e7040597a306d533a99145bb80bab2cf7af06eec961d2c48939964a0",
+      "lines": 170
+    },
+    {
+      "module": "Points.P057",
+      "path": "Points/P057.lean",
+      "sha256": "3344ac1cf985a606a690aa7efce6de46d1209942f984715ffe2b690b001ffa8b",
+      "lines": 170
+    },
+    {
+      "module": "Points.P024",
+      "path": "Points/P024.lean",
+      "sha256": "8b08b561a5aaf10d53704e5ae86ef5cf2b9ed3c176c56ef51c76b1df2365b400",
+      "lines": 290
+    },
+    {
+      "module": "Points.P023",
+      "path": "Points/P023.lean",
+      "sha256": "d876826daf2c5aed449ad7cf21b4eeb08e2a986921b0ba002995cbcb13bf3cea",
+      "lines": 290
+    },
+    {
+      "module": "Intervals.I011",
+      "path": "Intervals/I011.lean",
+      "sha256": "111c9a6b5cf14e785d9cc7b926d0e74d0cfa46d2aa699e9b72049db402f2fdf4",
+      "lines": 92
+    },
+    {
+      "module": "Points.P056",
+      "path": "Points/P056.lean",
+      "sha256": "eec507b0de160ab579a6f956adf6a4281faa882c6a0599f61409cfe0a27d8cef",
+      "lines": 170
+    },
+    {
+      "module": "Points.P055",
+      "path": "Points/P055.lean",
+      "sha256": "4bf2cc3ff0737c08b02ee04f77a714f0a3aed080571bba51c54d35909c45708e",
+      "lines": 170
+    },
+    {
+      "module": "Points.P022",
+      "path": "Points/P022.lean",
+      "sha256": "1877c48355370b17420eeaad1ab0a15b5bbab7ba919abf59fc54c4ae0a77917d",
+      "lines": 275
+    },
+    {
+      "module": "Points.P021",
+      "path": "Points/P021.lean",
+      "sha256": "e1bc417849636dfe9a95af8037021c5411d9934d65b0379cf4cdd26ca33e79d9",
+      "lines": 275
+    },
+    {
+      "module": "Intervals.I010",
+      "path": "Intervals/I010.lean",
+      "sha256": "8b01b7fe7fa46a2a5a6d695f308cc8c75a5a389f049e6e470e36278932fb4970",
+      "lines": 92
+    },
+    {
+      "module": "Points.P054",
+      "path": "Points/P054.lean",
+      "sha256": "5ed7dc5cd1a143ed2d62c76da7e9f99c781f1c9cab557838123f35b352e2bf27",
+      "lines": 170
+    },
+    {
+      "module": "Points.P053",
+      "path": "Points/P053.lean",
+      "sha256": "7f8db254d01380121cceaee0d5ec1654e891f7d51d75dcb3cc4b70942b61103f",
+      "lines": 170
+    },
+    {
+      "module": "Points.P020",
+      "path": "Points/P020.lean",
+      "sha256": "df238284722812bbcbc868603594b56b5966a50a720142cc9cf2067b6dbe2e11",
+      "lines": 272
+    },
+    {
+      "module": "Points.P019",
+      "path": "Points/P019.lean",
+      "sha256": "1d0b3dc5a5dcbab77d3314851ecb2c367ee30f0fce379bd932298fd63e473567",
+      "lines": 260
+    },
+    {
+      "module": "Intervals.I009",
+      "path": "Intervals/I009.lean",
+      "sha256": "136240bd8457327b4928bca46d78bd0b5af18567451f311005c281402f969887",
+      "lines": 92
+    },
+    {
+      "module": "Points.P052",
+      "path": "Points/P052.lean",
+      "sha256": "a7c52bb8d93d67258f308b8a86e31f632de93a1f7008c7585ab1ec69939e2da3",
+      "lines": 170
+    },
+    {
+      "module": "Points.P051",
+      "path": "Points/P051.lean",
+      "sha256": "3d9b5e56bcde41d965fe686ca1af9184325f2655ff28a6e2df29fe420f5b4205",
+      "lines": 170
+    },
+    {
+      "module": "Points.P018",
+      "path": "Points/P018.lean",
+      "sha256": "feb1222cc0b19df6db09aaecf66aa817ccb259a7b03f605aedc54815a0aa3df0",
+      "lines": 260
+    },
+    {
+      "module": "Points.P017",
+      "path": "Points/P017.lean",
+      "sha256": "c39c13555cd91e813a8ed18d09fcbdd7ecd94adfff32a36c55e5bb787765e393",
+      "lines": 260
+    },
+    {
+      "module": "Intervals.I008",
+      "path": "Intervals/I008.lean",
+      "sha256": "6640a78601e81e564eadc8ffad81e405c1aea26a64b356741afcdbedf0bcf41e",
+      "lines": 92
+    },
+    {
+      "module": "Points.P050",
+      "path": "Points/P050.lean",
+      "sha256": "fbd3b246235c16406a15a4d4280b2ce12ef912957e2729b44ff1654c954ab571",
+      "lines": 170
+    },
+    {
+      "module": "Points.P049",
+      "path": "Points/P049.lean",
+      "sha256": "587673625b1967071efea770cad8b0a10e4fef93bca8af98310770a6bf41cc6b",
+      "lines": 170
+    },
+    {
+      "module": "Points.P016",
+      "path": "Points/P016.lean",
+      "sha256": "9d0ef3ae8dec630a7504759f533277e29831ae67cafb688e8131dcd4377bd563",
+      "lines": 245
+    },
+    {
+      "module": "Points.P015",
+      "path": "Points/P015.lean",
+      "sha256": "82d913970e5737af8627301bc30aef1733833eb40976ced8afb372990b3b340a",
+      "lines": 245
+    },
+    {
+      "module": "Intervals.I007",
+      "path": "Intervals/I007.lean",
+      "sha256": "c05e92f9610cfa716d9eccaf4f1676ddcd66831d642cc90f6be38c40955b2f4e",
+      "lines": 92
+    },
+    {
+      "module": "Points.P048",
+      "path": "Points/P048.lean",
+      "sha256": "f33a8921db39d962d1490ce6a2c3e8ae70f4f78e688f9b3b00c3df3f2d7ad07e",
+      "lines": 170
+    },
+    {
+      "module": "Points.P047",
+      "path": "Points/P047.lean",
+      "sha256": "77a1b2464f1643477607e9788a754c055d1f81864b6637f1ce08949b230affbc",
+      "lines": 155
+    },
+    {
+      "module": "Points.P014",
+      "path": "Points/P014.lean",
+      "sha256": "835b889aaeb6e1484d5f7bb2326b866c115363a55f43d61c6351aa7e4c16ee23",
+      "lines": 245
+    },
+    {
+      "module": "Points.P013",
+      "path": "Points/P013.lean",
+      "sha256": "c059ba24b06b6b77a211f19084c95d0747f16cc3e83d8a78338a7dfc85a729da",
+      "lines": 230
+    },
+    {
+      "module": "Intervals.I006",
+      "path": "Intervals/I006.lean",
+      "sha256": "6f422f8e32ff98a8e16b0f6d3eed0da6498e5ffbd933eb33ae3a0852709b18aa",
+      "lines": 92
+    },
+    {
+      "module": "Points.P046",
+      "path": "Points/P046.lean",
+      "sha256": "b3c17b60782ac0e0584fd3963c678c47c7c64182347c991a3ba999b4f6e99abe",
+      "lines": 145
+    },
+    {
+      "module": "Points.P045",
+      "path": "Points/P045.lean",
+      "sha256": "915d4b0b3f658cf23504124591dfe90bfc49a2ceff2e0da99a2374086e04b78d",
+      "lines": 145
+    },
+    {
+      "module": "Points.P012",
+      "path": "Points/P012.lean",
+      "sha256": "642b8113140db537ed2ae0353578da325f8426281f75263c8e2aeef8b453324d",
+      "lines": 230
+    },
+    {
+      "module": "Points.P011",
+      "path": "Points/P011.lean",
+      "sha256": "8a6411dddcee523586501b7d57fee38ca1a571a2d7fb390c48a449d3163721b1",
+      "lines": 224
+    },
+    {
+      "module": "Intervals.I005",
+      "path": "Intervals/I005.lean",
+      "sha256": "15d2789fc38ce7467f0601db0969b3571ab7e518fb89b3c662afdeda4de8f519",
+      "lines": 92
+    },
+    {
+      "module": "Points.P044",
+      "path": "Points/P044.lean",
+      "sha256": "34423bf5aeda31a69ad0fe82b24ac3763a8db4bc1b07e32d4d1d399bada77b7a",
+      "lines": 145
+    },
+    {
+      "module": "Points.P043",
+      "path": "Points/P043.lean",
+      "sha256": "1ce71a1654c204c5a2512bba0a7ca6aa2806084ab233eac65ade46db704ae517",
+      "lines": 145
+    },
+    {
+      "module": "Points.P010",
+      "path": "Points/P010.lean",
+      "sha256": "00227a1da85833c2eb7ac554fa0e531572e81dbb78114f60681e96a72d8c867a",
+      "lines": 215
+    },
+    {
+      "module": "Points.P009",
+      "path": "Points/P009.lean",
+      "sha256": "93ad756e1609790c50ed427dfc1be4d93361095935ee28b9272e7c852382300c",
+      "lines": 215
+    },
+    {
+      "module": "Intervals.I004",
+      "path": "Intervals/I004.lean",
+      "sha256": "5120fce506465778c36af82c5314e9f0a4f9da15b6739982bc04c33124688831",
+      "lines": 92
+    },
+    {
+      "module": "Points.P042",
+      "path": "Points/P042.lean",
+      "sha256": "b94ba6b2dbf961cd246ca0f1b64524e60982bf7cce0719d234b28565579424c2",
+      "lines": 145
+    },
+    {
+      "module": "Points.P041",
+      "path": "Points/P041.lean",
+      "sha256": "28cf9001df63013b771e45cd6d8cbd235f51e521db3e783ea18da4d30a24d7c0",
+      "lines": 145
+    },
+    {
+      "module": "Points.P008",
+      "path": "Points/P008.lean",
+      "sha256": "3b98b3d8e68c1ad657cb6258b05094b12a22ba1ff67a93e07c7d46c07d514974",
+      "lines": 200
+    },
+    {
+      "module": "Points.P007",
+      "path": "Points/P007.lean",
+      "sha256": "6e4a14056f85c5cffe69ff0affe2fda23cffa821da0c3ae9fa05c869679efe81",
+      "lines": 200
+    },
+    {
+      "module": "Intervals.I003",
+      "path": "Intervals/I003.lean",
+      "sha256": "f6db163b1d60967d622d0494292945085c4541c25eb5c7811b4efd7d1bd8e487",
+      "lines": 92
+    },
+    {
+      "module": "Points.P040",
+      "path": "Points/P040.lean",
+      "sha256": "694f9e8cce8886394286fbece7499cd72a08a0e0179cdadcd69d2f745d8f222f",
+      "lines": 145
+    },
+    {
+      "module": "Points.P039",
+      "path": "Points/P039.lean",
+      "sha256": "63b1e09196166a92f60bebf3bc6213bc5d6753bdb6df8a162c2218e9f3fe619d",
+      "lines": 145
+    },
+    {
+      "module": "Points.P006",
+      "path": "Points/P006.lean",
+      "sha256": "19e22736d9e443bdcf246d2e07a1c90a343e2420e25e6f83aa1f032652db1c7a",
+      "lines": 188
+    },
+    {
+      "module": "Points.P005",
+      "path": "Points/P005.lean",
+      "sha256": "d521d26d9e145dde6a17e230b8ed45581ff8c906d7db991c0599a39f2094e697",
+      "lines": 185
+    },
+    {
+      "module": "Intervals.I002",
+      "path": "Intervals/I002.lean",
+      "sha256": "d096c4488bcf876e0621447a5f05305f9459d66c581f2a296dcc41c8b716d24a",
+      "lines": 92
+    },
+    {
+      "module": "Points.P038",
+      "path": "Points/P038.lean",
+      "sha256": "9a76aafc7449249e24f91655651f18ad2799dbcc513944ad0d7a193570ac8f66",
+      "lines": 145
+    },
+    {
+      "module": "Points.P037",
+      "path": "Points/P037.lean",
+      "sha256": "463236a517589d73c36fac5c21b41c5d86fd94e48c90761889554e81f6699366",
+      "lines": 145
+    },
+    {
+      "module": "Points.P004",
+      "path": "Points/P004.lean",
+      "sha256": "f4e70929a18e2e6a3b4489b6c5a819fd12b9fdf22b232fc8ca15a401ac73d844",
+      "lines": 176
+    },
+    {
+      "module": "Points.P003",
+      "path": "Points/P003.lean",
+      "sha256": "ee132a14ba95db8f3d9b9d2f2aef2bda6a0dd4e28967d58d48f5b84b27e7166d",
+      "lines": 164
+    },
+    {
+      "module": "Intervals.I001",
+      "path": "Intervals/I001.lean",
+      "sha256": "56a37571ca737391821e176caac13f4f35459adc289a2f2d409f54f4d162445f",
+      "lines": 92
+    },
+    {
+      "module": "Points.P036",
+      "path": "Points/P036.lean",
+      "sha256": "853fe717b6e0ec8faab2a0e112082dbd4084d57c518a219aee229bb88f2354a7",
+      "lines": 150
+    },
+    {
+      "module": "Points.P035",
+      "path": "Points/P035.lean",
+      "sha256": "06f1b78f999c457d52947225e76771ecf7babc24150aa6d2fd35a37f060f6153",
+      "lines": 170
+    },
+    {
+      "module": "Points.P002",
+      "path": "Points/P002.lean",
+      "sha256": "33214af42ca8458c609dc12fb636ad6fd4f384176965873ac2001662e1cffa3a",
+      "lines": 146
+    },
+    {
+      "module": "Intervals.I000",
+      "path": "Intervals/I000.lean",
+      "sha256": "61665be6616fea2e0b1ba0dfab1ac13db4a3de203102e89981b49d9c6f0f7b36",
+      "lines": 91
+    },
+    {
+      "module": "Points.P034",
+      "path": "Points/P034.lean",
+      "sha256": "7a3bfa4297c87f0b9cd7161a21a5bf0780842d82393333ebeda6ff8280b421e5",
+      "lines": 185
+    },
+    {
+      "module": "Points.P000",
+      "path": "Points/P000.lean",
+      "sha256": "3cbde436d60851327cf9af06b8c08a29f40c51105f9fd23367eb7f54db882aff",
+      "lines": 248
+    },
+    {
+      "module": "ClosingEntry",
+      "path": "ClosingEntry.lean",
+      "sha256": "ef08be2748a06b45405b25de5b490f481877f34d28d1d4ca883093fa66155d5f",
+      "lines": 27
+    },
+    {
+      "module": "CompactClosingLite",
+      "path": "CompactClosingLite.lean",
+      "sha256": "490220c7f6456c142848ddb5bff85d7f67ebe8c9e300447d9558e9583d8e0951",
+      "lines": 281
+    },
+    {
+      "module": "PackageTail.Primitive",
+      "path": "PackageTail/Primitive.lean",
+      "sha256": "1139dda15c5efedaa4dc51bdafd3913918652f25e30fd0f29aec0aa7ee66517e",
+      "lines": 81
+    },
+    {
+      "module": "PackageTail.Centered",
+      "path": "PackageTail/Centered.lean",
+      "sha256": "684d111dc1eadc27c6287dd340c6d2d2f3bbbaa9002c3a5ae10f6772d54f0f8d",
+      "lines": 125
+    },
+    {
+      "module": "PeriodShift",
+      "path": "PeriodShift.lean",
+      "sha256": "2cde0701ceb230e42aaa6b6277d2aba99c6b0bfec16517f5485d4ea45023ae53",
+      "lines": 94
+    },
+    {
+      "module": "MarginPieces",
+      "path": "MarginPieces.lean",
+      "sha256": "0f3a85630d56fee941de079e39ce6ecc85f7eb3fe1050b9c6ac932e3e7691f9f",
+      "lines": 64
+    },
+    {
+      "module": "Mathathon.P108.SStep",
+      "path": "Mathathon/P108/SStep.lean",
+      "sha256": "e8df3748c2fca958b9e3044ac9c724721a356f2fb28b50fce8a6fad328a9b357",
+      "lines": 79
+    },
+    {
+      "module": "Mathathon.P108.OuterValues",
+      "path": "Mathathon/P108/OuterValues.lean",
+      "sha256": "06a8e24517c0d4b9597e5e04112394ead44abeacaac6e60916323c00caa57f2d",
+      "lines": 331
+    },
+    {
+      "module": "Mathathon.P108.OuterDefs",
+      "path": "Mathathon/P108/OuterDefs.lean",
+      "sha256": "7c3393f0e32c3d87ec111751daae82fef1d0116041e3b7fe13710ae0186c072f",
+      "lines": 172
+    },
+    {
+      "module": "Mathathon.P108.Integrable",
+      "path": "Mathathon/P108/Integrable.lean",
+      "sha256": "cd26e55c30ded633c1e78258dc9f76085e2bc10ad13aaba58b8c5c8d886d39cd",
+      "lines": 156
+    },
+    {
+      "module": "Mathathon.P108.InnerShift",
+      "path": "Mathathon/P108/InnerShift.lean",
+      "sha256": "01768a13661727e9d0c74491c4afd3193b5c30593124cb7bff27a71613cf0e81",
+      "lines": 254
+    },
+    {
+      "module": "MarginPieces.Chunk015",
+      "path": "MarginPieces/Chunk015.lean",
+      "sha256": "80cb0c1f45ffa1de3bf2f42f0162ccb3ab7adbdc58068de9a22c45a304e95c82",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk014",
+      "path": "MarginPieces/Chunk014.lean",
+      "sha256": "d62aaaf8e600e924bffe5d3e7a3a1f9c008f95ecff539f566a06c82e7e5d6a5a",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk013",
+      "path": "MarginPieces/Chunk013.lean",
+      "sha256": "a2f2cdffe01b2b36602a3f585b17d6978f58796bc422401c06090ebd1219c724",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk012",
+      "path": "MarginPieces/Chunk012.lean",
+      "sha256": "d9cea29dad6042f98459c8d1047b26f285800603310a66d7b0c34d4a7fa9c4ae",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk011",
+      "path": "MarginPieces/Chunk011.lean",
+      "sha256": "412cb25be406e22d8a5d4a95d2e8fc726bce9aeb7a7f9dbeed79737a8c1c1caf",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk010",
+      "path": "MarginPieces/Chunk010.lean",
+      "sha256": "1821f4c38ca2c551e244d0f2786e20e815058a096afef53b9aabd82326ca4a04",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk009",
+      "path": "MarginPieces/Chunk009.lean",
+      "sha256": "11776df4a7337ed7c953e22caf07980630004d20d4c56ac66445f9e2bbd65fd9",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk008",
+      "path": "MarginPieces/Chunk008.lean",
+      "sha256": "4250f00606fff24814080378a27a351426e7d784e77c9c5ad73c03642e4e0b05",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk007",
+      "path": "MarginPieces/Chunk007.lean",
+      "sha256": "c5f9602b754895c82a7fc278b78369d6e94e37ecab2c9426e69c1b565458f8ea",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk006",
+      "path": "MarginPieces/Chunk006.lean",
+      "sha256": "8382376aae7e4ada60e09cf8f774be3cfc77468ed4f280f5f87c22f3c1e5aaa4",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk005",
+      "path": "MarginPieces/Chunk005.lean",
+      "sha256": "d80f9f6621a4845002ee7dc8b027990e4f49a3da77e9694211508909178b8eb6",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk004",
+      "path": "MarginPieces/Chunk004.lean",
+      "sha256": "ad05e234d88b52f6898cbde7e98e8c31000b5b9e54a51d2c946ab25c7837784a",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk003",
+      "path": "MarginPieces/Chunk003.lean",
+      "sha256": "088540abb3fcc44defe5e5c46652002a84ed0446aaf913da2a4cc1bae3598459",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk002",
+      "path": "MarginPieces/Chunk002.lean",
+      "sha256": "a55a6fd78c09332173bc508c6773513eb6a4c669655e2c5b0945aa1fa89fd435",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk001",
+      "path": "MarginPieces/Chunk001.lean",
+      "sha256": "a824a84d764278f2a746da18877da2e5f7b2338120f259d6ec87b84b7d4ee76b",
+      "lines": 1690
+    },
+    {
+      "module": "MarginPieces.Chunk000",
+      "path": "MarginPieces/Chunk000.lean",
+      "sha256": "4d404cf8831f8eda22b107284ecc434aedc79aeecd389987c6ba885c7f97d2c5",
+      "lines": 1690
+    },
+    {
+      "module": "ArithmeticEntry",
+      "path": "ArithmeticEntry.lean",
+      "sha256": "59984cdbfbc7745f4be01152db7f8d768925779935165f0b8edb670387a772e9",
+      "lines": 28
+    },
+    {
+      "module": "LeadingInstance",
+      "path": "LeadingInstance.lean",
+      "sha256": "496db1178f0385158a06e31423a45f6dc7d6b10bf7f22c3296330cd2b5d33fca",
+      "lines": 102
+    },
+    {
+      "module": "Interface",
+      "path": "Interface.lean",
+      "sha256": "9892e2a1a2ef33befac506b5b1ce1172b1806383a0d600a7ddd36e3c6c797109",
+      "lines": 147
+    },
+    {
+      "module": "ZetaIdentification",
+      "path": "ZetaIdentification.lean",
+      "sha256": "957ff4c54813f25c17c6df406fa090a640bcccc65cf4f6ab1554db7013aa3bee",
+      "lines": 21
+    },
+    {
+      "module": "Apery.Criterion",
+      "path": "Apery/Criterion.lean",
+      "sha256": "21ecd2dd72b780c8734062d0a838bdeef2bbd4ee2325619e526248f6ca006473",
+      "lines": 121
+    },
+    {
+      "module": "Zeta5S.AtFive",
+      "path": "Zeta5S/AtFive.lean",
+      "sha256": "37d365e615f1e820cc353d979096fc0ef7cf2369940fe0747cc0a8c2bf0f7780",
+      "lines": 476
+    },
+    {
+      "module": "Zeta5S.OuterFrame",
+      "path": "Zeta5S/OuterFrame.lean",
+      "sha256": "bc56e36b39fe6a51a9eef6b33435c3c203bf292494b7983b2a9eaa0106efb892",
+      "lines": 229
+    },
+    {
+      "module": "Zeta5S.ClassFrame",
+      "path": "Zeta5S/ClassFrame.lean",
+      "sha256": "18edb51bbc0cd33e6e584070e1d18b7862549c4a780899e974d611fb3a0a5582",
+      "lines": 188
+    },
+    {
+      "module": "Zeta5S.Unimodular",
+      "path": "Zeta5S/Unimodular.lean",
+      "sha256": "66b2173794bf6dd35e92cd26a16ad4d6729f8390950b9c247fcdf10a403edee7",
+      "lines": 146
+    },
+    {
+      "module": "Zeta5S.TEntry",
+      "path": "Zeta5S/TEntry.lean",
+      "sha256": "cd824b084084bd3772325da41e3ff98c3f9c64cff2417f8f9a52ebaab06e87e0",
+      "lines": 102
+    },
+    {
+      "module": "Zeta5S.DirectPoly",
+      "path": "Zeta5S/DirectPoly.lean",
+      "sha256": "af54610bd8169e340cc4051fee9d3fed77c77822ff01fc75ebc38f6c7816f598",
+      "lines": 307
+    },
+    {
+      "module": "Zeta5S.MomentVal",
+      "path": "Zeta5S/MomentVal.lean",
+      "sha256": "bf68753688043c7a72ff406266e39f221b5573df603fa0c73d223ff6adea4650",
+      "lines": 136
+    },
+    {
+      "module": "Zeta5S.LowRank",
+      "path": "Zeta5S/LowRank.lean",
+      "sha256": "5f59cfcbcbb229fe46bc828fa5dcf5cf197e33fcff203726ed268799ca7c0f32",
+      "lines": 65
+    },
+    {
+      "module": "Zeta5S.PoleVal",
+      "path": "Zeta5S/PoleVal.lean",
+      "sha256": "3f740f1cde864c2ad5ac6b01ca53426ac76cfbeffba3779a2706727be029a283",
+      "lines": 263
+    },
+    {
+      "module": "Zeta5S.InnerAlloc",
+      "path": "Zeta5S/InnerAlloc.lean",
+      "sha256": "6dfad96f2d460dd9c9296930b5ae09413fe5b152332ffa3293455a11b79f5470",
+      "lines": 336
+    },
+    {
+      "module": "Zeta5S.InnerWeights",
+      "path": "Zeta5S/InnerWeights.lean",
+      "sha256": "5301eba55cd706b99e56a56449048df188a76ac8924638b0ed0c9919694e3030",
+      "lines": 207
+    },
+    {
+      "module": "Zeta5S.ClassCount",
+      "path": "Zeta5S/ClassCount.lean",
+      "sha256": "5090166d377fee960fdd568f56ef2f9c6017028b45f756a13252485b23e2d341",
+      "lines": 253
+    },
+    {
+      "module": "BInnerStatement",
+      "path": "BInnerStatement.lean",
+      "sha256": "450a557ab7ec29f64019ab88ab7798ea64c13aab889830dcada7d632572b952d",
+      "lines": 96
+    },
+    {
+      "module": "RangeTargets",
+      "path": "RangeTargets.lean",
+      "sha256": "002e0467b85c39702204693ac3207b3491a3cddc3703f12e962ae6b94dbeaa54",
+      "lines": 3
+    },
+    {
+      "module": "OuterTargets",
+      "path": "OuterTargets.lean",
+      "sha256": "2dc9b7e4c0c67df8bc4ee37a129ba6e9b2dd502f0f796d6cc0e6184dbc2665d2",
+      "lines": 168
+    },
+    {
+      "module": "Zeta5S.SharpAssembly",
+      "path": "Zeta5S/SharpAssembly.lean",
+      "sha256": "f447e9c3bde267998c0deb9fa11cc2527f25d2efb3275f36de01350598b4347b",
+      "lines": 151
+    },
+    {
+      "module": "Zeta5S.SharpOuterScope",
+      "path": "Zeta5S/SharpOuterScope.lean",
+      "sha256": "7c641dfd5d2459688ac253f470677bb27b9bd0bfc52a882f76069eebb39704ab",
+      "lines": 83
+    },
+    {
+      "module": "Zeta5S.SharpOuterMain",
+      "path": "Zeta5S/SharpOuterMain.lean",
+      "sha256": "e71b9f87046c09e10fc5daa3701387833edb81980f9a11c995f23cbf22b40358",
+      "lines": 44
+    },
+    {
+      "module": "Zeta5S.SharpOuterWeights",
+      "path": "Zeta5S/SharpOuterWeights.lean",
+      "sha256": "9f402128a15f8cdb5ad05686c3a7e15c15caf45bf921994c042aee4ccaf0e500",
+      "lines": 57
+    },
+    {
+      "module": "Zeta5S.SmallFiniteStep",
+      "path": "Zeta5S/SmallFiniteStep.lean",
+      "sha256": "a853e0e1ffb0c9afbada4161c56677c27cc7e55b9bdaf36326635a40d9f14beb",
+      "lines": 81
+    },
+    {
+      "module": "Zeta5S.OuterFiniteStep",
+      "path": "Zeta5S/OuterFiniteStep.lean",
+      "sha256": "cca31191aeb1161aa6e63d59370a9e3f1ee8daa45424d1547bc7884170dc159f",
+      "lines": 143
+    },
+    {
+      "module": "Zeta5S.FiniteStep",
+      "path": "Zeta5S/FiniteStep.lean",
+      "sha256": "3b77dc0987c52f94b9a200a1cf25a60340f8cd709529de20f4042725aeed8c12",
+      "lines": 201
+    },
+    {
+      "module": "Zeta5S.AssemblyAnchors",
+      "path": "Zeta5S/AssemblyAnchors.lean",
+      "sha256": "bd8bb3ecb2f651b37d7b05c2e276edebedbec06ce0b30714d5dffbd7ccf7631c",
+      "lines": 116
+    },
+    {
+      "module": "Zeta5S.AssemblyProof",
+      "path": "Zeta5S/AssemblyProof.lean",
+      "sha256": "d8fb6ade6487eab981eb5cf0f0e14207bca622607473aa513d907dad6e97fd53",
+      "lines": 85
+    },
+    {
+      "module": "Zeta5S.AssemblyData",
+      "path": "Zeta5S/AssemblyData.lean",
+      "sha256": "d6a2847a752003dfaa54cc73933d2af4cbb343337e2f457599bba6d289faf0d4",
+      "lines": 100
+    },
+    {
+      "module": "Zeta5S.OuterScope",
+      "path": "Zeta5S/OuterScope.lean",
+      "sha256": "f501d3fbb06ce4d9906b35da86f5886215c7e9993f52a067fe74e6e1d11001d1",
+      "lines": 124
+    },
+    {
+      "module": "Zeta5S.OuterEntryMain",
+      "path": "Zeta5S/OuterEntryMain.lean",
+      "sha256": "0f08e5373d25b1888b5e51ed7b200e9f8651661a2bd0857dbbf4471d6f456451",
+      "lines": 549
+    },
+    {
+      "module": "Zeta5S.OuterEntries",
+      "path": "Zeta5S/OuterEntries.lean",
+      "sha256": "12b2773e0d6373cd892496785f955de3ffca3e0328c730131bd06c8d754d961c",
+      "lines": 296
+    },
+    {
+      "module": "Zeta5S.OuterBasis",
+      "path": "Zeta5S/OuterBasis.lean",
+      "sha256": "28571a19c49ce5d071c8dcf613712770fc7d52880a676b715a65776a92f7248f",
+      "lines": 164
+    },
+    {
+      "module": "Zeta5S.OuterEntry",
+      "path": "Zeta5S/OuterEntry.lean",
+      "sha256": "38262612c898966062b161c303c5558e17b3d7c8a9f046d838f0018f37a3fe67",
+      "lines": 141
+    },
+    {
+      "module": "Zeta5S.AtFiveNormData",
+      "path": "Zeta5S/AtFiveNormData.lean",
+      "sha256": "0a3110e2d781981b36893352e3127720836ac04e89b83db54d913b4453dba620",
+      "lines": 82
+    },
+    {
+      "module": "Zeta5S.AtFiveOuter",
+      "path": "Zeta5S/AtFiveOuter.lean",
+      "sha256": "0fdbe785c6591843117076807697ed048725da020c53b0bfc51e4844d2222d64",
+      "lines": 62
+    },
+    {
+      "module": "Zeta5S.NormalizationProof",
+      "path": "Zeta5S/NormalizationProof.lean",
+      "sha256": "c1d6f4962be96e4be1725ccaa6578cbf42dc3433e8d1fc0f8ba9522486d387b4",
+      "lines": 168
+    },
+    {
+      "module": "Zeta5S.SharpOuterFrame",
+      "path": "Zeta5S/SharpOuterFrame.lean",
+      "sha256": "0d9745348f88740f87086fa849e743f43f4e26b16761c77d612af32f55f0cbf1",
+      "lines": 135
+    },
+    {
+      "module": "Zeta5S.SharpLowRank",
+      "path": "Zeta5S/SharpLowRank.lean",
+      "sha256": "cdc53dbd005f014e6a99dc36b1753747ec989e33357e9aab746502b9e3e708c8",
+      "lines": 71
+    },
+    {
+      "module": "CArithProofs",
+      "path": "CArithProofs.lean",
+      "sha256": "8fd8d44c4044795835754a54999aa9663ea13a5d1586a50cebb56d90231d9b26",
+      "lines": 114
+    },
+    {
+      "module": "ArithInterface",
+      "path": "ArithInterface.lean",
+      "sha256": "539949919f72c5675d8d9436584c2fb4e11c40a0a2327a401cd02ca34e552eba",
+      "lines": 55
+    },
+    {
+      "module": "Final",
+      "path": "Final.lean",
+      "sha256": "77a38e9b9f36f3ab3660d2b2f12532f97c3e88096470c110d3c87b4da9efa067",
+      "lines": 41
+    },
+    {
+      "module": "InnerLocal",
+      "path": "InnerLocal.lean",
+      "sha256": "9d976a9abc79aea77a1b3dec59439b7850671a470195e93c44eb3a79870f4d9f",
+      "lines": 219
+    },
+    {
+      "module": "InnerScalar",
+      "path": "InnerScalar.lean",
+      "sha256": "c06858b0c69d0e9ef4414188d0da549ce86ed04cac8c0bb74307cbdb660ebfbe",
+      "lines": 108
+    },
+    {
+      "module": "OuterScalar",
+      "path": "OuterScalar.lean",
+      "sha256": "1934949938d93c033d3d6dc0bc80f3c46d1559a4eb017adcf661b359f3eef6a4",
+      "lines": 193
+    },
+    {
+      "module": "Scalar",
+      "path": "Scalar.lean",
+      "sha256": "e18923f0f985028eb151af50b92768f127b04d966e3a6e9b1eb1502fa34aa89d",
+      "lines": 112
+    },
+    {
+      "module": "InnerWeight",
+      "path": "InnerWeight.lean",
+      "sha256": "391db4579d50fd0f0e5966e9317209c5411441d92ce500f76c6b7ddc56572c0e",
+      "lines": 367
+    },
+    {
+      "module": "CostBounds",
+      "path": "CostBounds.lean",
+      "sha256": "ed3d617be91a69fb928134aa42ede52738296c89361de6f0180d937028463f57",
+      "lines": 128
+    },
+    {
+      "module": "Allocation",
+      "path": "Allocation.lean",
+      "sha256": "bfd7bcc007a6e17ba5ee0edc0d952b521d96a223ed6027b2bff3de7896999991",
+      "lines": 223
+    },
+    {
+      "module": "Classes",
+      "path": "Classes.lean",
+      "sha256": "86f3da527f5670e4c669b498da2f0f439d93e2cf7bbcce662c87845661d3dec1",
+      "lines": 85
+    },
+    {
+      "module": "PhiGamma",
+      "path": "PhiGamma.lean",
+      "sha256": "35da8cc39a18680462c27daa44d4abe2419067fbf3ed5860adfbd61982857f63",
+      "lines": 195
+    },
+    {
+      "module": "PhaseErrors",
+      "path": "PhaseErrors.lean",
+      "sha256": "cdc3343492848d643e7f03b252984b72af7d8ee260548aa1ba940882ab2f46d7",
+      "lines": 152
+    },
+    {
+      "module": "NextRows",
+      "path": "NextRows.lean",
+      "sha256": "97be51514a6d34940aba9c8876dc828b104672b75757a4d2440d1f1f04826b53",
+      "lines": 65
+    },
+    {
+      "module": "ClassRows",
+      "path": "ClassRows.lean",
+      "sha256": "7625a15adfb5a7cc61c3330a4f7659e0e4003a69ccb098e5078042a3a4824ef9",
+      "lines": 125
+    },
+    {
+      "module": "MeshCounts",
+      "path": "MeshCounts.lean",
+      "sha256": "c4de012c1b04454dc6d6d922dca6c31b39e86c18e7f5e8a74705fa9baa36769f",
+      "lines": 94
+    },
+    {
+      "module": "Dictionary",
+      "path": "Dictionary.lean",
+      "sha256": "fa33e007004c79d6099ed4b322e7c24ff0d24b4a3251aaae9e2b7e1770d6b08e",
+      "lines": 51
+    },
+    {
+      "module": "InnerModelTargets",
+      "path": "InnerModelTargets.lean",
+      "sha256": "8213a1963d20ae8fb9c2432308fca5edd8161ccc44989571cdead92e50e52edf",
+      "lines": 26
+    },
+    {
+      "module": "ContinuousClasses",
+      "path": "ContinuousClasses.lean",
+      "sha256": "428da0082d72cbb93a2acc5e0d45d0c2593b141d4ba6a25aaf8e3c07293a9a04",
+      "lines": 129
+    },
+    {
+      "module": "ModelAlgebra",
+      "path": "ModelAlgebra.lean",
+      "sha256": "e5fa1200da5bf40420fb838ae6fbbe76e857a3a475febb0cdeb62303a5a5f4aa",
+      "lines": 100
+    },
+    {
+      "module": "ClassSums",
+      "path": "ClassSums.lean",
+      "sha256": "a9aca49cdf283fafcf458ff955be03c6b2d5b37855494559cc52efded1123baf",
+      "lines": 172
+    },
+    {
+      "module": "ModelData",
+      "path": "ModelData.lean",
+      "sha256": "e5c8b9ff3858a4fa9d0cb7961e91ffdb5a56c56cc5493100fe2a28241fd009f4",
+      "lines": 137
+    },
+    {
+      "module": "GammaApprox",
+      "path": "GammaApprox.lean",
+      "sha256": "2f94d71063bf00c46325023a6ab3000919d09a86a5dd863a3ee88de2ab019f7f",
+      "lines": 105
+    },
+    {
+      "module": "GammaCells",
+      "path": "GammaCells.lean",
+      "sha256": "5f9cdc1157016b409d07a08aa25a0c6efc47554f3c7832010be6c0341be987d9",
+      "lines": 2
+    },
+    {
+      "module": "Continuity",
+      "path": "Continuity.lean",
+      "sha256": "a77decb751623e84a82c4233fcb2501a2c643fc023afff46cc20c062a63da29e",
+      "lines": 92
+    },
+    {
+      "module": "UniformClasses",
+      "path": "UniformClasses.lean",
+      "sha256": "f9b98f77d8230c02493fdc70e025b85edbfdc9479256491482fd2c66f567effc",
+      "lines": 77
+    },
+    {
+      "module": "InnerSum",
+      "path": "InnerSum.lean",
+      "sha256": "1c5dc048e44b67697b9f9fbc7f0b7d719800d64679b1638a962c3f497c36ac44",
+      "lines": 133
+    },
+    {
+      "module": "TransferStatement",
+      "path": "TransferStatement.lean",
+      "sha256": "78d1401d7f9d2a6c85944c779eea66bcb49dce50f036fd6e4610ee9fb9000483",
+      "lines": 11
+    },
+    {
+      "module": "Transfer",
+      "path": "Transfer.lean",
+      "sha256": "89576e19aaa36c3ddc27b37410c6ee52b80042af24254cdfb194e7fe16cdef72",
+      "lines": 129
+    },
+    {
+      "module": "PriorPrime",
+      "path": "PriorPrime.lean",
+      "sha256": "fccb0d299e3ccdb5a671fe4ffe0aa36026d73246ebda6a3b7b12d798bfd742db",
+      "lines": 446
+    },
+    {
+      "module": "BInnerLimitFinish",
+      "path": "BInnerLimitFinish.lean",
+      "sha256": "47c7b55a899d13ed248ba65277b5e19016238551d4cc5c923905f4ffe2cc54b2",
+      "lines": 13
+    },
+    {
+      "module": "Integrability",
+      "path": "Integrability.lean",
+      "sha256": "6c11004e997c98070d0d334416f13614bf12dfeaab50bc38aa302263e9a92d0f",
+      "lines": 64
+    },
+    {
+      "module": "Bounds",
+      "path": "Bounds.lean",
+      "sha256": "d35611489c90522e62dc1970778918a04cf12b29d29b3fa8379b4d9f32f6fa07",
+      "lines": 120
+    },
+    {
+      "module": "Inversion",
+      "path": "Inversion.lean",
+      "sha256": "462ccafa377957e4e7cc9b67cab62b6a464c944cbd23f833e3f8968c83d8b555",
+      "lines": 56
+    },
+    {
+      "module": "Discontinuities",
+      "path": "Discontinuities.lean",
+      "sha256": "308fd9520974f00e9a973f6acb728bedc59bad0b1550c4cee026b5c63f2df555",
+      "lines": 88
+    },
+    {
+      "module": "Completion",
+      "path": "Completion.lean",
+      "sha256": "adfe0016ab5a996e28134819b33e71539b6541cfc75c2fcde98f7cec6a1791d8",
+      "lines": 20
+    },
+    {
+      "module": "OuterSum",
+      "path": "OuterSum.lean",
+      "sha256": "0baf1e44498c7d2cf71f51a425c1877d0a9cc8e64b7d40d92838d3d0159413f3",
+      "lines": 132
+    },
+    {
+      "module": "FinalLocal",
+      "path": "FinalLocal.lean",
+      "sha256": "be5b4824be5522d21422e055ad5c901dc332bf07fa39416b0520d4a45fa3ce7d",
+      "lines": 61
+    },
+    {
+      "module": "AboveK",
+      "path": "AboveK.lean",
+      "sha256": "f9210b2e1c3286b058f7b142b3f4a5ddcd04d3bb3e4b6e7fc39cc4dcc2aca6f5",
+      "lines": 139
+    },
+    {
+      "module": "OuterLocal",
+      "path": "OuterLocal.lean",
+      "sha256": "02853cec505910f6f57eeda60cbb474b02bfe53cf5a0348d7916e98424d7482b",
+      "lines": 778
+    },
+    {
+      "module": "ClassData",
+      "path": "ClassData.lean",
+      "sha256": "0cea3c0c2f1f322a15e722c2294cc22bb10c0a06838e8d9237339cf3be483464",
+      "lines": 97
+    },
+    {
+      "module": "ClassSum",
+      "path": "ClassSum.lean",
+      "sha256": "620d2c06c0d150b481641e2434c741c9265074d327b562c0c0a7f9edd17e49bc",
+      "lines": 172
+    },
+    {
+      "module": "Regularity",
+      "path": "Regularity.lean",
+      "sha256": "153cd9af86bec2c5a1920221aebf9da5e48e2f1b36b1900dea4efab769dff6ae",
+      "lines": 130
+    },
+    {
+      "module": "Capstone",
+      "path": "Capstone.lean",
+      "sha256": "ecada6606e8f05491658450646cd0ac8ddb8789cb5e22fca604102e1bbf4c6c0",
+      "lines": 78
+    },
+    {
+      "module": "SharpSplit",
+      "path": "SharpSplit.lean",
+      "sha256": "67d1f713123986d2070fa50e95b1178b61f5187dce349f377ee7372d793eeff9",
+      "lines": 92
+    },
+    {
+      "module": "BridgeTargets",
+      "path": "BridgeTargets.lean",
+      "sha256": "020b41792723b1c94334c8f54f3d6113167deee24ae69b923598499b3cf3d4a4",
+      "lines": 89
+    },
+    {
+      "module": "Asymptotic",
+      "path": "Asymptotic.lean",
+      "sha256": "d0ff9415ebfc13c7023351428a9b66ff329a1d9012d6940ed3fe8424eacacb4e",
+      "lines": 287
+    },
+    {
+      "module": "FiniteProof",
+      "path": "FiniteProof.lean",
+      "sha256": "99188b0501af97542d6f84ea0b9359c687edbcbd0689667be11cf8f83c859450",
+      "lines": 252
+    },
+    {
+      "module": "Assembly",
+      "path": "Assembly.lean",
+      "sha256": "a43e370af202e72e7fb672ef014cc8454f8b3d55f45c084e57db90a45bf2ba7f",
+      "lines": 85
+    }
+  ],
+  "local_files": 282,
+  "local_lines": 69392,
+  "mathematical_source_changes": 0,
+  "old_fine_energy_chunks": 0,
+  "warm_products_copied": 2256
+}
