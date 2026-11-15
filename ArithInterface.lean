@@ -28,7 +28,7 @@ def NormalizationStatement : Prop := CCompact.NormalizationStatement
 /-- CONJECTURE: exact real-series and complex-zeta correspondence. -/
 def ZetaIdentificationStatement : Prop := CCompact.ZetaIdentificationStatement
 
-/-- CONJECTURE: exact actual normalizer limit at fixed M=400. -/
+/-- CONJECTURE: exact actual normalizer limit at fixed M=1000000. -/
 def NormalizerLimitStatement : Prop := CCompact.NormalizerLimitStatement
 
 /-- CONJECTURE: exact one-sided normalizer growth consequence. -/

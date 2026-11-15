@@ -24,10 +24,10 @@ noncomputable section
 def F (n : ℕ) : ℚ[X] := AperyS.FS 5 6 (40 * n) (3 * n) (37 * n)
 def K (n : ℕ) : ℝ := ((40 * n : ℕ) : ℝ)
 def m (n : ℕ) : ℚ :=
-  AperyS.AssemblyTarget.normalizerSharp 5 6 (40 * n) (3 * n) 400
-    (Mathathon.P108.RangeBridgeTarget.explicitAllocation 5 6 (40 * n) (3 * n) 400)
-def A : ℝ := Mathathon.P108.InnerExplicitTarget.arithmeticPackage 5 6 400
-def u : ℝ := -2678491 / 2000000
+  AperyS.AssemblyTarget.normalizerSharp 5 6 (40 * n) (3 * n) 1000000
+    (Mathathon.P108.RangeBridgeTarget.explicitAllocation 5 6 (40 * n) (3 * n) 1000000)
+def A : ℝ := Mathathon.P108.InnerExplicitTarget.arithmeticPackage 5 6 1000000
+def u : ℝ := -2650371 / 2000000
 def ξ : ℝ := BAnalyticPoles.zetaS 5
 
 /-- CONJECTURE: literal upstream Main.lean:26 conclusion, including its real witness. -/
@@ -60,7 +60,7 @@ def NormalizationStatement : Prop :=
   (∀ n : ℕ, 0 < m n) ∧ ∀ n : ℕ, 1 ≤ n →
     ∃ Q : ℤ[X], Q.map (Int.castRingHom ℚ) = C (m n) * F n
 
-/-- CONJECTURE: E432 specialized at the fixed cutoff M=400. -/
+/-- CONJECTURE: E432 specialized at the fixed cutoff M=1000000. -/
 def NormalizerLimitStatement : Prop :=
   Tendsto (fun n : ℕ => Real.log (m n : ℝ) / K n ^ 2) atTop (𝓝 A)
 
@@ -70,26 +70,26 @@ def NormalizerGrowthStatement : Prop :=
     Real.log (m n : ℝ) ≤ (A + ε) * K n ^ 2
 
 /-- CONJECTURE: analytic leaf owned by U49/E244, using the unchanged 16-arc measure. -/
-def LocalFieldStatement : Prop := U48.LocalFieldStatement (-1323 / 200)
+def LocalFieldStatement : Prop := U48.LocalFieldStatement (-32999 / 5000)
 
 /-- CONJECTURE: exact regularized field statement consumed by the energy proof. -/
-def EnhancedFieldStatement : Prop := U48.EnhancedFieldStatement (-1323 / 200)
+def EnhancedFieldStatement : Prop := U48.EnhancedFieldStatement (-32999 / 5000)
 
 /-- CONJECTURE: explicit tail side condition, not an unstated numerical assumption. -/
-def TailThresholdStatement : Prop := Apery.M0 ≤ (-1323 / 200 : ℝ)
+def TailThresholdStatement : Prop := Apery.M0 ≤ (-32999 / 5000 : ℝ)
 
 /-- CONJECTURE: missing local-to-global regularized link; lane U51/E246 owns it. -/
 def EnhancedTransportStatement : Prop :=
   LocalFieldStatement → TailThresholdStatement → EnhancedFieldStatement
 
 /-- CONJECTURE: U51/E246 configuration transport on the original fixed measure. -/
-def ConfigurationTransportStatement : Prop := U48.ConfigurationTransportGoal (-1323 / 200)
+def ConfigurationTransportStatement : Prop := U48.ConfigurationTransportGoal (-32999 / 5000)
 
 /-- CONJECTURE: exact scalar budget; lane U51/E246 owns its transport. -/
-def ScalarBudgetStatement : Prop := U48.ScalarBudgetStatement (-1323 / 200) u
+def ScalarBudgetStatement : Prop := U48.ScalarBudgetStatement (-32999 / 5000) u
 
 /-- CONJECTURE: parameterized finite bound; its actual consuming proof is required. -/
-def RealBoundTransportStatement : Prop := U48.RealBoundTransportGoal (-1323 / 200) u
+def RealBoundTransportStatement : Prop := U48.RealBoundTransportGoal (-32999 / 5000) u
 
 /-- CONJECTURE: only the s=5 specialization is consumed in this project. -/
 def FiniteRealBoundStatement : Prop :=
@@ -105,10 +105,10 @@ def AnalyticLeadingStatement : Prop :=
     0 < aeval ξ (F n) ∧ Real.log (aeval ξ (F n)) ≤ (u + ε) * K n ^ 2
 
 /-- CONJECTURE: closing theorem owned by U50/E245, on the bridge's own object. -/
-def ClosingStatement : Prop := Mathathon.P108.thetaPkg 5 6 (3 / 40) 400 u < 0
+def ClosingStatement : Prop := Mathathon.P108.thetaPkg 5 6 (3 / 40) 1000000 u < 0
 
 /-- CONJECTURE: explicit algebraic link between the limit and the closing object. -/
-def MarginIdentityStatement : Prop := A + u = Mathathon.P108.thetaPkg 5 6 (3 / 40) 400 u
+def MarginIdentityStatement : Prop := A + u = Mathathon.P108.thetaPkg 5 6 (3 / 40) 1000000 u
 
 /-- CONJECTURE: normalized integer polynomials with positive Gaussian decay.
 Adapted from upstream Apery/MainEstimate.lean:67-73, retaining the actual family. -/

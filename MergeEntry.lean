@@ -1,4 +1,5 @@
-import CompactEntry
+import SplitEntry
+import ClosingEntry
 import BFullPositive
 import ShortArithmeticFloor
 import AllM

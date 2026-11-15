@@ -1,5 +1,5 @@
 # Lean check
-Run 2026-11-14T21:12-08:00 on `MergeEntry` in `/Users/mathathon/code/mathathon/problems/108-zeta-odd-autopsy/evidence/L-merge/project`.
+Run 2026-11-14T22:21-08:00 on `MergeEntry` in `/Users/mathathon/code/mathathon/problems/108-zeta-odd-autopsy/evidence/L-merge/project`.
 **Overall: PASS**
 
 
@@ -45,11 +45,13 @@ Run 2026-11-14T21:12-08:00 on `MergeEntry` in `/Users/mathathon/code/mathathon/p
 | `Mathathon.P108.Skip.Delta_eq` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `CCompactWithClosing.irrational_five` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `CCompactCurrent.irrational_five` | **PASS** | propext, Classical.choice, Quot.sound |  |
-| `CCompactZeta5.irrational_five` | **PASS** | propext, Classical.choice, Quot.sound |  |
-| `CCompactZeta5.finite_real_bound` | **PASS** | propext, Classical.choice, Quot.sound |  |
-| `U49.local_field_certificate` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CCertificateSplit.irrational_five` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CCertificateSplit.finite_real_bound` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CSplitField.local_field_certificate` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `BSymbolicCriterion.criterion_standard` | **PASS** | propext, Classical.choice, Quot.sound |  |
 | `LMergeCompactAnalytic.finite_real_bound` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `CCertificateSplit.closing` | **PASS** | propext, Classical.choice, Quot.sound |  |
+| `SplitClosing.closing_neg` | **PASS** | propext, Classical.choice, Quot.sound |  |
 
 ## Statements (a human must compare each with the claim in the report)
 
@@ -251,17 +253,17 @@ CCompactWithClosing.irrational_five : CCompact.FiniteRealBoundStatement → ∃ 
 CCompactCurrent.irrational_five : CCompact.FiniteRealBoundStatement →
   CCompact.ClosingStatement → ∃ x, Irrational x ∧ riemannZeta 5 = ↑x
 ```
-### `CCompactZeta5.irrational_five`
+### `CCertificateSplit.irrational_five`
 ```lean
-CCompactZeta5.irrational_five : ∃ x, Irrational x ∧ riemannZeta 5 = ↑x
+CCertificateSplit.irrational_five : ∃ x, Irrational x ∧ riemannZeta 5 = ↑x
 ```
-### `CCompactZeta5.finite_real_bound`
+### `CCertificateSplit.finite_real_bound`
 ```lean
-CCompactZeta5.finite_real_bound : CCompact.FiniteRealBoundStatement
+CCertificateSplit.finite_real_bound : CCompact.FiniteRealBoundStatement
 ```
-### `U49.local_field_certificate`
+### `CSplitField.local_field_certificate`
 ```lean
-U49.local_field_certificate : ∀ (t : ℝ), 0 < t → t ≤ 2 → 2 * Apery.Uρ t - Apery.Vfield t ≤ -1323 / 200
+CSplitField.local_field_certificate : U48.LocalFieldStatement (-32999 / 5000)
 ```
 ### `BSymbolicCriterion.criterion_standard`
 ```lean
@@ -279,8 +281,16 @@ LMergeCompactAnalytic.finite_real_bound : ∀ (s n : ℕ),
     1 ≤ n →
       0 < (Polynomial.aeval (BAnalyticPoles.zetaS s)) (AperyS.FS s 6 (40 * n) (3 * n) (37 * n)) ∧
         Real.log ((Polynomial.aeval (BAnalyticPoles.zetaS s)) (AperyS.FS s 6 (40 * n) (3 * n) (37 * n))) ≤
-          -2678491 / 2000000 * ↑(40 * n) ^ 2 + (↑s + 23) * ↑(37 * n) * Real.log ↑(40 * n) +
+          -2650371 / 2000000 * ↑(40 * n) ^ 2 + (↑s + 23) * ↑(37 * n) * Real.log ↑(40 * n) +
             (12 * Real.log 2 + 23 + Real.log (BAnalyticIntegral.C s (2 * Real.pi))) * ↑(37 * n)
+```
+### `CCertificateSplit.closing`
+```lean
+CCertificateSplit.closing : CCompact.ClosingStatement
+```
+### `SplitClosing.closing_neg`
+```lean
+SplitClosing.closing_neg : Mathathon.P108.thetaPkg 5 6 (3 / 40) 1000000 (-2650371 / 2000000) < 0
 ```
 
 ## Source scan (warnings)

@@ -42,12 +42,12 @@ The normalizer and allocation are exactly those in the lane B E432 limit. -/
 theorem normalization : NormalizationStatement := by
   constructor
   · intro n
-    exact AperyS.AssemblyTarget.normalizerSharp_pos 5 6 (40 * n) (3 * n) 400
-      (Mathathon.P108.RangeBridgeTarget.explicitAllocation 5 6 (40 * n) (3 * n) 400)
+    exact AperyS.AssemblyTarget.normalizerSharp_pos 5 6 (40 * n) (3 * n) 1000000
+      (Mathathon.P108.RangeBridgeTarget.explicitAllocation 5 6 (40 * n) (3 * n) 1000000)
   · intro n hn
     obtain ⟨hNK, hα, hbudget, hshape, hh⟩ := arithmetic_side_conditions.2 n hn
-    have h := AperyS.AssemblyTarget.normalization_sharp 5 6 (40 * n) (3 * n) 400
-      (Mathathon.P108.RangeBridgeTarget.explicitAllocation 5 6 (40 * n) (3 * n) 400)
+    have h := AperyS.AssemblyTarget.normalization_sharp 5 6 (40 * n) (3 * n) 1000000
+      (Mathathon.P108.RangeBridgeTarget.explicitAllocation 5 6 (40 * n) (3 * n) 1000000)
       (by norm_num) (by norm_num) (by norm_num) hNK hα hbudget hshape
     simpa only [CCompact.m, CCompact.F, hh] using h
 
@@ -62,7 +62,7 @@ theorem zeta_identification : ZetaIdentificationStatement := by
 
 /-- PROOF-DRAFT: literal E432 Final.lean:28-29 specialization, no limit premise. -/
 theorem normalizer_limit : NormalizerLimitStatement :=
-  BFullBridge.explicit_normalizer_limit_statement 5 6 400
+  BFullBridge.explicit_normalizer_limit_statement 5 6 1000000
     arithmetic_side_conditions.1 (by norm_num)
 
 /-- PROOF-DRAFT: elementary one-sided consequence of the actual normalizer limit. -/
@@ -81,7 +81,7 @@ theorem normalizer_growth : NormalizerGrowthStatement := by
 
 /-- PROOF-DRAFT: unfold lane B's arithmeticPackage and thetaPkg; energy enters additively. -/
 theorem margin_identity : MarginIdentityStatement := by
-  change CCompact.A + CCompact.u = Mathathon.P108.thetaPkg 5 6 (3 / 40) 400 CCompact.u
+  change CCompact.A + CCompact.u = Mathathon.P108.thetaPkg 5 6 (3 / 40) 1000000 CCompact.u
   unfold CCompact.A Mathathon.P108.InnerExplicitTarget.arithmeticPackage Mathathon.P108.thetaPkg
   ring
 

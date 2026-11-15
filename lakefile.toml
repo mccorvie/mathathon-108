@@ -24,6 +24,7 @@ rev = "127b50e33f6033e2147921167a117af96d9ba4ea"
 
 
 
+
 [[lean_lib]]
 name = "AboveK"
 
@@ -127,6 +128,12 @@ name = "CAssembly"
 name = "Capstone"
 
 [[lean_lib]]
+name = "CellKernel"
+
+[[lean_lib]]
+name = "CellValidation"
+
+[[lean_lib]]
 name = "Cells"
 
 [[lean_lib]]
@@ -145,13 +152,16 @@ name = "ClassSums"
 name = "Classes"
 
 [[lean_lib]]
+name = "Closing"
+
+[[lean_lib]]
 name = "ClosingEntry"
 
 [[lean_lib]]
-name = "CompactClosingLite"
+name = "CompactAnalyticBound"
 
 [[lean_lib]]
-name = "CompactEntry"
+name = "CompactClosingLite"
 
 [[lean_lib]]
 name = "CompactTransports"
@@ -175,10 +185,7 @@ name = "CostBounds"
 name = "CriterionStatement"
 
 [[lean_lib]]
-name = "Critical"
-
-[[lean_lib]]
-name = "Data"
+name = "DataRows"
 
 [[lean_lib]]
 name = "DensityScout"
@@ -205,7 +212,19 @@ name = "ExtendedPotential"
 name = "FieldAverage"
 
 [[lean_lib]]
+name = "FieldCertificates"
+
+[[lean_lib]]
+name = "FieldCheck"
+
+[[lean_lib]]
 name = "FieldCoercivity"
+
+[[lean_lib]]
+name = "FieldData"
+
+[[lean_lib]]
+name = "FieldLogic"
 
 [[lean_lib]]
 name = "Final"
@@ -277,9 +296,6 @@ name = "IntegralWitness"
 name = "Interface"
 
 [[lean_lib]]
-name = "Intervals"
-
-[[lean_lib]]
 name = "Inversion"
 
 [[lean_lib]]
@@ -290,9 +306,6 @@ name = "LeadingInstance"
 
 [[lean_lib]]
 name = "LeanWitness"
-
-[[lean_lib]]
-name = "LocalField"
 
 [[lean_lib]]
 name = "LocalMass"
@@ -316,9 +329,6 @@ name = "MergeEntry"
 name = "MeshCounts"
 
 [[lean_lib]]
-name = "Mid"
-
-[[lean_lib]]
 name = "ModelAlgebra"
 
 [[lean_lib]]
@@ -329,6 +339,15 @@ name = "NextRows"
 
 [[lean_lib]]
 name = "NumericBase"
+
+[[lean_lib]]
+name = "NumericCertificates"
+
+[[lean_lib]]
+name = "NumericData"
+
+[[lean_lib]]
+name = "NumericProof"
 
 [[lean_lib]]
 name = "OuterLocal"
@@ -358,9 +377,6 @@ name = "PhaseErrors"
 name = "PhiGamma"
 
 [[lean_lib]]
-name = "Points"
-
-[[lean_lib]]
 name = "PoleProof"
 
 [[lean_lib]]
@@ -368,6 +384,9 @@ name = "PoleTargets"
 
 [[lean_lib]]
 name = "PositiveEnvelope"
+
+[[lean_lib]]
+name = "Primitive"
 
 [[lean_lib]]
 name = "PriorPrime"
@@ -409,6 +428,9 @@ name = "RealTransport"
 name = "Regularity"
 
 [[lean_lib]]
+name = "RowSoundness"
+
+[[lean_lib]]
 name = "Scalar"
 
 [[lean_lib]]
@@ -419,6 +441,21 @@ name = "SharpSplit"
 
 [[lean_lib]]
 name = "ShortArithmeticFloor"
+
+[[lean_lib]]
+name = "SplitAnalytic"
+
+[[lean_lib]]
+name = "SplitEntry"
+
+[[lean_lib]]
+name = "SplitField"
+
+[[lean_lib]]
+name = "SplitFieldCore"
+
+[[lean_lib]]
+name = "SplitTail"
 
 [[lean_lib]]
 name = "Statement"
@@ -439,7 +476,13 @@ name = "UArcsinePairs"
 name = "UFiniteEnergy"
 
 [[lean_lib]]
+name = "UValidation"
+
+[[lean_lib]]
 name = "UniformClasses"
+
+[[lean_lib]]
+name = "VValidation"
 
 [[lean_lib]]
 name = "Witness"
@@ -452,6 +495,3 @@ name = "ZetaBridge"
 
 [[lean_lib]]
 name = "ZetaIdentification"
-
-[[lean_lib]]
-name = "CompactAnalyticBound"
