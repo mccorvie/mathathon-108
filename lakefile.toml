@@ -1,5 +1,5 @@
 name = "Unified108"
-defaultTargets = ["CompactEntry"]
+defaultTargets = ["MergeEntry"]
 [leanOptions]
 autoImplicit = false
 relaxedAutoImplicit = false
@@ -9,7 +9,7 @@ maxSynthPendingDepth = 3
 [[require]]
 name = "mathlib"
 scope = "leanprover-community"
-git = "https://github.com/leanprover-community/mathlib4.git"
+git = "https://github.com/leanprover-community/mathlib4"
 rev = "v4.35.0"
 
 [[require]]
@@ -23,8 +23,15 @@ rev = "127b50e33f6033e2147921167a117af96d9ba4ea"
 
 
 
+
 [[lean_lib]]
 name = "AboveK"
+
+[[lean_lib]]
+name = "AffineDensity"
+
+[[lean_lib]]
+name = "AllM"
 
 [[lean_lib]]
 name = "Allocation"
@@ -34,6 +41,15 @@ name = "AnalyticInterface"
 
 [[lean_lib]]
 name = "Apery"
+
+[[lean_lib]]
+name = "ArcBridge"
+
+[[lean_lib]]
+name = "ArcMeasure"
+
+[[lean_lib]]
+name = "ArcMeasureDefs"
 
 [[lean_lib]]
 name = "ArithInterface"
@@ -57,6 +73,9 @@ name = "BAnalyticIntegral"
 name = "BAnalyticMoments"
 
 [[lean_lib]]
+name = "BFullPositive"
+
+[[lean_lib]]
 name = "BInnerLimitFinish"
 
 [[lean_lib]]
@@ -66,7 +85,31 @@ name = "BInnerStatement"
 name = "BRealStatement"
 
 [[lean_lib]]
+name = "BSymbolicAssembly"
+
+[[lean_lib]]
+name = "BorelAEField"
+
+[[lean_lib]]
+name = "BorelEnergy"
+
+[[lean_lib]]
+name = "BorelEnergyFloor"
+
+[[lean_lib]]
+name = "BorelPackageMargin"
+
+[[lean_lib]]
+name = "BorelRegularity"
+
+[[lean_lib]]
+name = "BorelWeakDuality"
+
+[[lean_lib]]
 name = "Bose"
+
+[[lean_lib]]
+name = "BoundedFieldSupremum"
 
 [[lean_lib]]
 name = "Bounds"
@@ -76,6 +119,9 @@ name = "BridgeTargets"
 
 [[lean_lib]]
 name = "CArithProofs"
+
+[[lean_lib]]
+name = "CAssembly"
 
 [[lean_lib]]
 name = "Capstone"
@@ -126,16 +172,40 @@ name = "ContinuousClasses"
 name = "CostBounds"
 
 [[lean_lib]]
+name = "CriterionStatement"
+
+[[lean_lib]]
 name = "Critical"
 
 [[lean_lib]]
 name = "Data"
 
 [[lean_lib]]
+name = "DensityScout"
+
+[[lean_lib]]
+name = "DensityTransport"
+
+[[lean_lib]]
 name = "Dictionary"
 
 [[lean_lib]]
 name = "Discontinuities"
+
+[[lean_lib]]
+name = "ExtendedFieldMargin"
+
+[[lean_lib]]
+name = "ExtendedOptimization"
+
+[[lean_lib]]
+name = "ExtendedPotential"
+
+[[lean_lib]]
+name = "FieldAverage"
+
+[[lean_lib]]
+name = "FieldCoercivity"
 
 [[lean_lib]]
 name = "Final"
@@ -147,7 +217,16 @@ name = "FinalLocal"
 name = "Finish"
 
 [[lean_lib]]
+name = "FiniteComparison"
+
+[[lean_lib]]
+name = "FiniteMatrix"
+
+[[lean_lib]]
 name = "FiniteProof"
+
+[[lean_lib]]
+name = "Folding"
 
 [[lean_lib]]
 name = "Functional"
@@ -160,6 +239,12 @@ name = "GammaApprox"
 
 [[lean_lib]]
 name = "GammaCells"
+
+[[lean_lib]]
+name = "GeneralArith"
+
+[[lean_lib]]
+name = "GeneralDegree"
 
 [[lean_lib]]
 name = "Gram"
@@ -186,6 +271,9 @@ name = "InnerWeight"
 name = "Integrability"
 
 [[lean_lib]]
+name = "IntegralWitness"
+
+[[lean_lib]]
 name = "Interface"
 
 [[lean_lib]]
@@ -201,13 +289,28 @@ name = "Kernel"
 name = "LeadingInstance"
 
 [[lean_lib]]
+name = "LeanWitness"
+
+[[lean_lib]]
 name = "LocalField"
+
+[[lean_lib]]
+name = "LocalMass"
+
+[[lean_lib]]
+name = "LogPositivePart"
+
+[[lean_lib]]
+name = "Margin"
 
 [[lean_lib]]
 name = "MarginPieces"
 
 [[lean_lib]]
 name = "Mathathon"
+
+[[lean_lib]]
+name = "MergeEntry"
 
 [[lean_lib]]
 name = "MeshCounts"
@@ -261,6 +364,12 @@ name = "Points"
 name = "PoleProof"
 
 [[lean_lib]]
+name = "PoleTargets"
+
+[[lean_lib]]
+name = "PositiveEnvelope"
+
+[[lean_lib]]
 name = "PriorPrime"
 
 [[lean_lib]]
@@ -288,6 +397,9 @@ name = "RealIntegral"
 name = "RealPointwise"
 
 [[lean_lib]]
+name = "RealPositiveLog"
+
+[[lean_lib]]
 name = "RealScalar"
 
 [[lean_lib]]
@@ -306,6 +418,9 @@ name = "Scaling"
 name = "SharpSplit"
 
 [[lean_lib]]
+name = "ShortArithmeticFloor"
+
+[[lean_lib]]
 name = "Statement"
 
 [[lean_lib]]
@@ -318,10 +433,25 @@ name = "TransferStatement"
 name = "TransportGoals"
 
 [[lean_lib]]
+name = "UArcsinePairs"
+
+[[lean_lib]]
+name = "UFiniteEnergy"
+
+[[lean_lib]]
 name = "UniformClasses"
+
+[[lean_lib]]
+name = "Witness"
 
 [[lean_lib]]
 name = "Zeta5S"
 
 [[lean_lib]]
+name = "ZetaBridge"
+
+[[lean_lib]]
 name = "ZetaIdentification"
+
+[[lean_lib]]
+name = "CompactAnalyticBound"

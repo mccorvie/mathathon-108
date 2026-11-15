@@ -1,0 +1,351 @@
+import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+import Mathlib.Algebra.Polynomial.Div
+import Mathlib.NumberTheory.Bernoulli
+import Mathlib.NumberTheory.Padics.PadicVal.Basic
+import Mathlib.Tactic.NormNum.Prime
+import Mathlib.Tactic.IntervalCases
+import Mathathon.P108.LaiSkipData
+import Mathathon.P108.DetG0
+import Mathathon.P108.DeltaEq.Core
+
+/-!
+# #108: Lai's ζ(7..49) skip line fails at K = 40 (s = 11, p = 17)
+
+EVENT WORK (#108, formalizer, Claude Opus 5.5, Fri Nov 13 2026, started 22:24 PT).
+
+Formalizes evidence E18 of `problems/108-zeta-odd-autopsy/dossier.md` (witness W4 of
+`../witness/README.md`, advocate:simple-witnesses).
+
+**Lai's line.** laichunwing/Irrationality-of-Zeta7-to-Zeta49@e05d19ba, `05_master_table.txt`
+l. 39-47 (`certified_I_main`): with `N_val = (3K) // 40`, every outer prime `K/3 < p ≤ K` with
+`s * N_val > 2p - 2` is skipped (`continue`), i.e. it contributes `L_p = 0`. That is valid only if
+`v_p(F_K) ≥ 0`, i.e. if every coefficient of `F_K` is `p`-integral.
+
+**Objects** (as in `../witness/hankel.py`; Lai, ai.vixra 2609.0080v1, Def. 4.2, 5.1, 5.2, eq. (29)):
+`K = 40n`, `N = 3n`, `h = 37n`, `D_m(t) = ∏_{j=1}^m (t + j²)`,
+`G_K(X)_{ij} = μ_X(D_N(t)^ν t^{i+j} / D_K(t))` (`0 ≤ i, j < h`), `Δ_K = det G_K ∈ ℚ[X]`,
+`S_K = (K!)^{2h} 4^{h-1} / ((N!)^{2νh} ∏_{i=1}^{h-1} ((2i)!)²)`, `F_K = S_K Δ_K`, with the
+ζ(s)-functional `μ_X(t^e) = (-1)^e B_{2e+2} (2e+s)!/((2e+2)!(s-1)!)` and
+`μ_X(1/(t + k²)) = k^{s-1}(X - H_k^{(s)}) + 1/(2k) - 1/(s-1)`, extended linearly through
+`f/D_K = (f /ₘ D_K) + ∑_k c_k/(t + k²)`, `c_k = f(-k²)/D_K'(-k²)`.
+
+**Main result** (`F40_contentVal17`, LEAN-CONDITIONAL on `Delta_eq`): at `s = 11`, `ν = 2`, `n = 1`
+(`K = 40`), `v_17(content F_40) = -247`, i.e. every nonzero coefficient of `F_40` has 17-adic
+valuation `≥ -247` and one (the constant coefficient) has exactly `-247`. With `laiSkips_11_40`
+(Lai's test skips `p = 17` at `K = 40`, `11·3 = 33 > 32`) this refutes the skip at the smallest
+instance (`lai_skip_witness`). The refutation alone (`F40_not_integral_at_17`: not every
+coefficient of `F_40` is 17-integral) needs only the constant coefficient, `det_G40_zero`.
+
+**The two `sorry`s:** `Delta_eq`, the determinant identity `det G_40(X) = DeltaLit` for the explicit
+polynomial `DeltaLit` (coefficients in `LeanSkip/DeltaData.lean`, computed by
+`../witness/modular.py`: multimodular determinant, Hadamard bound, CRT), and its constant
+coefficient `det_G40_zero : det G_40(0) = coefQ 0`. Both COMPUTED (twice: `modular.py`, and
+`py/det_G0.py` from these definitions), not formal.
+EVENT WORK (lane L, Sat Nov 14, E325): both are now proved in Lean, `det_G40_zero` through
+`DetG0` and `Delta_eq` through `DeltaEq.Delta_eq'` (J2, `evidence/L-delta-eq-proof/`), so this
+file has no `sorry`. The text of this paragraph above predates that.
+Everything else (the reading of the 17-adic valuations off those coefficients, `v_17(S_40) = 24`,
+Lai's skip arithmetic) is proved, by `decide +kernel` (kernel reduction only) and Mathlib lemmas.
+-/
+
+namespace Mathathon.P108.Skip
+
+open Polynomial
+
+/-! ## The template objects (definitions only; the variable `t` is `Polynomial.X`) -/
+
+/-- `D_m(t) = ∏_{j=1}^{m} (t + j²)`. -/
+noncomputable def D (m : ℕ) : ℚ[X] := ∏ j ∈ Finset.Icc 1 m, (X + C ((j : ℚ) ^ 2))
+
+/-- `H_k^{(s)} = ∑_{v=1}^{k} 1/v^s`. -/
+def H (s k : ℕ) : ℚ := ∑ v ∈ Finset.Icc 1 k, 1 / (v : ℚ) ^ s
+
+/-- `μ_X(t^e) = (-1)^e B_{2e+2} (2e+s)! / ((2e+2)! (s-1)!)` (only even Bernoulli indices occur,
+so Mathlib's `bernoulli` convention for `B_1` is irrelevant). -/
+def muMono (s e : ℕ) : ℚ :=
+  (-1) ^ e * bernoulli (2 * e + 2) * ((2 * e + s).factorial : ℚ) /
+    (((2 * e + 2).factorial : ℚ) * ((s - 1).factorial : ℚ))
+
+/-- `μ_X(1/(t + k²)) = k^{s-1} (X - H_k^{(s)}) + 1/(2k) - 1/(s-1)`, a polynomial in `X`. -/
+noncomputable def muPole (s k : ℕ) : ℚ[X] :=
+  C ((k : ℚ) ^ (s - 1)) * (X - C (H s k)) + C (1 / (2 * (k : ℚ)) - 1 / ((s : ℚ) - 1))
+
+/-- `D_K'(-k²) = ∏_{j ∈ [1, K], j ≠ k} (j² - k²)`. -/
+def dD (K k : ℕ) : ℚ := ∏ j ∈ (Finset.Icc 1 K).erase k, ((j : ℚ) ^ 2 - (k : ℚ) ^ 2)
+
+/-- `μ_X(f(t) / D_K(t))`, by linearity over the decomposition
+`f/D_K = q + ∑_{k=1}^{K} c_k/(t + k²)` with `q = f /ₘ D_K` and `c_k = f(-k²)/D_K'(-k²)`:
+`μ_X(f/D_K) = ∑_e q_e μ_X(t^e) + ∑_k c_k μ_X(1/(t + k²))`. -/
+noncomputable def muX (s K : ℕ) (f : ℚ[X]) : ℚ[X] :=
+  C (∑ e ∈ Finset.range ((f /ₘ D K).natDegree + 1), (f /ₘ D K).coeff e * muMono s e) +
+    ∑ k ∈ Finset.Icc 1 K, C (f.eval (-((k : ℚ) ^ 2)) / dD K k) * muPole s k
+
+/-- `G_K(X)_{ij} = μ_X(D_N(t)^ν t^{i+j} / D_K(t))` for `0 ≤ i, j < h`, where `K = 40n`,
+`N = 3n`, `h = 37n`. -/
+noncomputable def G (s ν n : ℕ) : Matrix (Fin (37 * n)) (Fin (37 * n)) ℚ[X] :=
+  Matrix.of fun i j => muX s (40 * n) (D (3 * n) ^ ν * X ^ (i.val + j.val))
+
+/-- `Δ_K(X) = det G_K(X)`. -/
+noncomputable def Delta (s ν n : ℕ) : ℚ[X] := (G s ν n).det
+
+/-- `S_K = (K!)^{2h} 4^{h-1} / ((N!)^{2νh} ∏_{i=1}^{h-1} ((2i)!)²)`. -/
+def S (ν n : ℕ) : ℚ :=
+  ((40 * n).factorial : ℚ) ^ (2 * (37 * n)) * 4 ^ (37 * n - 1) /
+    (((3 * n).factorial : ℚ) ^ (2 * ν * (37 * n)) *
+      ∏ i ∈ Finset.Icc 1 (37 * n - 1), ((2 * i).factorial : ℚ) ^ 2)
+
+/-- `F_K(X) = S_K Δ_K(X)`. -/
+noncomputable def F (s ν n : ℕ) : ℚ[X] := C (S ν n) * Delta s ν n
+
+/-- `v_p(content f) = v` (Gauss valuation): `f ≠ 0`, every nonzero coefficient has `p`-adic
+valuation `≥ v`, and some nonzero coefficient has valuation exactly `v`. -/
+def HasContentVal (p : ℕ) (f : ℚ[X]) (v : ℤ) : Prop :=
+  f ≠ 0 ∧ (∀ i, f.coeff i ≠ 0 → v ≤ padicValRat p (f.coeff i)) ∧
+    ∃ i, f.coeff i ≠ 0 ∧ padicValRat p (f.coeff i) = v
+
+/-- Lai's skip test in Program 05 (`05_master_table.txt` l. 40, 46), verbatim:
+`N_val = (3K) // 40`, and the prime `p` is skipped iff `s * N_val > 2p - 2`. -/
+def laiSkips (s K p : ℕ) : Prop := 2 * p - 2 < s * (3 * K / 40)
+
+instance (s K p : ℕ) : Decidable (laiSkips s K p) := by unfold laiSkips; infer_instance
+
+instance fact_prime_17 : Fact (Nat.Prime 17) := ⟨by norm_num⟩
+
+/-! ## Lai's skip arithmetic (no sorry) -/
+
+/-- At `K = 40`, `s = 11` (so `N_val = 3`): `17` is an outer prime (`40/3 < 17 ≤ 40`), Lai's test
+skips it (`2·17 - 2 = 32 < 33 = 11·3`), and it is the only outer prime skipped. -/
+theorem laiSkips_11_40 : Nat.Prime 17 ∧ 40 / 3 < 17 ∧ 17 ≤ 40 ∧ laiSkips 11 40 17 ∧
+    ∀ p, Nat.Prime p → 40 / 3 < p → p ≤ 40 → laiSkips 11 40 p → p = 17 := by
+  refine ⟨by norm_num, by norm_num, by norm_num, by decide, ?_⟩
+  intro p hp h1 h2 h3
+  unfold laiSkips at h3
+  norm_num at h1 h3
+  have : p ≤ 17 := by omega
+  interval_cases p <;> first | rfl | (exfalso; norm_num at hp)
+
+/-- At Lai's `K = 4·10⁶` (`N_val = 300000`), for every `s ≥ 27` the test skips every prime
+`p ≤ K`, in particular every outer prime `K/3 < p ≤ K`. -/
+theorem laiSkips_all_of_ge_27 (s : ℕ) (hs : 27 ≤ s) (p : ℕ) (hp : p ≤ 4 * 10 ^ 6) :
+    laiSkips s (4 * 10 ^ 6) p := by
+  unfold laiSkips
+  norm_num
+  omega
+
+/-! ## Reading 17-adic valuations off explicit rationals (no sorry) -/
+
+/-- Kernel-checkable certificate for one rational `z/d`: `z ≠ 0`, `d ≠ 0`,
+`|z| = p^a m` with `p ∤ m`, `d = p^b m'` with `p ∤ m'`, and `v ≤ a - b`. -/
+def checkEntry (p : ℕ) (v : ℤ) : ℤ × ℕ × ℕ × ℕ → Bool
+  | (z, d, a, b) => z != 0 && d != 0 &&
+      z.natAbs == p ^ a * (z.natAbs / p ^ a) && (z.natAbs / p ^ a) % p != 0 &&
+      d == p ^ b * (d / p ^ b) && (d / p ^ b) % p != 0 && decide (v ≤ (a : ℤ) - b)
+
+theorem padicValNat_of_split {p : ℕ} [hp : Fact p.Prime] (n a m : ℕ)
+    (h1 : n = p ^ a * m) (h2 : m % p ≠ 0) : padicValNat p n = a := by
+  have hm : m ≠ 0 := by rintro rfl; simp at h2
+  subst h1
+  rw [padicValNat.mul (pow_ne_zero _ hp.out.ne_zero) hm, padicValNat.prime_pow,
+    padicValNat.eq_zero_of_not_dvd (fun h => h2 (Nat.mod_eq_zero_of_dvd h)), add_zero]
+
+theorem padicValRat_of_check {p : ℕ} [Fact p.Prime] {v : ℤ} {z : ℤ} {d a b : ℕ}
+    (h : checkEntry p v (z, d, a, b) = true) :
+    (z : ℚ) / d ≠ 0 ∧ padicValRat p ((z : ℚ) / d) = (a : ℤ) - b ∧ v ≤ (a : ℤ) - b := by
+  simp only [checkEntry, Bool.and_eq_true, bne_iff_ne, ne_eq, beq_iff_eq,
+    decide_eq_true_eq] at h
+  obtain ⟨⟨⟨⟨⟨⟨hz, hd⟩, ha1⟩, ha2⟩, hb1⟩, hb2⟩, hv⟩ := h
+  have hzq : (z : ℚ) ≠ 0 := by exact_mod_cast hz
+  have hdq : (d : ℚ) ≠ 0 := by exact_mod_cast hd
+  refine ⟨div_ne_zero hzq hdq, ?_, hv⟩
+  rw [padicValRat.div hzq hdq, padicValRat.of_int, padicValRat.of_nat, padicValInt,
+    padicValNat_of_split _ a _ ha1 ha2, padicValNat_of_split _ b _ hb1 hb2]
+
+/-! ## The explicit polynomial `DeltaLit` and its 17-adic content (no sorry) -/
+
+/-- The `i`-th coefficient `z/d` of `coeffData`, and `0` beyond it. -/
+def coefQ (i : ℕ) : ℚ :=
+  match coeffData[i]? with
+  | some (z, d, _, _) => (z : ℚ) / d
+  | none => 0
+
+/-- `DeltaLit(X) = ∑_{i<38} coefQ i · X^i`: the determinant as computed by `modular.py`. -/
+noncomputable def DeltaLit : ℚ[X] := ∑ i ∈ Finset.range 38, C (coefQ i) * X ^ i
+
+theorem coeffData_length : coeffData.length = 38 := by decide +kernel
+
+/-- All 38 coefficients pass the certificate check with `p = 17`, `v = -271`. -/
+theorem coeffData_check : coeffData.all (checkEntry 17 (-271)) = true := by decide +kernel
+
+/-- The constant coefficient has `(a, b) = (0, 271)`. -/
+theorem coeffData_zero_ab :
+    (coeffData[0]?).map (fun e => ((e.2.2.1 : ℤ) - e.2.2.2)) = some (-271) := by decide +kernel
+
+theorem coefQ_eq_zero (i : ℕ) (hi : 38 ≤ i) : coefQ i = 0 := by
+  have : coeffData[i]? = none := List.getElem?_eq_none (by rw [coeffData_length]; exact hi)
+  simp [coefQ, this]
+
+theorem coefQ_val (i : ℕ) (hi : i < 38) :
+    coefQ i ≠ 0 ∧ -271 ≤ padicValRat 17 (coefQ i) := by
+  have hl : i < coeffData.length := by rw [coeffData_length]; exact hi
+  have hmem : coeffData[i] ∈ coeffData := List.getElem_mem hl
+  rcases h : coeffData[i] with ⟨z, d, a, b⟩
+  rw [h] at hmem
+  have hc := List.all_eq_true.1 coeffData_check _ hmem
+  have hq : coefQ i = (z : ℚ) / d := by simp [coefQ, List.getElem?_eq_getElem hl, h]
+  obtain ⟨h1, h2, h3⟩ := padicValRat_of_check hc
+  rw [hq, h2]
+  exact ⟨h1, h3⟩
+
+theorem coefQ_zero_val : padicValRat 17 (coefQ 0) = -271 := by
+  have hl : 0 < coeffData.length := by rw [coeffData_length]; norm_num
+  have hab := coeffData_zero_ab
+  have hmem : coeffData[0] ∈ coeffData := List.getElem_mem hl
+  rcases h : coeffData[0] with ⟨z, d, a, b⟩
+  rw [h] at hmem
+  rw [List.getElem?_eq_getElem hl, h] at hab
+  simp only [Option.map_some, Option.some.injEq] at hab
+  have hc := List.all_eq_true.1 coeffData_check _ hmem
+  have hq : coefQ 0 = (z : ℚ) / d := by simp [coefQ, List.getElem?_eq_getElem hl, h]
+  obtain ⟨_, h2, _⟩ := padicValRat_of_check hc
+  rw [hq, h2, hab]
+
+theorem DeltaLit_coeff (n : ℕ) : DeltaLit.coeff n = coefQ n := by
+  simp only [DeltaLit, finsetSum_coeff, coeff_C_mul_X_pow]
+  rw [Finset.sum_ite_eq]
+  split_ifs with h
+  · rfl
+  · rw [coefQ_eq_zero]; simpa using h
+
+/-- `v_17(content DeltaLit) = -271`, attained at the constant coefficient. -/
+theorem DeltaLit_contentVal : HasContentVal 17 DeltaLit (-271) := by
+  have h0 := coefQ_val 0 (by norm_num)
+  refine ⟨?_, ?_, 0, ?_, ?_⟩
+  · intro h
+    have := congrArg (fun f => Polynomial.coeff f 0) h
+    simp only [DeltaLit_coeff, coeff_zero] at this
+    exact h0.1 this
+  · intro i hi
+    rw [DeltaLit_coeff] at hi ⊢
+    by_cases h : i < 38
+    · exact (coefQ_val i h).2
+    · exact absurd (coefQ_eq_zero i (by omega)) hi
+  · rw [DeltaLit_coeff]; exact h0.1
+  · rw [DeltaLit_coeff]; exact coefQ_zero_val
+
+/-! ## `v_17(S_40) = 24` (no sorry) -/
+
+/-- Numerator of `S_K` as a natural number. -/
+def SNum (n : ℕ) : ℕ := (40 * n).factorial ^ (2 * (37 * n)) * 4 ^ (37 * n - 1)
+
+/-- Denominator of `S_K` as a natural number. -/
+def SDen (ν n : ℕ) : ℕ :=
+  (3 * n).factorial ^ (2 * ν * (37 * n)) * ∏ i ∈ Finset.Icc 1 (37 * n - 1), (2 * i).factorial ^ 2
+
+theorem S_eq (ν n : ℕ) : S ν n = (SNum n : ℚ) / (SDen ν n : ℚ) := by
+  simp [S, SNum, SDen, Nat.cast_prod]
+
+theorem SNum_ne_zero (n : ℕ) : SNum n ≠ 0 := by
+  unfold SNum; positivity
+
+theorem SDen_ne_zero (ν n : ℕ) : SDen ν n ≠ 0 := by
+  unfold SDen
+  exact mul_ne_zero (pow_ne_zero _ (Nat.factorial_ne_zero _))
+    (Finset.prod_ne_zero_iff.2 fun i _ => pow_ne_zero _ (Nat.factorial_ne_zero _))
+
+theorem SNum_split : SNum 1 = 17 ^ 148 * (SNum 1 / 17 ^ 148) ∧ (SNum 1 / 17 ^ 148) % 17 ≠ 0 := by
+  decide +kernel
+
+theorem SDen_split :
+    SDen 2 1 = 17 ^ 124 * (SDen 2 1 / 17 ^ 124) ∧ (SDen 2 1 / 17 ^ 124) % 17 ≠ 0 := by
+  decide +kernel
+
+theorem S_ne_zero : S 2 1 ≠ 0 := by
+  rw [S_eq]
+  exact div_ne_zero (by exact_mod_cast SNum_ne_zero 1) (by exact_mod_cast SDen_ne_zero 2 1)
+
+/-- `v_17(S_40) = 74·v_17(40!) - 2·∑_{i=1}^{36} v_17((2i)!) = 148 - 124 = 24` (ν = 2). -/
+theorem S_val : padicValRat 17 (S 2 1) = 24 := by
+  rw [S_eq, padicValRat.div (by exact_mod_cast SNum_ne_zero 1) (by exact_mod_cast SDen_ne_zero 2 1),
+    padicValRat.of_nat, padicValRat.of_nat,
+    padicValNat_of_split _ 148 _ SNum_split.1 SNum_split.2,
+    padicValNat_of_split _ 124 _ SDen_split.1 SDen_split.2]
+  norm_num
+
+/-! ## The determinant identity and the main theorem -/
+
+/-- **The determinant identity** `Δ_40(X) = det G_40(X) = DeltaLit(X)` at `s = 11`, `ν = 2`
+(`K = 40`, a `37 × 37` matrix over `ℚ[X]` with affine entries). COMPUTED by
+`../witness/modular.py` (`run_variant.py 11 2 1`); proved in Lean by `DeltaEq.Delta_eq'`
+(lane L E325, J2's Hankel certificates at 38 points and interpolation). -/
+theorem Delta_eq : Delta 11 2 1 = DeltaLit := by
+  exact DeltaEq.Delta_eq'
+
+theorem HasContentVal.C_mul {p : ℕ} [Fact p.Prime] {f : ℚ[X]} {v : ℤ}
+    (hf : HasContentVal p f v) {c : ℚ} (hc : c ≠ 0) :
+    HasContentVal p (C c * f) (padicValRat p c + v) := by
+  obtain ⟨hf0, hlow, i, hi, hiv⟩ := hf
+  refine ⟨mul_ne_zero (C_ne_zero.2 hc) hf0, ?_, i, ?_, ?_⟩
+  · intro j hj
+    rw [coeff_C_mul] at hj ⊢
+    have hj' : f.coeff j ≠ 0 := right_ne_zero_of_mul hj
+    rw [padicValRat.mul hc hj']
+    linarith [hlow j hj']
+  · rw [coeff_C_mul]; exact mul_ne_zero hc hi
+  · rw [coeff_C_mul, padicValRat.mul hc hi, hiv]
+
+/-- `F_K = S_K Δ_K` (definitional unfolding, stated once so that no proof unfolds `S` on literals). -/
+theorem F_eq (s ν n : ℕ) : F s ν n = C (S ν n) * Delta s ν n := rfl
+
+/-- `v_17(content Δ_40) = -271` (LEAN-CONDITIONAL on `Delta_eq`). -/
+theorem Delta40_contentVal17 : HasContentVal 17 (Delta 11 2 1) (-271) := by
+  rw [Delta_eq]; exact DeltaLit_contentVal
+
+theorem val_sum : padicValRat 17 (S 2 1) + -271 = -247 := by rw [S_val]; norm_num
+
+/-- **E18 (LEAN-CONDITIONAL on `Delta_eq`).** `v_17(content F_40) = -247` for `s = 11`, `ν = 2`,
+`K = 40`: every nonzero coefficient of `F_40 = S_40 Δ_40` has 17-adic valuation `≥ -247`, and
+one has exactly `-247`. -/
+theorem F40_contentVal17 : HasContentVal 17 (F 11 2 1) (-247) := by
+  rw [F_eq, ← val_sum]
+  exact Delta40_contentVal17.C_mul S_ne_zero
+
+/-- The constant coefficient of `Δ_K(X)` is the determinant of the rational matrix `G_K(0)`. -/
+theorem Delta_coeff_zero (s ν n : ℕ) :
+    (Delta s ν n).coeff 0 = ((G s ν n).map (Polynomial.eval 0)).det := by
+  rw [coeff_zero_eq_eval_zero, Delta, ← Polynomial.coe_evalRingHom, RingHom.map_det]
+  rfl
+
+/-- **The numeric determinant** `det G_40(0) = coefQ 0` (s = 11, ν = 2; a `37 × 37` rational
+matrix). Implied by `Delta_eq` (with `Delta_coeff_zero`, `DeltaLit_coeff`), stated separately so
+that the refutation `F40_not_integral_at_17` needs only this one number. COMPUTED (constant
+coefficient of `../witness/modular.py`'s `Δ_40`; recomputed independently from these definitions
+by `py/det_G0.py`); **not proved in Lean** (sorry). -/
+theorem det_G40_zero : ((G 11 2 1).map (Polynomial.eval 0)).det = coefQ 0 := by
+  -- EVENT WORK (formalizer 4, Sat Nov 14): now proved, no sorry (the docstring above predates
+  -- this). `LeanSkip/DetG0.lean` proves the same statement for verbatim copies of `G` and
+  -- `coefQ`; the kernel checks here that the copies unfold to these definitions.
+  exact DetG0.det_G40_zero'
+
+/-- `v_17(F_40(0)) = -247` (LEAN-CONDITIONAL on `det_G40_zero` only). -/
+theorem F40_coeff_zero_val : padicValRat 17 ((F 11 2 1).coeff 0) = -247 := by
+  rw [F_eq, coeff_C_mul, Delta_coeff_zero, det_G40_zero,
+    padicValRat.mul S_ne_zero (coefQ_val 0 (by norm_num)).1, S_val, coefQ_zero_val]
+  norm_num
+
+/-- Lai's skip needs `v_17(F_40) ≥ 0`, i.e. every coefficient of `F_40` `17`-integral; false
+(LEAN-CONDITIONAL on `det_G40_zero` only). -/
+theorem F40_not_integral_at_17 : ¬ ∀ i, 0 ≤ padicValRat 17 ((F 11 2 1).coeff i) := by
+  intro h
+  have h2 := h 0
+  rw [F40_coeff_zero_val] at h2
+  norm_num at h2
+
+/-- **The witness against Lai's skip line (LEAN-CONDITIONAL on `Delta_eq`).** At `s = 11`,
+`K = 40`, Lai's Program 05 test skips the outer prime `17`, which needs `F_40` to be
+`17`-integral; but `v_17(content F_40) = -247`. -/
+theorem lai_skip_witness :
+    laiSkips 11 40 17 ∧ HasContentVal 17 (F 11 2 1) (-247) ∧
+      ¬ ∀ i, 0 ≤ padicValRat 17 ((F 11 2 1).coeff i) :=
+  ⟨laiSkips_11_40.2.2.2.1, F40_contentVal17, F40_not_integral_at_17⟩
+
+end Mathathon.P108.Skip
